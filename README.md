@@ -1,2 +1,2 @@
 # bcbiosRnaseq
-R package to analyze data after small RNAseq with bcbio
+R package to analyze the output of small RNAseq pipeline with bcbio
