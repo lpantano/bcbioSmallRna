@@ -1,4 +1,4 @@
-Package: bcbiosRnaseq
+Package: bcbioSmallRna
 Title: small RNA-Seq Utilities
 Description: Quality control and differential expression for bcbio-nextgen
     small RNA-seq experiments.
