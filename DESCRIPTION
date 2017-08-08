@@ -43,7 +43,7 @@ Imports:
     S4Vectors,
     scales,
     stats,
-    SummarizedExperiment,
+    MultiAssayExperiment,
     utils
 Suggests:
     BiocStyle
