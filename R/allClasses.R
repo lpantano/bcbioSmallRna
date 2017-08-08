@@ -4,7 +4,7 @@
 #' [bcbio-nextgen](https://bcbio-nextgen.readthedocs.org/).
 #'
 #' [bcbioSmallRnaDataSet] is a subclass of
-#' [SummarizedExperiment::SummarizedExperiment] designed to store an RNA-seq
+#' [MultiAssayExperiment::MultiAssayExperiment] designed to store an RNA-seq
 #' analysis.
 #'
 #'
@@ -22,6 +22,5 @@
 #' @export
 bcbioSRNADataSet <- setClass(  # nolint
     "bcbioSmallRnaDataSet",
-    contains = "SummarizedExperiment",
-    representation = representation(callers = "SimpleList"))
+    contains = "MultiAssayExperiment")
 setValidity("bcbioSmallRnaDataSet", function(object) TRUE)
