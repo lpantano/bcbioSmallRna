@@ -38,12 +38,13 @@ Imports:
     ggrepel,
     isomiRs,
     methods,
+    MultiAssayExperiment,
     pheatmap,
+    purr,
     rjson,
     S4Vectors,
     scales,
     stats,
-    MultiAssayExperiment,
     utils
 Suggests:
     BiocStyle

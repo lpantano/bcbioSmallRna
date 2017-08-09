@@ -7,19 +7,18 @@
 #'
 #' @author Lorena Patano
 #'
-#' @param rna [bcbioRNADataSet].
-.read_smallrna_counts <- function(rna) {
+#' @param meta metadata of the bcbio run.
+.read_smallrna_counts <- function(meta) {
     # TODO Better way to handle sample_dirs than by piping in via metadata?
-    meta <- metadata(rna)
     fns <- file.path(meta[["sample_dirs"]],
                      paste(names(meta[["sample_dirs"]]),
                            "mirbase-ready.counts",
                            sep = "-"))
     names(fns) <- names(meta[["sample_dirs"]])
     message("Reading miRNA count files")
-    bcbio(rna, type = "isomirs") <- IsomirDataSeqFromFiles(
+    iso <- IsomirDataSeqFromFiles(
         files = fns[rownames(meta[["metadata"]])],
         coldata = meta[["metadata"]],
-        design = ~meta[["interesting_groups"]])
-    rna
+        design = ~meta[["interesting_groups"]][1L])
+    isoNorm(iso)
 }
