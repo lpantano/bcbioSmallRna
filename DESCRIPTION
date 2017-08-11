@@ -29,23 +29,33 @@ License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Imports:
+    Biobase,
     BiocGenerics,
     cowplot,
     data.table,
     DEGreport (>= 1.13.4),
     DESeq2 (>= 1.16.0),
+    dplyr,
     ggplot2 (>= 2.2.1),
     ggrepel,
     isomiRs,
+    janitor,
     methods,
     MultiAssayExperiment,
     pheatmap,
-    purr,
+    purrr,
+    readr,
+    reshape,
+    rlang,
     rjson,
     S4Vectors,
     scales,
     stats,
-    utils
+    stringr,
+    SummarizedExperiment,
+    tibble,
+    utils,
+    yaml
 Suggests:
     BiocStyle
 Remotes:

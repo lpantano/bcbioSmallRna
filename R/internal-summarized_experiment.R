@@ -4,6 +4,7 @@
 #' [bcbio-nextgen](https://bcbio-nextgen.readthedocs.io/) run metadata.
 #'
 #' @rdname summarized_experiment
+#' @noRd
 #' @keywords internal
 #'
 #' @author Michael Steinbaugh

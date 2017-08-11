@@ -4,7 +4,7 @@
 #' experiments.
 #'
 #' @import BiocGenerics Biobase DESeq2 MultiAssayExperiment SummarizedExperiment
-#'   S4Vectors
+#'   S4Vectors isomiRs
 #' @importFrom cowplot draw_plot ggdraw plot_grid
 #' @importFrom DEGreport degQC degCovariates degPatterns
 #' @importFrom ggplot2 aes_ coord_fixed coord_flip element_blank element_text
@@ -14,14 +14,20 @@
 #'   ylab ylim scale_x_log10 scale_color_manual geom_text aes_string
 #'   scale_x_log10 annotation_logticks
 #' @importFrom ggrepel geom_text_repel
-#' @importFrom dplyr select mutate filter left_join
-#' @importFrom purr set_names
+#' @importFrom dplyr select mutate filter left_join arrange "%>%"
+#'                   bind_rows bind_cols mutate_all summarise group_by
+#'                   enquo
+#' @importFrom janitor remove_empty_cols
+#' @importFrom reshape melt
+#' @importFrom tibble column_to_rownames
+#' @importFrom purrr set_names
 #' @importFrom isomiRs IsomirDataSeqFromFiles
 #' @importFrom methods as is new slot slot<- validObject
 #' @importFrom pheatmap pheatmap
 #' @importFrom stats formula
 #' @importFrom stringr str_detect str_match
-#' @importFrom readr read_lines read_csv read_tsv
+#' @importFrom readr read_lines read_csv read_tsv read_delim
+#' @importFrom rlang sym
 #' @importFrom utils read.table capture.output
 "_PACKAGE"
 

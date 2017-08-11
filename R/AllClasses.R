@@ -14,13 +14,11 @@
 #' - Server run paths.
 #' - R local environment information, including [sessionInfo()].
 #'
-#' @author Lorena Patano, Michael Steinbaugh
+#' @author Lorena Pantano, Michael Steinbaugh
 #' @rdname bcbioSmallRnaDataSet
-#' @examples
-#' path <- system.file("extra", package="bcbioSmallRna")
-#' bcb <- load_run(file.path(path, "bcbio"))
 #' @export
-bcbioSRNADataSet <- setClass(  # nolint
+bcbioSmallRnaDataSet <- setClass(  # nolint
     "bcbioSmallRnaDataSet",
-    contains = "MultiAssayExperiment")
+    contains = "MultiAssayExperiment",
+    slots = c(callers = "SimpleList"))
 setValidity("bcbioSmallRnaDataSet", function(object) TRUE)

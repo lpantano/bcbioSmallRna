@@ -3,36 +3,16 @@
 #' @rdname plots-smallrna
 #' @author Lorena Pantano, Michael Steinbaugh
 #'
-#' @param bcb [bcbioRNADataSet].
+#' @param bcb [bcbioSmallRnaDataSet].
 #' @return [ggplot].
 #'
 #' @description Plot size distribution of small RNA-seq data.
 #' @export
 plot_size_distribution <- function(bcb) {
-    meta <- metadata(bcb)
-    fns <- file.path(meta[["sample_dirs"]],
-                     paste(names(meta[["sample_dirs"]]),
-                           "ready.trimming_stats",
-                           sep = "-"))
-    names(fns) <- names(meta[["sample_dirs"]])
-    tab <- data.frame()
-    for (sample in rownames(meta[["metadata"]])) {
-        d <- read.table(fns[sample], sep = "")
-        tab <- rbind(
-            tab, d %>%
-                mutate(
-                    sample = sample,
-                    group = meta[["metadata"]][sample,
-                                               meta[["interesting_groups"]]]))
-    }
-
-    reads_adapter <- tab %>%
-        group_by(!!!syms(c("sample", "group"))) %>%
-        summarise(total = sum(.data[["V2"]]))
-
+    info <- adapter(bcb)
     ggdraw() +
         draw_plot(
-            ggplot(reads_adapter,
+            ggplot(info[["reads_by_sample"]],
                    aes_(x = ~sample, y = ~total, fill = ~group)) +
                 geom_bar(stat = "identity", position = "dodge") +
                 ggtitle("total number of reads with adapter") +
@@ -42,7 +22,7 @@ plot_size_distribution <- function(bcb) {
                         angle = 90L, vjust = 0.5, hjust = 1L)),
             0L, 0.5, 1L, 0.5) +
         draw_plot(
-            ggplot(tab, aes_(x = ~V1, y = ~V2, group = ~sample)) +
+            ggplot(info[["reads_by_pos"]], aes_(x = ~V1, y = ~V2, group = ~sample)) +
                 geom_bar(stat = "identity", position = "dodge") +
                 facet_wrap(~group, ncol = 2L) +
                 ggtitle("size distribution") +

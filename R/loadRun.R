@@ -13,8 +13,6 @@
 #'
 #' @param upload_dir Path to final upload directory. This path is set when
 #'   running `bcbio_nextgen -w template`.
-#' @param analysis Analysis type. Supports RNA-seq (`rnaseq`; **default**) or
-#'   small RNA-seq (`srnaseq`).
 #' @param interesting_groups Character vector of interesting groups. First entry
 #'   is used for plot colors during quality control (QC) analysis. Entire vector
 #'   is used for PCA and heatmap QC functions.
@@ -23,12 +21,11 @@
 #' @param ... Additional arguments, saved as metadata.
 #'
 #' @return [bcbioSmallRnaDataSet].
+#' @importFrom yaml yaml.load_file
 #' @export
-loadRun <- function(
+loadSmallRnaRun <- function(
     upload_dir = "final",
-    analysis = "rnaseq",
     interesting_groups = "description",
-    sample_metadata_file = NULL,
     max_samples = 50,
     ...) {
     # Directory paths ====
@@ -53,20 +50,13 @@ loadRun <- function(
     project_dir <- file.path(upload_dir, project_dir)
 
 
-    # Analysis type ====
-    supported_analyses <- c("srnaseq")
-    if (!analysis %in% supported_analyses) {
-        stop(paste("Supported analyses:", toString(supported_analyses)))
-    }
-
-
     # Project summary YAML ====
     yaml_file <- file.path(project_dir, "project-summary.yaml")
     if (!file.exists(yaml_file)) {
         stop("YAML project summary missing")
     }
     message("Reading project summary YAML")
-    yaml <- read_yaml(yaml_file)
+    yaml <- yaml.load_file(yaml_file)
 
 
     # Sample names ====
@@ -110,7 +100,6 @@ loadRun <- function(
     # counts generated with STAR.
     metrics <- .yaml_metrics(yaml)
 
-
     # bcbio-nextgen run information ====
     message("Reading bcbio run information")
     data_versions <- .data_versions(project_dir)
@@ -120,18 +109,12 @@ loadRun <- function(
     bcbio_nextgen_commands <- read_lines(
         file.path(project_dir, "bcbio-nextgen-commands.log"))
 
-
     # colData ====
-    if (!is.null(sample_metadata)) {
-        col_data <- sample_metadata
-    } else {
-        col_data <- .yaml_metadata(yaml)
-    }
-
+    col_data <- .yaml_metadata(yaml)
 
     # Metadata ====
     metadata <- list(
-        analysis = analysis,
+        analysis = "smallRna",
         upload_dir = upload_dir,
         sample_dirs = sample_dirs,
         project_dir = project_dir,
@@ -140,38 +123,24 @@ loadRun <- function(
         interesting_groups = interesting_groups,
         organism = organism,
         genome_build = genome_build,
-        ensembl_version = annotables::ensembl_version,
         lanes = lanes,
         yaml_file = yaml_file,
         yaml = yaml,
         metrics = metrics,
-        sample_metadata_file = sample_metadata_file,
-        sample_metadata = sample_metadata,
         data_versions = data_versions,
         programs = programs,
         bcbio_nextgen = bcbio_nextgen,
         bcbio_nextgen_commands = bcbio_nextgen_commands)
 
-    # Add user-defined custom metadata, if specified
-    dots <- list(...)
-    if (length(dots) > 0L) {
-        metadata <- c(metadata, dots)
-    }
-
-    mirna <- .read_smallrna_counts(metadata)
-
-    # rlog & variance
-    if(nrow(col_data) > max_samples){
-        message("Data to big, skipping vst/rlog")
-        rlog <- DESeqTransform(
-            SummarizedExperiment(assays = log2(counts(mirna) + 1),
-                                 colData = colData(mirna)))
-    }else{
-        rlog <- assays(mirna)[["norm"]]
-    }
-
     # SummarizedExperiment for miRNA ====
-
+    mirna <- .read_smallrna_counts(metadata, col_data)
+    iso <- isoCounts(mirna, iso5 = TRUE, iso3 = TRUE,
+                     add = TRUE, subs = TRUE, seed = TRUE,
+                     ref = TRUE)
+    mir <- SummarizedExperiment(assays = SimpleList(counts(mirna)),
+                                colData = col_data)
+    iso <- SummarizedExperiment(assays = SimpleList(counts(iso)),
+                                colData = col_data)
     # SummarizedExperiment for tRNA ====
 
     # SummarizedExperiment for clusters ====
@@ -179,10 +148,12 @@ loadRun <- function(
     # SummarizedExperiment for mirdeep2 ====
 
     # MultiAssayExperiment ====
-    se <- .multiassay_experiment()
-
+    exps <- list(mir = mirna, isomirs = iso)
+    se <- .multiassay_experiment(exps, col_data, metadata)
 
     # bcbioSmallRnaDataSet ====
     bcb <- new("bcbioSmallRnaDataSet", se)
+    bcbio(bcb, "isomirs") <- mirna
+    adapter(bcb) <- .read_adapter(bcb)
     bcb
 }

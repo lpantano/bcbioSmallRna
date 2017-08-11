@@ -1,8 +1,15 @@
+.make_names <- function(names) {
+    make.names(names, unique = TRUE) %>%
+        gsub("[^[:alnum:] ]", "_", .) %>%
+        gsub("\\.", "_", .) %>%
+        tolower
+}
+
 #' YAML utilities
 #'
 #' @rdname yaml
 #' @keywords internal
-#' @author Michael Steinbaugh
+#' @author Michael Steinbaugh, Lorena Pantano
 #'
 #' @param yaml Project summary YAML.
 #' @param ... Nested operator keys supplied as dot objects.
@@ -10,9 +17,10 @@
 #' @note Metrics are only generated for a standard RNA-seq run with aligned
 #'   counts. Fast RNA-seq mode with lightweight counts (pseudocounts) doesn't
 #'   output the same metrics into the YAML.
-#'
+#' @noRd
+#' @importFrom rlang dots_values
 #' @return [DataFrame].
-.yaml <- function(yaml, ...) {
+.yaml <- function(yaml, keys) {
     samples <- yaml[["samples"]]
     if (!length(samples)) {
         stop("No sample information in YAML")
@@ -20,7 +28,6 @@
 
     # Check for nested keys, otherwise return NULL
     # TODO Improve the recursion method using sapply in a future update
-    keys <- get_objs_from_dots(dots(...))
     if (!keys[[1L]] %in% names(samples[[1L]])) {
         return(NULL)
     }
@@ -31,39 +38,39 @@
     }
 
     lapply(seq_along(samples), function(a) {
-        nested <- samples[[a]][[keys]] %>% snake
+        nested <- samples[[a]][[keys]] %>%
+            set_names(., nm = .make_names(names(.)))
         # Set the description
         nested[["description"]] <- samples[[a]][["description"]]
         # Remove legacy duplicate `name` identifier
         nested[["name"]] <- NULL
         if (rev(keys)[[1L]] == "metadata") {
-            if (is.null(nested[["batch"]])) {
+            if (is.null(nested[["batch"]]))
                 nested[["batch"]] <- NA
-            }
+            if (is.null(nested[["phenotype"]]))
+                nested[["phenotype"]] <- NA
             if (length(nested[["phenotype"]])) {
-                if (grepl("^$", nested[["phenotype"]])) {
+                if (grepl("^$", nested[["phenotype"]]))
                     nested[["phenotype"]] <- NA
-                }
             }
         }
-        nested
+        nested %>% data.frame(., stringsAsFactors = FALSE)
     }
     ) %>%
-        rbindlist %>%
-        # List can be coerced to data frame using [data.table::rbindlist()] or
-        # [dplyr::bind_rows()]. Some YAML files will cause [bind_rows()] to
-        # throw `Column XXX can't be converted from integer to character` errors
-        # on numeric data, whereas this doesn't happen with [rbindlist()].
+        bind_rows %>%
+        arrange(description) %>%
         as.data.frame %>%
-        remove_na %>%
-        arrange(!!sym("description"))
+        remove_empty_cols
 }
 
 
 
 #' @rdname yaml
 .yaml_metadata <- function(yaml) {
-    .yaml(yaml, metadata) %>%
+    metadata <- .yaml(yaml, "metadata")
+    if (ncol(metadata) == 1)
+        metadata[["group"]] <- metadata[["description"]]
+    metadata %>%
         as.data.frame %>%
         mutate_all(factor) %>%
         mutate(description = as.character(.data[["description"]])) %>%
@@ -76,7 +83,7 @@
 
 #' @rdname yaml
 .yaml_metrics <- function(yaml) {
-    metrics <- .yaml(yaml, summary, metrics)
+    metrics <- .yaml(yaml, c("summary", "metrics"))
     if (is.null(metrics)) {
         return(NULL)
     }
