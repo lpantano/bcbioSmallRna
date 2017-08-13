@@ -1,0 +1,8 @@
+language: r
+cache: packages
+sudo: false
+dist: trusty
+r:
+  - bioc-devel
+r_github_packages:
+  - jimhester/covr
