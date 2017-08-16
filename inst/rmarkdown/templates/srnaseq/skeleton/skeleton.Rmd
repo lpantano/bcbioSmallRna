@@ -5,10 +5,14 @@ date: "`r Sys.Date()`"
 ---
 
 ```{r setup, message=FALSE}
-# Run [bcbioRnaseq::download()] to download `setup.R`
+# Run [bcbioSmallRna::download()] to download `setup.R`
 source("setup.R")
 library(isomiRs)
 library(bcbioSmallRna)
+
+out_dir <- "."
+data_out <- file.path(out_dir, "data")
+res_out <- file.path(out_dir, "results")
 
 # bcbioSmallRnaDataSet
 bcb <- loadSmallRnaRun(
