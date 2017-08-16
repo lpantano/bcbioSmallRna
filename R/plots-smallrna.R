@@ -2,18 +2,19 @@
 #'
 #' @rdname plots-smallrna
 #' @author Lorena Pantano, Michael Steinbaugh
-#'
+#' @aliases bcbSmallMicro bcbSmallCluster
 #' @param bcb [bcbioSmallRnaDataSet].
+#' @param color Column in metadata to use to color the bars.
 #' @return [ggplot].
 #'
 #' @description Plot size distribution of small RNA-seq data.
 #' @export
-plot_size_distribution <- function(bcb) {
+bcbSmallSize <- function(bcb, color="group") {
     info <- adapter(bcb)
     ggdraw() +
         draw_plot(
             ggplot(info[["reads_by_sample"]],
-                   aes_(x = ~sample, y = ~total, fill = ~group)) +
+                   aes_string(x = "sample", y = "total", fill = color)) +
                 geom_bar(stat = "identity", position = "dodge") +
                 ggtitle("total number of reads with adapter") +
                 ylab("# reads") +
@@ -22,7 +23,8 @@ plot_size_distribution <- function(bcb) {
                         angle = 90L, vjust = 0.5, hjust = 1L)),
             0L, 0.5, 1L, 0.5) +
         draw_plot(
-            ggplot(info[["reads_by_pos"]], aes_(x = ~V1, y = ~V2, group = ~sample)) +
+            ggplot(info[["reads_by_pos"]],
+                   aes_string(x = "V1", y = "V2", group = "sample")) +
                 geom_bar(stat = "identity", position = "dodge") +
                 facet_wrap(~group, ncol = 2L) +
                 ggtitle("size distribution") +
@@ -36,33 +38,33 @@ plot_size_distribution <- function(bcb) {
 
 
 #' @rdname plots-smallrna
-#' @description Plot of total miRNA counts.
+#' @keywords plot
 #' @export
-plot_mirna_counts <- function(bcb) {
-    .t <- data.frame(sample = colnames(bcbio(bcb)),
-                     total = colSums(bcbio(bcb)))
-    cs <- apply(bcbio(bcb), 2L, function(x) {
+bcbSmallMicro <- function(bcb) {
+    total <- data.frame(sample = colnames(mirna(bcb)),
+                     total = colSums(mirna(bcb)))
+    cs <- apply(mirna(bcb), 2L, function(x) {
         cumsum(sort(x, decreasing = TRUE))
     }) %>% as.data.frame
     cs[["pos"]] <- 1L:nrow(cs)
     plot_grid(
-        ggplot(.t) +
-            geom_bar(aes_(x = ~sample,
-                          y = ~total),
+        ggplot(total) +
+            geom_bar(aes_string(x = "sample",
+                          y = "total"),
                      stat = "identity") +
             theme(axis.text.x = element_text(
                 angle = 90L, hjust = 1L, vjust = 0.5)),
-        ggplot(melt(bcbio(bcb))) +
-            geom_boxplot(aes_(x = ~X2, y = ~value)) +
+        ggplot(melt(mirna(bcb))) +
+            geom_boxplot(aes_string(x = "X2", y = "value")) +
             xlab("") +
             ylab("expression") +
             scale_y_log10() +
             theme(axis.text.x = element_text(
                 angle = 90L, hjust = 1L, vjust = 0.5)),
         ggplot(melt(cs, id.vars = "pos")) +
-            geom_line(aes_(x = ~pos,
-                           y = ~value,
-                           color = ~variable)) +
+            geom_line(aes_string(x = "pos",
+                           y = "value",
+                           color = "variable")) +
             xlim(0L, 50L) +
             scale_y_log10(),
         nrow = 3L)
@@ -70,23 +72,69 @@ plot_mirna_counts <- function(bcb) {
 
 
 #' @rdname plots-smallrna
-#' @description Clustering small RNA samples.
+#' @keywords plot
 #' @export
-plot_srna_clusters <- function(bcb) {
-    counts <- bcbio(bcb)
-    design <- metadata(bcb)[["metadata"]]
-    dds <- DESeqDataSetFromMatrix(
-        counts[rowSums(counts > 0L) > 3L, ],
-        colData = design,
-        design = ~1L)
-    vst <- rlog(dds, betaPriorVar = FALSE)
-    annotation_col <- design %>%
-        .[, metadata(bcb)[["interesting_groups"]], drop = FALSE]
-    pheatmap(assay(vst),
-             annotation_col = annotation_col,
-             clustering_distance_cols = "correlation",
-             clustering_method = "ward.D",
-             scale = "row",
-             show_rownames = FALSE)
-    plot_pca(metadata(bcb), vst)
+bcbSmallCluster <- function(bcb){
+    if (is.null(experiments(bcb)[["cluster"]]))
+        stop("No cluster data in this analysis.")
+    total <- data.frame(sample = colnames(cluster(bcb)),
+                        total = colSums(cluster(bcb)))
+    plot_grid(
+        experiments(bcb)[["cluster"]] %>%
+            metadata %>%
+            .[["stats"]] %>%
+            ggplot(aes_string(x = "V2", y = "V1", fill = "V3")) +
+            geom_bar(stat = 'identity', position = 'dodge') +
+            labs(list(x="samples", y="reads")) +
+            scale_fill_brewer("steps", palette = 'Set1')+
+            theme(legend.position = "bottom",
+                  legend.direction = "horizontal",
+                  axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)),
+        ggplot(total) +
+            geom_bar(aes_string(x = "sample",
+                                y = "total"),
+                     stat = "identity") +
+            theme(axis.text.x =
+                      element_text(angle = 90L, hjust = 1L, vjust = 0.5)),
+        melt(mirna(bcb)) %>%
+            ggplot() +
+            geom_boxplot(aes_string(x = "X2", y = "value")) +
+            xlab("") +
+            ylab("expression") +
+            scale_y_log10() +
+            theme(axis.text.x = element_text(
+            angle = 90L, hjust = 1L, vjust = 0.5))
+    )
 }
+
+#' Plot PCA of the different small RNA data
+#' @rdname plotsSmallPCA
+#' @author Lorena Pantano
+#' @keywords plot
+#' @description Clustering small RNA samples.
+#' @param bcb [bcbioSmallRnaDataSet].
+#' @param type Data type to plot: `mirna, cluster, isomir, trna`.
+#' @param minAverage Minimun average small RNA expression to be kept.
+#' @param ... Options pass to [DEGreport::degPCA()].
+#' @export
+bcbSmallPCA <- function(bcb, type = "mirna", minAverage = 5, ...) {
+    counts <- experiments(bcb)[[type]] %>%
+        assays %>% .[["rlog"]] %>%
+        .[colMeans(.[]) > 2, ]
+    annotation_col <- colData(bcb) %>%
+        as.data.frame %>%
+        .[, metadata(bcb)[["interesting_groups"]], drop = FALSE]
+    th <- HeatmapAnnotation(df = annotation_col)
+    hplot <- Heatmap(counts,
+            top_annotation = th,
+            clustering_method_rows = "ward.D",
+            clustering_distance_columns = "kendall",
+            clustering_method_columns = "ward.D",
+            show_row_names = FALSE)
+    p <- degPCA(counts, annotation_col,
+                condition = metadata(bcb)[["interesting_groups"]], ...)
+    print(p)
+    hplot
+}
+
+

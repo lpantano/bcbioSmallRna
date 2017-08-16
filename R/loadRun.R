@@ -11,29 +11,33 @@
 #'
 #' @author Michael Steinbaugh, Lorena Pantano
 #'
-#' @param upload_dir Path to final upload directory. This path is set when
+#' @param uploadDir Path to final upload directory. This path is set when
 #'   running `bcbio_nextgen -w template`.
-#' @param interesting_groups Character vector of interesting groups. First entry
+#' @param interestingGroups Character vector of interesting groups. First entry
 #'   is used for plot colors during quality control (QC) analysis. Entire vector
 #'   is used for PCA and heatmap QC functions.
-#' @param max_samples *Optional*. Maximum number of samples to calculate rlog and
-#'   variance stabilization object from DESeq2.
+#' @param maxSamples *Optional*. Maximum number of samples to calculate rlog
+#'   and variance stabilization object from DESeq2.
+#' @param dataDir Folder to keep a cache of the object.
 #' @param ... Additional arguments, saved as metadata.
 #'
 #' @return [bcbioSmallRnaDataSet].
 #' @importFrom yaml yaml.load_file
 #' @export
 loadSmallRnaRun <- function(
-    upload_dir = "final",
-    interesting_groups = "description",
-    max_samples = 50,
+    uploadDir = "final",
+    interestingGroups = "description",
+    maxSamples = 50,
+    dataDir = NULL,
     ...) {
-    # Directory paths ====
-    # Check connection to final upload directory
-    if (!dir.exists(upload_dir)) {
+    # Directory paths and cache path====
+    if (!is.null(dataDir) & file.exists(file.path(dataDir, "bcb.rda")))
+        load(file.path(dataDir, "bcb.rda"))
+
+    if (!dir.exists(uploadDir)) {
         stop("Final upload directory failed to load")
     }
-    upload_dir <- normalizePath(upload_dir)
+    upload_dir <- normalizePath(uploadDir)
     # Find most recent nested project_dir (normally only 1)
     project_dir_pattern <- "^(\\d{4}-\\d{2}-\\d{2})_([^/]+)$"
     project_dir <- dir(upload_dir,
@@ -120,7 +124,7 @@ loadSmallRnaRun <- function(
         project_dir = project_dir,
         template = template,
         run_date = run_date,
-        interesting_groups = interesting_groups,
+        interesting_groups = interestingGroups,
         organism = organism,
         genome_build = genome_build,
         lanes = lanes,
@@ -133,27 +137,36 @@ loadSmallRnaRun <- function(
         bcbio_nextgen_commands = bcbio_nextgen_commands)
 
     # SummarizedExperiment for miRNA ====
-    mirna <- .read_smallrna_counts(metadata, col_data)
-    iso <- isoCounts(mirna, iso5 = TRUE, iso3 = TRUE,
-                     add = TRUE, subs = TRUE, seed = TRUE,
-                     ref = TRUE)
-    mir <- SummarizedExperiment(assays = SimpleList(counts(mirna)),
-                                colData = col_data)
-    iso <- SummarizedExperiment(assays = SimpleList(counts(iso)),
-                                colData = col_data)
+    mirna <- .read_mirna_counts(metadata, col_data)
+    mirna_rlog <- mirna %>% isoNorm %>% counts(., norm = TRUE)
+    isomirna <- isoCounts(mirna, iso5 = TRUE, iso3 = TRUE,
+                        add = TRUE, subs = TRUE, seed = TRUE,
+                        ref = TRUE)
+    iso_rlog <- isomirna %>% isoNorm %>% counts(., norm = TRUE)
+    mir <- SummarizedExperiment(assays = SimpleList(
+        raw = counts(mirna),
+        rlog = mirna_rlog),
+        colData = col_data)
+    iso <- SummarizedExperiment(assays = SimpleList(
+        raw = counts(isomirna),
+        rlog = iso_rlog),
+        colData = col_data)
     # SummarizedExperiment for tRNA ====
 
     # SummarizedExperiment for clusters ====
-
+    cluster <- .read_cluster_counts(metadata, col_data)
     # SummarizedExperiment for mirdeep2 ====
 
     # MultiAssayExperiment ====
-    exps <- list(mir = mirna, isomirs = iso)
+    exps <- list(mirna = mir, isomirs = iso, cluster = cluster)
     se <- .multiassay_experiment(exps, col_data, metadata)
 
     # bcbioSmallRnaDataSet ====
     bcb <- new("bcbioSmallRnaDataSet", se)
     bcbio(bcb, "isomirs") <- mirna
     adapter(bcb) <- .read_adapter(bcb)
+    if (!file.exists(dataDir))
+        dir.create(dataDir, showWarnings = FALSE, recursive = TRUE)
+    save(bcb, file = file.path(dataDir, "bcb.rda"))
     bcb
 }

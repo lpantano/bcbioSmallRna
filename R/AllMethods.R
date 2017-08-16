@@ -1,26 +1,3 @@
-#' Count matrix accessors
-#'
-#' By default, [counts()] returns the raw counts. Normalized counts, including
-#' transcripts per million (TPM) can be accessed using the `normalized`
-#' argument.
-#'
-#' @rdname counts
-#' @docType methods
-#'
-#' @author Lorena Pantano
-#'
-#' @param object Object.
-#' @param ... Additional parameters.
-#'
-#' @return Counts matrix
-#' @importMethodsFrom DESeq2 counts
-#' @export
-setMethod("counts", signature("bcbioSmallRnaDataSet"), function(object) {
-    counts <- assays(object)[[1]]
-    counts
-})
-
-
 #' Sample metrics accesor
 #'
 #' @rdname metrics
@@ -35,18 +12,42 @@ setMethod("metrics", signature("bcbioSmallRnaDataSet"), function(object) {
 })
 
 
-# mirna count data information
+#' mirna count data information
 #
-# @rdname mirna
-# @docType methods
-#
-# @param object [bcbioSmallRnaDataSet] object.
-#
-# setMethod("mirna", "bcbioSmallRnaDataSet", function(object) {
-#     experiments(object)[[1]]
-# })
+#' @rdname mirna
+#' @docType methods
+#' @aliases cluster trna isomir
+#' @param object [bcbioSmallRnaDataSet] object.
+#' @param type Type of count data to retrieve.
+#' @export
+setMethod("mirna", "bcbioSmallRnaDataSet", function(object, type="raw") {
+    if (type %in% names(assays(experiments(object)[["mirna"]])))
+        assays(experiments(object)[["mirna"]])[[type]]
+    else stop(paste(type, "not found"))
+})
+#' @rdname mirna
+#' @export
+setMethod("isomir", "bcbioSmallRnaDataSet", function(object, type="raw") {
+    if (type %in% names(assays(experiments(object)[["isomir"]])))
+        assays(experiments(object)[["isomir"]])[[type]]
+    else stop(paste(type, "not found"))
+})
+#' @rdname mirna
+#' @export
+setMethod("cluster", "bcbioSmallRnaDataSet", function(object, type="raw") {
+    if (type %in% names(assays(experiments(object)[["cluster"]])))
+        assays(experiments(object)[["cluster"]])[[type]]
+    else stop(paste(type, "not found"))
+})
+#' @rdname mirna
+#' @export
+setMethod("trna", "bcbioSmallRnaDataSet", function(object, type="raw") {
+    if (type %in% names(assays(experiments(object)[["trna"]])))
+        assays(experiments(object)[["trna"]])[[type]]
+    else stop(paste(type, "not found"))
+})
 
-#' bcbioSmallRnaDataSet caller accessors
+#' `bcbioSmallRnaDataSet` caller accessors
 #'
 #'
 #' Additional obejcts of interest include:
@@ -63,7 +64,8 @@ setMethod("metrics", signature("bcbioSmallRnaDataSet"), function(object) {
 #'
 #' @return caller object.
 #' @export
-setMethod("bcbio", signature("bcbioSmallRnaDataSet"), function(object, type = "counts") {
+setMethod("bcbio", signature("bcbioSmallRnaDataSet"),
+          function(object, type = "counts") {
     if (type %in% names(slot(object, "callers"))) {
         slot(object, "callers")[[type]]
     } else {

@@ -12,7 +12,7 @@
 #' @author Michael Steinbaugh, Lorena Pantano
 #'
 #' @param yaml Project summary YAML.
-#' @param ... Nested operator keys supplied as dot objects.
+#' @param keys Nested operator keys supplied as dot objects.
 #'
 #' @note Metrics are only generated for a standard RNA-seq run with aligned
 #'   counts. Fast RNA-seq mode with lightweight counts (pseudocounts) doesn't

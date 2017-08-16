@@ -4,19 +4,21 @@
 \alias{loadSmallRnaRun}
 \title{Load small RNA-seq bcbio-nextgen run}
 \usage{
-loadSmallRnaRun(upload_dir = "final", interesting_groups = "description",
-  max_samples = 50, ...)
+loadSmallRnaRun(uploadDir = "final", interestingGroups = "description",
+  maxSamples = 50, dataDir = NULL, ...)
 }
 \arguments{
-\item{upload_dir}{Path to final upload directory. This path is set when
+\item{uploadDir}{Path to final upload directory. This path is set when
 running \code{bcbio_nextgen -w template}.}
 
-\item{interesting_groups}{Character vector of interesting groups. First entry
+\item{interestingGroups}{Character vector of interesting groups. First entry
 is used for plot colors during quality control (QC) analysis. Entire vector
 is used for PCA and heatmap QC functions.}
 
-\item{max_samples}{\emph{Optional}. Maximum number of samples to calculate rlog and
-variance stabilization object from DESeq2.}
+\item{maxSamples}{\emph{Optional}. Maximum number of samples to calculate rlog
+and variance stabilization object from DESeq2.}
+
+\item{dataDir}{Folder to keep a cache of the object.}
 
 \item{...}{Additional arguments, saved as metadata.}
 }

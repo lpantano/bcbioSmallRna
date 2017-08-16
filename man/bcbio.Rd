@@ -6,7 +6,7 @@
 \alias{bcbio<-}
 \alias{bcbio,bcbioSmallRnaDataSet-method}
 \alias{bcbio<-,bcbioSmallRnaDataSet-method}
-\title{bcbioSmallRnaDataSet caller accessors}
+\title{\code{bcbioSmallRnaDataSet} caller accessors}
 \usage{
 \S4method{bcbio}{bcbioSmallRnaDataSet}(object, type = "counts")
 

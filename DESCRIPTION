@@ -31,6 +31,7 @@ LazyData: true
 Imports:
     Biobase,
     BiocGenerics,
+    ComplexHeatmap,
     cowplot,
     data.table,
     DEGreport (>= 1.13.4),
