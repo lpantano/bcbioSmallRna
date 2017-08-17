@@ -31,8 +31,10 @@ loadSmallRnaRun <- function(
     dataDir = NULL,
     ...) {
     # Directory paths and cache path====
-    if (!is.null(dataDir) & file.exists(file.path(dataDir, "bcb.rda")))
+    if (!is.null(dataDir) & file.exists(file.path(dataDir, "bcb.rda"))) {
         load(file.path(dataDir, "bcb.rda"))
+        return(bcb)
+    }
 
     if (!dir.exists(uploadDir)) {
         stop("Final upload directory failed to load")

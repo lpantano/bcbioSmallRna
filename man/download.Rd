@@ -19,5 +19,5 @@ the \href{http://bioinformatics.sph.harvard.edu/}{HBC website}.
 File download utility for RMarkdown knit reports.
 }
 \examples{
-bcbSmallDownload("setup.R")
+bcbSmallDownload()
 }

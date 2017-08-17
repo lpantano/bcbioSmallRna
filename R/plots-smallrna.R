@@ -52,6 +52,7 @@ bcbSmallMicro <- function(bcb) {
             geom_bar(aes_string(x = "sample",
                           y = "total"),
                      stat = "identity") +
+            ggtitle("Total reads being miRNAs") +
             theme(axis.text.x = element_text(
                 angle = 90L, hjust = 1L, vjust = 0.5)),
         ggplot(melt(mirna(bcb))) +
@@ -59,6 +60,7 @@ bcbSmallMicro <- function(bcb) {
             xlab("") +
             ylab("expression") +
             scale_y_log10() +
+            ggtitle("Expression distribution fo miRNAs") +
             theme(axis.text.x = element_text(
                 angle = 90L, hjust = 1L, vjust = 0.5)),
         ggplot(melt(cs, id.vars = "pos")) +
@@ -66,7 +68,8 @@ bcbSmallMicro <- function(bcb) {
                            y = "value",
                            color = "variable")) +
             xlim(0L, 50L) +
-            scale_y_log10(),
+            scale_y_log10() +
+            ggtitle("Saturation coverage"),
         nrow = 3L)
 }
 
@@ -86,22 +89,18 @@ bcbSmallCluster <- function(bcb){
             ggplot(aes_string(x = "V2", y = "V1", fill = "V3")) +
             geom_bar(stat = 'identity', position = 'dodge') +
             labs(list(x="samples", y="reads")) +
-            scale_fill_brewer("steps", palette = 'Set1')+
+            scale_fill_brewer("steps", palette = 'Set1') +
+            ggtitle("Reads kept after filtering") +
             theme(legend.position = "bottom",
                   legend.direction = "horizontal",
                   axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)),
-        ggplot(total) +
-            geom_bar(aes_string(x = "sample",
-                                y = "total"),
-                     stat = "identity") +
-            theme(axis.text.x =
-                      element_text(angle = 90L, hjust = 1L, vjust = 0.5)),
-        melt(mirna(bcb)) %>%
+        melt(cluster(bcb)) %>%
             ggplot() +
-            geom_boxplot(aes_string(x = "X2", y = "value")) +
+            geom_boxplot(aes_string(x = "variable", y = "value")) +
             xlab("") +
             ylab("expression") +
             scale_y_log10() +
+            ggtitle("Expression distribution of clusters detected") +
             theme(axis.text.x = element_text(
             angle = 90L, hjust = 1L, vjust = 0.5))
     )

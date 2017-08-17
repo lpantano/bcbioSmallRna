@@ -12,7 +12,7 @@
 #'   default dependency files for a new experiment.
 #'
 #' @examples
-#' bcbSmallDownload("setup.R")
+#' bcbSmallDownload()
 NULL
 
 

@@ -43,9 +43,8 @@
                              "read_stats.tsv") %>%
         read.table(., header = FALSE, sep = "\t")
 
-    ann <- clus[, 2L]
     clus_ma <- clus[, 3L:ncol(clus)]
-    row.names(clus_ma) <- paste0(row.names(clus_ma), ann)
+    row.names(clus_ma) <- paste0("cluster:", row.names(clus_ma))
     clus_ma <- clus_ma[, row.names(col_data)]
     clus_rlog <- clus_ma %>%
         DESeqDataSetFromMatrix(., colData = col_data, design = ~1) %>%
