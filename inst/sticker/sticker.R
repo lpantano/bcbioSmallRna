@@ -1,7 +1,7 @@
 
 
 hexSticker::sticker("inst/sticker/logo.png",
-                    url = "www.bioconductor.org",
+                    url = "https://bcb.io",
                     u_size = 5,
                     package = "bcbioSmallRna",
                     s_x = 1.0,
@@ -10,9 +10,9 @@ hexSticker::sticker("inst/sticker/logo.png",
                     s_heigh = 0.5,
                     p_x = 1,
                     p_y = 1.4,
-                    h_color = "dodgerblue4",
+                    h_color = "#00579E",
                     h_size = 1,
                     h_fill = "white",
-                    p_color = "dodgerblue4",
+                    p_color = "#00579E",
                     p_size = 17,
                     filename="inst/sticker/bcbioSmallRna.png")
