@@ -22,7 +22,7 @@ NULL
     sapply(seq_along(file), function(a) {
         if (!file.exists(file[[a]])) {
             download.file(
-                file.path("https://lpantano.github.io/bcbioSmallRna",
+                file.path("https://raw.githubusercontent.com/lpantano/bcbioSmallRna/master/docs",
                           "downloads",
                           file[[a]]),
                 destfile = file[[a]])
