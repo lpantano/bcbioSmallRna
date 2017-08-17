@@ -6,3 +6,4 @@ r:
   - bioc-devel
 r_github_packages:
   - jimhester/covr
+r_check_args: --no-manual --no-tests --no-build-vignettes --no-vignettes --no-codoc
