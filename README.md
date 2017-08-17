@@ -1,5 +1,6 @@
 # bcbioSmallRna
 
+<img src="https://github.com/lpantano/bcbioSmallRna/raw/master/inst/sticker/bcbioSmallRna.png" width="150" height="150" align="right"/>
 
 [![Build Status](https://travis-ci.org/lpantano/bcbioSmallRna.svg?branch=master)](https://travis-ci.org/lpantano/bcbioSmallRna)
 [![Project Status: Active - The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
