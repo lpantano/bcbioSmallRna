@@ -1,8 +1,12 @@
 language: r
-sudo: false
-os:
-#  - osx
-  - linux
+matrix:
+  include:
+    - os: linux
+      dist: trusty
+      sudo: false
+    - os: linux
+      dist: precise
+      sudo: false
 cache:
   packages: true
 r: bioc-devel
