@@ -8,9 +8,6 @@
 #' @rdname download
 #' @name download
 #'
-#' @param object *Optional*. File name. If `NULL` (default), download the
-#'   default dependency files for a new experiment.
-#'
 #' @examples
 #' bcbSmallDownload()
 NULL
