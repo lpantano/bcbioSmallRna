@@ -1,9 +1,12 @@
 language: r
-cache: packages
 sudo: false
-dist: trusty
-r:
-  - bioc-devel
+os:
+#  - osx
+  - linux
+cache:
+  packages: true
+r: bioc-devel
 r_github_packages:
   - jimhester/covr
-r_check_args: --no-manual --no-tests --no-build-vignettes --no-vignettes --no-codoc
+after_success:
+  - Rscript -e 'covr::codecov()'
