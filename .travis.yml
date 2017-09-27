@@ -1,8 +1,8 @@
 language: r
 dist: precise
 sudo: false
-cache:
-  packages: true
+#cache:
+#  packages: true
 r: bioc-devel
 r_github_packages:
   - jimhester/covr

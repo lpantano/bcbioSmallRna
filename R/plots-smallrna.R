@@ -82,7 +82,23 @@ bcbSmallCluster <- function(bcb){
         stop("No cluster data in this analysis.")
     total <- data.frame(sample = colnames(cluster(bcb)),
                         total = colSums(cluster(bcb)))
+    ann <- experiments(bcb)[["cluster"]] %>% rowData %>%
+        .[["ann"]]
+    class <- rep("Other", length(ann))
+    class[ann == "|"] <- "None"
+    class[grepl("snoRNA", ann, ignore.case = TRUE)] <- "snoRNA"
+    class[grepl("repeat", ann, ignore.case = TRUE)] <- "repeat"
+    class[grepl("tRNA", ann, ignore.case = TRUE)] <- "tRNA"
+    class[grepl("miRNA", ann, ignore.case = TRUE)] <- "miRNA"
+    classDF <- bind_cols(bind_cols(cluster(bcb)), ann = class) %>%
+        melt() %>% group_by(variable, ann) %>%
+        summarise(abundance = sum(value)) %>%
+        left_join(., group_by(., variable) %>%
+                      summarise(total = sum(abundance))) %>%
+        mutate(pct = abundance / total * 100)
+
     plot_grid(
+        plot_grid(
         experiments(bcb)[["cluster"]] %>%
             metadata %>%
             .[["stats"]] %>%
@@ -93,7 +109,9 @@ bcbSmallCluster <- function(bcb){
             ggtitle("Reads kept after filtering") +
             theme(legend.position = "bottom",
                   legend.direction = "horizontal",
-                  axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)),
+                  axis.text.x = element_text(angle = 90,
+                                             vjust = 0.5,
+                                             hjust=1)),
         melt(cluster(bcb)) %>%
             ggplot() +
             geom_boxplot(aes_string(x = "variable", y = "value")) +
@@ -102,7 +120,12 @@ bcbSmallCluster <- function(bcb){
             scale_y_log10() +
             ggtitle("Expression distribution of clusters detected") +
             theme(axis.text.x = element_text(
-            angle = 90L, hjust = 1L, vjust = 0.5))
+            angle = 90L, hjust = 1L, vjust = 0.5)), ncol = 2),
+        classDF %>% ggplot(aes_string(x = "variable", y = "pct", fill = "ann")) +
+            geom_bar(stat = "identity", position = "dodge") +
+            scale_fill_brewer(palette = "Set1") +
+            xlab("type of Small RNA") +
+            ylab("% of Expression"), nrow = 2
     )
 }
 
