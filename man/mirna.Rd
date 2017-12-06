@@ -7,9 +7,6 @@
 \alias{trna}
 \alias{isomir}
 \alias{mirna,bcbioSmallRnaDataSet-method}
-\alias{cluster}
-\alias{trna}
-\alias{isomir}
 \alias{isomir,bcbioSmallRnaDataSet-method}
 \alias{cluster,bcbioSmallRnaDataSet-method}
 \alias{trna,bcbioSmallRnaDataSet-method}
@@ -26,7 +23,7 @@
 \arguments{
 \item{object}{\link{bcbioSmallRnaDataSet} object.}
 
-\item{type}{Type of count data to retrieve.}
+\item{type}{Type of count data to retrieve. (raw rlog coldata)}
 }
 \description{
 mirna count data information

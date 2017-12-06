@@ -4,13 +4,14 @@
 \alias{bcbSmallSize}
 \alias{bcbSmallMicro}
 \alias{bcbSmallCluster}
-\alias{bcbSmallMicro}
-\alias{bcbSmallCluster}
+\alias{bcbSmallSizeDist}
 \title{Small RNA-seq quality control plots}
 \usage{
-bcbSmallSize(bcb, color = "group")
+bcbSmallSize(bcb, color = NULL)
 
-bcbSmallMicro(bcb)
+bcbSmallSizeDist(bcb, color = "NULL")
+
+bcbSmallMicro(bcb, group = NULL)
 
 bcbSmallCluster(bcb)
 }

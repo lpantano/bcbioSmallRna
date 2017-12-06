@@ -9,7 +9,8 @@
 #' @noRd
 #' @param meta Metadata of the bcbio run.
 #' @param col_data Samples information.
-.read_mirna_counts <- function(meta, col_data) {
+#' @param max_samples
+.read_mirna_counts <- function(meta, col_data, min_hits = 500, max_samples = 50) {
     # TODO Better way to handle sample_dirs than by piping in via metadata?
     fns <- file.path(meta[["sample_dirs"]],
                      paste(names(meta[["sample_dirs"]]),
@@ -20,8 +21,8 @@
     iso <- IsomirDataSeqFromFiles(
         files = fns[rownames(col_data)],
         coldata = col_data,
+        minHits = min_hits,
         design = ~1)
-    isoNorm(iso)
 }
 
 #' Load cluster data
@@ -31,7 +32,7 @@
 #' @author Lorena Pantano
 #' @noRd
 #' @inheritParams read_smallrna_counts
-.read_cluster_counts <- function(meta, col_data){
+.read_cluster_counts <- function(meta, col_data, max_samples){
     if (!file.exists(file.path(meta[["project_dir"]], "seqcluster")))
         return(NULL)
     clus <- file.path(meta[["project_dir"]],
@@ -46,16 +47,25 @@
     clus_ma <- clus[, 3L:ncol(clus)]
     row.names(clus_ma) <- paste0("cluster:", row.names(clus_ma))
     clus_ma <- clus_ma[, row.names(col_data)]
-    clus_rlog <- clus_ma %>%
-        DESeqDataSetFromMatrix(., colData = col_data, design = ~1) %>%
-        estimateSizeFactors %>%
-        rlog %>% assay
+    clus_rlog <- .normalize(clus_ma, col_data, max_samples = max_samples)
     SummarizedExperiment(assays = SimpleList(
         raw = clus_ma,
         rlog = clus_rlog),
         colData = col_data,
         rowData = clus[,1L:2L],
         metadata = list(stats = reads_stats))
+}
+
+.normalize <- function(ma, col_data, max_samples){
+    if (ncol(ma) < max_samples){
+        clus_rlog <- ma %>%
+            DESeqDataSetFromMatrix(., colData = col_data, design = ~1) %>%
+            estimateSizeFactors %>%
+            rlog %>% assay
+    }else{
+        clus_rlog <- voom(ma, plot = FALSE)[["E"]]
+    }
+    return(clus_rlog)
 }
 
 #' Read adapter removal statistics

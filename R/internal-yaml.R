@@ -37,7 +37,7 @@
         }
     }
 
-    lapply(seq_along(samples), function(a) {
+    m <- lapply(seq_along(samples), function(a) {
         nested <- samples[[a]][[keys]] %>%
             set_names(., nm = .make_names(names(.)))
         # Set the description
@@ -61,6 +61,12 @@
         arrange(description) %>%
         as.data.frame %>%
         remove_empty_cols
+    max_size <- m[["sequence_length"]] %>%
+        gsub(".*-", "", .) %>%
+        as.numeric() %>%
+        .[] / 10L
+    m[["library_size"]] <- round(max_size) * 10L
+    m
 }
 
 

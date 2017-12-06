@@ -4,7 +4,8 @@
 \alias{bcbSmallPCA}
 \title{Plot PCA of the different small RNA data}
 \usage{
-bcbSmallPCA(bcb, type = "mirna", minAverage = 5, ...)
+bcbSmallPCA(bcb, type = "mirna", minAverage = 5, columns = NULL,
+  data = FALSE, ...)
 }
 \arguments{
 \item{bcb}{\link{bcbioSmallRnaDataSet}.}
@@ -12,6 +13,10 @@ bcbSmallPCA(bcb, type = "mirna", minAverage = 5, ...)
 \item{type}{Data type to plot: \code{mirna, cluster, isomir, trna}.}
 
 \item{minAverage}{Minimun average small RNA expression to be kept.}
+
+\item{columns}{Columns in colData to add to heatmap.}
+
+\item{data}{Only return data.}
 
 \item{...}{Options pass to \code{\link[DEGreport:degPCA]{DEGreport::degPCA()}}.}
 }

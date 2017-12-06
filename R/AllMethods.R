@@ -8,7 +8,8 @@
 setMethod("metrics", signature("bcbioSmallRnaDataSet"), function(object) {
     metrics <- metadata(object)[["metrics"]]
     if (is.null(metrics)) return(NULL)
-    cbind(colData(object), metrics) %>% as.data.frame
+    right_join(as.data.frame(colData(object)),
+               as.data.frame(metrics), by = c("sample" = "description")) %>% as.data.frame
 })
 
 
@@ -18,19 +19,23 @@ setMethod("metrics", signature("bcbioSmallRnaDataSet"), function(object) {
 #' @docType methods
 #' @aliases cluster trna isomir
 #' @param object [bcbioSmallRnaDataSet] object.
-#' @param type Type of count data to retrieve.
+#' @param type Type of count data to retrieve. (raw rlog coldata)
 #' @export
 setMethod("mirna", "bcbioSmallRnaDataSet", function(object, type="raw") {
+    if (type == "coldata")
+        return(colData(experiments(object)[["mirna"]]))
     if (type %in% names(assays(experiments(object)[["mirna"]])))
         assays(experiments(object)[["mirna"]])[[type]]
-    else stop(paste(type, "not found"))
+    else stop(paste(type, "not found."))
 })
 #' @rdname mirna
 #' @export
 setMethod("isomir", "bcbioSmallRnaDataSet", function(object, type="raw") {
-    if (type %in% names(assays(experiments(object)[["isomir"]])))
-        assays(experiments(object)[["isomir"]])[[type]]
-    else stop(paste(type, "not found"))
+    if (type == "coldata")
+        return(colData(experiments(object)[["isomirs"]]))
+    if (type %in% names(assays(experiments(object)[["isomirs"]])))
+        assays(experiments(object)[["isomirs"]])[[type]]
+    else stop(paste(type, "not found."))
 })
 #' @rdname mirna
 #' @export

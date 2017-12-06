@@ -5,6 +5,7 @@
 #'
 #' @import BiocGenerics Biobase DESeq2 MultiAssayExperiment SummarizedExperiment
 #'   S4Vectors isomiRs
+#' @importFrom limma voom
 #' @importFrom cowplot draw_plot ggdraw plot_grid
 #' @importFrom DEGreport degQC degCovariates degPatterns degPCA
 #' @importFrom ggplot2 aes_string coord_fixed coord_flip element_blank element_text
@@ -14,7 +15,7 @@
 #'   ylab ylim scale_x_log10 scale_color_manual geom_text aes_string
 #'   scale_x_log10 annotation_logticks scale_fill_brewer
 #' @importFrom ggrepel geom_text_repel
-#' @importFrom dplyr select mutate filter left_join arrange "%>%"
+#' @importFrom dplyr select mutate filter left_join right_join arrange "%>%"
 #'                   bind_rows bind_cols mutate_all summarise group_by
 #'                   enquo
 #' @importFrom janitor remove_empty_cols

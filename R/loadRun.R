@@ -28,8 +28,10 @@ loadSmallRnaRun <- function(
     uploadDir = "final",
     interestingGroups = "description",
     maxSamples = 50,
-    dataDir = NULL,
+    dataDir = "data",
+    colData = NULL,
     ...) {
+    message("Cache will be safed under ", dataDir)
     # Directory paths and cache path====
     if (!is.null(dataDir) & file.exists(file.path(dataDir, "bcb.rda"))) {
         load(file.path(dataDir, "bcb.rda"))
@@ -64,13 +66,22 @@ loadSmallRnaRun <- function(
     message("Reading project summary YAML")
     yaml <- yaml.load_file(yaml_file)
 
+    # colData ====
+    if (is.null(colData)){
+        col_data <- .yaml_metadata(yaml)
+    }else{
+        col_data <- colData
+        col_data[["sample"]] <- rownames(col_data)
+    }
+
 
     # Sample names ====
     # Obtain the samples (and their directories) from the YAML
     sample_names <- vapply(
         yaml[["samples"]],
         function(x) x[["description"]],
-        character(1L)) %>% sort
+        character(1L)) %>% sort %>%
+        intersect(., rownames(col_data))
     sample_dirs <- file.path(upload_dir, sample_names) %>%
         set_names(sample_names)
     if (!identical(basename(sample_dirs), sample_names)) {
@@ -115,8 +126,6 @@ loadSmallRnaRun <- function(
     bcbio_nextgen_commands <- read_lines(
         file.path(project_dir, "bcbio-nextgen-commands.log"))
 
-    # colData ====
-    col_data <- .yaml_metadata(yaml)
 
     # Metadata ====
     metadata <- list(
@@ -139,24 +148,24 @@ loadSmallRnaRun <- function(
         bcbio_nextgen_commands = bcbio_nextgen_commands)
 
     # SummarizedExperiment for miRNA ====
-    mirna <- .read_mirna_counts(metadata, col_data)
-    mirna_rlog <- mirna %>% isoNorm %>% counts(., norm = TRUE)
+    mirna <- .read_mirna_counts(metadata, col_data, max_samples = maxSamples)
+    mirna_rlog <- mirna %>% isoNorm(., maxSamples = maxSamples) %>% counts(., norm = TRUE)
     isomirna <- isoCounts(mirna, iso5 = TRUE, iso3 = TRUE,
                         add = TRUE, subs = TRUE, seed = TRUE,
                         ref = TRUE)
-    iso_rlog <- isomirna %>% isoNorm %>% counts(., norm = TRUE)
+    iso_rlog <- isomirna %>% isoNorm(., maxSamples = maxSamples) %>% counts(., norm = TRUE)
     mir <- SummarizedExperiment(assays = SimpleList(
         raw = counts(mirna),
         rlog = mirna_rlog),
-        colData = col_data)
+        colData = col_data[rownames(colData(mirna)),, FALSE])
     iso <- SummarizedExperiment(assays = SimpleList(
         raw = counts(isomirna),
         rlog = iso_rlog),
-        colData = col_data)
+        colData = col_data[rownames(colData(isomirna)),, FALSE])
     # SummarizedExperiment for tRNA ====
 
     # SummarizedExperiment for clusters ====
-    cluster <- .read_cluster_counts(metadata, col_data)
+    cluster <- .read_cluster_counts(metadata, col_data, max_samples = maxSamples)
     # SummarizedExperiment for mirdeep2 ====
 
     # MultiAssayExperiment ====

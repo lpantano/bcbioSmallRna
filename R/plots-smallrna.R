@@ -2,20 +2,30 @@
 #'
 #' @rdname plots-smallrna
 #' @author Lorena Pantano, Michael Steinbaugh
-#' @aliases bcbSmallMicro bcbSmallCluster
+#' @aliases bcbSmallMicro bcbSmallCluster bcbSmallSizeDist
 #' @param bcb [bcbioSmallRnaDataSet].
 #' @param color Column in metadata to use to color the bars.
 #' @return [ggplot].
 #'
 #' @description Plot size distribution of small RNA-seq data.
 #' @export
-bcbSmallSize <- function(bcb, color="group") {
-    info <- adapter(bcb)
+bcbSmallSize <- function(bcb, color = NULL) {
+    if (is.null(color))
+        color <- metadata(bcb)[["interesting_groups"]]
+    info <- adapter(bcb)[["reads_by_sample"]] %>%
+        left_join(metrics(bcb), by = "sample")
+    m <-  metrics(bcb)
+    max_size <- m[["sequence_length"]] %>%
+        gsub(".*-", "", .) %>%
+        as.numeric() %>%
+        .[] / 10L
+   m[["library_size"]] <- round(max_size) * 10L
+
     ggdraw() +
         draw_plot(
-            ggplot(info[["reads_by_sample"]],
-                   aes_string(x = "sample", y = "total", fill = color)) +
-                geom_bar(stat = "identity", position = "dodge") +
+            ggplot(info,
+                   aes_string(x = color, y = "total", fill = color)) +
+                geom_boxplot() +
                 ggtitle("total number of reads with adapter") +
                 ylab("# reads") +
                 theme(
@@ -23,54 +33,90 @@ bcbSmallSize <- function(bcb, color="group") {
                         angle = 90L, vjust = 0.5, hjust = 1L)),
             0L, 0.5, 1L, 0.5) +
         draw_plot(
-            ggplot(info[["reads_by_pos"]],
-                   aes_string(x = "V1", y = "V2", group = "sample")) +
-                geom_bar(stat = "identity", position = "dodge") +
-                facet_wrap(~group, ncol = 2L) +
-                ggtitle("size distribution") +
-                ylab("# reads") + xlab("size") +
+            ggplot(m,
+                   aes_string(x = color, y = "library_size")) +
+                geom_boxplot() +
                 theme(
                     axis.text.x = element_text(
                         angle = 90L, vjust = 0.5, hjust = 1L)),
             0L, 0L, 1L, 0.5)
 }
 
+#' @rdname plots-smallrna
+#' @keywords plot
+#' @export
+bcbSmallSizeDist <- function(bcb, color = "NULL"){
+    if (is.null(color))
+        color <- metadata(bcb)[["interesting_groups"]]
 
+    size <- adapter(bcb)[["reads_by_pos"]] %>%
+        left_join(metrics(bcb), by = "sample") %>%
+        left_join(adapter(bcb)[["reads_by_sample"]][, c("sample", "total")],
+                  by = "sample")
+    size[["pct"]] <- size[["V2"]] / size[["total"]] * 100L
+    size[["group"]] <- size[[color]]
+    ggdraw() +
+        draw_plot(
+            ggplot(size,
+                   aes_string(x = "V1", y = "pct", group = "sample")) +
+                geom_smooth(se = FALSE, color = "black") +
+                facet_wrap(~group, ncol = 2L) +
+                ggtitle("size distribution") +
+                ylab("# reads") + xlab("size") +
+                theme(
+                    axis.text.x = element_text(
+                        angle = 90L, vjust = 0.5, hjust = 1L)))
+}
 
 #' @rdname plots-smallrna
 #' @keywords plot
 #' @export
-bcbSmallMicro <- function(bcb) {
+bcbSmallMicro <- function(bcb, group = NULL) {
+    if (is.null(group))
+        group <- metadata(bcb)[["interesting_groups"]]
+
     total <- data.frame(sample = colnames(mirna(bcb)),
-                     total = colSums(mirna(bcb)))
+                        mirtotal = colSums(mirna(bcb)),
+                        stringsAsFactors = FALSE) %>%
+        left_join(metrics(bcb), by = "sample") %>%
+        left_join(adapter(bcb)[["reads_by_sample"]], by ="sample") %>%
+        mutate(pct = mirtotal / total * 100L)
     cs <- apply(mirna(bcb), 2L, function(x) {
         cumsum(sort(x, decreasing = TRUE))
-    }) %>% as.data.frame
-    cs[["pos"]] <- 1L:nrow(cs)
+    }) %>% as.data.frame %>%
+        mutate(pos = 1:nrow(.)) %>%
+        melt(., id.vars = "pos") %>%
+        left_join(metrics(bcb), by = c("variable" = "sample"))
+    es <- melt(mirna(bcb)) %>%
+         left_join(metrics(bcb), by = c("X2" = "sample"))
+    es[["value"]] <- log2(es[["value"]] + 1L)
     plot_grid(
         ggplot(total) +
-            geom_bar(aes_string(x = "sample",
-                          y = "total"),
-                     stat = "identity") +
-            ggtitle("Total reads being miRNAs") +
+            geom_jitter(aes_string(x = group,
+                          y = "pct")) +
+            ggtitle("Percentage reads being miRNAs") +
             theme(axis.text.x = element_text(
                 angle = 90L, hjust = 1L, vjust = 0.5)),
-        ggplot(melt(mirna(bcb))) +
-            geom_boxplot(aes_string(x = "X2", y = "value")) +
-            xlab("") +
-            ylab("expression") +
-            scale_y_log10() +
-            ggtitle("Expression distribution fo miRNAs") +
-            theme(axis.text.x = element_text(
-                angle = 90L, hjust = 1L, vjust = 0.5)),
-        ggplot(melt(cs, id.vars = "pos")) +
-            geom_line(aes_string(x = "pos",
-                           y = "value",
-                           color = "variable")) +
-            xlim(0L, 50L) +
-            scale_y_log10() +
-            ggtitle("Saturation coverage"),
-        nrow = 3L)
+        plot_grid(
+            ggplot(es) +
+                geom_density(aes_string(x = "value", color = group, group = "X2")) +
+                xlab("") +
+                ylab("expression") +
+                ggtitle("Expression distribution of miRNAs") +
+                theme(legend.position="bottom") +
+                theme(axis.text.x = element_text(
+                    angle = 90L, hjust = 1L, vjust = 0.5)),
+            ggplot(cs) +
+                geom_line(aes_string(x = "pos",
+                                     y = "value",
+                                     group = "variable",
+                                     color = group)) +
+                xlim(0L, 25L) +
+                scale_y_log10() +
+                theme(legend.position="bottom") +
+                ggtitle("Saturation coverage"),
+            ncol = 2L),
+        nrow = 2L)
 }
 
 
@@ -137,24 +183,34 @@ bcbSmallCluster <- function(bcb){
 #' @param bcb [bcbioSmallRnaDataSet].
 #' @param type Data type to plot: `mirna, cluster, isomir, trna`.
 #' @param minAverage Minimun average small RNA expression to be kept.
+#' @param columns Columns in colData to add to heatmap.
+#' @param data Only return data.
 #' @param ... Options pass to [DEGreport::degPCA()].
 #' @export
-bcbSmallPCA <- function(bcb, type = "mirna", minAverage = 5, ...) {
+bcbSmallPCA <- function(bcb, type = "mirna",
+                        minAverage = 5, columns = NULL,
+                        data = FALSE, ...) {
+    if (is.null(columns))
+        columns <- metadata(bcb)[["interesting_groups"]]
     counts <- experiments(bcb)[[type]] %>%
         assays %>% .[["rlog"]] %>%
-        .[colMeans(.[]) > 2, ]
-    annotation_col <- colData(bcb) %>%
+        .[rowMeans(.[]) > minAverage, ]
+    annotation_col <- experiments(bcb)[[type]] %>%
+        colData %>%
         as.data.frame %>%
-        .[, metadata(bcb)[["interesting_groups"]], drop = FALSE]
+        .[, columns, drop = FALSE]
+    return(list(counts = counts, annotation = annotation_col))
+
     th <- HeatmapAnnotation(df = annotation_col)
     hplot <- Heatmap(counts,
             top_annotation = th,
             clustering_method_rows = "ward.D",
             clustering_distance_columns = "kendall",
             clustering_method_columns = "ward.D",
-            show_row_names = FALSE)
+            show_row_names = FALSE,
+            show_column_names = ncol(counts) < 50)
     p <- degPCA(counts, annotation_col,
-                condition = metadata(bcb)[["interesting_groups"]], ...)
+                condition = columns[1], ...)
     print(p)
     hplot
 }
