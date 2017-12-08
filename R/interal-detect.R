@@ -10,21 +10,21 @@
 #' @return Organism string.
 .detect_organism <- function(genome_build) {
     if (str_detect(genome_build, "^(hg|GRCh)\\d+")) {
-        "hsapiens"
+        return("hsapiens")
     } else if (str_detect(genome_build, "^mm\\d+")) {
-        "mmusculus"
+        return("mmusculus")
     } else if (str_detect(genome_build, "^rn\\d+")) {
-            "rnorvegicus"
+        return("rnorvegicus")
     } else if (str_detect(genome_build, "^WBcel\\d+")) {
-        "celegans"
+        return("celegans")
     } else if (str_detect(genome_build, "^BDGP\\d+")) {
-        "dmelanogaster"
+        return("dmelanogaster")
     } else if (str_detect(genome_build, "^Zv\\d+")) {
-        "drerio"
+        return("drerio")
     } else if (str_detect(genome_build, "^ASM\\d+")) {
-        "spombe"
+        return("spombe")
     } else if (str_detect(genome_build, "^(MB|MG)\\d+")) {
-        "ecoli"
+        return("ecoli")
     } else {
         warning("Failed to detect organism")
     }

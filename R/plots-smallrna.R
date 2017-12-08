@@ -15,11 +15,9 @@ bcbSmallSize <- function(bcb, color = NULL) {
     info <- adapter(bcb)[["reads_by_sample"]] %>%
         left_join(metrics(bcb), by = "sample")
     m <-  metrics(bcb)
-    max_size <- m[["sequence_length"]] %>%
+    m[["longest_sequence"]] <- m[["sequence_length"]] %>%
         gsub(".*-", "", .) %>%
-        as.numeric() %>%
-        .[] / 10L
-   m[["library_size"]] <- round(max_size) * 10L
+        as.numeric()
 
     ggdraw() +
         draw_plot(
@@ -34,7 +32,7 @@ bcbSmallSize <- function(bcb, color = NULL) {
             0L, 0.5, 1L, 0.5) +
         draw_plot(
             ggplot(m,
-                   aes_string(x = color, y = "library_size")) +
+                   aes_string(x = color, y = "longest_sequence")) +
                 geom_boxplot() +
                 theme(
                     axis.text.x = element_text(

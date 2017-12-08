@@ -28,14 +28,16 @@ loadSmallRnaRun <- function(
     uploadDir = "final",
     interestingGroups = "description",
     maxSamples = 50,
-    dataDir = "data",
+    dataDir = NULL,
     colData = NULL,
     ...) {
     message("Cache will be safed under ", dataDir)
     # Directory paths and cache path====
-    if (!is.null(dataDir) & file.exists(file.path(dataDir, "bcb.rda"))) {
-        load(file.path(dataDir, "bcb.rda"))
-        return(bcb)
+    if (!is.null(dataDir)) {
+        if (file.exists(file.path(dataDir, "bcb.rda"))){
+            load(file.path(dataDir, "bcb.rda"))
+            return(bcb)
+        }
     }
 
     if (!dir.exists(uploadDir)) {
@@ -70,7 +72,7 @@ loadSmallRnaRun <- function(
     if (is.null(colData)){
         col_data <- .yaml_metadata(yaml)
     }else{
-        col_data <- colData
+        col_data <- as.data.frame(colData)
         col_data[["sample"]] <- rownames(col_data)
     }
 
@@ -112,10 +114,8 @@ loadSmallRnaRun <- function(
 
 
     # Sample metrics ====
-    # Note that sample metrics used for QC plots are not currently generated
-    # when using fast RNA-seq workflow. This depends upon MultiQC and aligned
-    # counts generated with STAR.
-    metrics <- .yaml_metrics(yaml)
+    metrics <- .yaml_metrics(yaml) %>%
+        .[.[["description"]] %in% col_data[["sample"]],]
 
     # bcbio-nextgen run information ====
     message("Reading bcbio run information")
@@ -176,8 +176,10 @@ loadSmallRnaRun <- function(
     bcb <- new("bcbioSmallRnaDataSet", se)
     bcbio(bcb, "isomirs") <- mirna
     adapter(bcb) <- .read_adapter(bcb)
-    if (!file.exists(dataDir))
-        dir.create(dataDir, showWarnings = FALSE, recursive = TRUE)
-    save(bcb, file = file.path(dataDir, "bcb.rda"))
+    if (!is.null(dataDir)){
+        if(!file.exists(dataDir))
+            dir.create(dataDir, showWarnings = FALSE, recursive = TRUE)
+        save(bcb, file = file.path(dataDir, "bcb.rda"))
+    }
     bcb
 }
