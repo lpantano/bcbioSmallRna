@@ -95,8 +95,7 @@ loadSmallRnaRun <- function(
     # Genome ====
     # Use the genome build of the first sample to match
     genome_build <- yaml[["samples"]][[1L]][["genome_build"]]
-    organism <- .detect_organism(genome_build)
-    message(paste("Genome:", organism, genome_build))
+    message(paste("Genome:", genome_build))
 
     # Sequencing lanes ====
     lane_pattern <- "_L(\\d{3})"
@@ -136,7 +135,6 @@ loadSmallRnaRun <- function(
         template = template,
         run_date = run_date,
         interesting_groups = interestingGroups,
-        organism = organism,
         genome_build = genome_build,
         lanes = lanes,
         yaml_file = yaml_file,
@@ -149,11 +147,13 @@ loadSmallRnaRun <- function(
 
     # SummarizedExperiment for miRNA ====
     mirna <- .read_mirna_counts(metadata, col_data, max_samples = maxSamples)
-    mirna_rlog <- mirna %>% isoNorm(., maxSamples = maxSamples) %>% counts(., norm = TRUE)
+    mirna_rlog <- mirna %>%
+        isoNorm(., maxSamples = maxSamples) %>% counts(., norm = TRUE)
     isomirna <- isoCounts(mirna, iso5 = TRUE, iso3 = TRUE,
                         add = TRUE, subs = TRUE, seed = TRUE,
                         ref = TRUE)
-    iso_rlog <- isomirna %>% isoNorm(., maxSamples = maxSamples) %>% counts(., norm = TRUE)
+    iso_rlog <- isomirna %>%
+        isoNorm(., maxSamples = maxSamples) %>% counts(., norm = TRUE)
     mir <- SummarizedExperiment(assays = SimpleList(
         raw = counts(mirna),
         rlog = mirna_rlog),
