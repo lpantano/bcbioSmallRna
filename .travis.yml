@@ -1,10 +1,9 @@
 language: r
-dist: precise
 sudo: false
-#cache:
-#  packages: true
+cache: packages
 r: bioc-devel
-r_github_packages:
-  - jimhester/covr
+r_packages:
+  - covr
+  - rlang
 after_success:
   - Rscript -e 'covr::codecov()'
