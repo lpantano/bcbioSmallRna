@@ -62,7 +62,7 @@ bcbSmallSizeDist <- function(bcb, color = NULL, percentage = TRUE){
         draw_plot(
             ggplot(size,
                    aes_string(x = "V1", y = "pct", group = "sample")) +
-                geom_smooth(se = FALSE, color = "black") +
+                geom_line() +
                 facet_wrap(~group, ncol = 2L) +
                 ggtitle("size distribution") +
                 ylab("# reads") + xlab("size") +
