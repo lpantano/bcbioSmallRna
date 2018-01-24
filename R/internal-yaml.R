@@ -54,18 +54,14 @@
                     nested[["phenotype"]] <- NA
             }
         }
-        nested %>% data.frame(., stringsAsFactors = FALSE)
+        nested[!sapply(nested, is.null)] %>%
+            data.frame(., stringsAsFactors = FALSE)
     }
     ) %>%
         bind_rows %>%
         arrange(description) %>%
         as.data.frame %>%
         remove_empty_cols
-    max_size <- m[["sequence_length"]] %>%
-        gsub(".*-", "", .) %>%
-        as.numeric() %>%
-        .[] / 10L
-    m[["library_size"]] <- round(max_size) * 10L
     m
 }
 
@@ -96,6 +92,12 @@
     characters <- metrics[, c("description",
                               "quality_format",
                               "sequence_length")]
+    max_size <- metrics[["sequence_length"]] %>%
+        gsub(".*-", "", .) %>%
+        as.numeric() %>%
+        .[] / 10L
+    metrics[["library_size"]] <- round(max_size) * 10L
+    rownames(metrics) <- metrics[["description"]]
     numerics <- metrics[, setdiff(colnames(metrics), colnames(characters))] %>%
         as.data.frame %>%
         mutate_all(as.numeric)

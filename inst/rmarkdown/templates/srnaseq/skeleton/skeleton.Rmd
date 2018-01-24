@@ -2,6 +2,11 @@
 title: "Small RNA-seq quality control"
 author: "`r getOption('author')`"
 date: "`r Sys.Date()`"
+params:
+    bcb: "data/sbcb.rda"
+    alpha: 0.05
+    lfc: 0
+    outputDir: "."
 ---
 
 ```{r setup, message=FALSE}

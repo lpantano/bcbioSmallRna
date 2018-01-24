@@ -76,6 +76,7 @@ loadSmallRnaRun <- function(
         col_data[["sample"]] <- rownames(col_data)
     }
 
+    stopifnot(interestingGroups %in% names(col_data))
 
     # Sample names ====
     # Obtain the samples (and their directories) from the YAML

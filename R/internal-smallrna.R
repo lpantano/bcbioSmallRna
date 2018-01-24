@@ -38,7 +38,8 @@
     clus <- file.path(meta[["project_dir"]],
                      "seqcluster",
                      "counts.tsv") %>%
-        read.table(., header = TRUE, sep = "\t", row.names = 1L)
+        read.table(., header = TRUE, sep = "\t",
+                   row.names = 1L, check.names = FALSE)
     reads_stats <- file.path(meta[["project_dir"]],
                              "seqcluster",
                              "read_stats.tsv") %>%
@@ -87,7 +88,7 @@
         read.table(fns[sample], sep = "") %>%
             mutate(
                 sample = sample,
-                group = coldata[sample, meta[["interesting_groups"]]])
+                group = coldata[sample, meta[["interesting_groups"]][1]])
     }) %>% bind_rows()
     reads_by_sample <- reads_by_pos %>%
         group_by(!!!sym("sample"), !!!sym("group")) %>%
