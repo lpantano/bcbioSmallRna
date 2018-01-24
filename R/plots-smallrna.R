@@ -5,19 +5,22 @@
 #' @aliases bcbSmallMicro bcbSmallCluster bcbSmallSizeDist
 #' @param bcb [bcbioSmallRnaDataSet].
 #' @param color Column in metadata to use to color the bars.
+#' @param percentage Whether to plot the percentage or absolute number.
 #' @return [ggplot].
 #'
 #' @description Plot size distribution of small RNA-seq data.
 #' @export
 bcbSmallSize <- function(bcb, color = NULL) {
     if (is.null(color))
-        color <- metadata(bcb)[["interesting_groups"]]
+        color <- metadata(bcb)[["interesting_groups"]][1]
     info <- adapter(bcb)[["reads_by_sample"]] %>%
         left_join(metrics(bcb), by = "sample")
+    info[[color]] <- as.factor(info[[color]])
     m <-  metrics(bcb)
     m[["longest_sequence"]] <- m[["sequence_length"]] %>%
         gsub(".*-", "", .) %>%
         as.numeric()
+    m[[color]] <- as.factor(m[[color]])
 
     ggdraw() +
         draw_plot(
@@ -43,16 +46,18 @@ bcbSmallSize <- function(bcb, color = NULL) {
 #' @rdname plots-smallrna
 #' @keywords plot
 #' @export
-bcbSmallSizeDist <- function(bcb, color = "NULL"){
+bcbSmallSizeDist <- function(bcb, color = NULL, percentage = TRUE){
     if (is.null(color))
-        color <- metadata(bcb)[["interesting_groups"]]
+        color <- metadata(bcb)[["interesting_groups"]][1]
 
     size <- adapter(bcb)[["reads_by_pos"]] %>%
         left_join(metrics(bcb), by = "sample") %>%
         left_join(adapter(bcb)[["reads_by_sample"]][, c("sample", "total")],
                   by = "sample")
-    size[["pct"]] <- size[["V2"]] / size[["total"]] * 100L
-    size[["group"]] <- size[[color]]
+    if (percentage)
+        size[["pct"]] <- size[["V2"]] / size[["total"]] * 100L
+    else size[["pct"]] <- size[["V2"]] * 1L
+    size[["group"]] <- as.factor(size[[color]])
     ggdraw() +
         draw_plot(
             ggplot(size,
@@ -71,22 +76,24 @@ bcbSmallSizeDist <- function(bcb, color = "NULL"){
 #' @export
 bcbSmallMicro <- function(bcb, group = NULL) {
     if (is.null(group))
-        group <- metadata(bcb)[["interesting_groups"]]
+        group <- metadata(bcb)[["interesting_groups"]][1]
+    m <- metrics(bcb)
+    m[[group]] <- as.factor(m[[group]])
 
     total <- data.frame(sample = colnames(mirna(bcb)),
                         mirtotal = colSums(mirna(bcb)),
                         stringsAsFactors = FALSE) %>%
-        left_join(metrics(bcb), by = "sample") %>%
+        left_join(m, by = "sample") %>%
         left_join(adapter(bcb)[["reads_by_sample"]], by ="sample") %>%
         mutate(pct = mirtotal / total * 100L)
     cs <- apply(mirna(bcb), 2L, function(x) {
         cumsum(sort(x, decreasing = TRUE))
     }) %>% as.data.frame %>%
-        mutate(pos = 1:nrow(.)) %>%
-        melt(., id.vars = "pos") %>%
-        left_join(metrics(bcb), by = c("variable" = "sample"))
+        mutate(rank = 1:nrow(.)) %>%
+        melt(., id.vars = "rank") %>%
+        left_join(m, by = c("variable" = "sample"))
     es <- melt(mirna(bcb)) %>%
-         left_join(metrics(bcb), by = c("X2" = "sample"))
+         left_join(m, by = c("X2" = "sample"))
     es[["value"]] <- log2(es[["value"]] + 1L)
     plot_grid(
         ggplot(total) +
@@ -105,7 +112,7 @@ bcbSmallMicro <- function(bcb, group = NULL) {
                 theme(axis.text.x = element_text(
                     angle = 90L, hjust = 1L, vjust = 0.5)),
             ggplot(cs) +
-                geom_line(aes_string(x = "pos",
+                geom_line(aes_string(x = "rank",
                                      y = "value",
                                      group = "variable",
                                      color = group)) +
@@ -121,9 +128,12 @@ bcbSmallMicro <- function(bcb, group = NULL) {
 #' @rdname plots-smallrna
 #' @keywords plot
 #' @export
-bcbSmallCluster <- function(bcb){
+bcbSmallCluster <- function(bcb, group = NULL){
     if (is.null(experiments(bcb)[["cluster"]]))
         stop("No cluster data in this analysis.")
+    if (is.null(group))
+        group <- metadata(bcb)[["interesting_groups"]][1]
+
     total <- data.frame(sample = colnames(cluster(bcb)),
                         total = colSums(cluster(bcb)))
     ann <- experiments(bcb)[["cluster"]] %>% rowData %>%
@@ -139,7 +149,10 @@ bcbSmallCluster <- function(bcb){
         summarise(abundance = sum(value)) %>%
         left_join(., group_by(., variable) %>%
                       summarise(total = sum(abundance))) %>%
-        mutate(pct = abundance / total * 100)
+        mutate(pct = abundance / total * 100) %>%
+        inner_join(colData(bcb)[, c("sample", group), drop = FALSE] %>%
+                       as.data.frame(),
+                   by = c("variable" = "sample"))
 
     plot_grid(
         plot_grid(
@@ -165,11 +178,12 @@ bcbSmallCluster <- function(bcb){
             ggtitle("Expression distribution of clusters detected") +
             theme(axis.text.x = element_text(
             angle = 90L, hjust = 1L, vjust = 0.5)), ncol = 2),
-        classDF %>% ggplot(aes_string(x = "variable", y = "pct", fill = "ann")) +
-            geom_bar(stat = "identity", position = "dodge") +
+        classDF %>% ggplot(aes_string(x = group, y = "pct", color = "ann")) +
+            geom_point(stat = "identity", position = "dodge") +
             scale_fill_brewer(palette = "Set1") +
             xlab("type of Small RNA") +
-            ylab("% of Expression"), nrow = 2
+            ylab("% of Expression") +
+            facet_wrap(~ann), nrow = 2
     )
 }
 
@@ -180,7 +194,7 @@ bcbSmallCluster <- function(bcb){
 #' @description Clustering small RNA samples.
 #' @param bcb [bcbioSmallRnaDataSet].
 #' @param type Data type to plot: `mirna, cluster, isomir, trna`.
-#' @param minAverage Minimun average small RNA expression to be kept.
+#' @param minAverage Minimun average small RNA expression to be kept. (log2 scale.)
 #' @param columns Columns in colData to add to heatmap.
 #' @param data Only return data.
 #' @param ... Options pass to [DEGreport::degPCA()].
@@ -196,8 +210,11 @@ bcbSmallPCA <- function(bcb, type = "mirna",
     annotation_col <- experiments(bcb)[[type]] %>%
         colData %>%
         as.data.frame %>%
-        .[, columns, drop = FALSE]
-    return(list(counts = counts, annotation = annotation_col))
+        .[, columns, drop = FALSE] %>%
+        mutate_all(as.factor)
+    rownames(annotation_col) <- colnames(counts)
+    if (data)
+        return(list(counts = counts, annotation = annotation_col))
 
     th <- HeatmapAnnotation(df = annotation_col)
     hplot <- Heatmap(counts,
