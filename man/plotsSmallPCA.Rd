@@ -12,7 +12,7 @@ bcbSmallPCA(bcb, type = "mirna", minAverage = 5, columns = NULL,
 
 \item{type}{Data type to plot: \code{mirna, cluster, isomir, trna}.}
 
-\item{minAverage}{Minimun average small RNA expression to be kept.}
+\item{minAverage}{Minimun average small RNA expression to be kept. (log2 scale.)}
 
 \item{columns}{Columns in colData to add to heatmap.}
 

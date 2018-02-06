@@ -17,7 +17,9 @@
 #' @importFrom ggrepel geom_text_repel
 #' @importFrom dplyr select mutate filter left_join right_join arrange "%>%"
 #'                   bind_rows bind_cols mutate_all summarise group_by
-#'                   enquo
+#'                   enquo inner_join
+#' @importFrom circlize colorRamp2
+#' @importFrom RColorBrewer brewer.pal
 #' @importFrom janitor remove_empty_cols
 #' @importFrom reshape melt
 #' @importFrom tibble column_to_rownames

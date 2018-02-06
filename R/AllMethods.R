@@ -9,7 +9,8 @@ setMethod("metrics", signature("bcbioSmallRnaDataSet"), function(object) {
     metrics <- metadata(object)[["metrics"]]
     if (is.null(metrics)) return(NULL)
     right_join(as.data.frame(colData(object)),
-               as.data.frame(metrics), by = c("sample" = "description")) %>% as.data.frame
+               as.data.frame(metrics), by = c("sample" = "description")) %>%
+        as.data.frame
 })
 
 

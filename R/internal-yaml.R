@@ -89,9 +89,14 @@
     if (is.null(metrics)) {
         return(NULL)
     }
-    characters <- metrics[, c("description",
-                              "quality_format",
-                              "sequence_length")]
+    read <- intersect(c("description",
+                "quality_format",
+                "sequence_length",
+                "reads_before_trimming",
+                "read_with_adapter",
+                "read_pass_filter"),
+              colnames(metrics))
+    characters <- metrics[, read]
     max_size <- metrics[["sequence_length"]] %>%
         gsub(".*-", "", .) %>%
         as.numeric() %>%

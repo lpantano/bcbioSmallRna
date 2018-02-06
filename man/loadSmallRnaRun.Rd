@@ -5,7 +5,7 @@
 \title{Load small RNA-seq bcbio-nextgen run}
 \usage{
 loadSmallRnaRun(uploadDir = "final", interestingGroups = "description",
-  maxSamples = 50, dataDir = "data", colData = NULL, ...)
+  maxSamples = 50, dataDir = NULL, colData = NULL, ...)
 }
 \arguments{
 \item{uploadDir}{Path to final upload directory. This path is set when

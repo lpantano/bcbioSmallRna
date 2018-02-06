@@ -171,6 +171,7 @@ loadSmallRnaRun <- function(
 
     # MultiAssayExperiment ====
     exps <- list(mirna = mir, isomirs = iso, cluster = cluster)
+    exps <- exps[sapply(exps, function(x) !is.null(x))]
     se <- .multiassay_experiment(exps, col_data, metadata)
 
     # bcbioSmallRnaDataSet ====

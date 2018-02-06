@@ -16,6 +16,9 @@ bcbSmallSize <- function(bcb, color = NULL) {
     info <- adapter(bcb)[["reads_by_sample"]] %>%
         left_join(metrics(bcb), by = "sample")
     info[[color]] <- as.factor(info[[color]])
+    if (!("reads_before_trimming" %in% colnames(info)))
+        info[["reads_before_trimming"]] <- info[["total"]]
+    info[["pct"]] <- info[["total"]] / info[["reads_before_trimming"]]
     m <-  metrics(bcb)
     m[["longest_sequence"]] <- m[["sequence_length"]] %>%
         gsub(".*-", "", .) %>%
@@ -25,22 +28,35 @@ bcbSmallSize <- function(bcb, color = NULL) {
     ggdraw() +
         draw_plot(
             ggplot(info,
-                   aes_string(x = color, y = "total", fill = color)) +
+                   aes_string(x = color, y = "reads_before_trimming", fill = color)) +
                 geom_boxplot() +
-                ggtitle("total number of reads with adapter") +
+                geom_jitter() +
+                coord_trans(y = "log10") +
+                ggtitle("total number of reads") +
                 ylab("# reads") +
-                theme(
+                theme(legend.position="none",
                     axis.text.x = element_text(
                         angle = 90L, vjust = 0.5, hjust = 1L)),
-            0L, 0.5, 1L, 0.5) +
+            0L, 0.63, 1L, 0.35) +
+        draw_plot(
+            ggplot(info,
+                   aes_string(x = color, y = "pct", fill = color)) +
+                geom_boxplot() +
+                geom_jitter() +
+                ggtitle("total % of reads with adapter") +
+                ylab("% reads") +
+                theme(legend.position="none",
+                    axis.text.x = element_text(
+                        angle = 90L, vjust = 0.5, hjust = 1L)),
+            0L, 0.3, 1L, 0.33) +
         draw_plot(
             ggplot(m,
                    aes_string(x = color, y = "longest_sequence")) +
                 geom_boxplot() +
-                theme(
+                theme(legend.position="none",
                     axis.text.x = element_text(
                         angle = 90L, vjust = 0.5, hjust = 1L)),
-            0L, 0L, 1L, 0.5)
+            0L, 0L, 1L, 0.3)
 }
 
 #' @rdname plots-smallrna
@@ -96,9 +112,10 @@ bcbSmallMicro <- function(bcb, group = NULL) {
          left_join(m, by = c("X2" = "sample"))
     es[["value"]] <- log2(es[["value"]] + 1L)
     plot_grid(
-        ggplot(total) +
-            geom_jitter(aes_string(x = group,
-                          y = "pct")) +
+        ggplot(total, aes_string(x = group,
+                                 y = "pct")) +
+            geom_boxplot() +
+            geom_jitter() +
             ggtitle("Percentage reads being miRNAs") +
             theme(axis.text.x = element_text(
                 angle = 90L, hjust = 1L, vjust = 0.5)),
@@ -155,20 +172,20 @@ bcbSmallCluster <- function(bcb, group = NULL){
                    by = c("variable" = "sample"))
 
     plot_grid(
-        plot_grid(
-        experiments(bcb)[["cluster"]] %>%
-            metadata %>%
-            .[["stats"]] %>%
-            ggplot(aes_string(x = "V2", y = "V1", fill = "V3")) +
-            geom_bar(stat = 'identity', position = 'dodge') +
-            labs(list(x="samples", y="reads")) +
-            scale_fill_brewer("steps", palette = 'Set1') +
-            ggtitle("Reads kept after filtering") +
-            theme(legend.position = "bottom",
-                  legend.direction = "horizontal",
-                  axis.text.x = element_text(angle = 90,
-                                             vjust = 0.5,
-                                             hjust=1)),
+        # plot_grid(
+        # experiments(bcb)[["cluster"]] %>%
+        #     metadata %>%
+        #     .[["stats"]] %>%
+        #     ggplot(aes_string(x = "V2", y = "V1", fill = "V3")) +
+        #     geom_bar(stat = 'identity', position = 'dodge') +
+        #     labs(list(x="samples", y="reads")) +
+        #     scale_fill_brewer("steps", palette = 'Set1') +
+        #     ggtitle("Reads kept after filtering") +
+        #     theme(legend.position = "bottom",
+        #           legend.direction = "horizontal",
+        #           axis.text.x = element_text(angle = 90,
+        #                                      vjust = 0.5,
+        #                                      hjust=1)),
         melt(cluster(bcb)) %>%
             ggplot() +
             geom_boxplot(aes_string(x = "variable", y = "value")) +
@@ -177,7 +194,8 @@ bcbSmallCluster <- function(bcb, group = NULL){
             scale_y_log10() +
             ggtitle("Expression distribution of clusters detected") +
             theme(axis.text.x = element_text(
-            angle = 90L, hjust = 1L, vjust = 0.5)), ncol = 2),
+            angle = 90L, hjust = 1L, vjust = 0.5)),
+        # ncol = 2),
         classDF %>% ggplot(aes_string(x = group, y = "pct", color = "ann")) +
             geom_point(stat = "identity", position = "dodge") +
             scale_fill_brewer(palette = "Set1") +
@@ -215,19 +233,37 @@ bcbSmallPCA <- function(bcb, type = "mirna",
     rownames(annotation_col) <- colnames(counts)
     if (data)
         return(list(counts = counts, annotation = annotation_col))
-
-    th <- HeatmapAnnotation(df = annotation_col)
+    palette <- colorRamp2(seq(min(counts), max(counts), length = 3),
+                          c("blue", "#EEEEEE", "orange"), space = "RGB")
+    th <- HeatmapAnnotation(df = annotation_col,
+                            col = .make_colors(annotation_col))
     hplot <- Heatmap(counts,
-            top_annotation = th,
-            clustering_method_rows = "ward.D",
-            clustering_distance_columns = "kendall",
-            clustering_method_columns = "ward.D",
-            show_row_names = FALSE,
-            show_column_names = ncol(counts) < 50)
+                     col = palette,
+                     top_annotation = th,
+                     clustering_method_rows = "ward.D",
+                     clustering_distance_columns = "kendall",
+                     clustering_method_columns = "ward.D",
+                     show_row_names = FALSE,
+                     show_column_names = ncol(counts) < 50)
     p <- degPCA(counts, annotation_col,
                 condition = columns[1], ...)
     print(p)
     hplot
 }
 
+
+.make_colors <- function(ann){
+    col <- lapply(names(ann), function(a){
+        if (length(unique(ann[[a]])) < 3){
+            v <- c("orange", "blue")[1:length(unique(ann[[a]]))]
+            names(v) <- unique(ann[[a]])
+            return(v)
+        }
+        v <- brewer.pal(length(unique(ann[[a]])), "Set1")
+        names(v) <- unique(ann[[a]])
+        v
+    })
+    names(col) <- names(ann)
+    col
+}
 

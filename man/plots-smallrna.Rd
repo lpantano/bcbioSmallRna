@@ -9,16 +9,18 @@
 \usage{
 bcbSmallSize(bcb, color = NULL)
 
-bcbSmallSizeDist(bcb, color = "NULL")
+bcbSmallSizeDist(bcb, color = NULL, percentage = TRUE)
 
 bcbSmallMicro(bcb, group = NULL)
 
-bcbSmallCluster(bcb)
+bcbSmallCluster(bcb, group = NULL)
 }
 \arguments{
 \item{bcb}{\link{bcbioSmallRnaDataSet}.}
 
 \item{color}{Column in metadata to use to color the bars.}
+
+\item{percentage}{Whether to plot the percentage or absolute number.}
 }
 \value{
 \link{ggplot}.
