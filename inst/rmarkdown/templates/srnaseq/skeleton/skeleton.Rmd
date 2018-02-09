@@ -3,27 +3,25 @@ title: "Small RNA-seq quality control"
 author: "`r getOption('author')`"
 date: "`r Sys.Date()`"
 params:
-    bcb: "data/sbcb.rda"
+    bcb: "data/bcb.rda"
     alpha: 0.05
     lfc: 0
     outputDir: "."
 ---
 
 ```{r setup, message=FALSE}
-# Run [bcbioSmallRna::download()] to download `setup.R`
-source("setup.R")
 library(isomiRs)
+library(DEGreport)
+library(ggplot2)
 library(bcbioSmallRna)
+theme_set(theme_light(base_size = 12))
 
 out_dir <- "."
 data_out <- file.path(out_dir, "data")
 res_out <- file.path(out_dir, "results")
 
 # bcbioSmallRnaDataSet
-bcb <- loadSmallRnaRun(
-    upload_dir = file.path("data", "final"),
-    interesting_groups = c("genotype", "treatment"),
-    dataDir = data_out)
+load(params$bcb)
 ```
 
 ```{r header, child="_header.Rmd"}
@@ -47,6 +45,9 @@ are some cases this rule won't apply.
 bcbSmallSize(bcb)
 ```
 
+```{r adapter-size-dist, fig.height=7}
+bcbSmallSizeDist(bcb)
+```
 
 ## miRNA
 
