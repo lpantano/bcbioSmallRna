@@ -40,7 +40,6 @@ Imports:
     dplyr,
     ggplot2 (>= 2.2.1),
     ggrepel,
-    isomiRs,
     janitor,
     limma,
     methods,
@@ -63,5 +62,6 @@ Suggests:
     BiocStyle
 Remotes:
     lpantano/DEGreport,
+    lpantano/isomiRs
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 6.0.1.9000
