@@ -18,6 +18,7 @@
 #'   is used for PCA and heatmap QC functions.
 #' @param maxSamples *Optional*. Maximum number of samples to calculate rlog
 #'   and variance stabilization object from DESeq2.
+#' @param colData *Optional* External metadata to be used while reading samples.
 #' @param dataDir Folder to keep a cache of the object.
 #' @param ... Additional arguments, saved as metadata.
 #'

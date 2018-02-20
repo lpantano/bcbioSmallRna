@@ -20,6 +20,8 @@ and variance stabilization object from DESeq2.}
 
 \item{dataDir}{Folder to keep a cache of the object.}
 
+\item{colData}{\emph{Optional} External metadata to be used while reading samples.}
+
 \item{...}{Additional arguments, saved as metadata.}
 }
 \value{

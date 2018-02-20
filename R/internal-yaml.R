@@ -7,6 +7,8 @@
 
 #' YAML utilities
 #'
+#' Parsing yaml file from bcbio run.
+#'
 #' @rdname yaml
 #' @keywords internal
 #' @author Michael Steinbaugh, Lorena Pantano
@@ -14,11 +16,7 @@
 #' @param yaml Project summary YAML.
 #' @param keys Nested operator keys supplied as dot objects.
 #'
-#' @note Metrics are only generated for a standard RNA-seq run with aligned
-#'   counts. Fast RNA-seq mode with lightweight counts (pseudocounts) doesn't
-#'   output the same metrics into the YAML.
 #' @noRd
-#' @importFrom rlang dots_values
 #' @return [DataFrame].
 .yaml <- function(yaml, keys) {
     samples <- yaml[["samples"]]
@@ -67,7 +65,6 @@
 
 
 
-#' @rdname yaml
 .yaml_metadata <- function(yaml) {
     metadata <- .yaml(yaml, "metadata")
     if (ncol(metadata) == 1)
@@ -82,8 +79,6 @@
 }
 
 
-
-#' @rdname yaml
 .yaml_metrics <- function(yaml) {
     metrics <- .yaml(yaml, c("summary", "metrics"))
     if (is.null(metrics)) {

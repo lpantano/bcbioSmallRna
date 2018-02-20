@@ -90,11 +90,11 @@ bcbSmallSizeDist <- function(bcb, color = NULL, percentage = TRUE){
 #' @rdname plots-smallrna
 #' @keywords plot
 #' @export
-bcbSmallMicro <- function(bcb, group = NULL) {
-    if (is.null(group))
-        group <- metadata(bcb)[["interesting_groups"]][1]
+bcbSmallMicro <- function(bcb, color = NULL) {
+    if (is.null(color))
+        color <- metadata(bcb)[["interesting_groups"]][1]
     m <- metrics(bcb)
-    m[[group]] <- as.factor(m[[group]])
+    m[[color]] <- as.factor(m[[color]])
 
     total <- data.frame(sample = colnames(mirna(bcb)),
                         mirtotal = colSums(mirna(bcb)),
@@ -112,7 +112,7 @@ bcbSmallMicro <- function(bcb, group = NULL) {
          left_join(m, by = c("X2" = "sample"))
     es[["value"]] <- log2(es[["value"]] + 1L)
     plot_grid(
-        ggplot(total, aes_string(x = group,
+        ggplot(total, aes_string(x = color,
                                  y = "pct")) +
             geom_boxplot() +
             geom_jitter() +
@@ -121,7 +121,9 @@ bcbSmallMicro <- function(bcb, group = NULL) {
                 angle = 90L, hjust = 1L, vjust = 0.5)),
         plot_grid(
             ggplot(es) +
-                geom_density(aes_string(x = "value", color = group, group = "X2")) +
+                geom_density(aes_string(x = "value",
+                                        color = color,
+                                        group = "X2")) +
                 xlab("") +
                 ylab("expression") +
                 ggtitle("Expression distribution of miRNAs") +
@@ -132,7 +134,7 @@ bcbSmallMicro <- function(bcb, group = NULL) {
                 geom_line(aes_string(x = "rank",
                                      y = "value",
                                      group = "variable",
-                                     color = group)) +
+                                     color = color)) +
                 xlim(0L, 25L) +
                 scale_y_log10() +
                 theme(legend.position="bottom") +
@@ -145,11 +147,11 @@ bcbSmallMicro <- function(bcb, group = NULL) {
 #' @rdname plots-smallrna
 #' @keywords plot
 #' @export
-bcbSmallCluster <- function(bcb, group = NULL){
+bcbSmallCluster <- function(bcb, color = NULL){
     if (is.null(experiments(bcb)[["cluster"]]))
         stop("No cluster data in this analysis.")
-    if (is.null(group))
-        group <- metadata(bcb)[["interesting_groups"]][1]
+    if (is.null(color))
+        color <- metadata(bcb)[["interesting_groups"]][1]
 
     total <- data.frame(sample = colnames(cluster(bcb)),
                         total = colSums(cluster(bcb)))
@@ -167,7 +169,7 @@ bcbSmallCluster <- function(bcb, group = NULL){
         left_join(., group_by(., variable) %>%
                       summarise(total = sum(abundance))) %>%
         mutate(pct = abundance / total * 100) %>%
-        inner_join(colData(bcb)[, c("sample", group), drop = FALSE] %>%
+        inner_join(colData(bcb)[, c("sample", color), drop = FALSE] %>%
                        as.data.frame(),
                    by = c("variable" = "sample"))
 
@@ -196,7 +198,7 @@ bcbSmallCluster <- function(bcb, group = NULL){
             theme(axis.text.x = element_text(
             angle = 90L, hjust = 1L, vjust = 0.5)),
         # ncol = 2),
-        classDF %>% ggplot(aes_string(x = group, y = "pct", color = "ann")) +
+        classDF %>% ggplot(aes_string(x = color, y = "pct", color = "ann")) +
             geom_point(stat = "identity", position = "dodge") +
             scale_fill_brewer(palette = "Set1") +
             xlab("type of Small RNA") +

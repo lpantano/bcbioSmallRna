@@ -11,9 +11,9 @@ bcbSmallSize(bcb, color = NULL)
 
 bcbSmallSizeDist(bcb, color = NULL, percentage = TRUE)
 
-bcbSmallMicro(bcb, group = NULL)
+bcbSmallMicro(bcb, color = NULL)
 
-bcbSmallCluster(bcb, group = NULL)
+bcbSmallCluster(bcb, color = NULL)
 }
 \arguments{
 \item{bcb}{\link{bcbioSmallRnaDataSet}.}

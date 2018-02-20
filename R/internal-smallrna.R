@@ -9,7 +9,7 @@
 #' @noRd
 #' @param meta Metadata of the bcbio run.
 #' @param col_data Samples information.
-#' @param max_samples
+#' @param max_samples Maximum samples to perform count transformation.
 .read_mirna_counts <- function(meta, col_data, min_hits = 500, max_samples = 50) {
     # TODO Better way to handle sample_dirs than by piping in via metadata?
     fns <- file.path(meta[["sample_dirs"]],
@@ -75,7 +75,7 @@
 #' @rdname read_adapter
 #' @author Lorena Pantano
 #' @noRd
-#' @param bcb [bcbioSmallRnaDataSet]
+#' @param bcb The [bcbioSmallRnaDataSet] object
 .read_adapter <- function(bcb) {
     meta <- metadata(bcb)
     coldata <- colData(bcb)

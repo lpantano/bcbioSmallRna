@@ -30,8 +30,8 @@
 #' @importFrom stats formula
 #' @importFrom stringr str_detect str_match
 #' @importFrom readr read_lines read_csv read_tsv read_delim
-#' @importFrom rlang sym
-#' @importFrom utils read.table capture.output
+#' @importFrom rlang sym dots_values
+#' @importFrom utils read.table capture.output download.file
 "_PACKAGE"
 
 globalVariables(".")

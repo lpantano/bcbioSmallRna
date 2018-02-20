@@ -4,8 +4,6 @@ author: "`r getOption('author')`"
 date: "`r Sys.Date()`"
 params:
     bcb: "data/bcb.rda"
-    alpha: 0.05
-    lfc: 0
     outputDir: "."
 ---
 
@@ -24,7 +22,7 @@ res_out <- file.path(out_dir, "results")
 load(params$bcb)
 ```
 
-```{r header, child="_header.Rmd"}
+```{r header, eval = file.exists("_header.Rmd"), child="_header.Rmd"}
 ```
 
 
@@ -114,5 +112,5 @@ bcbSmallCluster(bcb)
 bcbSmallPCA(bcb, "cluster")
 ```
 
-```{r footer, child="_footer.Rmd"}
+```{r footer, eval = file.exists("_footer.Rmd"), child="_footer.Rmd"}
 ```

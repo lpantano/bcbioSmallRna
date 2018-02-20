@@ -45,7 +45,6 @@ Imports:
     limma,
     methods,
     MultiAssayExperiment,
-    pheatmap,
     purrr,
     RColorBrewer,
     readr,
