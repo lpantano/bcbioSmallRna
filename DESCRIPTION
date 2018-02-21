@@ -44,6 +44,7 @@ Imports:
     janitor,
     limma,
     methods,
+    magrittr,
     MultiAssayExperiment,
     purrr,
     RColorBrewer,
