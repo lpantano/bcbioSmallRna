@@ -8,14 +8,15 @@
 #' @importFrom limma voom
 #' @importFrom cowplot draw_plot ggdraw plot_grid
 #' @importFrom DEGreport degQC degCovariates degPatterns degPCA
-#' @importFrom ggplot2 aes_string coord_fixed coord_flip element_blank element_text
+#' @importFrom ggplot2 aes_string coord_fixed coord_flip coord_trans element_blank element_text
 #'   expand_limits facet_wrap geom_bar geom_boxplot geom_density geom_hline
 #'   geom_jitter geom_line geom_point geom_polygon geom_ribbon geom_smooth
 #'   ggplot ggtitle guides labs scale_x_continuous scale_y_log10 theme xlab xlim
 #'   ylab ylim scale_x_log10 scale_color_manual geom_text aes_string
 #'   scale_x_log10 annotation_logticks scale_fill_brewer
 #' @importFrom ggrepel geom_text_repel
-#' @importFrom dplyr select mutate filter left_join right_join arrange "%>%"
+#' @importFrom dplyr select mutate mutate_if filter left_join right_join
+#'                   arrange "%>%"
 #'                   bind_rows bind_cols mutate_all summarise group_by
 #'                   enquo inner_join
 #' @importFrom circlize colorRamp2

@@ -32,7 +32,8 @@ loadSmallRnaRun <- function(
     dataDir = NULL,
     colData = NULL,
     ...) {
-    message("Cache will be safed under ", dataDir)
+    if (!is.null(dataDir))
+        message("Cache will be safed under ", dataDir)
     # Directory paths and cache path====
     if (!is.null(dataDir)) {
         if (file.exists(file.path(dataDir, "bcb.rda"))){
@@ -74,8 +75,8 @@ loadSmallRnaRun <- function(
         col_data <- .yaml_metadata(yaml)
     }else{
         col_data <- as.data.frame(colData)
-        col_data[["sample"]] <- rownames(col_data)
     }
+    col_data[["sample"]] <- rownames(col_data)
 
     stopifnot(interestingGroups %in% names(col_data))
 
@@ -159,11 +160,11 @@ loadSmallRnaRun <- function(
     mir <- SummarizedExperiment(assays = SimpleList(
         raw = counts(mirna),
         rlog = mirna_rlog),
-        colData = col_data[rownames(colData(mirna)),, FALSE])
+        colData = col_data[rownames(colData(mirna)),])
     iso <- SummarizedExperiment(assays = SimpleList(
         raw = counts(isomirna),
         rlog = iso_rlog),
-        colData = col_data[rownames(colData(isomirna)),, FALSE])
+        colData = col_data[rownames(colData(isomirna)),])
     # SummarizedExperiment for tRNA ====
 
     # SummarizedExperiment for clusters ====
