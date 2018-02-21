@@ -3,9 +3,6 @@
 \docType{import}
 \name{reexports}
 \alias{reexports}
-\alias{metadata}
-\alias{colData}
-\alias{experiments}
 \alias{\%>\%}
 \title{Objects exported from other packages}
 \keyword{internal}
@@ -14,8 +11,6 @@ These objects are imported from other packages. Follow the links
 below to see their documentation.
 
 \describe{
-  \item{MultiAssayExperiment}{\code{\link[MultiAssayExperiment]{metadata}}, \code{\link[MultiAssayExperiment]{colData}}, \code{\link[MultiAssayExperiment]{experiments}}}
-
   \item{magrittr}{\code{\link[magrittr]{\%>\%}}}
 }}
 

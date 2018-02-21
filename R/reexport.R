@@ -1,10 +1,10 @@
 # MultiAssayExperiment ====
 #' @export
-MultiAssayExperiment::metadata
+metadata <- MultiAssayExperiment::metadata
 #' @export
-MultiAssayExperiment::colData
+colData <- MultiAssayExperiment::colData
 #' @export
-MultiAssayExperiment::experiments
+experiments <- MultiAssayExperiment::experiments
 # magrittr ====
 #' @importFrom magrittr %>%
 #' @export

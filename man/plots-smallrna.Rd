@@ -28,6 +28,15 @@ bcbSmallCluster(bcb, color = NULL)
 \description{
 Plot size distribution of small RNA-seq data.
 }
+\examples{
+data(sbcb)
+bcbSmallSize(sbcb, color = "country")
+bcbSmallSizeDist(sbcb, color = "country")
+bcbSmallMicro(sbcb, color = "country")
+bcbSmallCluster(sbcb, color = "country")
+bcbSmallPCA(sbcb, minAverage=8)
+bcbSmallPCA(sbcb, type = "cluster", minAverage = 8)
+}
 \author{
 Lorena Pantano, Michael Steinbaugh
 }
