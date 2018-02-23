@@ -1,0 +1,139 @@
+[2018-02-20T17:08Z] compute-a-16-42.o2.rc.hms.harvard.edu: System YAML configuration: /n/app/bcbio/dev/galaxy/bcbio_system.yaml
+[2018-02-20T17:09Z] compute-a-16-42.o2.rc.hms.harvard.edu: Timing: organize samples
+[2018-02-20T17:09Z] compute-a-16-42.o2.rc.hms.harvard.edu: ipython: organize_samples
+[2018-02-20T17:09Z] compute-a-16-140.o2.rc.hms.harvard.edu: Using input YAML configuration: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/config/samples.yaml
+[2018-02-20T17:09Z] compute-a-16-140.o2.rc.hms.harvard.edu: Checking sample YAML configuration: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/config/samples.yaml
+[2018-02-20T17:09Z] compute-a-16-140.o2.rc.hms.harvard.edu: Testing minimum versions of installed programs
+[2018-02-20T17:09Z] compute-a-16-42.o2.rc.hms.harvard.edu: ipython: prepare_sample
+[2018-02-20T17:09Z] compute-a-16-42.o2.rc.hms.harvard.edu: Timing: adapter trimming
+[2018-02-20T17:09Z] compute-a-16-42.o2.rc.hms.harvard.edu: ipython: trim_srna_sample
+[2018-02-20T18:30Z] compute-e-16-212.o2.rc.hms.harvard.edu: System YAML configuration: /n/app/bcbio/dev/galaxy/bcbio_system.yaml
+[2018-02-20T18:30Z] compute-e-16-212.o2.rc.hms.harvard.edu: Running locally instead of distributed -- checkpoint passed: trimming
+[2018-02-20T18:30Z] compute-e-16-212.o2.rc.hms.harvard.edu: Timing: organize samples
+[2018-02-20T18:30Z] compute-e-16-212.o2.rc.hms.harvard.edu: multiprocessing: organize_samples
+[2018-02-20T18:30Z] compute-e-16-212.o2.rc.hms.harvard.edu: Using input YAML configuration: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/config/samples.yaml
+[2018-02-20T18:30Z] compute-e-16-212.o2.rc.hms.harvard.edu: Checking sample YAML configuration: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/config/samples.yaml
+[2018-02-20T18:30Z] compute-e-16-212.o2.rc.hms.harvard.edu: Testing minimum versions of installed programs
+[2018-02-20T18:30Z] compute-e-16-212.o2.rc.hms.harvard.edu: multiprocessing: prepare_sample
+[2018-02-20T18:30Z] compute-e-16-212.o2.rc.hms.harvard.edu: Timing: adapter trimming
+[2018-02-20T18:30Z] compute-e-16-212.o2.rc.hms.harvard.edu: multiprocessing: trim_srna_sample
+[2018-02-21T15:44Z] compute-a-16-45.o2.rc.hms.harvard.edu: System YAML configuration: /n/app/bcbio/dev/galaxy/bcbio_system.yaml
+[2018-02-21T15:44Z] compute-a-16-45.o2.rc.hms.harvard.edu: Running locally instead of distributed -- checkpoint passed: trimming
+[2018-02-21T15:44Z] compute-a-16-45.o2.rc.hms.harvard.edu: Timing: organize samples
+[2018-02-21T15:44Z] compute-a-16-45.o2.rc.hms.harvard.edu: multiprocessing: organize_samples
+[2018-02-21T15:44Z] compute-a-16-45.o2.rc.hms.harvard.edu: Using input YAML configuration: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/config/samples.yaml
+[2018-02-21T15:44Z] compute-a-16-45.o2.rc.hms.harvard.edu: Checking sample YAML configuration: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/config/samples.yaml
+[2018-02-21T15:44Z] compute-a-16-45.o2.rc.hms.harvard.edu: Testing minimum versions of installed programs
+[2018-02-21T15:44Z] compute-a-16-45.o2.rc.hms.harvard.edu: multiprocessing: prepare_sample
+[2018-02-21T15:44Z] compute-a-16-45.o2.rc.hms.harvard.edu: Timing: adapter trimming
+[2018-02-21T15:44Z] compute-a-16-45.o2.rc.hms.harvard.edu: multiprocessing: trim_srna_sample
+[2018-02-21T15:46Z] compute-a-16-45.o2.rc.hms.harvard.edu: Timing: prepare
+[2018-02-21T15:46Z] compute-a-16-45.o2.rc.hms.harvard.edu: ipython: seqcluster_prepare
+[2018-02-21T15:47Z] compute-a-16-45.o2.rc.hms.harvard.edu: Timing: alignment
+[2018-02-21T15:47Z] compute-a-16-45.o2.rc.hms.harvard.edu: ipython: srna_alignment
+[2018-02-21T15:47Z] compute-a-16-37.o2.rc.hms.harvard.edu: Aligning lane ERR187665 with star aligner
+[2018-02-21T15:54Z] compute-a-16-45.o2.rc.hms.harvard.edu: Timing: small RNA annotation
+[2018-02-21T15:54Z] compute-a-16-45.o2.rc.hms.harvard.edu: ipython: srna_annotation
+[2018-02-21T16:00Z] compute-a-16-45.o2.rc.hms.harvard.edu: Timing: cluster
+[2018-02-21T16:00Z] compute-a-16-45.o2.rc.hms.harvard.edu: ipython: seqcluster_cluster
+[2018-02-21T16:32Z] compute-a-16-45.o2.rc.hms.harvard.edu: Timing: quality control
+[2018-02-21T16:32Z] compute-a-16-45.o2.rc.hms.harvard.edu: ipython: pipeline_summary
+[2018-02-21T16:32Z] compute-a-16-80.o2.rc.hms.harvard.edu: QC: ERR187490 fastqc
+[2018-02-21T16:32Z] compute-a-16-80.o2.rc.hms.harvard.edu: QC: ERR187665 fastqc
+[2018-02-21T16:32Z] compute-a-16-80.o2.rc.hms.harvard.edu: QC: ERR187665 atropos
+[2018-02-21T16:32Z] compute-a-16-80.o2.rc.hms.harvard.edu: QC: ERR187665 small-rna
+[2018-02-21T16:32Z] compute-a-16-80.o2.rc.hms.harvard.edu: QC: ERR187490 small-rna
+[2018-02-21T16:32Z] compute-a-16-80.o2.rc.hms.harvard.edu: QC: ERR187490 atropos
+[2018-02-21T16:32Z] compute-a-16-80.o2.rc.hms.harvard.edu: QC: ERR187664 fastqc
+[2018-02-21T16:32Z] compute-a-16-80.o2.rc.hms.harvard.edu: QC: ERR187664 small-rna
+[2018-02-21T16:32Z] compute-a-16-80.o2.rc.hms.harvard.edu: QC: ERR187494 fastqc
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Produced HTML report /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/work/qc/ERR187490/fastqc/fastqc_report.html
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: QC: ERR187494 small-rna
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: QC: ERR187494 atropos
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Produced HTML report /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/work/qc/ERR187664/fastqc/fastqc_report.html
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Produced HTML report /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/work/qc/ERR187494/fastqc/fastqc_report.html
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Produced HTML report /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/work/qc/ERR187665/fastqc/fastqc_report.html
+[2018-02-21T16:33Z] compute-a-16-45.o2.rc.hms.harvard.edu: ipython: qsignature_summary
+[2018-02-21T16:33Z] compute-a-16-45.o2.rc.hms.harvard.edu: ipython: multiqc_summary
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: copy qsignature
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: summarize fastqc
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: summarize target information
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: summarize coverage
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: summarize variants
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: summarize metrics
+[2018-02-21T16:33Z] compute-a-16-45.o2.rc.hms.harvard.edu: Timing: report
+[2018-02-21T16:33Z] compute-a-16-45.o2.rc.hms.harvard.edu: Timing: upload
+[2018-02-21T16:33Z] compute-a-16-45.o2.rc.hms.harvard.edu: ipython: upload_samples
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/final/ERR187490/qc/fastqc/fastqc_report.html
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/final/ERR187664/qc/fastqc/fastqc_report.html
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/final/ERR187494/qc/fastqc/fastqc_report.html
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/final/ERR187665/qc/fastqc/fastqc_report.html
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/final/ERR187490/qc/fastqc/Per_tile_sequence_quality.tsv
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/final/ERR187490/qc/fastqc/ERR187490.zip
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/final/ERR187665/qc/fastqc/Per_tile_sequence_quality.tsv
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/final/ERR187664/qc/fastqc/Per_tile_sequence_quality.tsv
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/final/ERR187494/qc/fastqc/Per_tile_sequence_quality.tsv
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/final/ERR187665/qc/fastqc/Per_sequence_GC_content.tsv
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/final/ERR187490/qc/fastqc/Per_sequence_GC_content.tsv
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/final/ERR187664/qc/fastqc/Per_sequence_GC_content.tsv
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/final/ERR187490/qc/fastqc/Per_base_sequence_content.tsv
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/final/ERR187664/qc/fastqc/Per_base_sequence_content.tsv
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/final/ERR187490/qc/fastqc/Per_base_sequence_quality.tsv
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/final/ERR187664/qc/fastqc/Per_base_sequence_quality.tsv
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/final/ERR187664/qc/fastqc/Sequence_Length_Distribution.tsv
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/final/ERR187664/qc/fastqc/Per_base_N_content.tsv
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/final/ERR187664/qc/fastqc/fastqc_data.txt
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/final/ERR187490/qc/fastqc/Sequence_Length_Distribution.tsv
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/final/ERR187664/qc/fastqc/Per_sequence_quality_scores.tsv
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/final/ERR187490/qc/fastqc/Per_base_N_content.tsv
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/final/ERR187664/qc/fastqc/ERR187664.zip
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/final/ERR187490/qc/fastqc/fastqc_data.txt
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/final/ERR187490/qc/fastqc/Per_sequence_quality_scores.tsv
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/final/ERR187664/qc/atropos/ERR187664.log
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/final/ERR187664/qc/small-rna/ERR187664_bcbio_mirbase.txt
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/final/ERR187664/ERR187664-ready.trimming_stats
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/final/ERR187490/qc/atropos/ERR187490.log
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/final/ERR187490/qc/small-rna/ERR187490_bcbio_mirbase.txt
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/final/ERR187665/qc/fastqc/Per_base_sequence_content.tsv
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/final/ERR187494/qc/fastqc/Per_sequence_GC_content.tsv
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/final/ERR187665/qc/fastqc/Per_base_sequence_quality.tsv
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/final/ERR187490/ERR187490-ready.trimming_stats
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/final/ERR187665/qc/fastqc/Sequence_Length_Distribution.tsv
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/final/ERR187494/qc/fastqc/Per_base_sequence_content.tsv
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/final/ERR187664/ERR187664-mirbase-ready.counts
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/final/ERR187494/qc/fastqc/Per_base_sequence_quality.tsv
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/final/ERR187665/qc/fastqc/Per_base_N_content.tsv
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/final/ERR187494/qc/fastqc/Sequence_Length_Distribution.tsv
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/final/ERR187664/ERR187664-mirbase-ready.gff
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/final/ERR187494/qc/fastqc/Per_base_N_content.tsv
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/final/ERR187494/qc/fastqc/fastqc_data.txt
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/final/ERR187494/qc/fastqc/Per_sequence_quality_scores.tsv
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/final/ERR187490/ERR187490-mirbase-ready.counts
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/final/ERR187665/qc/fastqc/fastqc_data.txt
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Storing directory in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/final/ERR187664/mintmap
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/final/ERR187494/qc/fastqc/ERR187494.zip
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/final/ERR187490/ERR187490-mirbase-ready.gff
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/final/ERR187665/qc/fastqc/Per_sequence_quality_scores.tsv
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/final/ERR187664/ERR187664-transcriptome.bam
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/final/ERR187494/qc/atropos/ERR187494.log
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Storing directory in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/final/ERR187490/mintmap
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/final/ERR187665/qc/fastqc/ERR187665.zip
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/final/ERR187494/qc/small-rna/ERR187494_bcbio_mirbase.txt
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/final/ERR187490/ERR187490-transcriptome.bam
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/final/ERR187665/qc/atropos/ERR187665.log
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/final/ERR187494/ERR187494-ready.trimming_stats
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/final/ERR187665/qc/small-rna/ERR187665.txt
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/final/ERR187494/ERR187494-mirbase-ready.counts
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/final/ERR187665/qc/small-rna/ERR187665_bcbio_mirbase.txt
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/final/ERR187494/ERR187494-mirbase-ready.gff
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/final/ERR187665/ERR187665-ready.trimming_stats
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Storing directory in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/final/ERR187494/mintmap
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/final/ERR187665/ERR187665-mirbase-ready.counts
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/final/ERR187494/ERR187494-transcriptome.bam
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/final/ERR187665/ERR187665-mirbase-ready.gff
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Storing directory in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/final/ERR187665/mintmap
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/final/ERR187665/ERR187665-transcriptome.bam
+[2018-02-21T16:33Z] compute-a-16-45.o2.rc.hms.harvard.edu: ipython: upload_samples_project
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/final/2018-02-21_samples/programs.txt
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/final/2018-02-21_samples/data_versions.csv
+[2018-02-21T16:33Z] compute-a-16-80.o2.rc.hms.harvard.edu: Storing in local filesystem: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/final/2018-02-21_samples/bcbio-nextgen.log

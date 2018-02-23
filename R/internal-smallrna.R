@@ -18,11 +18,22 @@
                            sep = "-"))
     names(fns) <- names(meta[["sample_dirs"]])
     message("Reading miRNA count files")
+    fns = .check_compress(fns)
     iso <- IsomirDataSeqFromFiles(
         files = fns[rownames(col_data)],
         coldata = col_data,
         minHits = min_hits,
         design = ~1)
+}
+
+.check_compress <- function(fns){
+    sapply(fns, function(fn){
+        if (file.exists(fn))
+            return(fn)
+        if (file.exists(paste0(fn, ".gz")))
+            return(paste0(fn, ".gz"))
+        warning("File doesn't exists: ", fn)
+    })
 }
 
 #' Load cluster data

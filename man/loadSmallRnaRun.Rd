@@ -38,6 +38,10 @@ When working in RStudio, we recommend connecting to the bcbio-nextgen
 run directory as a remote connection over
 \href{https://github.com/osxfuse/osxfuse/wiki/SSHFS}{sshfs}.
 }
+\examples{
+path <- system.file("extra", package="bcbioSmallRna")
+bcb <- loadSmallRnaRun(file.path(path, "bcbio"), "country")
+}
 \author{
 Michael Steinbaugh, Lorena Pantano
 }

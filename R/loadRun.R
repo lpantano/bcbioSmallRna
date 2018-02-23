@@ -23,6 +23,9 @@
 #' @param ... Additional arguments, saved as metadata.
 #'
 #' @return [bcbioSmallRnaDataSet].
+#' @examples
+#' path <- system.file("extra", package="bcbioSmallRna")
+#' bcb <- loadSmallRnaRun(file.path(path, "bcbio"), "country")
 #' @importFrom yaml yaml.load_file
 #' @export
 loadSmallRnaRun <- function(

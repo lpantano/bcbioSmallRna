@@ -1,0 +1,37 @@
+INFO-seqcluster.libs.logger(27): Run cluster
+INFO-seqcluster.libs.logger(104): Checking parameters and files
+INFO-seqcluster.libs.logger(123): Output dir will be: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/work/seqcluster/cluster
+INFO-seqcluster.libs.logger(235): Clean bam file with highly repetitive reads with low counts. sum(counts)/n_hits > 1%
+INFO-seqcluster.libs.logger(237): Using /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/work/align/seqs_rmlw.bam file
+INFO-seqcluster.libs.logger(36): Total genome with sequences: 0.000334155 
+INFO-seqcluster.libs.logger(40): Parsing matrix file
+INFO-seqcluster.libs.logger(43): counts after: 16676907
+INFO-seqcluster.libs.logger(44): # sequences after: 132006
+INFO-seqcluster.libs.logger(53): Cleaning bam file
+INFO-seqcluster.libs.logger(55): counts after: 15910546
+INFO-seqcluster.libs.logger(56): # sequences after: 119907
+INFO-seqcluster.libs.logger(251): Parsing aligned file
+INFO-seqcluster.libs.logger(252): Merging sequences
+INFO-seqcluster.libs.logger(259): Creating clusters
+INFO-seqcluster.libs.logger(129): 40039 Clusters read
+INFO-seqcluster.libs.logger(153): Creating meta-clusters based on shared sequences: 119907
+INFO-seqcluster.libs.logger(177): 492 metaclusters from 98984 sequences
+INFO-seqcluster.libs.logger(270): 492 clusters found
+INFO-seqcluster.libs.logger(63): counts after: 15910546
+INFO-seqcluster.libs.logger(64): # sequences after: 119907
+INFO-seqcluster.libs.logger(69): Solving multi-mapping events in the network of clusters
+INFO-seqcluster.libs.logger(62): Number of loci: 40039
+INFO-seqcluster.libs.logger(84): seqs in clusters 98344
+INFO-seqcluster.libs.logger(86): Clusters too long to be analized: 0
+INFO-seqcluster.libs.logger(87): Number of clusters removed because low number of reads: 102
+INFO-seqcluster.libs.logger(88): Number of clusters with conflicts: 76
+INFO-seqcluster.libs.logger(72): counts after: 15701436
+INFO-seqcluster.libs.logger(73): # sequences after: 98344
+INFO-seqcluster.libs.logger(77): Clusters up to 602
+INFO-seqcluster.libs.logger(215): Creating bed file
+INFO-seqcluster.libs.logger(219): Annotating clusters
+INFO-seqcluster.libs.logger(223): Using /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/srna-transcripts.gtf 
+INFO-seqcluster.libs.logger(86): Creating json and count matrix
+INFO-seqcluster.libs.logger(89): Output file in: /n/scratch2/hsph_bioinformatic_core/lp113/geu_example/samples/work/seqcluster/cluster
+INFO-seqcluster.libs.logger(97): Finished
+INFO-seqcluster.libs.logger(53): It took 27.583 minutes
