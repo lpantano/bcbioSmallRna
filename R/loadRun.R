@@ -64,7 +64,6 @@ loadSmallRnaRun <- function(
     template <- match[[3L]]
     project_dir <- file.path(upload_dir, project_dir)
 
-
     # Project summary YAML ====
     yaml_file <- file.path(project_dir, "project-summary.yaml")
     if (!file.exists(yaml_file)) {
@@ -80,7 +79,7 @@ loadSmallRnaRun <- function(
         col_data <- as.data.frame(colData)
     }
     col_data[["sample"]] <- rownames(col_data)
-
+    message(paste(names(col_data)))
     stopifnot(interestingGroups %in% names(col_data))
 
     # Sample names ====
@@ -117,7 +116,6 @@ loadSmallRnaRun <- function(
         lanes <- 1L
     }
 
-
     # Sample metrics ====
     metrics <- .yaml_metrics(yaml) %>%
         .[.[["description"]] %in% col_data[["sample"]],]
@@ -130,7 +128,6 @@ loadSmallRnaRun <- function(
         file.path(project_dir, "bcbio-nextgen.log"))
     bcbio_nextgen_commands <- read_lines(
         file.path(project_dir, "bcbio-nextgen-commands.log"))
-
 
     # Metadata ====
     metadata <- list(

@@ -20,9 +20,10 @@
 #' bcbSmallPCA(sbcb, type = "cluster", minAverage = 8)
 #' @export
 bcbSmallSize <- function(bcb, color = NULL) {
+
     if (is.null(color))
         color <- metadata(bcb)[["interesting_groups"]][1]
-    info <- adapter(bcb)[["reads_by_sample"]] %>%
+    info <- adapter(bcb)[["reads_by_sample"]][,c(1, 3)] %>%
         left_join(metrics(bcb), by = "sample")
     info[[color]] <- as.factor(info[[color]])
     if (!("reads_before_trimming" %in% colnames(info)))
@@ -76,7 +77,7 @@ bcbSmallSizeDist <- function(bcb, color = NULL, percentage = TRUE){
     if (is.null(color))
         color <- metadata(bcb)[["interesting_groups"]][1]
 
-    size <- adapter(bcb)[["reads_by_pos"]] %>%
+    size <- adapter(bcb)[["reads_by_pos"]][,c(1, 3)] %>%
         left_join(metrics(bcb), by = "sample") %>%
         left_join(adapter(bcb)[["reads_by_sample"]][, c("sample", "total")],
                   by = "sample")

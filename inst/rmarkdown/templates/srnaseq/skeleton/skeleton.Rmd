@@ -7,19 +7,51 @@ params:
     outputDir: "."
 ---
 
+```{r aes, results='hide'}
+library(knitr)
+library(ggplot2)
+
+# Set seed for reproducibility
+set.seed(1454944673L)
+
+opts_chunk[["set"]](
+    autodep = TRUE,
+    bootstrap.show.code = FALSE,
+    cache = TRUE,
+    cache.lazy = TRUE,
+    dev = c("png", "pdf"),
+    error = TRUE,
+    fig.height = 6,
+    fig.retina = 2L,
+    fig.width = 6,
+    highlight = TRUE,
+    message = FALSE,
+    prompt = TRUE,
+    # formatR required for tidy code
+    tidy = TRUE,
+    warning = TRUE)
+
+theme_set(
+    theme_light(base_size = 12L))
+theme_update(
+    legend.justification = "center",
+    legend.position = "bottom")
+```
+
 ```{r setup, message=FALSE}
 library(isomiRs)
 library(DEGreport)
-library(ggplot2)
 library(bcbioSmallRna)
-theme_set(theme_light(base_size = 12))
 
-out_dir <- "."
+out_dir <- params$outputDir
 data_out <- file.path(out_dir, "data")
 res_out <- file.path(out_dir, "results")
+sapply(list(res_out, data_out), dir.create, recursive = TRUE, showWarnings = FALSE)
 
 # bcbioSmallRnaDataSet
-load(params$bcb)
+bcb_name <- load(params$bcb)
+bcb <- get(bcb_name, inherits = FALSE)
+
 ```
 
 ```{r header, eval = file.exists("_header.Rmd"), child="_header.Rmd"}
