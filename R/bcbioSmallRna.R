@@ -21,15 +21,16 @@
 #'                   enquo inner_join
 #' @importFrom circlize colorRamp2
 #' @importFrom RColorBrewer brewer.pal
-#' @importFrom janitor remove_empty_cols
+#' @importFrom janitor remove_empty
 #' @importFrom reshape melt
 #' @importFrom tibble column_to_rownames
+#' @importFrom tidyr separate
 #' @importFrom purrr set_names
 #' @importFrom isomiRs IsomirDataSeqFromFiles
 #' @importFrom methods as is new slot slot<- validObject
 #' @importFrom ComplexHeatmap Heatmap HeatmapAnnotation draw
 #' @importFrom stats formula
-#' @importFrom stringr str_detect str_match
+#' @importFrom stringr str_detect str_match str_split str_replace_all
 #' @importFrom readr read_lines read_csv read_tsv read_delim
 #' @importFrom rlang sym dots_values
 #' @importFrom utils read.table capture.output download.file

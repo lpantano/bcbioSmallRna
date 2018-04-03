@@ -36,6 +36,32 @@
     })
 }
 
+
+.choose_mapping <- function(mapping, priority){
+    class <- sapply(str_split(mapping, " ")[[1]], function(x){
+        which(x == priority)
+    }) %>% which.min() %>% names(.) %>% .[1L]
+    if (is.null(class))
+        return(mapping)
+    class
+}
+
+.clean_id <- function(row){
+    priority <- row[1]
+    names <- row[2]
+    rna <- sapply(str_split(names, ";")[[1]], function(x){
+        if (grepl(priority, x))
+            return(x)
+    })  %>%  unique(.) %>%
+        paste(., collapse = ";") %>%
+        str_replace_all(., "NULL", "")
+    if (rna == "")
+        return (str_split(names, ";")[[1]] %>%
+                    unique() %>%
+                    paste(., collapse = ";"))
+    rna
+}
+
 #' Load cluster data
 #'
 #' @keywords internal
@@ -46,6 +72,8 @@
 .read_cluster_counts <- function(meta, col_data, max_samples){
     if (!file.exists(file.path(meta[["project_dir"]], "seqcluster")))
         return(NULL)
+    priority = c("miRNA", "tRNA", "repeat", "ncrna", "gene", "")
+
     clus <- file.path(meta[["project_dir"]],
                      "seqcluster",
                      "counts.tsv") %>%
@@ -55,16 +83,26 @@
                              "seqcluster",
                              "read_stats.tsv") %>%
         read.table(., header = FALSE, sep = "\t")
-
     clus_ma <- clus[, 3L:ncol(clus)]
-    row.names(clus_ma) <- paste0("cluster:", row.names(clus_ma))
+    row_data <- clus[,1L:2L]
+    row_data[["cluster"]] <- paste0("cluster:", 1L:nrow(clus))
+    row_data <- row_data %>%
+        separate(!!sym("ann"), sep = "\\|", into = c("biotype", "names"))
+    row_data[["priority"]] <- sapply(row_data[["biotype"]],
+                                     .choose_mapping, priority)
+    row_data[["rna_id"]] <- apply(row_data[,c("priority", "names")],
+                                  1,
+                                  .clean_id)
+    row_data <- row_data[,c("cluster", "priority", "rna_id",
+                            "biotype", "names", "nloci")]
+    row.names(clus_ma) <- paste0("cluster:", 1L:nrow(clus))
     clus_ma <- clus_ma[, row.names(col_data)]
     clus_rlog <- .normalize(clus_ma, col_data, max_samples = max_samples)
     SummarizedExperiment(assays = SimpleList(
         raw = clus_ma,
         rlog = clus_rlog),
         colData = col_data,
-        rowData = clus[,1L:2L],
+        rowData = row_data,
         metadata = list(stats = reads_stats))
 }
 

@@ -59,7 +59,7 @@
         bind_rows %>%
         arrange(description) %>%
         as.data.frame %>%
-        remove_empty_cols
+        remove_empty
     m
 }
 

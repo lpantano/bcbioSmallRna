@@ -3,6 +3,7 @@ Title: small RNA-Seq Utilities
 Description: Quality control and differential expression for bcbio-nextgen
     small RNA-seq experiments.
 Version: 0.0.1
+Date: 2018-04-03
 Authors@R: c(
     person("Lorena", "Pantano",
            email = "lorena.pantano@gmail.com",
@@ -58,6 +59,7 @@ Imports:
     stringr,
     SummarizedExperiment,
     tibble,
+    tidyr,
     utils,
     yaml
 Suggests:

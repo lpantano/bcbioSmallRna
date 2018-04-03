@@ -149,20 +149,16 @@ bcbSmallCluster <- function(bcb, color = NULL){
 
     total <- data.frame(sample = colnames(cluster(bcb)),
                         total = colSums(cluster(bcb)))
-    ann <- experiments(bcb)[["cluster"]] %>% rowData %>%
-        .[["ann"]]
-    class <- rep("Other", length(ann))
-    class[ann == "|"] <- "None"
-    class[grepl("snoRNA", ann, ignore.case = TRUE)] <- "snoRNA"
-    class[grepl("repeat", ann, ignore.case = TRUE)] <- "repeat"
-    class[grepl("tRNA", ann, ignore.case = TRUE)] <- "tRNA"
-    class[grepl("miRNA", ann, ignore.case = TRUE)] <- "miRNA"
-    classDF <- bind_cols(bind_cols(cluster(bcb)), ann = class) %>%
+    class <- experiments(bcb)[["cluster"]] %>% rowData %>%
+        .[["priority"]]
+    class[class == ""] <- "Intergenic"
+     classDF <- bind_cols(bind_cols(cluster(bcb)),
+                          ann = class) %>%
         melt() %>%
         mutate_if(is.factor, as.character) %>%
-        group_by(variable, ann) %>%
+        group_by(!!sym("variable"), !!sym("ann")) %>%
         summarise(abundance = sum(value)) %>%
-        left_join(., group_by(., variable) %>%
+        left_join(., group_by(., !!sym("variable")) %>%
                       summarise(total = sum(abundance))) %>%
         mutate(pct = abundance / total * 100) %>%
         inner_join(colData(bcb)[, c("sample", color), drop = FALSE] %>%
