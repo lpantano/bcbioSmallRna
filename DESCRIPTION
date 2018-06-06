@@ -63,7 +63,10 @@ Imports:
     utils,
     yaml
 Suggests:
-    BiocStyle
+    BiocStyle,
+    testthat,
+    rmarkdown,
+    testthat
 Remotes:
     lpantano/DEGreport,
     lpantano/isomiRs

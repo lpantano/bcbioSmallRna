@@ -2,6 +2,18 @@
 title: "Small RNA-seq quality control"
 author: "`r getOption('author')`"
 date: "`r Sys.Date()`"
+output:
+    html_document:
+        code_folding: hide
+        df_print: paged
+        highlight: pygments
+        number_sections: false
+        self_contained: true
+        theme: paper
+        toc: true
+        toc_float:
+            collapsed: true
+            smooth_scroll: false
 params:
     bcb: "data/bcb.rda"
     outputDir: "."
@@ -29,10 +41,10 @@ opts_chunk[["set"]](
     prompt = TRUE,
     # formatR required for tidy code
     tidy = TRUE,
-    warning = TRUE)
+    warning = FALSE)
 
 theme_set(
-    theme_light(base_size = 12L))
+    theme_light(base_size = 11L))
 theme_update(
     legend.justification = "center",
     legend.position = "bottom")
@@ -42,6 +54,8 @@ theme_update(
 library(isomiRs)
 library(DEGreport)
 library(bcbioSmallRna)
+library(ComplexHeatmap)
+library(circlize)
 
 out_dir <- params$outputDir
 data_out <- file.path(out_dir, "data")
@@ -51,7 +65,6 @@ sapply(list(res_out, data_out), dir.create, recursive = TRUE, showWarnings = FAL
 # bcbioSmallRnaDataSet
 bcb_name <- load(params$bcb)
 bcb <- get(bcb_name, inherits = FALSE)
-
 ```
 
 ```{r header, eval = file.exists("_header.Rmd"), child="_header.Rmd"}
@@ -93,8 +106,30 @@ bcbSmallMicro(bcb)
 
 ### Clustering of samples
 
+```{r mirna-cluster-data}
+data = bcbSmallPCA(bcb)
+color_by = metadata(bcb)[["interesting_groups"]]
+```
+
+```{r mirna-heatmap}
+palette <- colorRamp2(seq(min(data[["counts"]]),
+                          max(data[["counts"]]), length = 3),
+                      c("blue", "#EEEEEE", "orange"), space = "RGB")
+th <- HeatmapAnnotation(df = data[["annotation"]],
+                        col = degColors(data[["annotation"]]))
+Heatmap(data[["counts"]],
+        col = palette,
+        top_annotation = th,
+        clustering_method_rows = "ward.D",
+        clustering_distance_columns = "kendall",
+        clustering_method_columns = "ward.D",
+        show_row_names = FALSE,
+        show_column_names = ncol(data[["counts"]]) < 50)
+```
+
 ```{r mirna-pca}
-bcbSmallPCA(bcb)
+degPCA(data[["counts"]], data[["annotation"]],
+            condition = color_by)
 ```
 
 
@@ -114,7 +149,7 @@ There are 5 different types of isomiRs:
 
 ```{r isomiRs, fig.cap="Proportion of isomiRs counting reads (left) or unique sequences (right)."}
 ids <- bcbio(bcb, "isomirs")
-isoPlot(ids, type = "all", column = "group")
+isoPlot(ids, type = "all", column = "country")
 ```
 
 
@@ -140,9 +175,32 @@ bcbSmallCluster(bcb)
 
 ### Clustering of samples
 
-```{r clusters-pca}
-bcbSmallPCA(bcb, "cluster")
+```{r cluster-cluster-data}
+data = bcbSmallPCA(bcb, "cluster")
+color_by = metadata(bcb)[["interesting_groups"]]
 ```
+
+```{r cluster-heatmap}
+palette <- colorRamp2(seq(min(data[["counts"]]),
+                          max(data[["counts"]]), length = 3),
+                      c("blue", "#EEEEEE", "orange"), space = "RGB")
+th <- HeatmapAnnotation(df = data[["annotation"]],
+                        col = degColors(data[["annotation"]]))
+Heatmap(data[["counts"]],
+        col = palette,
+        top_annotation = th,
+        clustering_method_rows = "ward.D",
+        clustering_distance_columns = "kendall",
+        clustering_method_columns = "ward.D",
+        show_row_names = FALSE,
+        show_column_names = ncol(data[["counts"]]) < 50)
+```
+
+```{r cluster-pca}
+degPCA(data[["counts"]], data[["annotation"]],
+            condition = color_by)
+```
+
 
 ```{r footer, eval = file.exists("_footer.Rmd"), child="_footer.Rmd"}
 ```

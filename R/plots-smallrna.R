@@ -11,13 +11,16 @@
 #' @description Plot size distribution of small RNA-seq data.
 #'
 #' @examples
+#' library(DEGreport)
 #' data(sbcb)
 #' bcbSmallSize(sbcb, color = "country")
 #' bcbSmallSizeDist(sbcb, color = "country")
 #' bcbSmallMicro(sbcb, color = "country")
 #' bcbSmallCluster(sbcb, color = "country")
-#' bcbSmallPCA(sbcb, minAverage=8)
-#' bcbSmallPCA(sbcb, type = "cluster", minAverage = 8)
+#' data <- bcbSmallPCA(sbcb, minAverage=8)
+#' degPCA(data[["counts"]], data[["annotation"]], condition = "country")
+#' data <- bcbSmallPCA(sbcb, type = "cluster", minAverage = 8)
+#' degPCA(data[["counts"]], data[["annotation"]], condition = "country")
 #' @export
 bcbSmallSize <- function(bcb, color = NULL) {
 
@@ -81,15 +84,15 @@ bcbSmallSizeDist <- function(bcb, color = NULL, percentage = TRUE){
         left_join(adapter(bcb)[["reads_by_sample"]][, c("sample", "total")],
                   by = "sample")
     if (percentage)
-        size[["pct"]] <- size[["V2"]] / size[["total"]] * 100L
-    else size[["pct"]] <- size[["V2"]] * 1L
-    size[["group"]] <- as.factor(size[[color]])
+        size[["pct"]] <- size[["reads"]] / size[["total"]] * 100L
+    else size[["pct"]] <- size[["reads"]] * 1L
+    size[["groupby"]] <- as.factor(size[[color]])
     ggdraw() +
         draw_plot(
             ggplot(size,
-                   aes_string(x = "V1", y = "pct", group = "sample")) +
+                   aes_string(x = "size", y = "pct", group = "sample")) +
                 geom_line() +
-                facet_wrap(~group, ncol = 2L) +
+                facet_wrap(~groupby, ncol = 2L) +
                 ggtitle("size distribution") +
                 ylab("# reads") + xlab("size") +
                 theme(
@@ -105,7 +108,6 @@ bcbSmallMicro <- function(bcb, color = NULL) {
         color <- metadata(bcb)[["interesting_groups"]][1]
     m <- metrics(bcb) %>% mutate_if(is.factor, as.character)
     m[[color]] <- as.factor(m[[color]])
-
     total <- data.frame(sample = colnames(mirna(bcb)),
                         mirtotal = colSums(mirna(bcb)),
                         stringsAsFactors = FALSE) %>%
@@ -228,39 +230,6 @@ bcbSmallPCA <- function(bcb, type = "mirna",
         .[, columns, drop = FALSE] %>%
         mutate_all(as.factor)
     rownames(annotation_col) <- colnames(counts)
-    if (data)
-        return(list(counts = counts, annotation = annotation_col))
-    palette <- colorRamp2(seq(min(counts), max(counts), length = 3),
-                          c("blue", "#EEEEEE", "orange"), space = "RGB")
-    th <- HeatmapAnnotation(df = annotation_col,
-                            col = .make_colors(annotation_col))
-    hplot <- Heatmap(counts,
-                     col = palette,
-                     top_annotation = th,
-                     clustering_method_rows = "ward.D",
-                     clustering_distance_columns = "kendall",
-                     clustering_method_columns = "ward.D",
-                     show_row_names = FALSE,
-                     show_column_names = ncol(counts) < 50)
-    p <- degPCA(counts, annotation_col,
-                condition = columns[1], ...)
-    print(p)
-    hplot
-}
-
-
-.make_colors <- function(ann){
-    col <- lapply(names(ann), function(a){
-        if (length(unique(ann[[a]])) < 3){
-            v <- c("orange", "blue")[1:length(unique(ann[[a]]))]
-            names(v) <- unique(ann[[a]])
-            return(v)
-        }
-        v <- brewer.pal(length(unique(ann[[a]])), "Set1")
-        names(v) <- unique(ann[[a]])
-        v
-    })
-    names(col) <- names(ann)
-    col
+    list(counts = counts, annotation = annotation_col)
 }
 

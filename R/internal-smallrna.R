@@ -134,13 +134,13 @@
                            sep = "-"))
     names(fns) <- names(meta[["sample_dirs"]])
     reads_by_pos <- lapply(rownames(coldata), function(sample) {
-        read.table(fns[sample], sep = "") %>%
+        read.table(fns[sample], sep = "", col.names = c("size", "reads") ) %>%
             mutate(
                 sample = sample,
-                group = coldata[sample, meta[["interesting_groups"]][1]])
+                colorby = coldata[sample, meta[["interesting_groups"]][1]])
     }) %>% bind_rows()
     reads_by_sample <- reads_by_pos %>%
-        group_by(!!!sym("sample"), !!!sym("group")) %>%
-        summarise(total = sum(.data[["V2"]]))
+        group_by(!!!sym("sample"), !!!sym("colorby")) %>%
+        summarise(total = sum(.data[["reads"]]))
     list(reads_by_pos = reads_by_pos, reads_by_sample = reads_by_sample)
 }
