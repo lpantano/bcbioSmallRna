@@ -18,13 +18,19 @@
 <!-- Font Awesome icons -->
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 
+<!-- clipboard.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js" integrity="sha384-cV+rhyOuRHc9Ub/91rihWcGmMmCXDeksTtCihMupQHSsi8GIIRDG0ThDc3HGQFJ3" crossorigin="anonymous"></script>
 
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
 <script src="../jquery.sticky-kit.min.js"></script>
 <script src="../pkgdown.js"></script>
-  
-  
+
+
+
+<meta property="og:title" content="Function reference" />
+
+
 <!-- mathjax -->
 <script src='https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
@@ -47,18 +53,37 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="../index.html">bcbioSmallRna</a>
+      <span class="navbar-brand">
+        <a class="navbar-link" href="../index.html">bcbioSmallRna</a>
+        <span class="label label-default" data-toggle="tooltip" data-placement="bottom" title="Released package">0.0.1</span>
+      </span>
     </div>
+
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
-  <a href="..//index.html">
+  <a href="../index.html">
     <span class="fa fa-home fa-lg"></span>
      
   </a>
 </li>
 <li>
   <a href="../reference/index.html">Reference</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Articles
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="../articles/qc-example.html">QC for small RNA-seq data analyzed with bcbio</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="../news/index.html">Changelog</a>
 </li>
       </ul>
       
@@ -70,6 +95,7 @@
   </a>
 </li>
       </ul>
+      
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
 </div><!--/.navbar -->
@@ -77,88 +103,95 @@
       
       </header>
 
-      <div class="row">
-  <div class="col-md-9">
+<div class="row">
+  <div class="contents col-md-9">
     <div class="page-header">
-      <h1>
-        Reference
-        <small>version&nbsp;0.0.1</small>
-      </h1>
+      <h1>Reference</h1>
     </div>
 
-    <div class="contents">
-      <table class="ref-index">
+    <table class="ref-index">
 
-      <colgroup>
-        <col class="alias" />
-        <col class="title" />
-      </colgroup>
+    <colgroup>
+      <col class="alias" />
+      <col class="title" />
+    </colgroup>
 
-      <tbody>
-        <tr>
-          <th colspan="2">
-            <h2 id="section-all-functions" class="hasAnchor"><a href="#section-all-functions" class="anchor"></a>All functions</h2>
-            <p class="section-desc"></p>
-          </th>
-        </tr>
-        <tr>
-          <!--  -->
-          <td>
-            <p><code><a href="adapter.html">adapter</a></code> <code><a href="adapter.html">adapter<-</a></code> </p>
-          </td>
-          <td><p>Sample adapter accesor</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="bcbio.html">bcbio</a></code> <code><a href="bcbio.html">bcbio<-</a></code> </p>
-          </td>
-          <td><p><code>bcbioSmallRnaDataSet</code> caller accessors</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p></p>
-          </td>
-          <td><p>bcbioSmallRna</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p></p>
-          </td>
-          <td><p>bcbioSmallRnaDataSet</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="loadSmallRnaRun.html">loadSmallRnaRun</a></code> </p>
-          </td>
-          <td><p>Load small RNA-seq bcbio-nextgen run</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="metrics.html">metrics</a></code> </p>
-          </td>
-          <td><p>Sample metrics accesor</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="mirna.html">mirna</a></code> <code><a href="mirna.html">isomir</a></code> <code><a href="mirna.html">cluster</a></code> <code><a href="mirna.html">trna</a></code> </p>
-          </td>
-          <td><p>mirna count data information</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="plots-smallrna.html">bcbSmallSize</a></code> <code><a href="plots-smallrna.html">bcbSmallMicro</a></code> <code><a href="plots-smallrna.html">bcbSmallCluster</a></code> </p>
-          </td>
-          <td><p>Small RNA-seq quality control plots</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="plotsSmallPCA.html">bcbSmallPCA</a></code> </p>
-          </td>
-          <td><p>Plot PCA of the different small RNA data</p></td>
-        </tr>
-      </tbody>
-      </table>
-    </div>
+    <tbody>
+      <tr>
+        <th colspan="2">
+          <h2 id="section-all-functions" class="hasAnchor"><a href="#section-all-functions" class="anchor"></a>All functions</h2>
+          <p class="section-desc"></p>
+        </th>
+      </tr>
+      <tr>
+        <!--  -->
+        <td>
+          <p><code><a href="adapter.html">adapter(<i>&lt;bcbioSmallRnaDataSet&gt;</i>)</a></code> <code><a href="adapter.html">`adapter<-`(<i>&lt;bcbioSmallRnaDataSet&gt;</i>,<i>&lt;list&gt;</i>)</a></code> </p>
+        </td>
+        <td><p>Sample adapter accesor</p></td>
+      </tr><tr>
+        <!--  -->
+        <td>
+          <p><code><a href="bcbio.html">bcbio(<i>&lt;bcbioSmallRnaDataSet&gt;</i>)</a></code> <code><a href="bcbio.html">`bcbio<-`(<i>&lt;bcbioSmallRnaDataSet&gt;</i>)</a></code> </p>
+        </td>
+        <td><p><code>bcbioSmallRnaDataSet</code> caller accessors</p></td>
+      </tr><tr>
+        <!--  -->
+        <td>
+          <p><code><a href="bcbioSmallRna-package.html">bcbioSmallRna-package</a></code> </p>
+        </td>
+        <td><p>bcbioSmallRna</p></td>
+      </tr><tr>
+        <!--  -->
+        <td>
+          <p><code><a href="bcbioSmallRnaDataSet.html">bcbioSmallRnaDataSet-class</a></code> </p>
+        </td>
+        <td><p>bcbioSmallRnaDataSet</p></td>
+      </tr><tr>
+        <!--  -->
+        <td>
+          <p><code><a href="download.html">bcbSmallDownload()</a></code> </p>
+        </td>
+        <td><p>Download Dependency File</p></td>
+      </tr><tr>
+        <!--  -->
+        <td>
+          <p><code><a href="loadSmallRnaRun.html">loadSmallRnaRun()</a></code> </p>
+        </td>
+        <td><p>Load small RNA-seq bcbio-nextgen run</p></td>
+      </tr><tr>
+        <!--  -->
+        <td>
+          <p><code><a href="metrics.html">metrics(<i>&lt;bcbioSmallRnaDataSet&gt;</i>)</a></code> </p>
+        </td>
+        <td><p>Sample metrics accesor</p></td>
+      </tr><tr>
+        <!--  -->
+        <td>
+          <p><code><a href="mirna.html">mirna(<i>&lt;bcbioSmallRnaDataSet&gt;</i>)</a></code> <code><a href="mirna.html">isomir(<i>&lt;bcbioSmallRnaDataSet&gt;</i>)</a></code> <code><a href="mirna.html">cluster(<i>&lt;bcbioSmallRnaDataSet&gt;</i>)</a></code> <code><a href="mirna.html">trna(<i>&lt;bcbioSmallRnaDataSet&gt;</i>)</a></code> </p>
+        </td>
+        <td><p>mirna count data information</p></td>
+      </tr><tr>
+        <!--  -->
+        <td>
+          <p><code><a href="plots-smallrna.html">bcbSmallSize()</a></code> <code><a href="plots-smallrna.html">bcbSmallSizeDist()</a></code> <code><a href="plots-smallrna.html">bcbSmallMicro()</a></code> <code><a href="plots-smallrna.html">bcbSmallCluster()</a></code> </p>
+        </td>
+        <td><p>Small RNA-seq quality control plots</p></td>
+      </tr><tr>
+        <!--  -->
+        <td>
+          <p><code><a href="plotsSmallPCA.html">bcbSmallPCA()</a></code> </p>
+        </td>
+        <td><p>Plot PCA of the different small RNA data</p></td>
+      </tr><tr>
+        <!--  -->
+        <td>
+          <p><code><a href="sbcb.html">sbcb</a></code> </p>
+        </td>
+        <td><p>Tiny example of bcbioSmallRna object</p></td>
+      </tr>
+    </tbody>
+    </table>
   </div>
 
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
@@ -175,11 +208,14 @@
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="http://hadley.github.io/pkgdown/">pkgdown</a>.</p>
+  <p>Site built with <a href="http://pkgdown.r-lib.org/">pkgdown</a>.</p>
 </div>
 
       </footer>
    </div>
 
+  
+
   </body>
 </html>
+

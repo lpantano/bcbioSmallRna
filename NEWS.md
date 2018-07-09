@@ -5,4 +5,5 @@
 * Fix bcbioSmallSizeDist to avoid duplication of columns when getting adapter information
 
 ## Feature
+* Load final folder using project folder path instead
 * Feature: Improve cluster annotation

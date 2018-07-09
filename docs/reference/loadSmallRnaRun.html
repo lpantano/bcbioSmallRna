@@ -18,13 +18,25 @@
 <!-- Font Awesome icons -->
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 
+<!-- clipboard.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js" integrity="sha384-cV+rhyOuRHc9Ub/91rihWcGmMmCXDeksTtCihMupQHSsi8GIIRDG0ThDc3HGQFJ3" crossorigin="anonymous"></script>
 
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
 <script src="../jquery.sticky-kit.min.js"></script>
 <script src="../pkgdown.js"></script>
-  
-  
+
+
+
+<meta property="og:title" content="Load small RNA-seq bcbio-nextgen run — loadSmallRnaRun" />
+
+<meta property="og:description" content="Simply point to the final upload directory output by
+bcbio-nextgen, and this function
+will take care of the rest. It automatically imports small RNA-seq counts,
+metadata, and program versions used." />
+<meta name="twitter:card" content="summary" />
+
+
 <!-- mathjax -->
 <script src='https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
@@ -47,18 +59,37 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="../index.html">bcbioSmallRna</a>
+      <span class="navbar-brand">
+        <a class="navbar-link" href="../index.html">bcbioSmallRna</a>
+        <span class="label label-default" data-toggle="tooltip" data-placement="bottom" title="Released package">0.0.1</span>
+      </span>
     </div>
+
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
-  <a href="..//index.html">
+  <a href="../index.html">
     <span class="fa fa-home fa-lg"></span>
      
   </a>
 </li>
 <li>
   <a href="../reference/index.html">Reference</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Articles
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="../articles/qc-example.html">QC for small RNA-seq data analyzed with bcbio</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="../news/index.html">Changelog</a>
 </li>
       </ul>
       
@@ -70,6 +101,7 @@
   </a>
 </li>
       </ul>
+      
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
 </div><!--/.navbar -->
@@ -77,23 +109,27 @@
       
       </header>
 
-      <div class="row">
+<div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>Load small RNA-seq bcbio-nextgen run</h1>
+    <small class="dont-index">Source: <a href='https://github.com/lpantano/bcbiosRnaseq/blob/master/R/loadRun.R'><code>R/loadRun.R</code></a></small>
+    <div class="hidden name"><code>loadSmallRnaRun.Rd</code></div>
     </div>
 
+    <div class="ref-description">
     
     <p>Simply point to the final upload directory output by
 <a href='https://bcbio-nextgen.readthedocs.io/'>bcbio-nextgen</a>, and this function
 will take care of the rest. It automatically imports small RNA-seq counts,
 metadata, and program versions used.</p>
     
+    </div>
 
     <pre class="usage"><span class='fu'>loadSmallRnaRun</span>(<span class='kw'>uploadDir</span> <span class='kw'>=</span> <span class='st'>"final"</span>, <span class='kw'>interestingGroups</span> <span class='kw'>=</span> <span class='st'>"description"</span>,
-  <span class='kw'>maxSamples</span> <span class='kw'>=</span> <span class='fl'>50</span>, <span class='kw'>dataDir</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='no'>...</span>)</pre>
+  <span class='kw'>maxSamples</span> <span class='kw'>=</span> <span class='fl'>50</span>, <span class='kw'>dataDir</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>colData</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='no'>...</span>)</pre>
     
-    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a> Arguments</h2>
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
@@ -117,6 +153,10 @@ and variance stabilization object from DESeq2.</p></td>
       <td><p>Folder to keep a cache of the object.</p></td>
     </tr>
     <tr>
+      <th>colData</th>
+      <td><p><em>Optional</em> External metadata to be used while reading samples.</p></td>
+    </tr>
+    <tr>
       <th>...</th>
       <td><p>Additional arguments, saved as metadata.</p></td>
     </tr>
@@ -133,6 +173,18 @@ run directory as a remote connection over
 <a href='https://github.com/osxfuse/osxfuse/wiki/SSHFS'>sshfs</a>.</p>
     
 
+    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
+    <pre class="examples"><div class='input'><span class='no'>path</span> <span class='kw'>&lt;-</span> <span class='fu'>system.file</span>(<span class='st'>"extra"</span>, <span class='kw'>package</span><span class='kw'>=</span><span class='st'>"bcbioSmallRna"</span>)
+<span class='no'>bcb</span> <span class='kw'>&lt;-</span> <span class='fu'>loadSmallRnaRun</span>(<span class='fu'>file.path</span>(<span class='no'>path</span>, <span class='st'>"bcbio"</span>), <span class='st'>"country"</span>)</div><div class='output co'>#&gt; <span class='message'>2018-02-21_samples</span></div><div class='output co'>#&gt; <span class='message'>Reading project summary YAML</span></div><div class='output co'>#&gt; <span class='message'>value for "which" not specified, defaulting to c("rows", "cols")</span></div><div class='output co'>#&gt; <span class='message'>countrygroupsample</span></div><div class='output co'>#&gt; <span class='message'>4 samples detected</span></div><div class='output co'>#&gt; <span class='message'>Genome: hg19</span></div><div class='output co'>#&gt; <span class='message'>value for "which" not specified, defaulting to c("rows", "cols")</span></div><div class='output co'>#&gt; <span class='message'>Reading bcbio run information</span></div><div class='output co'>#&gt; <span class='message'>Parsed with column specification:</span>
+#&gt; <span class='message'>cols(</span>
+#&gt; <span class='message'>  genome = col_character(),</span>
+#&gt; <span class='message'>  resource = col_character(),</span>
+#&gt; <span class='message'>  version = col_character()</span>
+#&gt; <span class='message'>)</span></div><div class='output co'>#&gt; <span class='message'>Parsed with column specification:</span>
+#&gt; <span class='message'>cols(</span>
+#&gt; <span class='message'>  program = col_character(),</span>
+#&gt; <span class='message'>  version = col_character()</span>
+#&gt; <span class='message'>)</span></div><div class='output co'>#&gt; <span class='message'>Reading miRNA count files</span></div><div class='output co'>#&gt; <span class='message'>Total samples filtered due to low number of hits: 0</span></div><div class='output co'>#&gt; <span class='message'>converting counts to integer mode</span></div><div class='output co'>#&gt; <span class='message'>converting counts to integer mode</span></div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
@@ -142,7 +194,9 @@ run directory as a remote connection over
       <li><a href="#value">Value</a></li>
 
       <li><a href="#note">Note</a></li>
-          </ul>
+      
+      <li><a href="#examples">Examples</a></li>
+    </ul>
 
     <h2>Author</h2>
     
@@ -157,11 +211,14 @@ Michael Steinbaugh, Lorena Pantano
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="http://hadley.github.io/pkgdown/">pkgdown</a>.</p>
+  <p>Site built with <a href="http://pkgdown.r-lib.org/">pkgdown</a>.</p>
 </div>
 
       </footer>
    </div>
 
+  
+
   </body>
 </html>
+

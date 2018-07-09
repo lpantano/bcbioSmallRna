@@ -11,7 +11,7 @@
 #'
 #' @author Michael Steinbaugh, Lorena Pantano
 #'
-#' @param uploadDir Path to final upload directory. This path is set when
+#' @param projectDir Path to final upload directory. This path is set when
 #'   running `bcbio_nextgen -w template`.
 #' @param interestingGroups Character vector of interesting groups. First entry
 #'   is used for plot colors during quality control (QC) analysis. Entire vector
@@ -29,7 +29,7 @@
 #' @importFrom yaml yaml.load_file
 #' @export
 loadSmallRnaRun <- function(
-    uploadDir = "final",
+    projectDir = "date-final",
     interestingGroups = "description",
     maxSamples = 50,
     dataDir = NULL,
@@ -44,30 +44,24 @@ loadSmallRnaRun <- function(
             return(bcb)
         }
     }
-
+    uploadDir <- file.path(projectDir, "..")
+    upload_dir <- normalizePath(uploadDir)
+    
     if (!dir.exists(uploadDir)) {
         stop("Final upload directory failed to load")
     }
-    upload_dir <- normalizePath(uploadDir)
     # Find most recent nested project_dir (normally only 1)
     project_dir_pattern <- "^(\\d{4}-\\d{2}-\\d{2})_([^/]+)$"
-    project_dir <- dir(upload_dir,
-                       pattern = project_dir_pattern,
-                       full.names = FALSE,
-                       recursive = FALSE)
-    if (length(project_dir) != 1L) {
-        stop("Uncertain about project directory location")
-    }
+    project_dir <- projectDir
     message(project_dir)
     match <- str_match(project_dir, project_dir_pattern)
     run_date <- match[[2L]] %>% as.Date
     template <- match[[3L]]
-    project_dir <- file.path(upload_dir, project_dir)
 
     # Project summary YAML ====
     yaml_file <- file.path(project_dir, "project-summary.yaml")
     if (!file.exists(yaml_file)) {
-        stop("YAML project summary missing")
+        stop("YAML project summary missing ", yaml_file)
     }
     message("Reading project summary YAML")
     yaml <- yaml.load_file(yaml_file)
@@ -89,6 +83,9 @@ loadSmallRnaRun <- function(
         function(x) x[["description"]],
         character(1L)) %>% sort %>%
         intersect(., rownames(col_data))
+    if (length(sample_names) == 0){
+        stop("No overlap between metadata rownames and files in final bcbio folder.")
+    }
     sample_dirs <- file.path(upload_dir, sample_names) %>%
         set_names(sample_names)
     if (!identical(basename(sample_dirs), sample_names)) {
