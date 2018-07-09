@@ -156,11 +156,11 @@ loadSmallRnaRun <- function(
         isoNorm(., maxSamples = maxSamples) %>% counts(., norm = TRUE)
     mir <- SummarizedExperiment(assays = SimpleList(
         raw = counts(mirna),
-        rlog = mirna_rlog),
+        log = mirna_rlog),
         colData = col_data[rownames(colData(mirna)),])
     iso <- SummarizedExperiment(assays = SimpleList(
         raw = counts(isomirna),
-        rlog = iso_rlog),
+        log = iso_rlog),
         colData = col_data[rownames(colData(isomirna)),])
     # SummarizedExperiment for tRNA ====
 

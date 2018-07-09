@@ -21,9 +21,11 @@
 <!-- clipboard.js -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js" integrity="sha384-cV+rhyOuRHc9Ub/91rihWcGmMmCXDeksTtCihMupQHSsi8GIIRDG0ThDc3HGQFJ3" crossorigin="anonymous"></script>
 
+<!-- sticky kit -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sticky-kit/1.1.3/sticky-kit.min.js" integrity="sha256-c4Rlo1ZozqTPE2RLuvbusY3+SU1pQaJC0TjuhygMipw=" crossorigin="anonymous"></script>
+
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
-<script src="../jquery.sticky-kit.min.js"></script>
 <script src="../pkgdown.js"></script>
 
 
@@ -32,6 +34,7 @@
 
 <meta property="og:description" content="Plot size distribution of small RNA-seq data." />
 <meta name="twitter:card" content="summary" />
+
 
 
 <!-- mathjax -->
@@ -80,6 +83,9 @@
     <span class="caret"></span>
   </a>
   <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="../articles/browsing-object.html">Browsing the elements of the object</a>
+    </li>
     <li>
       <a href="../articles/qc-example.html">QC for small RNA-seq data analyzed with bcbio</a>
     </li>
@@ -151,374 +157,11 @@
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'>data</span>(<span class='no'>sbcb</span>)
-<span class='fu'>bcbSmallSize</span>(<span class='no'>sbcb</span>, <span class='kw'>color</span> <span class='kw'>=</span> <span class='st'>"country"</span>)</div><div class='img'><img src='plots-smallrna-1.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'>bcbSmallSizeDist</span>(<span class='no'>sbcb</span>, <span class='kw'>color</span> <span class='kw'>=</span> <span class='st'>"country"</span>)</div><div class='img'><img src='plots-smallrna-2.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'>bcbSmallMicro</span>(<span class='no'>sbcb</span>, <span class='kw'>color</span> <span class='kw'>=</span> <span class='st'>"country"</span>)</div><div class='img'><img src='plots-smallrna-3.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'>bcbSmallCluster</span>(<span class='no'>sbcb</span>, <span class='kw'>color</span> <span class='kw'>=</span> <span class='st'>"country"</span>)</div><div class='output co'>#&gt; <span class='message'>Using ann as id variables</span></div><div class='output co'>#&gt; <span class='message'>Joining, by = "variable"</span></div><div class='output co'>#&gt; <span class='message'>Using  as id variables</span></div><div class='output co'>#&gt; <span class='warning'>Warning: Transformation introduced infinite values in continuous y-axis</span></div><div class='output co'>#&gt; <span class='warning'>Warning: Removed 92 rows containing non-finite values (stat_boxplot).</span></div><div class='img'><img src='plots-smallrna-4.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'><a href='plotsSmallPCA.html'>bcbSmallPCA</a></span>(<span class='no'>sbcb</span>, <span class='kw'>minAverage</span><span class='kw'>=</span><span class='fl'>8</span>)</div><div class='output co'>#&gt; $counts
-#&gt;                   ERR187490 ERR187494 ERR187664 ERR187665
-#&gt; hsa-let-7a-5p        15.213    15.589    15.471    15.648
-#&gt; hsa-let-7b-5p         9.380     7.525     7.671     8.809
-#&gt; hsa-let-7d-3p         8.238     8.372     8.551     8.608
-#&gt; hsa-let-7d-5p        11.170    11.444    11.532    11.116
-#&gt; hsa-let-7f-5p        15.277    15.486    15.584    15.575
-#&gt; hsa-let-7g-5p        13.228    13.352    13.414    13.120
-#&gt; hsa-let-7i-5p        12.767    13.025    12.854    12.619
-#&gt; hsa-miR-101-3p       10.474    10.243    10.206    10.412
-#&gt; hsa-miR-103a-3p      12.741    12.881    12.862    12.650
-#&gt; hsa-miR-106b-3p       9.559     9.975     9.685     9.447
-#&gt; hsa-miR-107          10.426    10.624    10.416    10.227
-#&gt; hsa-miR-10a-5p       14.648    14.726    16.199    15.517
-#&gt; hsa-miR-1260b         8.770     8.317     7.408     8.087
-#&gt; hsa-miR-128-3p        9.647     9.796     9.973    10.227
-#&gt; hsa-miR-1307-3p       9.235     9.317     9.103     9.147
-#&gt; hsa-miR-1307-5p       9.090     8.160     8.057     9.044
-#&gt; hsa-miR-130a-3p       8.160     8.674     8.763     8.086
-#&gt; hsa-miR-130b-3p      10.277    10.862    10.837    10.667
-#&gt; hsa-miR-132-3p        8.351     8.361     8.462     7.497
-#&gt; hsa-miR-140-3p       10.272    10.431    10.114    10.445
-#&gt; hsa-miR-142-3p        9.822     9.402     9.380    10.622
-#&gt; hsa-miR-142-5p       15.356    15.399    15.496    15.596
-#&gt; hsa-miR-143-3p        7.843     6.981     9.578     8.609
-#&gt; hsa-miR-146a-5p      17.036    16.925    17.134    16.746
-#&gt; hsa-miR-146b-3p       9.309     9.444     9.214     8.428
-#&gt; hsa-miR-146b-5p      15.280    15.708    15.405    15.482
-#&gt; hsa-miR-148a-3p      15.636    16.507    15.828    17.204
-#&gt; hsa-miR-148a-5p      10.613    11.695    10.478    11.351
-#&gt; hsa-miR-148b-3p      10.668    11.087    10.962    11.440
-#&gt; hsa-miR-151a-3p       9.906     9.361    10.986     9.706
-#&gt; hsa-miR-151a-5p       9.517     8.713    10.359     8.907
-#&gt; hsa-miR-151b          8.914     8.008     9.633     8.200
-#&gt; hsa-miR-155-5p       16.918    17.406    17.320    16.548
-#&gt; hsa-miR-15a-5p        9.776     9.907     9.524     9.561
-#&gt; hsa-miR-15b-5p        9.747    10.104     9.831    10.209
-#&gt; hsa-miR-16-2-3p       8.281     8.424     8.243     8.315
-#&gt; hsa-miR-16-5p        13.982    14.355    14.132    14.266
-#&gt; hsa-miR-17-3p         9.220     8.974     8.777     8.708
-#&gt; hsa-miR-17-5p        10.364    10.695    10.647    10.792
-#&gt; hsa-miR-181a-2-3p     9.759     8.966     9.531     8.692
-#&gt; hsa-miR-181a-3p       9.763    10.127    10.496     9.515
-#&gt; hsa-miR-181a-5p      16.618    16.517    17.146    15.386
-#&gt; hsa-miR-181b-5p      12.231    12.085    12.534    11.340
-#&gt; hsa-miR-181c-5p      10.430     9.740    11.164     9.520
-#&gt; hsa-miR-182-5p        9.535     9.434    10.429     9.713
-#&gt; hsa-miR-186-5p       12.836    13.144    13.570    13.661
-#&gt; hsa-miR-191-5p       16.329    16.457    16.795    17.132
-#&gt; hsa-miR-192-5p       11.094    11.969    12.717    11.928
-#&gt; hsa-miR-193b-3p      10.830    10.586    10.666    10.529
-#&gt; hsa-miR-197-3p        9.535     9.420     8.824     9.151
-#&gt; hsa-miR-19b-3p       10.955    10.746    10.546    10.647
-#&gt; hsa-miR-20a-5p       10.896    11.001    10.774    11.298
-#&gt; hsa-miR-21-3p        14.424    13.646    12.785    13.311
-#&gt; hsa-miR-21-5p        14.843    15.554    15.247    15.900
-#&gt; hsa-miR-210-3p       11.872    11.462    11.157    10.884
-#&gt; hsa-miR-210-5p        8.536     8.317     8.490     8.137
-#&gt; hsa-miR-22-3p        12.508    12.302    12.499    13.013
-#&gt; hsa-miR-221-3p       10.229    11.441    10.249    10.767
-#&gt; hsa-miR-222-3p       10.135    11.199    10.083    10.432
-#&gt; hsa-miR-23a-3p        9.964     9.377     9.581     9.621
-#&gt; hsa-miR-23b-3p        8.894     8.375     8.404     8.576
-#&gt; hsa-miR-24-3p         9.459     9.018     9.433     9.305
-#&gt; hsa-miR-25-3p        12.761    13.302    13.016    13.105
-#&gt; hsa-miR-26a-5p       13.261    13.521    13.752    13.455
-#&gt; hsa-miR-26b-5p       11.313    11.354    11.319    11.713
-#&gt; hsa-miR-27a-3p       12.110    11.296    11.415    11.581
-#&gt; hsa-miR-27b-3p       13.208    13.125    12.920    13.152
-#&gt; hsa-miR-28-3p         8.069     7.835     8.627     8.588
-#&gt; hsa-miR-29a-3p       12.061    12.089    11.858    11.788
-#&gt; hsa-miR-301a-3p       7.671     8.086     8.001     8.526
-#&gt; hsa-miR-30b-5p        9.493     9.341     9.657     9.862
-#&gt; hsa-miR-30c-5p       11.314    11.785    11.652    11.865
-#&gt; hsa-miR-30d-5p       13.626    13.512    13.915    13.597
-#&gt; hsa-miR-30e-3p        9.595    10.228     9.868     9.855
-#&gt; hsa-miR-30e-5p       12.683    12.721    12.649    13.453
-#&gt; hsa-miR-320a         11.248    11.119    11.135    10.180
-#&gt; hsa-miR-339-3p       10.078     9.834     9.855     9.330
-#&gt; hsa-miR-339-5p        9.302     8.713     8.745     8.302
-#&gt; hsa-miR-342-3p       11.161    10.933    11.212    11.170
-#&gt; hsa-miR-345-5p        8.126     7.917     8.489     8.574
-#&gt; hsa-miR-34a-5p       10.458    10.037    10.240     9.799
-#&gt; hsa-miR-361-3p        9.530     9.867     9.878     9.158
-#&gt; hsa-miR-361-5p        8.245     8.386     7.921     8.288
-#&gt; hsa-miR-363-3p       10.823    11.061    10.007    10.941
-#&gt; hsa-miR-365a-3p       8.906     8.530     9.173     8.765
-#&gt; hsa-miR-365b-3p       8.906     8.530     9.173     8.765
-#&gt; hsa-miR-378a-3p      13.333    13.272    13.325    13.363
-#&gt; hsa-miR-423-3p       11.998    11.994    11.950    11.692
-#&gt; hsa-miR-423-5p       12.205    12.409    12.556    11.822
-#&gt; hsa-miR-425-5p       10.528    10.406    10.851    10.695
-#&gt; hsa-miR-4485-3p       9.597     7.540     9.933     6.621
-#&gt; hsa-miR-454-3p        8.391     8.515     8.893     8.896
-#&gt; hsa-miR-4792          9.465    10.055    10.337     9.584
-#&gt; hsa-miR-484           9.524     9.415     8.862     9.971
-#&gt; hsa-miR-486-5p       13.063    13.414    14.219    14.293
-#&gt; hsa-miR-500a-3p       8.528     8.617     8.787     9.129
-#&gt; hsa-miR-532-5p        9.762     9.491     9.399     9.820
-#&gt; hsa-miR-589-5p        7.973     8.004     8.020     8.314
-#&gt; hsa-miR-769-5p       10.101    10.171    10.168    10.224
-#&gt; hsa-miR-7706          8.498     9.075     9.361     9.024
-#&gt; hsa-miR-7974          7.902     8.501     8.208     8.354
-#&gt; hsa-miR-7977          9.133     8.905     7.262     8.238
-#&gt; hsa-miR-874-3p        8.570     8.154     8.113     8.918
-#&gt; hsa-miR-9-5p          8.800     8.429    10.083     9.650
-#&gt; hsa-miR-92a-3p       17.681    17.888    17.686    17.391
-#&gt; hsa-miR-92b-3p       11.334    11.226    11.226    11.586
-#&gt; hsa-miR-93-5p        10.834    11.290    11.247    11.377
-#&gt; hsa-miR-941          10.632    10.395    10.613    11.039
-#&gt; hsa-miR-98-5p        12.458    12.662    12.845    13.515
-#&gt; 
-#&gt; $annotation
-#&gt;           country
-#&gt; ERR187490 BRITISH
-#&gt; ERR187494 FINLAND
-#&gt; ERR187664     USA
-#&gt; ERR187665 NIGERIA
-#&gt; </div><div class='input'><span class='fu'><a href='plotsSmallPCA.html'>bcbSmallPCA</a></span>(<span class='no'>sbcb</span>, <span class='kw'>type</span> <span class='kw'>=</span> <span class='st'>"cluster"</span>, <span class='kw'>minAverage</span> <span class='kw'>=</span> <span class='fl'>8</span>)</div><div class='output co'>#&gt; $counts
-#&gt;             ERR187490 ERR187494 ERR187664 ERR187665
-#&gt; cluster:2      11.359    11.828    11.603    12.023
-#&gt; cluster:3       9.529     9.359     9.567    10.014
-#&gt; cluster:4      13.055    13.377    14.133    14.422
-#&gt; cluster:5      10.094    10.364     9.993    10.231
-#&gt; cluster:11      8.467     8.436     8.442     7.661
-#&gt; cluster:14      8.188     9.056     9.574     8.133
-#&gt; cluster:15     11.255    11.757    11.731    11.547
-#&gt; cluster:19     10.340    10.468    10.054    10.616
-#&gt; cluster:24     10.939    11.016    10.694    11.437
-#&gt; cluster:25     10.572     7.347    10.408     8.239
-#&gt; cluster:26      8.271     8.795     7.994     9.375
-#&gt; cluster:28     10.551    10.065    10.168     9.944
-#&gt; cluster:29      9.638     9.724     9.410     9.114
-#&gt; cluster:30      9.972     9.966    10.645     9.146
-#&gt; cluster:32     11.339    11.388    11.723    10.601
-#&gt; cluster:36     10.837    10.074    10.341     9.394
-#&gt; cluster:41     15.011    13.646    15.310    13.927
-#&gt; cluster:46      8.456     8.485     8.694     8.418
-#&gt; cluster:49      9.525     9.169     9.480     9.136
-#&gt; cluster:50     10.334    10.470    11.352     9.250
-#&gt; cluster:54     11.656     9.521    11.209     9.018
-#&gt; cluster:55     14.671    14.705    16.146    15.666
-#&gt; cluster:56     11.064    10.761    10.776    10.813
-#&gt; cluster:57     13.715    13.571    13.871    13.752
-#&gt; cluster:61     11.246    10.882    11.094     9.900
-#&gt; cluster:63      8.915     8.902     9.175    10.402
-#&gt; cluster:64      8.690     9.135     8.982     8.975
-#&gt; cluster:68      8.764    10.152     9.761     9.893
-#&gt; cluster:71      8.857     8.726     9.616    10.543
-#&gt; cluster:76      8.095     7.860     8.374     8.656
-#&gt; cluster:80      6.887     8.198     8.151     9.060
-#&gt; cluster:83      9.154     8.622     8.516     9.126
-#&gt; cluster:84      8.868    10.099     9.914     8.325
-#&gt; cluster:86     12.602    12.596    11.961    13.185
-#&gt; cluster:88     17.506    16.876    14.651    15.919
-#&gt; cluster:90      9.721     9.622     8.517     9.148
-#&gt; cluster:98     10.049    10.876    10.778     9.585
-#&gt; cluster:99     11.333    12.213    12.067    10.736
-#&gt; cluster:100    10.081     8.896     9.479     9.007
-#&gt; cluster:102     8.518     8.573     8.667     9.231
-#&gt; cluster:104    10.835    10.886    11.337    13.180
-#&gt; cluster:106     8.814     8.034     7.705     9.158
-#&gt; cluster:111    14.018    14.358    14.045    14.403
-#&gt; cluster:112    11.950    11.119    11.147    11.590
-#&gt; cluster:113    13.234    13.098    12.807    13.265
-#&gt; cluster:114     9.448     8.870     6.907     8.789
-#&gt; cluster:116    11.019    11.168    11.065    12.063
-#&gt; cluster:120    12.988    11.698    12.887    13.675
-#&gt; cluster:123    10.531    10.903     9.026     9.545
-#&gt; cluster:126    10.247    10.229    10.406    10.100
-#&gt; cluster:127     8.558     9.848     9.354     9.361
-#&gt; cluster:128     8.894     9.010     8.805     8.687
-#&gt; cluster:129     7.528     7.435     9.451     8.362
-#&gt; cluster:130     9.778     9.566     9.408     8.303
-#&gt; cluster:131     8.965     9.032     9.270     9.446
-#&gt; cluster:132    10.717     9.989    11.614    10.437
-#&gt; cluster:133    11.108    11.233    11.294    12.126
-#&gt; cluster:135    12.925    13.009    12.788    13.743
-#&gt; cluster:137     9.119     7.882     8.755     7.729
-#&gt; cluster:140    12.907    12.559    12.255    13.310
-#&gt; cluster:141    10.374    10.352    11.160     9.083
-#&gt; cluster:143    11.054     8.003    10.387     7.467
-#&gt; cluster:147    10.537    10.685    10.893     9.260
-#&gt; cluster:150     9.568     9.481     9.640    10.890
-#&gt; cluster:151     9.466     9.671     7.676     8.135
-#&gt; cluster:152    11.807    11.649    11.413    12.366
-#&gt; cluster:153     8.820     8.633     8.522     8.534
-#&gt; cluster:154    10.882    10.798    10.789    10.645
-#&gt; cluster:156     9.994     9.585     9.228     9.194
-#&gt; cluster:158    13.148    13.212    13.106    12.968
-#&gt; cluster:159    10.867     9.322    10.136    10.963
-#&gt; cluster:160    11.859    11.791    11.850    11.388
-#&gt; cluster:163     7.578     8.641     9.181     8.500
-#&gt; cluster:164     9.159     9.923     9.785     9.767
-#&gt; cluster:166    10.132    10.178    10.093    10.357
-#&gt; cluster:168     7.978     8.969     7.688     8.692
-#&gt; cluster:169    12.058    11.631    11.283    11.195
-#&gt; cluster:172    13.365    13.249    13.215    13.480
-#&gt; cluster:174    11.233    10.973    11.186    11.313
-#&gt; cluster:175    13.787    13.584    14.138    13.813
-#&gt; cluster:176     9.936    10.256    10.873    10.724
-#&gt; cluster:179    17.758    17.909    17.624    17.513
-#&gt; cluster:180    11.500    11.339    11.230    11.787
-#&gt; cluster:181     8.438     8.604     8.894     9.146
-#&gt; cluster:183    11.479    10.806    11.186    10.278
-#&gt; cluster:184    10.670    10.477    10.873    10.916
-#&gt; cluster:185     6.983     7.524     7.593     9.918
-#&gt; cluster:189    10.769    11.114    10.917    11.602
-#&gt; cluster:192     9.937    11.074    10.278     9.099
-#&gt; cluster:193    11.051    11.935    12.623    12.024
-#&gt; cluster:199     8.595     8.980     8.842     9.478
-#&gt; cluster:201     8.725     8.725     8.479    10.277
-#&gt; cluster:203     7.899     8.412     7.663     8.048
-#&gt; cluster:204    12.530    11.898    11.099    15.831
-#&gt; cluster:207     7.085     6.875     7.029    12.021
-#&gt; cluster:209    15.225    15.567    15.365    15.767
-#&gt; cluster:210    11.410    11.610    11.633    11.472
-#&gt; cluster:211     9.434     7.514     7.594     8.948
-#&gt; cluster:213    15.454    15.435    15.448    15.797
-#&gt; cluster:214    11.856    12.417    12.364    12.130
-#&gt; cluster:217    10.149    10.227    10.418    10.225
-#&gt; cluster:218    10.991     8.938    11.201     8.047
-#&gt; cluster:220    13.559    14.160    14.071    14.274
-#&gt; cluster:222    12.904    10.404    12.625     9.347
-#&gt; cluster:223    12.276    12.079    12.462    11.439
-#&gt; cluster:225    17.291    16.562    16.734    16.166
-#&gt; cluster:226    13.460    13.450    13.418    13.068
-#&gt; cluster:227    16.228    16.604    16.862    16.585
-#&gt; cluster:231     9.428     9.668     9.233     8.090
-#&gt; cluster:233    16.418    16.784    16.439    15.625
-#&gt; cluster:236    10.277     7.446     9.966     5.549
-#&gt; cluster:237    16.960    17.423    17.250    16.658
-#&gt; cluster:238    10.215    10.676     9.164     9.947
-#&gt; cluster:241     9.167     9.092     7.716     8.701
-#&gt; cluster:242    11.361    11.783    11.177    14.376
-#&gt; cluster:243     8.849     9.570     7.951    11.863
-#&gt; cluster:244     8.699     8.324     8.381     9.108
-#&gt; cluster:246    17.879    15.741    17.724    15.165
-#&gt; cluster:249     7.716     8.405     8.360     9.573
-#&gt; cluster:250    12.317    12.871    12.777    12.691
-#&gt; cluster:253     8.787     8.834     7.804     8.563
-#&gt; cluster:257    19.664    18.685    19.577    18.101
-#&gt; cluster:260    11.229    11.094    10.090    11.600
-#&gt; cluster:261    18.889    17.984    18.994    16.902
-#&gt; cluster:262     8.673     8.546     6.661     8.317
-#&gt; cluster:263    10.068     9.696     9.126    11.418
-#&gt; cluster:264    10.611    10.267    10.234    12.215
-#&gt; cluster:265     9.516     9.686    10.041    11.854
-#&gt; cluster:267    13.029    10.479    12.633     9.089
-#&gt; cluster:268    19.453    17.104    19.063    16.210
-#&gt; cluster:274     9.450     9.259     9.777     8.452
-#&gt; cluster:277    11.319    11.162    11.075    10.282
-#&gt; cluster:279     9.772     8.901     8.621     8.291
-#&gt; cluster:282     9.858     9.304     8.583    10.298
-#&gt; cluster:292    14.586    14.831    14.377    14.768
-#&gt; cluster:293    10.745    10.828    10.688    10.334
-#&gt; cluster:294     9.562     9.397     8.712     9.241
-#&gt; cluster:303    10.836    10.389    10.336    10.009
-#&gt; cluster:306     8.666     8.192     8.044     9.107
-#&gt; cluster:307     9.960    10.294     9.902    10.563
-#&gt; cluster:311    10.878    11.089     9.905    11.122
-#&gt; cluster:313    10.568     9.854    11.175     9.737
-#&gt; cluster:315     9.157     9.467     9.114     9.744
-#&gt; cluster:320    11.475    12.549    12.417    14.347
-#&gt; cluster:322    12.871    13.086    12.838    12.802
-#&gt; cluster:324     9.736     9.366     9.643     8.108
-#&gt; cluster:325     8.300     8.482     8.555     8.314
-#&gt; cluster:326    10.626     8.867     9.901     9.953
-#&gt; cluster:327    13.270    13.499    13.656    13.567
-#&gt; cluster:331    10.110    10.346    10.218     9.904
-#&gt; cluster:334     9.885     9.837    10.259     9.702
-#&gt; cluster:340    12.830    13.103    13.461    13.778
-#&gt; cluster:341     9.919    10.071    10.037    10.510
-#&gt; cluster:347    10.405    10.363    10.066    12.174
-#&gt; cluster:348     9.509    10.770    10.233    10.141
-#&gt; cluster:350     8.178     8.193     8.798     8.619
-#&gt; cluster:354    10.009     9.611     7.737     8.864
-#&gt; cluster:358    10.856    11.149    11.068    10.392
-#&gt; cluster:362    10.429    10.975    10.871    10.910
-#&gt; cluster:365     9.653     9.172     9.481     9.555
-#&gt; cluster:366    10.653    10.379    10.526    11.170
-#&gt; cluster:367     7.975     8.003     7.931     8.475
-#&gt; cluster:369     9.487     9.161     9.117     9.083
-#&gt; cluster:371     8.680     8.319     8.758     7.824
-#&gt; cluster:374     8.760     8.359    10.002     9.803
-#&gt; cluster:378     9.565     9.413     8.734    10.117
-#&gt; cluster:379    11.284    11.018     8.445    10.070
-#&gt; cluster:385     8.652     9.365     9.288     9.153
-#&gt; cluster:386     9.125     9.728     9.674     9.401
-#&gt; cluster:387    10.003     9.924    10.247    12.773
-#&gt; cluster:388    10.188     9.832     9.569    10.226
-#&gt; cluster:389     9.233     8.875     9.143     9.912
-#&gt; cluster:400    11.389    10.871     9.219    10.818
-#&gt; cluster:404     8.672     8.714     6.763     8.032
-#&gt; cluster:409    10.392    11.557    10.266    11.062
-#&gt; cluster:415    11.348    11.343    11.224    11.848
-#&gt; cluster:416     9.593     9.420    10.376     9.829
-#&gt; cluster:418     8.909     8.256     8.547     8.189
-#&gt; cluster:429    15.674    16.547    15.738    17.383
-#&gt; cluster:431    10.859    11.316    11.163    11.523
-#&gt; cluster:433    15.287    15.458    15.477    15.687
-#&gt; cluster:437     8.449     7.940     7.891     8.496
-#&gt; cluster:440     9.326     8.879     9.314     9.416
-#&gt; cluster:442    15.768    15.943    15.437    16.319
-#&gt; cluster:445    11.001    10.755    10.480    10.768
-#&gt; cluster:451     7.630     8.041     7.869     8.608
-#&gt; cluster:455    10.042     9.486     9.620     9.804
-#&gt; cluster:457    10.911    11.073    10.885    11.230
-#&gt; cluster:462     8.975     8.295     9.184     6.782
-#&gt; cluster:469    12.458    12.625    12.738    13.648
-#&gt; cluster:473    12.806    13.308    12.928    13.234
-#&gt; cluster:478     9.052     9.385     9.257     9.301
-#&gt; cluster:480    10.180    11.272    10.012    10.642
-#&gt; cluster:482     9.799     9.475     9.295     9.950
-#&gt; cluster:483    12.523    12.258    12.385    13.140
-#&gt; cluster:488    10.944    11.398    11.891    10.826
-#&gt; cluster:489     9.977     9.675     9.994     9.038
-#&gt; cluster:491    10.894    10.671    10.464     9.533
-#&gt; cluster:492     9.942    10.164    10.438     8.773
-#&gt; cluster:493    10.425    10.103     9.504     9.444
-#&gt; cluster:495     8.099     7.823     8.537     8.786
-#&gt; cluster:496     8.412     8.337     8.561     7.617
-#&gt; cluster:497    11.983    12.285    12.463    13.252
-#&gt; cluster:502     8.061     9.584     8.805     9.261
-#&gt; cluster:503     8.143     7.648     6.991     9.588
-#&gt; cluster:504     9.395    10.126     9.750     8.813
-#&gt; cluster:508     8.482     8.714     8.520     9.149
-#&gt; cluster:511     9.652    10.140     9.521     9.565
-#&gt; cluster:512     9.667    10.092     8.693     8.947
-#&gt; cluster:517    12.141    12.128    11.795    11.940
-#&gt; cluster:522     9.197     9.244     9.572     9.507
-#&gt; cluster:523    12.968    13.100    12.831    13.272
-#&gt; cluster:527     8.896     9.222     8.758     9.682
-#&gt; cluster:530     8.166     8.639     8.657     8.179
-#&gt; cluster:531     8.539     7.986     8.669     8.049
-#&gt; cluster:532    16.673    16.520    17.086    15.464
-#&gt; cluster:533     8.221     8.296     8.021     8.510
-#&gt; cluster:535     7.831     6.839     9.473     8.716
-#&gt; cluster:536     8.536     9.074     9.271     9.144
-#&gt; cluster:539     9.799     9.879     9.414     9.665
-#&gt; cluster:544     8.389     8.389     8.880     7.046
-#&gt; cluster:553    10.562    10.267    10.146    10.556
-#&gt; cluster:558    12.592    10.075    11.476     9.806
-#&gt; cluster:559    11.704    10.006    10.911    10.218
-#&gt; cluster:562    13.258    13.335    13.320    13.222
-#&gt; cluster:563    16.339    16.425    16.691    17.255
-#&gt; cluster:564    11.876    10.160    11.524     9.559
-#&gt; cluster:566    17.067    16.900    17.032    16.840
-#&gt; cluster:572    10.324     9.983     9.351    10.392
-#&gt; cluster:575     9.615    10.728    10.193    10.370
-#&gt; cluster:576    11.478    11.132    10.011    10.367
-#&gt; cluster:578     7.366     8.018     8.361     9.252
-#&gt; cluster:582     7.239     7.868     8.156     8.874
-#&gt; cluster:589    10.677    10.546    10.867    10.059
-#&gt; cluster:593    11.024    11.209    11.065    10.530
-#&gt; cluster:595    10.954    11.422    11.359    12.318
-#&gt; cluster:599    10.721    10.974    11.628    13.260
-#&gt; cluster:601     9.026     8.623     9.137     8.964
-#&gt; cluster:602    15.334    15.745    15.334    15.619
-#&gt; 
-#&gt; $annotation
-#&gt;           country
-#&gt; ERR187490 BRITISH
-#&gt; ERR187494 FINLAND
-#&gt; ERR187664     USA
-#&gt; ERR187665 NIGERIA
-#&gt; </div></pre>
+    <pre class="examples"><div class='input'><span class='fu'>library</span>(<span class='no'>DEGreport</span>)
+<span class='fu'>data</span>(<span class='no'>sbcb</span>)
+<span class='fu'>bcbSmallSize</span>(<span class='no'>sbcb</span>, <span class='kw'>color</span> <span class='kw'>=</span> <span class='st'>"country"</span>)</div><div class='img'><img src='plots-smallrna-1.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'>bcbSmallSizeDist</span>(<span class='no'>sbcb</span>, <span class='kw'>color</span> <span class='kw'>=</span> <span class='st'>"country"</span>)</div><div class='img'><img src='plots-smallrna-2.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'>bcbSmallMicro</span>(<span class='no'>sbcb</span>, <span class='kw'>color</span> <span class='kw'>=</span> <span class='st'>"country"</span>)</div><div class='img'><img src='plots-smallrna-3.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'>bcbSmallCluster</span>(<span class='no'>sbcb</span>, <span class='kw'>color</span> <span class='kw'>=</span> <span class='st'>"country"</span>)</div><div class='output co'>#&gt; <span class='message'>Using ann as id variables</span></div><div class='output co'>#&gt; <span class='message'>Joining, by = "variable"</span></div><div class='output co'>#&gt; <span class='message'>Using  as id variables</span></div><div class='output co'>#&gt; <span class='warning'>Warning: Transformation introduced infinite values in continuous y-axis</span></div><div class='output co'>#&gt; <span class='warning'>Warning: Removed 92 rows containing non-finite values (stat_boxplot).</span></div><div class='img'><img src='plots-smallrna-4.png' alt='' width='700' height='433' /></div><div class='input'><span class='no'>data</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='plotsSmallPCA.html'>bcbSmallPCA</a></span>(<span class='no'>sbcb</span>, <span class='kw'>minAverage</span><span class='kw'>=</span><span class='fl'>8</span>)
+<span class='fu'><a href='http://www.rdocumentation.org/packages/DEGreport/topics/degPCA'>degPCA</a></span>(<span class='no'>data</span><span class='kw'>[[</span><span class='st'>"counts"</span>]], <span class='no'>data</span><span class='kw'>[[</span><span class='st'>"annotation"</span>]], <span class='kw'>condition</span> <span class='kw'>=</span> <span class='st'>"country"</span>)</div><div class='img'><img src='plots-smallrna-5.png' alt='' width='700' height='433' /></div><div class='input'><span class='no'>data</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='plotsSmallPCA.html'>bcbSmallPCA</a></span>(<span class='no'>sbcb</span>, <span class='kw'>type</span> <span class='kw'>=</span> <span class='st'>"cluster"</span>, <span class='kw'>minAverage</span> <span class='kw'>=</span> <span class='fl'>8</span>)
+<span class='fu'><a href='http://www.rdocumentation.org/packages/DEGreport/topics/degPCA'>degPCA</a></span>(<span class='no'>data</span><span class='kw'>[[</span><span class='st'>"counts"</span>]], <span class='no'>data</span><span class='kw'>[[</span><span class='st'>"annotation"</span>]], <span class='kw'>condition</span> <span class='kw'>=</span> <span class='st'>"country"</span>)</div><div class='img'><img src='plots-smallrna-6.png' alt='' width='700' height='433' /></div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>

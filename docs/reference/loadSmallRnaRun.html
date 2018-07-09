@@ -21,9 +21,11 @@
 <!-- clipboard.js -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js" integrity="sha384-cV+rhyOuRHc9Ub/91rihWcGmMmCXDeksTtCihMupQHSsi8GIIRDG0ThDc3HGQFJ3" crossorigin="anonymous"></script>
 
+<!-- sticky kit -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sticky-kit/1.1.3/sticky-kit.min.js" integrity="sha256-c4Rlo1ZozqTPE2RLuvbusY3+SU1pQaJC0TjuhygMipw=" crossorigin="anonymous"></script>
+
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
-<script src="../jquery.sticky-kit.min.js"></script>
 <script src="../pkgdown.js"></script>
 
 
@@ -35,6 +37,7 @@ bcbio-nextgen, and this function
 will take care of the rest. It automatically imports small RNA-seq counts,
 metadata, and program versions used." />
 <meta name="twitter:card" content="summary" />
+
 
 
 <!-- mathjax -->
@@ -84,6 +87,9 @@ metadata, and program versions used." />
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
+      <a href="../articles/browsing-object.html">Browsing the elements of the object</a>
+    </li>
+    <li>
       <a href="../articles/qc-example.html">QC for small RNA-seq data analyzed with bcbio</a>
     </li>
   </ul>
@@ -126,14 +132,15 @@ metadata, and program versions used.</p>
     
     </div>
 
-    <pre class="usage"><span class='fu'>loadSmallRnaRun</span>(<span class='kw'>uploadDir</span> <span class='kw'>=</span> <span class='st'>"final"</span>, <span class='kw'>interestingGroups</span> <span class='kw'>=</span> <span class='st'>"description"</span>,
-  <span class='kw'>maxSamples</span> <span class='kw'>=</span> <span class='fl'>50</span>, <span class='kw'>dataDir</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>colData</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='no'>...</span>)</pre>
+    <pre class="usage"><span class='fu'>loadSmallRnaRun</span>(<span class='kw'>projectDir</span> <span class='kw'>=</span> <span class='st'>"date-final"</span>,
+  <span class='kw'>interestingGroups</span> <span class='kw'>=</span> <span class='st'>"description"</span>, <span class='kw'>maxSamples</span> <span class='kw'>=</span> <span class='fl'>50</span>, <span class='kw'>dataDir</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>colData</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='no'>...</span>)</pre>
     
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
-      <th>uploadDir</th>
+      <th>projectDir</th>
       <td><p>Path to final upload directory. This path is set when
 running <code>bcbio_nextgen -w template</code>.</p></td>
     </tr>
@@ -175,16 +182,7 @@ run directory as a remote connection over
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='no'>path</span> <span class='kw'>&lt;-</span> <span class='fu'>system.file</span>(<span class='st'>"extra"</span>, <span class='kw'>package</span><span class='kw'>=</span><span class='st'>"bcbioSmallRna"</span>)
-<span class='no'>bcb</span> <span class='kw'>&lt;-</span> <span class='fu'>loadSmallRnaRun</span>(<span class='fu'>file.path</span>(<span class='no'>path</span>, <span class='st'>"bcbio"</span>), <span class='st'>"country"</span>)</div><div class='output co'>#&gt; <span class='message'>2018-02-21_samples</span></div><div class='output co'>#&gt; <span class='message'>Reading project summary YAML</span></div><div class='output co'>#&gt; <span class='message'>value for "which" not specified, defaulting to c("rows", "cols")</span></div><div class='output co'>#&gt; <span class='message'>countrygroupsample</span></div><div class='output co'>#&gt; <span class='message'>4 samples detected</span></div><div class='output co'>#&gt; <span class='message'>Genome: hg19</span></div><div class='output co'>#&gt; <span class='message'>value for "which" not specified, defaulting to c("rows", "cols")</span></div><div class='output co'>#&gt; <span class='message'>Reading bcbio run information</span></div><div class='output co'>#&gt; <span class='message'>Parsed with column specification:</span>
-#&gt; <span class='message'>cols(</span>
-#&gt; <span class='message'>  genome = col_character(),</span>
-#&gt; <span class='message'>  resource = col_character(),</span>
-#&gt; <span class='message'>  version = col_character()</span>
-#&gt; <span class='message'>)</span></div><div class='output co'>#&gt; <span class='message'>Parsed with column specification:</span>
-#&gt; <span class='message'>cols(</span>
-#&gt; <span class='message'>  program = col_character(),</span>
-#&gt; <span class='message'>  version = col_character()</span>
-#&gt; <span class='message'>)</span></div><div class='output co'>#&gt; <span class='message'>Reading miRNA count files</span></div><div class='output co'>#&gt; <span class='message'>Total samples filtered due to low number of hits: 0</span></div><div class='output co'>#&gt; <span class='message'>converting counts to integer mode</span></div><div class='output co'>#&gt; <span class='message'>converting counts to integer mode</span></div></pre>
+<span class='no'>bcb</span> <span class='kw'>&lt;-</span> <span class='fu'>loadSmallRnaRun</span>(<span class='fu'>file.path</span>(<span class='no'>path</span>, <span class='st'>"bcbio"</span>), <span class='st'>"country"</span>)</div><div class='output co'>#&gt; <span class='message'>/Users/lpantano/repos/hbc/bcbioSmallRna/inst/extra/bcbio</span></div><div class='output co'>#&gt; <span class='error'>Error in loadSmallRnaRun(file.path(path, "bcbio"), "country"): YAML project summary missing /Users/lpantano/repos/hbc/bcbioSmallRna/inst/extra/bcbio/project-summary.yaml</span></div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>

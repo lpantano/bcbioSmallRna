@@ -29,13 +29,16 @@ bcbSmallCluster(bcb, color = NULL)
 Plot size distribution of small RNA-seq data.
 }
 \examples{
+library(DEGreport)
 data(sbcb)
 bcbSmallSize(sbcb, color = "country")
 bcbSmallSizeDist(sbcb, color = "country")
 bcbSmallMicro(sbcb, color = "country")
 bcbSmallCluster(sbcb, color = "country")
-bcbSmallPCA(sbcb, minAverage=8)
-bcbSmallPCA(sbcb, type = "cluster", minAverage = 8)
+data <- bcbSmallPCA(sbcb, minAverage=8)
+degPCA(data[["counts"]], data[["annotation"]], condition = "country")
+data <- bcbSmallPCA(sbcb, type = "cluster", minAverage = 8)
+degPCA(data[["counts"]], data[["annotation"]], condition = "country")
 }
 \author{
 Lorena Pantano, Michael Steinbaugh

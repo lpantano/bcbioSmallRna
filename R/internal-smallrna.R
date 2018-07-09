@@ -100,7 +100,7 @@
     clus_rlog <- .normalize(clus_ma, col_data, max_samples = max_samples)
     SummarizedExperiment(assays = SimpleList(
         raw = clus_ma,
-        rlog = clus_rlog),
+        log = clus_rlog),
         colData = col_data,
         rowData = row_data,
         metadata = list(stats = reads_stats))
@@ -111,7 +111,7 @@
         clus_rlog <- ma %>%
             DESeqDataSetFromMatrix(., colData = col_data, design = ~1) %>%
             estimateSizeFactors %>%
-            rlog %>% assay
+            varianceStabilizingTransformation %>% assay
     }else{
         clus_rlog <- voom(ma, plot = FALSE)[["E"]]
     }

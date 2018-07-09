@@ -222,7 +222,7 @@ bcbSmallPCA <- function(bcb, type = "mirna",
     if (is.null(columns))
         columns <- metadata(bcb)[["interesting_groups"]]
     counts <- experiments(bcb)[[type]] %>%
-        assays %>% .[["rlog"]] %>%
+        assays %>% .[["log"]] %>%
         .[rowMeans(.[]) > minAverage, ]
     annotation_col <- experiments(bcb)[[type]] %>%
         colData %>%

@@ -1,0 +1,106 @@
+---
+title: "Browsing the elements of the object"
+shorttitle: "Most important methods"
+author: "Lorena Pantano"
+date: "`r BiocStyle::doc_date()`"
+package: "`r BiocStyle::pkg_ver('bcbioSmallRna')`"
+abstract: >
+  bcbioSmallRna package version: `r packageVersion("bcbioSmallRna")`
+output:
+  rmarkdown::html_document:
+    highlight: pygments
+    toc: true
+    fig_width: 5
+vignette: >
+  %\VignetteIndexEntry{Browsing the elements of the object}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding[utf8]{inputenc}
+  %\VignetteKeywords{Quality Control, Visualization, smallRNASeq, ReportWriting}
+---
+
+```{r aes, results='hide'}
+library(knitr)
+library(ggplot2)
+
+# Set seed for reproducibility
+set.seed(1454944673L)
+
+library(BiocStyle)
+knitr::opts_chunk$set(tidy=FALSE,
+                      dev="png",
+                      message=FALSE, error=FALSE,
+                      warning=TRUE)
+
+theme_set(
+    theme_light(base_size = 11L))
+theme_update(
+    legend.justification = "center",
+    legend.position = "bottom")
+```
+
+```{r setup, message=FALSE}
+library(isomiRs)
+library(DEGreport)
+library(bcbioSmallRna)
+
+data(sbcb)
+# bcbioSmallRnaDataSet
+bcb <- sbcb
+```
+
+# Get count matrix
+
+You can get all the count matrix with the method `mirna`, `isomir`, `cluster`:
+
+```{r counts}
+# for miRNAs
+head(mirna(bcb))
+# for clusters
+head(cluster(bcb))
+# for isomir
+head(isomir(bcb))
+```
+
+By default this is the raw count data, however you can access a pre-computed
+normalized data using the second positional parameter `log`:
+ 
+```{r normalized}
+head(mirna(bcb, "log"))
+```
+
+# Metrics
+
+There are some important metris stored in the object that can be gotten with
+the following methods:
+ 
+## Adapter removal
+
+These section shows how to get general stats for the adapter removal step.
+
+To get the numbers of adapters removed at each position:
+
+```{r adapter-by-position}
+head(adapter(bcb)[["reads_by_pos"]])
+```
+
+As well, the total reads with adapter can be seen with:
+
+```{r adapter-total}
+adapter(bcb)[["reads_by_sample"]]
+```
+
+## General metrics
+
+All the metrics performed by bcbio can be seen with:
+
+```{r all-metrics}
+metrics(bcb)
+```
+
+
+# Session 
+
+```{r, results='markup'}
+devtools::session_info()
+```
+
