@@ -83,6 +83,7 @@ loadSmallRnaRun <- function(
         function(x) x[["description"]],
         character(1L)) %>% sort %>%
         intersect(., rownames(col_data))
+    col_data <- col_data[intersect(sample_names, rownames(col_data)),]
     if (length(sample_names) == 0){
         stop("No overlap between metadata rownames and files in final bcbio folder.")
     }
