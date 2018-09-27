@@ -18,7 +18,7 @@
 #' @importFrom dplyr select mutate mutate_if filter left_join right_join
 #'                   arrange "%>%"
 #'                   bind_rows bind_cols mutate_all summarise group_by
-#'                   enquo inner_join
+#'                   enquo inner_join ungroup
 #' @importFrom circlize colorRamp2
 #' @importFrom RColorBrewer brewer.pal
 #' @importFrom janitor remove_empty

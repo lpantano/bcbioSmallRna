@@ -3,7 +3,7 @@ Title: small RNA-Seq Utilities
 Description: Quality control and differential expression for bcbio-nextgen
     small RNA-seq experiments.
 Version: 0.0.1
-Date: 2018-07-09
+Date: 2018-09-27
 Authors@R: c(
     person("Lorena", "Pantano",
            email = "lorena.pantano@gmail.com",
@@ -71,4 +71,4 @@ Remotes:
     lpantano/DEGreport,
     lpantano/isomiRs
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 6.0.1.9000
+RoxygenNote: 6.1.0

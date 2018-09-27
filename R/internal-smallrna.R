@@ -38,11 +38,11 @@
 
 
 .choose_mapping <- function(mapping, priority){
-    class <- sapply(str_split(mapping, " ")[[1]], function(x){
-        which(x == priority)
+    class <- sapply(priority, function(x){
+        grep(x, mapping)
     }) %>% which.min() %>% names(.) %>% .[1L]
     if (is.null(class))
-        return(mapping)
+        return(NULL)
     class
 }
 
@@ -72,7 +72,7 @@
 .read_cluster_counts <- function(meta, col_data, max_samples){
     if (!file.exists(file.path(meta[["project_dir"]], "seqcluster")))
         return(NULL)
-    priority = c("miRNA", "tRNA", "repeat", "ncrna", "gene", "")
+    priority = c("miRNA", "tRNA", "repeat", "ncrna", "gene", "rRNA", "")
 
     clus <- file.path(meta[["project_dir"]],
                      "seqcluster",
@@ -83,11 +83,63 @@
                              "seqcluster",
                              "read_stats.tsv") %>%
         read.table(., header = FALSE, sep = "\t")
+
+    size_data <- file.path(meta[["project_dir"]],
+                           "seqcluster",
+                           "size_counts.tsv") %>%
+        read.table(., header = FALSE, sep = "\t")
+    size_data[["cluster"]] <- paste0("cluster:", size_data[["V4"]])
+    
     clus_ma <- clus[, 3L:ncol(clus)]
     row_data <- clus[,1L:2L]
     row_data[["cluster"]] <- paste0("cluster:", 1L:nrow(clus))
     row_data <- row_data %>%
         separate(!!sym("ann"), sep = "\\|", into = c("biotype", "names"))
+    row_data[["priority"]] <- sapply(row_data[["names"]],
+                                     .choose_mapping, priority)
+    row_data[["rna_id"]] <- apply(row_data[,c("priority", "names")],
+                                  1,
+                                  .clean_id)
+    row_data <- row_data[,c("cluster", "priority", "rna_id",
+                            "biotype", "names", "nloci")]
+    row.names(clus_ma) <- paste0("cluster:", 1L:nrow(clus))
+    clus_ma <- clus_ma[, row.names(col_data)]
+    clus_rlog <- .normalize(clus_ma, col_data, max_samples = max_samples)
+
+    size_data <- left_join(row_data, size_data, by = "cluster") %>% 
+        group_by(!!!sym("V1"), !!!sym("priority")) %>% 
+        summarise(counts = sum(!!!sym("V2"))) %>% 
+        ungroup() %>% 
+        mutate(pct = counts / sum(counts) * 100L) %>% 
+        dplyr::rename(size = "V1") %>% 
+        .[,c("size", "priority", "pct")]
+    
+    
+    SummarizedExperiment(assays = SimpleList(
+        raw = clus_ma,
+        log = clus_rlog),
+        colData = col_data,
+        rowData = row_data,
+        metadata = list(stats = reads_stats, size = size_data))
+}
+
+
+#' Load cluster data
+#'
+#' @keywords internal
+#' @rdname read_cluster_size
+#' @author Lorena Pantano
+#' @noRd
+#' @inheritParams read_smallrna_counts
+.read_cluster_size <- function(meta, col_data, max_samples){
+    if (!file.exists(file.path(meta[["project_dir"]], "seqcluster")))
+        return(NULL)
+    priority = c("miRNA", "tRNA", "repeat", "ncrna", "gene", "")
+    
+    clus <- file.path(meta[["project_dir"]],
+                      "seqcluster",
+                      "size_counts.tsv") %>%
+        read.table(., header = FALSE, sep = "\t")
     row_data[["priority"]] <- sapply(row_data[["biotype"]],
                                      .choose_mapping, priority)
     row_data[["rna_id"]] <- apply(row_data[,c("priority", "names")],

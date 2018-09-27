@@ -25,12 +25,12 @@
 #' @return [bcbioSmallRnaDataSet].
 #' @examples
 #' path <- system.file("extra", package="bcbioSmallRna")
-#' bcb <- loadSmallRnaRun(file.path(path, "bcbio"), "country")
+#' sbcb <- loadSmallRnaRun(file.path(path, "bcbio", "2018-02-21_samples"), "country")
 #' @importFrom yaml yaml.load_file
 #' @export
 loadSmallRnaRun <- function(
     projectDir = "date-final",
-    interestingGroups = "description",
+    interestingGroups = "sample",
     maxSamples = 50,
     dataDir = NULL,
     colData = NULL,

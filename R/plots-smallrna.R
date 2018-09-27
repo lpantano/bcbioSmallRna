@@ -31,7 +31,7 @@ bcbSmallSize <- function(bcb, color = NULL) {
     info[[color]] <- as.factor(info[[color]])
     if (!("reads_before_trimming" %in% colnames(info)))
         info[["reads_before_trimming"]] <- info[["total"]]
-    info[["pct"]] <- info[["total"]] / info[["reads_before_trimming"]]
+    info[["pct"]] <- info[["total"]] / info[["reads_before_trimming"]] * 100L
     m <-  metrics(bcb)
     m[["longest_sequence"]] <- m[["sequence_length"]] %>%
         gsub(".*-", "", .) %>%

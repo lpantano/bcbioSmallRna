@@ -148,6 +148,13 @@ See example:
 [![IMAGE ALT TEXT](http://i.makeagif.com/media/7-03-2016/M0GjW2.gif)](https://youtu.be/Zjzte8n2-Sg "Example")
 
 
+```{r plot_srna_size_cluster, fig.width=8, fig.cap="Proportion of reads maaping to different small RNA molecules."}
+metadata(experiments(bcb)[["cluster"]])[["size"]] %>% 
+    ggplot(aes(x = size, y = pct, fill = priority)) +
+    geom_bar(stat = "identity", position = "dodge")
+```
+
+
 ```{r plot_srna_clusters, fig.width=6, fig.height=8, fig.cap="Reads kept after each filering step(top left). Proportion of sequences detected (top right). SmallRNA proportions (bottom)."}
 bcbSmallCluster(bcb)
 ```

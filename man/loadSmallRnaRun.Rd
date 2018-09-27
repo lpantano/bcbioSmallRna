@@ -5,7 +5,7 @@
 \title{Load small RNA-seq bcbio-nextgen run}
 \usage{
 loadSmallRnaRun(projectDir = "date-final",
-  interestingGroups = "description", maxSamples = 50, dataDir = NULL,
+  interestingGroups = "sample", maxSamples = 50, dataDir = NULL,
   colData = NULL, ...)
 }
 \arguments{
@@ -41,7 +41,7 @@ run directory as a remote connection over
 }
 \examples{
 path <- system.file("extra", package="bcbioSmallRna")
-bcb <- loadSmallRnaRun(file.path(path, "bcbio"), "country")
+sbcb <- loadSmallRnaRun(file.path(path, "bcbio", "2018-02-21_samples"), "country")
 }
 \author{
 Michael Steinbaugh, Lorena Pantano

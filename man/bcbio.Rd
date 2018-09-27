@@ -10,7 +10,8 @@
 \usage{
 \S4method{bcbio}{bcbioSmallRnaDataSet}(object, type = "counts")
 
-\S4method{bcbio}{bcbioSmallRnaDataSet}(object, type = "counts") <- value
+\S4method{bcbio}{bcbioSmallRnaDataSet}(object,
+  type = "counts") <- value
 }
 \arguments{
 \item{object}{Object.}
