@@ -16,8 +16,7 @@ This is an [R][] package.
 ### [Bioconductor][] method
 
 ```r
-source("https://bioconductor.org/biocLite.R")
-biocLite("lpantano/bcbioSmallRna")
+BiocManager("lpantano/bcbioSmallRna")
 ```
 
 ### [devtools][] method

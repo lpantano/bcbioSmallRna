@@ -3,7 +3,7 @@ Title: small RNA-Seq Utilities
 Description: Quality control and differential expression for bcbio-nextgen
     small RNA-seq experiments.
 Version: 0.0.1
-Date: 2018-09-27
+Date: 2018-10-01
 Authors@R: c(
     person("Lorena", "Pantano",
            email = "lorena.pantano@gmail.com",
@@ -25,9 +25,8 @@ biocViews:
 URL:
     https://github.com/lpantano/bcbiosRnaseq
 BugReports: https://github.com/lpantano/bcbiosRnaseq/issues
-Depends: R (>= 3.4.0)
+Depends: R (>= 3.5.0)
 License: MIT + file LICENSE
-Encoding: UTF-8
 LazyData: true
 Imports:
     Biobase,
@@ -64,7 +63,7 @@ Imports:
     yaml
 Suggests:
     BiocStyle,
-    testthat,
+    knitr,
     rmarkdown,
     testthat
 Remotes:
@@ -72,3 +71,5 @@ Remotes:
     lpantano/isomiRs
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 6.1.0
+VignetteBuilder: knitr
+Encoding: UTF-8

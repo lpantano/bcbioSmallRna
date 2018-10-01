@@ -1,0 +1,154 @@
+details:
+- algorithm:
+    adapters:
+    - TGGAATTCTCGGGTGC
+    aligner: star
+    expression_caller:
+    - seqcluster
+    species: hsa
+  analysis: smallRNA-seq
+  description: ERS185470
+  files:
+  - ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR204/ERR204777/ERR204777.fastq.gz
+  genome_build: hg19
+  metadata:
+    laboratory: 5
+    population: CEU
+- algorithm:
+    adapters:
+    - TGGAATTCTCGGGTGC
+    aligner: star
+    expression_caller:
+    - seqcluster
+    species: hsa
+  analysis: smallRNA-seq
+  description: ERS185403
+  files:
+  - ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR187/ERR187558/ERR187558.fastq.gz
+  genome_build: hg19
+  metadata:
+    laboratory: 1
+    population: GBR
+- algorithm:
+    adapters:
+    - TGGAATTCTCGGGTGC
+    aligner: star
+    expression_caller:
+    - seqcluster
+    species: hsa
+  analysis: smallRNA-seq
+  description: ERS185400
+  files:
+  - ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR187/ERR187777/ERR187777.fastq.gz
+  genome_build: hg19
+  metadata:
+    laboratory: 7
+    population: YRI
+- algorithm:
+    adapters:
+    - TGGAATTCTCGGGTGC
+    aligner: star
+    expression_caller:
+    - seqcluster
+    species: hsa
+  analysis: smallRNA-seq
+  description: ERS185125
+  files:
+  - ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR187/ERR187911/ERR187911.fastq.gz
+  genome_build: hg19
+  metadata:
+    laboratory: 1
+    population: TSI
+- algorithm:
+    adapters:
+    - TGGAATTCTCGGGTGC
+    aligner: star
+    expression_caller:
+    - seqcluster
+    species: hsa
+  analysis: smallRNA-seq
+  description: ERS185102
+  files:
+  - ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR187/ERR187864/ERR187864.fastq.gz
+  genome_build: hg19
+  metadata:
+    laboratory: 3
+    population: CEU
+- algorithm:
+    adapters:
+    - TGGAATTCTCGGGTGC
+    aligner: star
+    expression_caller:
+    - seqcluster
+    species: hsa
+  analysis: smallRNA-seq
+  description: ERS185252
+  files:
+  - ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR187/ERR187506/ERR187506.fastq.gz
+  genome_build: hg19
+  metadata:
+    laboratory: 4
+    population: FIN
+- algorithm:
+    adapters:
+    - TGGAATTCTCGGGTGC
+    aligner: star
+    expression_caller:
+    - seqcluster
+    species: hsa
+  analysis: smallRNA-seq
+  description: ERS185036
+  files:
+  - ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR187/ERR187913/ERR187913.fastq.gz
+  genome_build: hg19
+  metadata:
+    laboratory: 1
+    population: FIN
+- algorithm:
+    adapters:
+    - TGGAATTCTCGGGTGC
+    aligner: star
+    expression_caller:
+    - seqcluster
+    species: hsa
+  analysis: smallRNA-seq
+  description: ERS185068
+  files:
+  - ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR187/ERR187605/ERR187605.fastq.gz
+  genome_build: hg19
+  metadata:
+    laboratory: 4
+    population: YRI
+- algorithm:
+    adapters:
+    - TGGAATTCTCGGGTGC
+    aligner: star
+    expression_caller:
+    - seqcluster
+    species: hsa
+  analysis: smallRNA-seq
+  description: ERS185082
+  files:
+  - ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR187/ERR187883/ERR187883.fastq.gz
+  genome_build: hg19
+  metadata:
+    laboratory: 5
+    population: TSI
+- algorithm:
+    adapters:
+    - TGGAATTCTCGGGTGC
+    aligner: star
+    expression_caller:
+    - seqcluster
+    species: hsa
+  analysis: smallRNA-seq
+  description: ERS185473
+  files:
+  - ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR187/ERR187620/ERR187620.fastq.gz
+  genome_build: hg19
+  metadata:
+    laboratory: 1
+    population: GBR
+fc_name: geu_tiny
+upload:
+  dir: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final

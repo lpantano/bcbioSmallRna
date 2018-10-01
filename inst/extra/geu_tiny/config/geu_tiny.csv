@@ -1,0 +1,11 @@
+samplenames,description,population,laboratory
+ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR187/ERR187864/ERR187864.fastq.gz,ERS185102,CEU,3
+ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR204/ERR204777/ERR204777.fastq.gz,ERS185470,CEU,5
+ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR187/ERR187913/ERR187913.fastq.gz,ERS185036,FIN,1
+ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR187/ERR187506/ERR187506.fastq.gz,ERS185252,FIN,4
+ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR187/ERR187620/ERR187620.fastq.gz,ERS185473,GBR,1
+ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR187/ERR187558/ERR187558.fastq.gz,ERS185403,GBR,1
+ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR187/ERR187883/ERR187883.fastq.gz,ERS185082,TSI,5
+ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR187/ERR187911/ERR187911.fastq.gz,ERS185125,TSI,1
+ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR187/ERR187777/ERR187777.fastq.gz,ERS185400,YRI,7
+ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR187/ERR187605/ERR187605.fastq.gz,ERS185068,YRI,4

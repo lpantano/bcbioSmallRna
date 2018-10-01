@@ -19,17 +19,16 @@ vignette: >
 ---
 
 ```{r aes, results='hide'}
-library(knitr)
-library(ggplot2)
-
-# Set seed for reproducibility
-set.seed(1454944673L)
-
 library(BiocStyle)
 knitr::opts_chunk$set(tidy=FALSE,
                       dev="png",
                       message=FALSE, error=FALSE,
                       warning=TRUE)
+library(knitr)
+library(ggplot2)
+
+# Set seed for reproducibility
+set.seed(1454944673L)
 
 theme_set(
     theme_light(base_size = 11L))

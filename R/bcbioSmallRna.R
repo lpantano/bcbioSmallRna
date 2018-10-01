@@ -33,7 +33,7 @@
 #' @importFrom stringr str_detect str_match str_split str_replace_all
 #' @importFrom readr read_lines read_csv read_tsv read_delim
 #' @importFrom rlang sym dots_values
-#' @importFrom utils read.table capture.output download.file
+#' @importFrom utils read.table capture.output download.file read.csv
 "_PACKAGE"
 
 globalVariables(".")

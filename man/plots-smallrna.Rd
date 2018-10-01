@@ -31,14 +31,14 @@ Plot size distribution of small RNA-seq data.
 \examples{
 library(DEGreport)
 data(sbcb)
-bcbSmallSize(sbcb, color = "country")
-bcbSmallSizeDist(sbcb, color = "country")
-bcbSmallMicro(sbcb, color = "country")
-bcbSmallCluster(sbcb, color = "country")
+bcbSmallSize(sbcb, color = "population")
+bcbSmallSizeDist(sbcb, color = "population")
+bcbSmallMicro(sbcb, color = "population")
+bcbSmallCluster(sbcb, color = "population")
 data <- bcbSmallPCA(sbcb, minAverage=8)
-degPCA(data[["counts"]], data[["annotation"]], condition = "country")
+degPCA(data[["counts"]], data[["annotation"]], condition = "population")
 data <- bcbSmallPCA(sbcb, type = "cluster", minAverage = 8)
-degPCA(data[["counts"]], data[["annotation"]], condition = "country")
+degPCA(data[["counts"]], data[["annotation"]], condition = "population")
 }
 \author{
 Lorena Pantano, Michael Steinbaugh

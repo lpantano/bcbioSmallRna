@@ -25,7 +25,8 @@
 #' @return [bcbioSmallRnaDataSet].
 #' @examples
 #' path <- system.file("extra", package="bcbioSmallRna")
-#' sbcb <- loadSmallRnaRun(file.path(path, "bcbio", "2018-02-21_samples"), "country")
+#' sbcb <- loadSmallRnaRun(file.path(path, "geu_tiny", "final",
+#'                                   "2018-09-29_geu_tiny"), "population")
 #' @importFrom yaml yaml.load_file
 #' @export
 loadSmallRnaRun <- function(
@@ -60,15 +61,18 @@ loadSmallRnaRun <- function(
 
     # Project summary YAML ====
     yaml_file <- file.path(project_dir, "project-summary.yaml")
-    if (!file.exists(yaml_file)) {
-        stop("YAML project summary missing ", yaml_file)
+    yaml <- yaml.load_file(yaml_file)
+    csv_file <- file.path(project_dir, "metadata.csv")
+    if (!file.exists(csv_file)) {
+        stop("CSV metadata file is missing ", csv_file)
     }
     message("Reading project summary YAML")
-    yaml <- yaml.load_file(yaml_file)
-
+    csv <- read.csv(csv_file, row.names = 1L, check.names = FALSE)
+    csv <- csv[,apply(!is.na(csv), 2, all)]
+    
     # colData ====
     if (is.null(colData)){
-        col_data <- .yaml_metadata(yaml)
+        col_data <- csv
     }else{
         col_data <- as.data.frame(colData)
     }
@@ -78,11 +82,7 @@ loadSmallRnaRun <- function(
 
     # Sample names ====
     # Obtain the samples (and their directories) from the YAML
-    sample_names <- vapply(
-        yaml[["samples"]],
-        function(x) x[["description"]],
-        character(1L)) %>% sort %>%
-        intersect(., rownames(col_data))
+    sample_names <- row.names(csv)
     col_data <- col_data[intersect(sample_names, rownames(col_data)),]
     if (length(sample_names) == 0){
         stop("No overlap between metadata rownames and files in final bcbio folder.")
@@ -94,25 +94,10 @@ loadSmallRnaRun <- function(
     }
     message(paste(length(sample_dirs), "samples detected"))
 
-
     # Genome ====
     # Use the genome build of the first sample to match
     genome_build <- yaml[["samples"]][[1L]][["genome_build"]]
     message(paste("Genome:", genome_build))
-
-    # Sequencing lanes ====
-    lane_pattern <- "_L(\\d{3})"
-    if (any(str_detect(sample_dirs, lane_pattern))) {
-        lanes <- str_match(names(sample_dirs), lane_pattern) %>%
-            .[, 2L] %>%
-            unique %>%
-            length
-        message(paste(
-            lanes, "sequencing lane detected", "(technical replicates)"))
-    } else {
-        # TODO Check that downstream functions don't use NULL
-        lanes <- 1L
-    }
 
     # Sample metrics ====
     metrics <- .yaml_metrics(yaml) %>%
@@ -137,9 +122,7 @@ loadSmallRnaRun <- function(
         run_date = run_date,
         interesting_groups = interestingGroups,
         genome_build = genome_build,
-        lanes = lanes,
-        yaml_file = yaml_file,
-        yaml = yaml,
+        csv_file = csv_file,
         metrics = metrics,
         data_versions = data_versions,
         programs = programs,
@@ -167,13 +150,18 @@ loadSmallRnaRun <- function(
 
     # SummarizedExperiment for clusters ====
     cluster <- .read_cluster_counts(metadata, col_data, max_samples = maxSamples)
+    cluster_sequences <- .read_cluster_seqs_counts(metadata, col_data,
+                                                   rowData(cluster),
+                                                   max_samples = maxSamples)
     # SummarizedExperiment for mirdeep2 ====
 
     # MultiAssayExperiment ====
-    exps <- list(mirna = mir, isomirs = iso, cluster = cluster)
+    exps <- list(mirna = mir, isomirs = iso,
+                 cluster = cluster, cluster_seqs = cluster_sequences)
     exps <- exps[sapply(exps, function(x) !is.null(x))]
-    se <- .multiassay_experiment(exps, col_data, metadata)
-
+    se <- MultiAssayExperiment(experiments = exps,
+                               colData = col_data,
+                               metadata = metadata)
     # bcbioSmallRnaDataSet ====
     bcb <- new("bcbioSmallRnaDataSet", se)
     bcbio(bcb, "isomirs") <- mirna

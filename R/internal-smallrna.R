@@ -79,6 +79,7 @@
                      "counts.tsv") %>%
         read.table(., header = TRUE, sep = "\t",
                    row.names = 1L, check.names = FALSE)
+    
     reads_stats <- file.path(meta[["project_dir"]],
                              "seqcluster",
                              "read_stats.tsv") %>%
@@ -121,6 +122,44 @@
         colData = col_data,
         rowData = row_data,
         metadata = list(stats = reads_stats, size = size_data))
+}
+
+
+#' Load cluster data at sequence level
+#'
+#' @keywords internal
+#' @rdname read_cluster_counts
+#' @author Lorena Pantano
+#' @noRd
+#' @inheritParams read_smallrna_counts
+.read_cluster_seqs_counts <- function(meta, col_data, row_data, max_samples){
+    if (!file.exists(file.path(meta[["project_dir"]], "seqcluster")))
+        return(NULL)
+    priority = c("miRNA", "tRNA", "repeat", "ncrna", "gene", "rRNA", "")
+    
+    clus <- file.path(meta[["project_dir"]],
+                      "seqcluster",
+                      "counts_sequence.tsv") %>%
+        read.table(., header = TRUE, sep = "\t", check.names = FALSE)
+    names(clus)[3] <- "sequence"
+
+    clus_ma <- clus[, 4L:ncol(clus)]
+    clus[["id"]] <- paste0("cluster:", clus[["id"]])
+    row_data <- left_join(clus[,c(1L,3L)]  %>% 
+                              dplyr::rename(cluster = "id"),
+                          as.data.frame(row_data),
+                          by = "cluster")
+    
+    row.names(clus_ma) <- paste0("sequence:", 1L:nrow(clus))
+    clus_ma <- clus_ma[, row.names(col_data)]
+    row.names(row_data) <- row.names(clus_ma)
+    clus_rlog <- .normalize(clus_ma, col_data, max_samples = max_samples)
+    
+    SummarizedExperiment(assays = SimpleList(
+        raw = clus_ma,
+        log = clus_rlog),
+        colData = col_data,
+        rowData = row_data)
 }
 
 
@@ -168,6 +207,21 @@
         clus_rlog <- voom(ma, plot = FALSE)[["E"]]
     }
     return(clus_rlog)
+}
+
+.read_cluster_sequences <- function(meta, row_data){
+    
+    clus_seqs <- file.path(meta[["project_dir"]],
+                           "seqcluster",
+                           "counts_sequences.tsv")
+    if (!file.exists(clus_seqs)){
+        return(NULL)
+    }
+    ma <- read.table(clus_seqs, header = TRUE, sep = "\t",
+                     row.names = 1L, check.names = FALSE)
+    ma[["cluster"]] <- paste0("cluster:", ma[["id"]])
+    
+    left_join(row_data, ma, by = "cluster")
 }
 
 #' Read adapter removal statistics
