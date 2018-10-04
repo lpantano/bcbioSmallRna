@@ -85,7 +85,7 @@
       <h1>Browsing the elements of the object</h1>
                         <h4 class="author">Lorena Pantano</h4>
             
-            <h4 class="date">9 July 2018</h4>
+            <h4 class="date">4 October 2018</h4>
       
       <small class="dont-index">Source: <a href="https://github.com/lpantano/bcbiosRnaseq/blob/master/vignettes/browsing-object.Rmd"><code>vignettes/browsing-object.Rmd</code></a></small>
       <div class="hidden name"><code>browsing-object.Rmd</code></div>
@@ -98,17 +98,16 @@
       <p>bcbioSmallRna package version: 0.0.1</p>
     </div>
     
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(knitr)
-<span class="kw">library</span>(ggplot2)
-
-<span class="co"># Set seed for reproducibility</span>
-<span class="kw">set.seed</span>(1454944673L)
-
-<span class="kw">library</span>(BiocStyle)
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(BiocStyle)
 knitr<span class="op">::</span>opts_chunk<span class="op">$</span><span class="kw">set</span>(<span class="dt">tidy=</span><span class="ot">FALSE</span>,
                       <span class="dt">dev=</span><span class="st">"png"</span>,
                       <span class="dt">message=</span><span class="ot">FALSE</span>, <span class="dt">error=</span><span class="ot">FALSE</span>,
                       <span class="dt">warning=</span><span class="ot">TRUE</span>)
+<span class="kw">library</span>(knitr)
+<span class="kw">library</span>(ggplot2)
+
+<span class="co"># Set seed for reproducibility</span>
+<span class="kw">set.seed</span>(1454944673L)
 
 <span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/theme_get">theme_set</a></span>(
     <span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/ggtheme">theme_light</a></span>(<span class="dt">base_size =</span> 11L))
@@ -216,312 +215,92 @@ bcb &lt;-<span class="st"> </span>sbcb</code></pre></div>
 <div id="session" class="section level1">
 <h1 class="hasAnchor">
 <a href="#session" class="anchor"></a>Session</h1>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">devtools<span class="op">::</span><span class="kw"><a href="http://www.rdocumentation.org/packages/devtools/topics/session_info">session_info</a></span>()</code></pre></div>
-<pre><code>##  setting  value                       
-##  version  R version 3.4.4 (2018-03-15)
-##  system   x86_64, darwin15.6.0        
-##  ui       X11                         
-##  language (EN)                        
-##  collate  en_US.UTF-8                 
-##  tz       America/New_York            
-##  date     2018-07-09                  
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">sessionInfo</span>()</code></pre></div>
+<pre><code>## R version 3.5.1 (2018-07-02)
+## Platform: x86_64-apple-darwin15.6.0 (64-bit)
+## Running under: macOS High Sierra 10.13.3
 ## 
-##  package              * version    date      
-##  acepack                1.4.1      2016-10-29
-##  annotate               1.56.2     2018-03-22
-##  AnnotationDbi          1.40.0     2017-10-31
-##  assertive.base         0.0-7      2016-12-30
-##  assertive.sets         0.0-3      2016-12-30
-##  assertthat             0.2.0      2017-04-11
-##  backports              1.1.2      2017-12-13
-##  base                 * 3.4.4      2018-03-15
-##  base64enc              0.1-3      2015-07-28
-##  bcbioSmallRna        * 0.0.1      2018-07-09
-##  bindr                  0.1.1.9000 2018-07-03
-##  bindrcpp               0.2.2.9000 2018-07-03
-##  Biobase              * 2.38.0     2017-10-31
-##  BiocGenerics         * 0.24.0     2017-10-31
-##  BiocParallel           1.12.0     2017-10-31
-##  BiocStyle            * 2.6.1      2017-11-30
-##  bit                    1.1-14     2018-05-29
-##  bit64                  0.9-7      2017-05-08
-##  bitops                 1.0-6      2013-08-17
-##  blob                   1.1.1      2018-03-25
-##  caTools                1.17.1     2014-09-10
-##  checkmate              1.8.5      2017-10-24
-##  circlize               0.4.4      2018-06-10
-##  cli                    1.0.0      2017-11-05
-##  cluster                2.0.7-1    2018-04-09
-##  colorspace             1.3-2      2016-12-14
-##  commonmark             1.5        2018-04-28
-##  compiler               3.4.4      2018-03-15
-##  ComplexHeatmap         1.17.1     2017-10-25
-##  ConsensusClusterPlus   1.42.0     2017-10-31
-##  cowplot                0.9.2      2017-12-17
-##  crayon                 1.3.4      2017-09-16
-##  data.table             1.11.4     2018-05-27
-##  datasets             * 3.4.4      2018-03-15
-##  DBI                    1.0.0      2018-05-02
-##  DEGreport            * 1.17.3     2018-07-09
-##  DelayedArray         * 0.4.1      2017-11-07
-##  desc                   1.2.0      2018-05-01
-##  DESeq2                 1.18.1     2017-11-12
-##  devtools               1.13.5     2018-02-18
-##  digest                 0.6.15     2018-01-28
-##  DiscriMiner          * 0.1-29     2013-11-15
-##  dplyr                  0.7.6      2018-06-29
-##  edgeR                  3.20.9     2018-02-27
-##  evaluate               0.10.1     2017-06-24
-##  foreign                0.8-70     2018-04-23
-##  Formula                1.2-3      2018-05-03
-##  fs                     1.2.2      2018-03-21
-##  gdata                  2.18.0     2017-06-06
-##  genefilter             1.60.0     2017-10-31
-##  geneplotter            1.56.0     2017-10-31
-##  GenomeInfoDb         * 1.14.0     2017-10-31
-##  GenomeInfoDbData       1.0.0      2018-06-21
-##  GenomicRanges        * 1.30.3     2018-02-26
-##  GetoptLong             0.1.7      2018-06-10
-##  GGally                 1.4.0      2018-05-17
-##  ggdendro               0.1-20     2016-04-27
-##  ggplot2              * 3.0.0      2018-07-03
-##  ggrepel                0.8.0      2018-05-09
-##  GlobalOptions          0.1.0      2018-06-09
-##  glue                   1.2.0      2017-10-29
-##  gplots                 3.0.1      2016-03-30
-##  graphics             * 3.4.4      2018-03-15
-##  grDevices            * 3.4.4      2018-03-15
-##  grid                   3.4.4      2018-03-15
-##  gridExtra              2.3        2017-09-09
-##  gtable                 0.2.0      2016-02-26
-##  gtools                 3.8.1      2018-06-26
-##  Hmisc                  4.1-1      2018-01-03
-##  hms                    0.4.2      2018-03-10
-##  htmlTable              1.12       2018-05-26
-##  htmltools              0.3.6      2017-04-28
-##  htmlwidgets            1.2        2018-04-19
-##  httpuv                 1.4.3      2018-05-10
-##  IRanges              * 2.12.0     2017-10-31
-##  isomiRs              * 1.9.1      2018-07-09
-##  janitor                1.0.0      2018-03-22
-##  KernSmooth             2.23-15    2015-06-29
-##  knitr                * 1.20       2018-02-20
-##  later                  0.7.2      2018-05-01
-##  lattice                0.20-35    2017-03-25
-##  latticeExtra           0.6-28     2016-02-09
-##  lazyeval               0.2.1      2017-10-29
-##  limma                  3.34.9     2018-02-22
-##  locfit                 1.5-9.1    2013-04-20
-##  logging                0.7-103    2013-04-12
-##  magrittr               1.5        2014-11-22
-##  MASS                   7.3-50     2018-04-30
-##  Matrix                 1.2-14     2018-04-09
-##  matrixStats          * 0.53.1     2018-02-11
-##  memoise                1.1.0      2017-04-21
-##  methods              * 3.4.4      2018-03-15
-##  mime                   0.5        2016-07-07
-##  mnormt                 1.5-5      2016-10-15
-##  MultiAssayExperiment   1.4.9      2018-01-08
-##  munsell                0.5.0      2018-06-12
-##  nlme                   3.1-137    2018-04-07
-##  nnet                   7.3-12     2016-02-02
-##  Nozzle.R1              1.1-1      2013-05-15
-##  parallel             * 3.4.4      2018-03-15
-##  pillar                 1.2.3      2018-05-25
-##  pkgconfig              2.0.1      2017-03-21
-##  pkgdown                1.1.0      2018-06-02
-##  plyr                   1.8.4      2016-06-08
-##  promises               1.0.1      2018-04-13
-##  psych                  1.8.4      2018-05-06
-##  purrr                  0.2.5      2018-05-29
-##  R6                     2.2.2      2017-06-17
-##  RColorBrewer           1.1-2      2014-12-07
-##  Rcpp                   0.12.17    2018-05-18
-##  RCurl                  1.95-4.10  2018-01-04
-##  readr                  1.1.1      2017-05-16
-##  reshape                0.8.7      2017-08-06
-##  reshape2               1.4.3      2017-12-11
-##  rjson                  0.2.20     2018-06-08
-##  rlang                  0.2.1      2018-05-30
-##  rmarkdown              1.10       2018-06-11
-##  roxygen2               6.0.1.9000 2017-10-31
-##  rpart                  4.1-13     2018-02-23
-##  rprojroot              1.3-2      2018-01-03
-##  RSQLite                2.1.1      2018-05-06
-##  rstudioapi             0.7        2017-09-07
-##  S4Vectors            * 0.16.0     2017-10-31
-##  scales                 0.5.0      2017-08-24
-##  shape                  1.4.4      2018-02-07
-##  shiny                  1.1.0      2018-05-17
-##  shinydashboard         0.7.0      2018-03-21
-##  splines                3.4.4      2018-03-15
-##  stats                * 3.4.4      2018-03-15
-##  stats4               * 3.4.4      2018-03-15
-##  stringi                1.2.3      2018-06-12
-##  stringr                1.3.1      2018-05-10
-##  SummarizedExperiment * 1.8.1      2017-12-19
-##  survival               2.42-3     2018-04-16
-##  tibble                 1.4.2      2018-01-22
-##  tidyr                  0.8.1      2018-05-18
-##  tidyselect             0.2.4      2018-02-26
-##  tools                  3.4.4      2018-03-15
-##  utf8                   1.1.3      2018-01-03
-##  utils                * 3.4.4      2018-03-15
-##  withr                  2.1.2      2018-03-15
-##  XML                    3.98-1.11  2018-04-16
-##  xml2                   1.2.0      2018-01-24
-##  xtable                 1.8-2      2016-02-05
-##  XVector                0.18.0     2017-10-31
-##  yaml                   2.1.19     2018-05-01
-##  zlibbioc               1.24.0     2017-10-31
-##  source                             
-##  cran (@1.4.1)                      
-##  Bioconductor                       
-##  Bioconductor                       
-##  cran (@0.0-7)                      
-##  cran (@0.0-3)                      
-##  CRAN (R 3.4.0)                     
-##  cran (@1.1.2)                      
-##  local                              
-##  cran (@0.1-3)                      
-##  local (lpantano/bcbioSmallRna@NA)  
-##  Github (krlmlr/bindr@b6e6fd6)      
-##  Github (krlmlr/bindrcpp@bd5ae73)   
-##  cran (@2.38.0)                     
-##  cran (@0.24.0)                     
-##  cran (@1.12.0)                     
-##  Bioconductor                       
-##  CRAN (R 3.4.4)                     
-##  CRAN (R 3.4.0)                     
-##  cran (@1.0-6)                      
-##  CRAN (R 3.4.4)                     
-##  cran (@1.17.1)                     
-##  cran (@1.8.5)                      
-##  CRAN (R 3.4.4)                     
-##  cran (@1.0.0)                      
-##  CRAN (R 3.4.4)                     
-##  CRAN (R 3.4.0)                     
-##  CRAN (R 3.4.4)                     
-##  local                              
-##  cran (@1.17.1)                     
-##  cran (@1.42.0)                     
-##  cran (@0.9.2)                      
-##  CRAN (R 3.4.1)                     
-##  cran (@1.11.4)                     
-##  local                              
-##  CRAN (R 3.4.4)                     
-##  Github (lpantano/DEGreport@3b615c7)
-##  cran (@0.4.1)                      
-##  CRAN (R 3.4.4)                     
-##  Bioconductor                       
-##  CRAN (R 3.4.3)                     
-##  cran (@0.6.15)                     
-##  cran (@0.1-29)                     
-##  cran (@0.7.6)                      
-##  cran (@3.20.9)                     
-##  cran (@0.10.1)                     
-##  CRAN (R 3.4.4)                     
-##  CRAN (R 3.4.4)                     
-##  CRAN (R 3.4.4)                     
-##  cran (@2.18.0)                     
-##  cran (@1.60.0)                     
-##  cran (@1.56.0)                     
-##  cran (@1.14.0)                     
-##  Bioconductor                       
-##  cran (@1.30.3)                     
-##  CRAN (R 3.4.4)                     
-##  cran (@1.4.0)                      
-##  CRAN (R 3.4.0)                     
-##  cran (@3.0.0)                      
-##  cran (@0.8.0)                      
-##  CRAN (R 3.4.4)                     
-##  cran (@1.2.0)                      
-##  cran (@3.0.1)                      
-##  local                              
-##  local                              
-##  local                              
-##  CRAN (R 3.4.1)                     
-##  CRAN (R 3.4.0)                     
-##  cran (@3.8.1)                      
-##  cran (@4.1-1)                      
-##  cran (@0.4.2)                      
-##  CRAN (R 3.4.4)                     
-##  cran (@0.3.6)                      
-##  CRAN (R 3.4.4)                     
-##  CRAN (R 3.4.4)                     
-##  cran (@2.12.0)                     
-##  Github (lpantano/isomiRs@67228e7)  
-##  cran (@1.0.0)                      
-##  CRAN (R 3.4.4)                     
-##  cran (@1.20)                       
-##  CRAN (R 3.4.4)                     
-##  CRAN (R 3.4.4)                     
-##  cran (@0.6-28)                     
-##  cran (@0.2.1)                      
-##  cran (@3.34.9)                     
-##  cran (@1.5-9.1)                    
-##  cran (@0.7-103)                    
-##  CRAN (R 3.4.0)                     
-##  CRAN (R 3.4.4)                     
-##  CRAN (R 3.4.4)                     
-##  CRAN (R 3.4.3)                     
-##  CRAN (R 3.4.0)                     
-##  local                              
-##  CRAN (R 3.4.0)                     
-##  cran (@1.5-5)                      
-##  cran (@1.4.9)                      
-##  CRAN (R 3.4.4)                     
-##  CRAN (R 3.4.4)                     
-##  CRAN (R 3.4.4)                     
-##  cran (@1.1-1)                      
-##  local                              
-##  CRAN (R 3.4.4)                     
-##  CRAN (R 3.4.0)                     
-##  CRAN (R 3.4.4)                     
-##  CRAN (R 3.4.0)                     
-##  CRAN (R 3.4.4)                     
-##  cran (@1.8.4)                      
-##  cran (@0.2.5)                      
-##  CRAN (R 3.4.0)                     
-##  CRAN (R 3.4.0)                     
-##  cran (@0.12.17)                    
-##  cran (@1.95-4.)                    
-##  CRAN (R 3.4.0)                     
-##  cran (@0.8.7)                      
-##  cran (@1.4.3)                      
-##  cran (@0.2.20)                     
-##  CRAN (R 3.4.4)                     
-##  CRAN (R 3.4.4)                     
-##  Github (klutometis/roxygen@bbf259d)
-##  CRAN (R 3.4.4)                     
-##  CRAN (R 3.4.3)                     
-##  CRAN (R 3.4.4)                     
-##  CRAN (R 3.4.1)                     
-##  cran (@0.16.0)                     
-##  CRAN (R 3.4.1)                     
-##  cran (@1.4.4)                      
-##  CRAN (R 3.4.4)                     
-##  CRAN (R 3.4.4)                     
-##  local                              
-##  local                              
-##  local                              
-##  CRAN (R 3.4.4)                     
-##  cran (@1.3.1)                      
-##  cran (@1.8.1)                      
-##  CRAN (R 3.4.4)                     
-##  cran (@1.4.2)                      
-##  cran (@0.8.1)                      
-##  cran (@0.2.4)                      
-##  local                              
-##  CRAN (R 3.4.3)                     
-##  local                              
-##  cran (@2.1.2)                      
-##  CRAN (R 3.4.4)                     
-##  CRAN (R 3.4.3)                     
-##  cran (@1.8-2)                      
-##  cran (@0.18.0)                     
-##  cran (@2.1.19)                     
-##  cran (@1.24.0)</code></pre>
+## Matrix products: default
+## BLAS: /Library/Frameworks/R.framework/Versions/3.5/Resources/lib/libRblas.0.dylib
+## LAPACK: /Library/Frameworks/R.framework/Versions/3.5/Resources/lib/libRlapack.dylib
+## 
+## locale:
+## [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
+## 
+## attached base packages:
+## [1] parallel  stats4    stats     graphics  grDevices utils     datasets 
+## [8] methods   base     
+## 
+## other attached packages:
+##  [1] bcbioSmallRna_0.0.1         DEGreport_1.17.5           
+##  [3] isomiRs_1.9.1               SummarizedExperiment_1.10.1
+##  [5] DelayedArray_0.6.5          BiocParallel_1.14.2        
+##  [7] matrixStats_0.54.0          Biobase_2.40.0             
+##  [9] GenomicRanges_1.32.6        GenomeInfoDb_1.16.0        
+## [11] IRanges_2.14.11             S4Vectors_0.18.3           
+## [13] BiocGenerics_0.26.0         DiscriMiner_0.1-29         
+## [15] ggplot2_3.0.0               knitr_1.20                 
+## [17] BiocStyle_2.8.2            
+## 
+## loaded via a namespace (and not attached):
+##   [1] assertive.base_0.0-7        colorspace_1.3-2           
+##   [3] rjson_0.2.20                rprojroot_1.3-2            
+##   [5] circlize_0.4.4              htmlTable_1.12             
+##   [7] XVector_0.20.0              ggdendro_0.1-20            
+##   [9] GlobalOptions_0.1.0         base64enc_0.1-3            
+##  [11] fs_1.2.6                    rstudioapi_0.7             
+##  [13] roxygen2_6.1.0              assertive.sets_0.0-3       
+##  [15] MultiAssayExperiment_1.6.0  ggrepel_0.8.0              
+##  [17] bit64_0.9-7                 fansi_0.3.0                
+##  [19] AnnotationDbi_1.42.1        xml2_1.2.0                 
+##  [21] splines_3.5.1               logging_0.7-103            
+##  [23] mnormt_1.5-5                geneplotter_1.58.0         
+##  [25] Formula_1.2-3               Nozzle.R1_1.1-1            
+##  [27] broom_0.5.0                 annotate_1.58.0            
+##  [29] cluster_2.0.7-1             readr_1.1.1                
+##  [31] compiler_3.5.1              backports_1.1.2            
+##  [33] assertthat_0.2.0            Matrix_1.2-14              
+##  [35] lazyeval_0.2.1              cli_1.0.0                  
+##  [37] limma_3.36.3                lasso2_1.2-19              
+##  [39] acepack_1.4.1               htmltools_0.3.6            
+##  [41] tools_3.5.1                 bindrcpp_0.2.2             
+##  [43] gtable_0.2.0                glue_1.3.0                 
+##  [45] GenomeInfoDbData_1.1.0      dplyr_0.7.6                
+##  [47] Rcpp_0.12.18                pkgdown_1.1.0              
+##  [49] gdata_2.18.0                nlme_3.1-137               
+##  [51] psych_1.8.4                 stringr_1.3.1              
+##  [53] gtools_3.8.1                XML_3.98-1.16              
+##  [55] edgeR_3.22.3                zlibbioc_1.26.0            
+##  [57] MASS_7.3-50                 scales_1.0.0               
+##  [59] hms_0.4.2                   RColorBrewer_1.1-2         
+##  [61] ComplexHeatmap_1.18.1       yaml_2.2.0                 
+##  [63] memoise_1.1.0               gridExtra_2.3              
+##  [65] rpart_4.1-13                reshape_0.8.7              
+##  [67] latticeExtra_0.6-28         stringi_1.2.4              
+##  [69] RSQLite_2.1.1               genefilter_1.62.0          
+##  [71] desc_1.2.0                  checkmate_1.8.5            
+##  [73] caTools_1.17.1.1            shape_1.4.4                
+##  [75] rlang_0.2.2                 pkgconfig_2.0.2            
+##  [77] commonmark_1.5              bitops_1.0-6               
+##  [79] evaluate_0.11               lattice_0.20-35            
+##  [81] purrr_0.2.5                 bindr_0.1.1                
+##  [83] htmlwidgets_1.2             cowplot_0.9.3              
+##  [85] bit_1.1-14                  tidyselect_0.2.4           
+##  [87] GGally_1.4.0                plyr_1.8.4                 
+##  [89] magrittr_1.5                DESeq2_1.20.0              
+##  [91] R6_2.2.2                    gplots_3.0.1               
+##  [93] Hmisc_4.1-1                 DBI_1.0.0                  
+##  [95] pillar_1.3.0                foreign_0.8-71             
+##  [97] withr_2.1.2                 survival_2.42-6            
+##  [99] RCurl_1.95-4.11             nnet_7.3-12                
+## [101] tibble_1.4.2                janitor_1.1.1              
+## [103] crayon_1.3.4                utf8_1.1.4                 
+## [105] KernSmooth_2.23-15          rmarkdown_1.10             
+## [107] GetoptLong_0.1.7            locfit_1.5-9.1             
+## [109] grid_3.5.1                  data.table_1.11.4          
+## [111] blob_1.1.1                  ConsensusClusterPlus_1.44.0
+## [113] digest_0.6.16               xtable_1.8-3               
+## [115] tidyr_0.8.1                 munsell_0.5.0</code></pre>
 </div>
   </div>
 

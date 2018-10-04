@@ -83,7 +83,7 @@ loadSmallRnaRun <- function(
     # Sample names ====
     # Obtain the samples (and their directories) from the YAML
     sample_names <- row.names(csv)
-    col_data <- col_data[intersect(sample_names, rownames(col_data)),]
+    col_data <- col_data[intersect(sample_names, rownames(col_data)),,drop=FALSE]
     if (length(sample_names) == 0){
         stop("No overlap between metadata rownames and files in final bcbio folder.")
     }
