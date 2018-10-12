@@ -41,8 +41,10 @@
     class <- sapply(priority, function(x){
         grep(x, mapping)
     }) %>% which.min() %>% names(.) %>% .[1L]
-    if (is.null(class))
-        return(NULL)
+    if (class=="" & mapping != "")
+        return("Other")
+    if (class=="")
+        return("non-annotated")
     class
 }
 
@@ -135,8 +137,7 @@
 .read_cluster_seqs_counts <- function(meta, col_data, row_data, max_samples){
     if (!file.exists(file.path(meta[["project_dir"]], "seqcluster")))
         return(NULL)
-    priority = c("miRNA", "tRNA", "repeat", "ncrna", "gene", "rRNA", "")
-    
+
     clus <- file.path(meta[["project_dir"]],
                       "seqcluster",
                       "counts_sequence.tsv") %>%

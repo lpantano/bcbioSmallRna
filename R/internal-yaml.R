@@ -100,7 +100,7 @@
     rownames(metrics) <- metrics[["description"]]
     numerics <- metrics[, setdiff(colnames(metrics), colnames(characters))] %>%
         as.data.frame %>%
-        mutate_all(as.numeric)
+        mutate_if(~all(!grepl("NA", .)), as.numeric)
     bind_cols(characters, numerics) %>%
         as.data.frame %>%
         column_to_rownames("description") %>%
