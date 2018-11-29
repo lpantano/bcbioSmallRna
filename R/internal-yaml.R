@@ -108,3 +108,15 @@
         bind_cols(., characters[, "description", drop = FALSE]) %>%
         DataFrame
 }
+
+.metrics <- function(yaml_file){
+    project_dir <- dirname(yaml_file)
+    if (!file.exists(project_dir))
+        return(.yaml_metrics(yaml_file))
+    fn <- file.path(project_dir, "multiqc", "multiqc_data",
+                    "multiqc_bcbio_metrics.txt")
+    df <- read.table(fn, header = TRUE, sep = "\t", row.names = 1) %>% 
+        clean_names()
+    df[["description"]] <- row.names(df)
+    df
+}

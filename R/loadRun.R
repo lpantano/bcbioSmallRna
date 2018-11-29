@@ -100,7 +100,7 @@ loadSmallRnaRun <- function(
     message(paste("Genome:", genome_build))
 
     # Sample metrics ====
-    metrics <- .yaml_metrics(yaml) %>%
+    metrics <- .metrics(yaml_file) %>%
         .[.[["description"]] %in% col_data[["sample"]],]
 
     # bcbio-nextgen run information ====

@@ -21,10 +21,10 @@
 #'                   enquo inner_join ungroup
 #' @importFrom circlize colorRamp2
 #' @importFrom RColorBrewer brewer.pal
-#' @importFrom janitor remove_empty
+#' @importFrom janitor remove_empty clean_names
 #' @importFrom reshape melt
 #' @importFrom tibble column_to_rownames
-#' @importFrom tidyr separate
+#' @importFrom tidyr separate gather
 #' @importFrom purrr set_names
 #' @importFrom isomiRs IsomirDataSeqFromFiles
 #' @importFrom methods as is new slot slot<- validObject

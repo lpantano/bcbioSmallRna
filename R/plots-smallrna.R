@@ -33,7 +33,7 @@ bcbSmallSize <- function(bcb, color = NULL) {
         info[["reads_before_trimming"]] <- info[["total"]]
     info[["pct"]] <- info[["total"]] / info[["reads_before_trimming"]] * 100L
     m <-  metrics(bcb)
-    m[["longest_sequence"]] <- m[["sequence_length"]] %>%
+    m[["average_sequence"]] <- m[["average_read_length"]] %>%
         gsub(".*-", "", .) %>%
         as.numeric()
     m[[color]] <- as.factor(m[[color]])
@@ -65,7 +65,7 @@ bcbSmallSize <- function(bcb, color = NULL) {
             0L, 0.3, 1L, 0.33) +
         draw_plot(
             ggplot(m,
-                   aes_string(x = color, y = "longest_sequence")) +
+                   aes_string(x = color, y = "average_sequence")) +
                 geom_boxplot() +
                 theme(legend.position="none",
                     axis.text.x = element_text(
@@ -144,6 +144,7 @@ bcbSmallMicro <- function(bcb, color = NULL) {
 #' @keywords plot
 #' @export
 bcbSmallCluster <- function(bcb, color = NULL){
+
     if (is.null(experiments(bcb)[["cluster"]]))
         stop("No cluster data in this analysis.")
     if (is.null(color))
@@ -154,54 +155,71 @@ bcbSmallCluster <- function(bcb, color = NULL){
     class <- experiments(bcb)[["cluster"]] %>% rowData %>%
         .[["priority"]]
     class[class == ""] <- "Intergenic"
-     classDF <- bind_cols(bind_cols(cluster(bcb)),
-                          ann = class) %>%
+    classDF <- bind_cols(bind_cols(cluster(bcb)),
+                         ann = class) %>%
         melt() %>%
+        set_names(c("ann", "sample", "value")) %>% 
         mutate_if(is.factor, as.character) %>%
-        group_by(!!sym("variable"), !!sym("ann")) %>%
+        group_by(!!sym("sample"), !!sym("ann")) %>%
         summarise(abundance = sum(value)) %>%
-        left_join(., group_by(., !!sym("variable")) %>%
+        left_join(., group_by(., !!sym("sample")) %>%
                       summarise(total = sum(abundance))) %>%
         mutate(pct = abundance / total * 100) %>%
         inner_join(colData(bcb)[, c("sample", color), drop = FALSE] %>%
                        as.data.frame(),
-                   by = c("variable" = "sample"))
+                   by = "sample")
 
-    plot_grid(
-        # plot_grid(
-        # experiments(bcb)[["cluster"]] %>%
-        #     metadata %>%
-        #     .[["stats"]] %>%
-        #     ggplot(aes_string(x = "V2", y = "V1", fill = "V3")) +
-        #     geom_bar(stat = 'identity', position = 'dodge') +
-        #     labs(list(x="samples", y="reads")) +
-        #     scale_fill_brewer("steps", palette = 'Set1') +
-        #     ggtitle("Reads kept after filtering") +
-        #     theme(legend.position = "bottom",
-        #           legend.direction = "horizontal",
-        #           axis.text.x = element_text(angle = 90,
-        #                                      vjust = 0.5,
-        #                                      hjust=1)),
-        melt(cluster(bcb)) %>%
-            mutate_if(is.factor, as.character) %>%
-            ggplot() +
-            geom_boxplot(aes_string(x = "variable", y = "value")) +
-            xlab("") +
-            ylab("expression") +
-            scale_y_log10() +
-            ggtitle("Expression distribution of clusters detected") +
-            theme(axis.text.x = element_text(
-            angle = 90L, hjust = 1L, vjust = 0.5)),
-        # ncol = 2),
-        classDF %>% ggplot(aes_string(x = color, y = "pct", color = "ann")) +
-            geom_point(stat = "identity") +
-            scale_fill_brewer(palette = "Set1") +
-            xlab("type of Small RNA") +
-            ylab("% of Expression") +
-            theme(axis.text.x = element_text(
-                angle = 90L, hjust = 1L, vjust = 0.5)) +
-            facet_wrap(~ann), nrow = 2
-    )
+    seqs_ma <- experiments(bcb)[["cluster_seqs"]] %>% assay()
+    seqs_rows <- experiments(bcb)[["cluster_seqs"]] %>%
+        rowData() %>%
+        as.data.frame() %>% 
+        mutate(size = nchar(as.character(sequence)))
+    classDF_seqs <- bind_cols(seqs_rows, seqs_ma) %>% 
+        .[,c(3, 8:ncol(.))] %>%
+        gather(sample, counts, -priority, -size) %>%
+        group_by(priority, size, sample) %>% 
+        summarise(counts=sum(counts)) %>% 
+        group_by(sample) %>%
+        inner_join(colData(bcb)[, c("sample", color), drop = FALSE] %>%
+                       as.data.frame(),
+                   by = "sample") %>% 
+        mutate(pct = counts/sum(counts)*100,
+               facet = !!sym(color)) %>% 
+        mutate(priority = factor(priority,
+                                 levels = c("miRNA", "tRNA", "repeat",
+                                            "ncRNA", "gene", 
+                                            "other", "non-annotated"))) 
+
+    ggdraw() +
+        draw_plot(
+            ggplot(classDF_seqs, aes_string("size", "pct", fill = "priority")) +
+                geom_bar(stat = "identity", position = "dodge") +
+                scale_fill_brewer("type", palette = "Dark2") + 
+                facet_wrap(~facet),
+            0, 0.5, 1, 0.5) +
+        draw_plot(
+            melt(cluster(bcb)) %>%
+                mutate_if(is.factor, as.character) %>%
+                ggplot(aes_string(group = "variable", x = "value")) +
+                geom_density() +
+                xlab("") +
+                ylab("expression") +
+                scale_x_log10() +
+                ggtitle("Expression distribution of clusters detected") +
+                theme(axis.text.x = element_text(
+                    angle = 90L, hjust = 1L, vjust = 0.5)),
+            0, 0, 0.5, 0.5) +
+        draw_plot(
+            classDF %>% ggplot(aes_string(x = color, y = "pct", color = "ann")) +
+                geom_point(stat = "identity") +
+                scale_fill_brewer(palette = "Set1") +
+                xlab("type of Small RNA") +
+                ylab("% of Expression") +
+                theme(axis.text.x = element_text(
+                    angle = 90L, hjust = 1L, vjust = 0.5)) +
+                facet_wrap(~ann),
+            0.5, 0, 0.5, 0.5)
+    
 }
 
 #' Plot PCA of the different small RNA data

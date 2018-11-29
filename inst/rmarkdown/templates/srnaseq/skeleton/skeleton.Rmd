@@ -3,17 +3,16 @@ title: "Small RNA-seq quality control"
 author: "`r getOption('author')`"
 date: "`r Sys.Date()`"
 output:
-    html_document:
-        code_folding: hide
-        df_print: paged
-        highlight: pygments
-        number_sections: false
-        self_contained: true
-        theme: paper
-        toc: true
-        toc_float:
-            collapsed: true
-            smooth_scroll: false
+  html_document:
+    code_folding: hide
+    df_print: kable
+    highlight: tango
+    theme: paper
+    number_sections: false
+    toc: true
+    toc_float:
+      collapsed: true
+      smooth_scroll: false
 params:
     bcb: "data/bcb.rda"
     outputDir: "."
@@ -149,7 +148,7 @@ There are 5 different types of isomiRs:
 
 ```{r isomiRs, fig.cap="Proportion of isomiRs counting reads (left) or unique sequences (right)."}
 ids <- bcbio(bcb, "isomirs")
-isoPlot(ids, type = "all", column = "country")
+isoPlot(ids, type = "all", column = by_color)
 ```
 
 
@@ -157,7 +156,7 @@ isoPlot(ids, type = "all", column = "country")
 
 We use [seqcluster](http://seqcluster.readthedocs.io/getting_started.html) to identify any type of small RNA. It generates a list of clusters of small RNA sequences, their genome location, their annotation and the abundance in all the sample of the project. The next figure explain the algorithm used for that and the way to use it for differential expression analyses.
 
-<div style="width:150px; height=150px">
+<div style="width:350px; height=350px">
 ![](http://seqcluster.readthedocs.io/_images/seqcluster.png){ width=50% }
 </div>
 
@@ -168,7 +167,7 @@ See example:
 [![IMAGE ALT TEXT](http://i.makeagif.com/media/7-03-2016/M0GjW2.gif)](https://youtu.be/Zjzte8n2-Sg "Example")
 
 
-```{r plot_srna_clusters, fig.width=6, fig.height=8, fig.cap="Reads kept after each filering step(top left). Proportion of sequences detected (top right). SmallRNA proportions (bottom)."}
+```{r plot_srna_clusters, fig.width=6, fig.height=8, fig.cap="Abundance distribution (bottom left). Proportion of sequences detected by size (top) and by sample (bottom right)."}
 bcbSmallCluster(bcb)
 ```
 

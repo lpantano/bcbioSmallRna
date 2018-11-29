@@ -136,7 +136,7 @@ isoPlot(ids, type = "all", column = color_by)
 
 We use [seqcluster](http://seqcluster.readthedocs.io/getting_started.html) to identify any type of small RNA. It generates a list of clusters of small RNA sequences, their genome location, their annotation and the abundance in all the sample of the project. The next figure explain the algorithm used for that and the way to use it for differential expression analyses.
 
-<div style="width:150px; height=150px">
+<div style="width:250px; height=250px">
 ![](http://seqcluster.readthedocs.io/_images/seqcluster.png){ width=50% }
 </div>
 
@@ -146,6 +146,8 @@ See example:
 
 [![IMAGE ALT TEXT](http://i.makeagif.com/media/7-03-2016/M0GjW2.gif)](https://youtu.be/Zjzte8n2-Sg "Example")
 
+## SmallRNA types detected
+
 
 ```{r plot_srna_size_cluster, fig.width=8, fig.cap="Proportion of reads maaping to different small RNA molecules."}
 metadata(experiments(bcb)[["cluster"]])[["size"]] %>% 
@@ -154,7 +156,7 @@ metadata(experiments(bcb)[["cluster"]])[["size"]] %>%
 ```
 
 
-```{r plot_srna_clusters, fig.width=6, fig.height=8, fig.cap="Reads kept after each filering step(top left). Proportion of sequences detected (top right). SmallRNA proportions (bottom)."}
+```{r plot_srna_clusters, fig.width=9, fig.height=8, fig.cap="Abundance distribution (top). Proportion of sequences detected by size (bottom left) and by sample (bottom right)."}
 bcbSmallCluster(bcb)
 ```
 
