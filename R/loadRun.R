@@ -26,7 +26,7 @@
 #' @examples
 #' path <- system.file("extra", package="bcbioSmallRna")
 #' sbcb <- loadSmallRnaRun(file.path(path, "geu_tiny", "final",
-#'                                   "2018-09-29_geu_tiny"), "population")
+#'                                   "2018-12-05_geu_tiny"), "population")
 #' @importFrom yaml yaml.load_file
 #' @export
 loadSmallRnaRun <- function(
@@ -145,6 +145,7 @@ loadSmallRnaRun <- function(
     iso <- SummarizedExperiment(assays = SimpleList(
         raw = counts(isomirna),
         log = iso_rlog),
+        metadata = metadata(mirna),
         colData = col_data[rownames(colData(isomirna)),])
     # SummarizedExperiment for tRNA ====
 

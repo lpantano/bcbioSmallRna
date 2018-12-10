@@ -1,0 +1,6128 @@
+18	12.0	gene	1
+19	12.0	gene	1
+20	33.7	gene	1
+21	25.999999999999996	gene	1
+22	3.7999999999999994	gene	1
+23	9.7	gene	1
+24	4.7	gene	1
+25	1.4	gene	1
+26	16.5	gene	1
+18	1.3	ncrna gene	2
+19	8.8	ncrna gene	2
+20	8.3	ncrna gene	2
+21	11.6	ncrna gene	2
+22	4.8	ncrna gene	2
+23	1.8	ncrna gene	2
+24	0.6	ncrna gene	2
+26	0.9	ncrna gene	2
+27	0.7	ncrna gene	2
+28	1.2999999999999998	ncrna gene	2
+18	1.4	gene ncrna piRNA	3
+19	4.0	gene ncrna piRNA	3
+20	6.0	gene ncrna piRNA	3
+21	9.9	gene ncrna piRNA	3
+22	5.8	gene ncrna piRNA	3
+23	13.0	gene ncrna piRNA	3
+24	8.0	gene ncrna piRNA	3
+25	7.3	gene ncrna piRNA	3
+26	3.1	gene ncrna piRNA	3
+27	7.0	gene ncrna piRNA	3
+28	6.1	gene ncrna piRNA	3
+18	0.3	ncrna gene	4
+20	0.4	ncrna gene	4
+21	2.6	ncrna gene	4
+23	0.5	ncrna gene	4
+25	3.3	ncrna gene	4
+26	33.49999999999999	ncrna gene	4
+27	2.2	ncrna gene	4
+28	2.1999999999999997	ncrna gene	4
+18	1.5	gene miRNA	5
+19	5.8	gene miRNA	5
+20	115.89999999999999	gene miRNA	5
+21	141.0	gene miRNA	5
+22	240.60000000000005	gene miRNA	5
+23	51.60000000000001	gene miRNA	5
+24	11.600000000000001	gene miRNA	5
+25	1.1	gene miRNA	5
+26	0.3	gene miRNA	5
+18	7.5	ncrna gene	6
+19	14.700000000000003	ncrna gene	6
+20	35.900000000000006	ncrna gene	6
+21	237.0	ncrna gene	6
+22	15.5	ncrna gene	6
+23	21.200000000000003	ncrna gene	6
+24	36.8	ncrna gene	6
+25	15.200000000000001	ncrna gene	6
+26	21.500000000000004	ncrna gene	6
+27	56.59999999999999	ncrna gene	6
+28	68.5	ncrna gene	6
+18	8.1	ncrna gene	7
+19	20.799999999999997	ncrna gene	7
+20	10.399999999999999	ncrna gene	7
+21	3.9	ncrna gene	7
+22	13.399999999999999	ncrna gene	7
+25	0.3	ncrna gene	7
+26	0.8	ncrna gene	7
+27	0.3	ncrna gene	7
+18	36.0	gene	8
+19	26.099999999999998	gene	8
+20	21.499999999999996	gene	8
+21	26.8	gene	8
+22	8.1	gene	8
+23	27.0	gene	8
+24	33.7	gene	8
+25	47.39999999999999	gene	8
+26	30.0	gene	8
+27	68.5	gene	8
+28	60.79999999999999	gene	8
+18	9.299999999999999	gene	9
+19	13.2	gene	9
+20	10.8	gene	9
+21	11.9	gene	9
+22	8.4	gene	9
+23	13.900000000000002	gene	9
+24	20.100000000000005	gene	9
+25	12.0	gene	9
+26	24.6	gene	9
+27	29.200000000000003	gene	9
+28	73.50000000000001	gene	9
+18	2.1	ncrna gene	10
+19	11.2	ncrna gene	10
+20	22.200000000000003	ncrna gene	10
+21	42.89999999999999	ncrna gene	10
+22	27.8	ncrna gene	10
+23	22.5	ncrna gene	10
+24	16.7	ncrna gene	10
+25	28.500000000000004	ncrna gene	10
+26	65.6	ncrna gene	10
+27	113.0	ncrna gene	10
+28	145.60000000000008	ncrna gene	10
+18	1.0	gene	11
+19	2.6999999999999993	gene	11
+20	2.2	gene	11
+21	1.0	gene	11
+22	0.8999999999999999	gene	11
+23	2.4	gene	11
+24	2.1999999999999997	gene	11
+25	5.7	gene	11
+26	3.0999999999999996	gene	11
+27	0.6	gene	11
+28	0.3	gene	11
+18	2.6999999999999997	gene	12
+19	4.4	gene	12
+20	3.9999999999999996	gene	12
+21	1.4	gene	12
+22	2.8	gene	12
+23	1.1	gene	12
+24	2.1999999999999997	gene	12
+25	0.7	gene	12
+26	1.7	gene	12
+27	3.1	gene	12
+28	1.7	gene	12
+18	11.100000000000001	gene miRNA	13
+19	2.9	gene miRNA	13
+20	51.699999999999996	gene miRNA	13
+21	40.8	gene miRNA	13
+22	58.400000000000006	gene miRNA	13
+23	742.7999999999996	gene miRNA	13
+24	142.5	gene miRNA	13
+25	3.4000000000000004	gene miRNA	13
+26	0.8	gene miRNA	13
+18	1.9	gene miRNA	14
+19	19.400000000000002	gene miRNA	14
+20	4.9	gene miRNA	14
+21	10.6	gene miRNA	14
+22	41.4	gene miRNA	14
+23	10.5	gene miRNA	14
+24	56.7	gene miRNA	14
+25	2.2	gene miRNA	14
+23	0.3	gene	15
+24	4.3999999999999995	gene	15
+25	3.6	gene	15
+26	5.4	gene	15
+27	11.200000000000001	gene	15
+28	130.7	gene	15
+18	17.700000000000003	gene	16
+19	16.9	gene	16
+20	34.699999999999996	gene	16
+21	37.900000000000006	gene	16
+22	84.19999999999997	gene	16
+23	54.2	gene	16
+24	97.50000000000001	gene	16
+25	127.59999999999998	gene	16
+26	128.39999999999998	gene	16
+27	85.50000000000001	gene	16
+28	139.49999999999997	gene	16
+18	1.6	ncrna gene	17
+19	0.3	ncrna gene	17
+21	0.6	ncrna gene	17
+22	0.7	ncrna gene	17
+23	1.0	ncrna gene	17
+24	3.3	ncrna gene	17
+27	2.3	ncrna gene	17
+28	6.7	ncrna gene	17
+19	0.6	ncrna gene	18
+20	0.5	ncrna gene	18
+21	0.8	ncrna gene	18
+22	0.4	ncrna gene	18
+23	0.8	ncrna gene	18
+24	0.8	ncrna gene	18
+26	1.2	ncrna gene	18
+27	3.3	ncrna gene	18
+28	1.3	ncrna gene	18
+18	0.3	ncrna gene	19
+20	0.3	ncrna gene	19
+21	1.6	ncrna gene	19
+22	6.3999999999999995	ncrna gene	19
+23	6.6	ncrna gene	19
+24	13.9	ncrna gene	19
+25	4.9	ncrna gene	19
+26	18.599999999999998	ncrna gene	19
+27	10.6	ncrna gene	19
+28	13.700000000000001	ncrna gene	19
+19	0.3		20
+20	1.3		20
+21	2.0		20
+22	17.2		20
+23	0.3		20
+24	2.6		20
+18	981.6000000000001	gene	21
+19	2.6	gene	21
+20	6.8	gene	21
+18	734.6999999999999	tRNA repeat piRNA	22
+19	3.5	tRNA repeat piRNA	22
+22	1.2	tRNA repeat piRNA	22
+25	1.2000000000000002	tRNA repeat piRNA	22
+27	0.6	tRNA repeat piRNA	22
+18	1.0	tRNA repeat piRNA	23
+19	5.3999999999999995	tRNA repeat piRNA	23
+22	0.6	tRNA repeat piRNA	23
+23	2.2	tRNA repeat piRNA	23
+24	3.6999999999999997	tRNA repeat piRNA	23
+25	6.199999999999999	tRNA repeat piRNA	23
+26	0.5	tRNA repeat piRNA	23
+27	0.8999999999999999	tRNA repeat piRNA	23
+18	9.7	tRNA repeat piRNA	24
+19	6.1	tRNA repeat piRNA	24
+20	2.6999999999999997	tRNA repeat piRNA	24
+21	0.3	tRNA repeat piRNA	24
+22	2.3	tRNA repeat piRNA	24
+23	1.9	tRNA repeat piRNA	24
+24	4.1	tRNA repeat piRNA	24
+25	22.099999999999998	tRNA repeat piRNA	24
+26	8.8	tRNA repeat piRNA	24
+27	1.9	tRNA repeat piRNA	24
+28	3.5	tRNA repeat piRNA	24
+18	8.4	gene	25
+19	63.6	gene	25
+20	9.5	gene	25
+21	6.4	gene	25
+22	24.7	gene	25
+18	49.5	tRNA repeat piRNA	26
+19	21.7	tRNA repeat piRNA	26
+20	4.6000000000000005	tRNA repeat piRNA	26
+21	5.8999999999999995	tRNA repeat piRNA	26
+22	34.9	tRNA repeat piRNA	26
+23	76.60000000000001	tRNA repeat piRNA	26
+24	36.79999999999999	tRNA repeat piRNA	26
+25	104.29999999999997	tRNA repeat piRNA	26
+26	52.99999999999999	tRNA repeat piRNA	26
+27	29.500000000000004	tRNA repeat piRNA	26
+28	5.9	tRNA repeat piRNA	26
+18	24.299999999999997		27
+19	0.8		27
+18	17.299999999999997	tRNA repeat piRNA	28
+19	31.399999999999995	tRNA repeat piRNA	28
+20	11.6	tRNA repeat piRNA	28
+21	17.8	tRNA repeat piRNA	28
+22	58.099999999999994	tRNA repeat piRNA	28
+23	101.10000000000001	tRNA repeat piRNA	28
+24	62.99999999999999	tRNA repeat piRNA	28
+25	13.4	tRNA repeat piRNA	28
+26	9.6	tRNA repeat piRNA	28
+27	9.3	tRNA repeat piRNA	28
+28	1.7	tRNA repeat piRNA	28
+18	7.800000000000001	tRNA repeat piRNA	29
+19	7.199999999999999	tRNA repeat piRNA	29
+20	3.9	tRNA repeat piRNA	29
+21	0.3	tRNA repeat piRNA	29
+22	0.6	tRNA repeat piRNA	29
+23	0.6	tRNA repeat piRNA	29
+24	5.0	tRNA repeat piRNA	29
+25	3.0999999999999996	tRNA repeat piRNA	29
+26	0.4	tRNA repeat piRNA	29
+27	0.3	tRNA repeat piRNA	29
+18	1.1	tRNA repeat piRNA	30
+22	2.0	tRNA repeat piRNA	30
+23	1.2	tRNA repeat piRNA	30
+24	0.3	tRNA repeat piRNA	30
+25	0.3	tRNA repeat piRNA	30
+27	0.4	tRNA repeat piRNA	30
+28	0.4	tRNA repeat piRNA	30
+18	0.6	repeat	31
+19	0.7	repeat	31
+20	1.5	repeat	31
+22	0.3	repeat	31
+23	1.6	repeat	31
+24	1.0	repeat	31
+25	0.3	repeat	31
+18	4789.900000000001	tRNA gene repeat piRNA	32
+19	378.4000000000001	tRNA gene repeat piRNA	32
+20	53.09999999999998	tRNA gene repeat piRNA	32
+21	76.6	tRNA gene repeat piRNA	32
+22	294.8	tRNA gene repeat piRNA	32
+23	6.4	tRNA gene repeat piRNA	32
+24	7.0	tRNA gene repeat piRNA	32
+25	3.7	tRNA gene repeat piRNA	32
+28	2.5999999999999996	tRNA gene repeat piRNA	32
+18	3.6999999999999997	gene miRNA	33
+19	17.2	gene miRNA	33
+20	5.0	gene miRNA	33
+21	11.7	gene miRNA	33
+22	3.3	gene miRNA	33
+20	2.5	gene	34
+23	2.1	gene	34
+24	87.19999999999999	gene	34
+25	256.6	gene	34
+26	10.6	gene	34
+27	0.3	gene	34
+28	0.6	gene	34
+18	37.0	gene miRNA	35
+19	577.0	gene miRNA	35
+20	954.4999999999994	gene miRNA	35
+21	1419.2999999999995	gene miRNA	35
+22	1594.7000000000003	gene miRNA	35
+23	375.59999999999997	gene miRNA	35
+24	58.79999999999999	gene miRNA	35
+25	3.7	gene miRNA	35
+19	3.5	gene miRNA	36
+20	17.400000000000002	gene miRNA	36
+21	25.5	gene miRNA	36
+22	20.8	gene miRNA	36
+23	79.19999999999999	gene miRNA	36
+24	19.099999999999998	gene miRNA	36
+25	1.5	gene miRNA	36
+18	1.9	gene miRNA	37
+19	13.0	gene miRNA	37
+20	42.400000000000006	gene miRNA	37
+21	79.8	gene miRNA	37
+22	165.8000000000001	gene miRNA	37
+23	90.79999999999998	gene miRNA	37
+24	9.299999999999997	gene miRNA	37
+25	0.3	gene miRNA	37
+18	3.0999999999999996	gene	38
+19	3.8	gene	38
+20	3.5	gene	38
+21	7.2	gene	38
+22	0.8999999999999999	gene	38
+23	1.0	gene	38
+24	1.6	gene	38
+25	0.6	gene	38
+26	0.6	gene	38
+27	0.3	gene	38
+28	0.3	gene	38
+18	2.0	repeat miRNA gene	39
+19	11.9	repeat miRNA gene	39
+20	39.3	repeat miRNA gene	39
+21	60.2	repeat miRNA gene	39
+22	415.1	repeat miRNA gene	39
+23	1187.6	repeat miRNA gene	39
+24	1358.1000000000001	repeat miRNA gene	39
+25	510.40000000000015	repeat miRNA gene	39
+26	48.0	repeat miRNA gene	39
+27	18.7	repeat miRNA gene	39
+19	0.4	gene miRNA	40
+21	0.9	gene miRNA	40
+22	4.2	gene miRNA	40
+23	96.0	gene miRNA	40
+24	1.2	gene miRNA	40
+25	3.2	gene miRNA	40
+26	0.4	gene miRNA	40
+18	2.1	repeat gene	41
+19	2.6	repeat gene	41
+20	13.700000000000001	repeat gene	41
+21	1.7000000000000002	repeat gene	41
+22	7.799999999999999	repeat gene	41
+23	38.7	repeat gene	41
+24	22.2	repeat gene	41
+25	1.6	repeat gene	41
+26	1.0	repeat gene	41
+18	1.7	ncrna gene	42
+20	1.5	ncrna gene	42
+21	0.8	ncrna gene	42
+22	0.5	ncrna gene	42
+24	3.4	ncrna gene	42
+25	4.1	ncrna gene	42
+27	3.8	ncrna gene	42
+28	4.1	ncrna gene	42
+20	1.4	gene	43
+21	7.6000000000000005	gene	43
+22	6.4	gene	43
+23	0.3	gene	43
+19	0.3	gene ncrna piRNA	44
+20	3.5999999999999996	gene ncrna piRNA	44
+21	1.4	gene ncrna piRNA	44
+22	0.8999999999999999	gene ncrna piRNA	44
+23	5.2	gene ncrna piRNA	44
+24	0.8999999999999999	gene ncrna piRNA	44
+25	1.0	gene ncrna piRNA	44
+26	2.4	gene ncrna piRNA	44
+27	0.3	gene ncrna piRNA	44
+28	6.1	gene ncrna piRNA	44
+22	0.3	gene	45
+24	0.4	gene	45
+25	0.3	gene	45
+26	2.1	gene	45
+27	1.7000000000000002	gene	45
+28	1.6	gene	45
+18	6.0	gene miRNA	46
+19	41.599999999999994	gene miRNA	46
+20	310.40000000000003	gene miRNA	46
+21	986.9999999999999	gene miRNA	46
+22	454.3999999999999	gene miRNA	46
+23	668.6999999999999	gene miRNA	46
+24	1.5	gene miRNA	46
+19	0.3	gene	47
+22	0.3	gene	47
+23	0.3	gene	47
+24	0.3	gene	47
+25	1.4000000000000001	gene	47
+26	1.7	gene	47
+27	4.0	gene	47
+28	3.0999999999999996	gene	47
+18	1.1	gene	48
+19	2.0	gene	48
+20	0.7	gene	48
+21	3.8	gene	48
+22	3.3	gene	48
+23	1.8000000000000003	gene	48
+24	4.8999999999999995	gene	48
+25	10.600000000000001	gene	48
+26	4.3999999999999995	gene	48
+27	7.9	gene	48
+28	29.2	gene	48
+18	0.3	gene	49
+20	0.4	gene	49
+21	0.6	gene	49
+22	0.8999999999999999	gene	49
+23	0.6	gene	49
+24	0.3	gene	49
+25	0.6	gene	49
+26	0.3	gene	49
+27	0.3	gene	49
+22	1.4	gene	50
+23	1.2	gene	50
+24	0.7	gene	50
+25	3.4	gene	50
+26	7.0	gene	50
+27	0.8999999999999999	gene	50
+28	1.0	gene	50
+18	0.4	gene	51
+20	0.3	gene	51
+21	0.8	gene	51
+22	0.7	gene	51
+24	0.4	gene	51
+25	0.6	gene	51
+26	0.3	gene	51
+27	0.6	gene	51
+28	1.4	gene	51
+18	3.6	gene	52
+19	0.4	gene	52
+20	4.7	gene	52
+21	3.6	gene	52
+22	7.5	gene	52
+23	8.9	gene	52
+24	11.4	gene	52
+25	11.5	gene	52
+26	1.1	gene	52
+27	1.9000000000000001	gene	52
+20	2.5	gene	53
+21	3.6999999999999997	gene	53
+22	8.9	gene	53
+23	3.8	gene	53
+24	6.2	gene	53
+25	5.8	gene	53
+26	0.8999999999999999	gene	53
+18	0.6	ncrna gene	54
+19	1.2000000000000002	ncrna gene	54
+20	0.6	ncrna gene	54
+21	1.8	ncrna gene	54
+22	9.6	ncrna gene	54
+23	0.8	ncrna gene	54
+24	1.2	ncrna gene	54
+25	2.1	ncrna gene	54
+26	1.0	ncrna gene	54
+27	10.899999999999999	ncrna gene	54
+28	2.6999999999999997	ncrna gene	54
+22	12.899999999999999	ncrna gene	55
+23	4.3999999999999995	ncrna gene	55
+24	4.3	ncrna gene	55
+25	0.6	ncrna gene	55
+26	12.8	ncrna gene	55
+27	15.399999999999999	ncrna gene	55
+28	30.599999999999998	ncrna gene	55
+18	4.0	ncrna gene	56
+19	11.8	ncrna gene	56
+20	3.3	ncrna gene	56
+21	3.7	ncrna gene	56
+22	5.499999999999999	ncrna gene	56
+23	4.8	ncrna gene	56
+24	1.5	ncrna gene	56
+25	2.7	ncrna gene	56
+26	19.0	ncrna gene	56
+27	18.5	ncrna gene	56
+28	18.0	ncrna gene	56
+20	7.6000000000000005	repeat miRNA gene	57
+21	7.4	repeat miRNA gene	57
+22	20.9	repeat miRNA gene	57
+23	48.199999999999996	repeat miRNA gene	57
+24	2.3	repeat miRNA gene	57
+19	5.9	gene miRNA	58
+20	8.5	gene miRNA	58
+21	45.4	gene miRNA	58
+22	23.0	gene miRNA	58
+23	14.700000000000001	gene miRNA	58
+24	77.80000000000001	gene miRNA	58
+25	0.3	gene miRNA	58
+18	113.49999999999999	gene miRNA	59
+19	160.9	gene miRNA	59
+20	149.10000000000005	gene miRNA	59
+21	346.90000000000003	gene miRNA	59
+22	271.4	gene miRNA	59
+23	99.19999999999999	gene miRNA	59
+24	46.1	gene miRNA	59
+25	5.5	gene miRNA	59
+27	0.8	gene miRNA	59
+19	1.8	gene	60
+20	0.6	gene	60
+21	0.3	gene	60
+24	1.1	gene	60
+25	0.6	gene	60
+26	0.6	gene	60
+18	265.1000000000001	repeat	61
+19	5.3	repeat	61
+21	2.4	repeat	61
+22	33.2	repeat	61
+18	1.4000000000000001	ncrna gene	62
+19	12.700000000000001	ncrna gene	62
+20	40.300000000000004	ncrna gene	62
+21	108.49999999999999	ncrna gene	62
+22	202.00000000000003	ncrna gene	62
+23	195.40000000000006	ncrna gene	62
+24	7.6	ncrna gene	62
+18	24.8	tRNA repeat	63
+19	9.3	tRNA repeat	63
+20	4.6	tRNA repeat	63
+21	0.3	tRNA repeat	63
+23	0.3	tRNA repeat	63
+24	1.7000000000000002	tRNA repeat	63
+26	0.6	tRNA repeat	63
+28	0.4	tRNA repeat	63
+18	2.3	tRNA repeat	64
+19	8.4	tRNA repeat	64
+20	24.5	tRNA repeat	64
+21	80.10000000000001	tRNA repeat	64
+22	13.600000000000001	tRNA repeat	64
+26	0.3	tRNA repeat	64
+18	1.2999999999999998	ncrna gene	65
+19	0.4	ncrna gene	65
+20	0.5	ncrna gene	65
+21	2.7	ncrna gene	65
+22	0.7	ncrna gene	65
+23	2.3	ncrna gene	65
+24	24.2	ncrna gene	65
+25	8.6	ncrna gene	65
+26	8.3	ncrna gene	65
+27	7.1	ncrna gene	65
+28	1.4	ncrna gene	65
+18	0.3	gene miRNA	66
+19	1.2	gene miRNA	66
+20	3.3	gene miRNA	66
+21	14.000000000000002	gene miRNA	66
+22	2.8	gene miRNA	66
+23	0.8999999999999999	gene miRNA	66
+18	71.39999999999999	ncrna gene	67
+19	38.49999999999999	ncrna gene	67
+20	32.89999999999999	ncrna gene	67
+21	33.7	ncrna gene	67
+22	36.599999999999994	ncrna gene	67
+23	68.89999999999999	ncrna gene	67
+24	184.80000000000004	ncrna gene	67
+25	133.10000000000002	ncrna gene	67
+26	60.99999999999999	ncrna gene	67
+27	59.9	ncrna gene	67
+28	100.10000000000002	ncrna gene	67
+18	41.9	ncrna gene	68
+19	7.2	ncrna gene	68
+20	13.500000000000002	ncrna gene	68
+21	11.700000000000001	ncrna gene	68
+22	5.399999999999999	ncrna gene	68
+23	11.700000000000001	ncrna gene	68
+24	11.5	ncrna gene	68
+25	22.900000000000002	ncrna gene	68
+26	33.400000000000006	ncrna gene	68
+27	62.59999999999999	ncrna gene	68
+28	118.00000000000001	ncrna gene	68
+21	0.3	gene	69
+22	0.3	gene	69
+23	1.6	gene	69
+24	1.7	gene	69
+27	0.7	gene	69
+28	0.6	gene	69
+20	1.1	tRNA repeat	70
+21	6.0	tRNA repeat	70
+22	18.200000000000003	tRNA repeat	70
+23	47.7	tRNA repeat	70
+24	11.6	tRNA repeat	70
+25	12.5	tRNA repeat	70
+26	28.0	tRNA repeat	70
+27	3.8	tRNA repeat	70
+18	141.00000000000006	tRNA repeat	71
+19	5.3999999999999995	tRNA repeat	71
+20	1.0	tRNA repeat	71
+21	2.4000000000000004	tRNA repeat	71
+22	17.7	tRNA repeat	71
+23	6.8	tRNA repeat	71
+24	7.699999999999999	tRNA repeat	71
+25	6.6	tRNA repeat	71
+26	25.2	tRNA repeat	71
+27	180.29999999999998	tRNA repeat	71
+28	304.40000000000003	tRNA repeat	71
+18	0.9	tRNA repeat	72
+19	1.4	tRNA repeat	72
+21	1.4	tRNA repeat	72
+22	9.9	tRNA repeat	72
+23	0.8	tRNA repeat	72
+24	0.5	tRNA repeat	72
+27	0.3	tRNA repeat	72
+18	102.99999999999997	tRNA repeat gene	73
+19	45.099999999999994	tRNA repeat gene	73
+20	15.600000000000001	tRNA repeat gene	73
+21	4.0	tRNA repeat gene	73
+22	0.7	tRNA repeat gene	73
+23	0.3	tRNA repeat gene	73
+21	0.7	gene miRNA	74
+22	8.3	gene miRNA	74
+23	9.4	gene miRNA	74
+24	3.6999999999999997	gene miRNA	74
+20	0.8	repeat miRNA gene	75
+21	2.4999999999999996	repeat miRNA gene	75
+22	23.900000000000002	repeat miRNA gene	75
+23	12.4	repeat miRNA gene	75
+18	1.1	piRNA repeat gene	76
+19	2.2	piRNA repeat gene	76
+20	0.8	piRNA repeat gene	76
+21	1.7000000000000002	piRNA repeat gene	76
+22	0.8999999999999999	piRNA repeat gene	76
+23	4.2	piRNA repeat gene	76
+24	6.9	piRNA repeat gene	76
+25	4.3	piRNA repeat gene	76
+26	1.0	piRNA repeat gene	76
+27	0.5	piRNA repeat gene	76
+28	1.2	piRNA repeat gene	76
+18	294.6	tRNA repeat piRNA	77
+19	1.4	tRNA repeat piRNA	77
+20	5.1	tRNA repeat piRNA	77
+21	4.0	tRNA repeat piRNA	77
+22	5.2	tRNA repeat piRNA	77
+24	0.4	tRNA repeat piRNA	77
+26	0.3	tRNA repeat piRNA	77
+18	0.3	tRNA repeat piRNA	78
+19	0.7	tRNA repeat piRNA	78
+20	0.6	tRNA repeat piRNA	78
+21	0.4	tRNA repeat piRNA	78
+22	0.5	tRNA repeat piRNA	78
+23	0.3	tRNA repeat piRNA	78
+25	12.9	tRNA repeat piRNA	78
+26	1.5	tRNA repeat piRNA	78
+27	2.2	tRNA repeat piRNA	78
+28	0.4	tRNA repeat piRNA	78
+18	422.1	gene	79
+19	106.1	gene	79
+21	0.6	gene	79
+18	33.099999999999994	tRNA repeat piRNA	80
+19	39.2	tRNA repeat piRNA	80
+20	48.19999999999998	tRNA repeat piRNA	80
+21	82.19999999999999	tRNA repeat piRNA	80
+22	127.4	tRNA repeat piRNA	80
+23	12.799999999999999	tRNA repeat piRNA	80
+24	26.9	tRNA repeat piRNA	80
+25	9.299999999999999	tRNA repeat piRNA	80
+26	3.1	tRNA repeat piRNA	80
+27	6.4	tRNA repeat piRNA	80
+28	2.8	tRNA repeat piRNA	80
+18	2.8	ncrna gene	81
+19	4.500000000000001	ncrna gene	81
+20	1.5	ncrna gene	81
+21	3.5	ncrna gene	81
+22	15.7	ncrna gene	81
+23	51.599999999999994	ncrna gene	81
+24	80.0	ncrna gene	81
+25	16.5	ncrna gene	81
+26	16.2	ncrna gene	81
+27	12.799999999999999	ncrna gene	81
+28	25.0	ncrna gene	81
+19	2.9	ncrna gene	82
+20	7.1	ncrna gene	82
+21	26.700000000000003	ncrna gene	82
+22	11.700000000000001	ncrna gene	82
+23	10.100000000000001	ncrna gene	82
+24	15.000000000000002	ncrna gene	82
+25	59.2	ncrna gene	82
+26	207.90000000000006	ncrna gene	82
+27	115.69999999999997	ncrna gene	82
+28	63.09999999999999	ncrna gene	82
+18	0.4	ncrna gene	83
+19	3.3	ncrna gene	83
+20	0.4	ncrna gene	83
+21	0.4	ncrna gene	83
+22	0.7	ncrna gene	83
+23	3.0	ncrna gene	83
+24	0.4	ncrna gene	83
+25	1.1	ncrna gene	83
+26	1.2999999999999998	ncrna gene	83
+27	15.399999999999999	ncrna gene	83
+28	0.3	ncrna gene	83
+18	0.7	gene	84
+19	2.0	gene	84
+20	5.2	gene	84
+21	1.7	gene	84
+22	2.9	gene	84
+23	2.3000000000000003	gene	84
+24	2.4	gene	84
+25	1.4000000000000001	gene	84
+26	1.2	gene	84
+27	5.1	gene	84
+28	4.4	gene	84
+18	2.2	gene miRNA	85
+19	5.3	gene miRNA	85
+20	82.6	gene miRNA	85
+21	197.49999999999997	gene miRNA	85
+22	188.8	gene miRNA	85
+23	14.799999999999999	gene miRNA	85
+18	3.9	repeat	86
+19	0.6	repeat	86
+20	0.4	repeat	86
+21	0.5	repeat	86
+22	1.6	repeat	86
+23	0.8	repeat	86
+25	0.3	repeat	86
+28	0.4	repeat	86
+19	0.8999999999999999	gene	87
+20	1.2	gene	87
+21	0.8999999999999999	gene	87
+22	0.4	gene	87
+23	1.3	gene	87
+24	1.8000000000000003	gene	87
+25	3.4	gene	87
+26	1.0	gene	87
+27	1.3	gene	87
+28	1.1	gene	87
+19	1.1	repeat miRNA gene	88
+20	4.699999999999999	repeat miRNA gene	88
+21	16.1	repeat miRNA gene	88
+22	29.8	repeat miRNA gene	88
+23	2.1	repeat miRNA gene	88
+24	1.5	repeat miRNA gene	88
+19	0.3	gene	89
+20	0.3	gene	89
+21	4.9	gene	89
+22	3.7	gene	89
+23	2.3	gene	89
+20	0.3	repeat miRNA gene	90
+21	11.7	repeat miRNA gene	90
+22	76.9	repeat miRNA gene	90
+23	15.900000000000002	repeat miRNA gene	90
+19	0.4	gene miRNA	91
+20	1.2	gene miRNA	91
+21	3.4	gene miRNA	91
+22	1.6	gene miRNA	91
+23	3.0	gene miRNA	91
+24	3.5	gene miRNA	91
+25	0.8999999999999999	gene miRNA	91
+18	13.0	gene miRNA	92
+19	1.9	gene miRNA	92
+20	15.4	gene miRNA	92
+21	43.2	gene miRNA	92
+22	129.0	gene miRNA	92
+23	12.299999999999999	gene miRNA	92
+24	0.8	gene miRNA	92
+18	62.199999999999996	gene	93
+19	111.89999999999999	gene	93
+20	100.7	gene	93
+21	22.0	gene	93
+22	19.7	gene	93
+23	28.1	gene	93
+24	34.99999999999999	gene	93
+25	56.5	gene	93
+26	109.89999999999998	gene	93
+27	209.6	gene	93
+28	469.2	gene	93
+18	14.8	gene miRNA	94
+19	45.5	gene miRNA	94
+20	73.10000000000001	gene miRNA	94
+21	167.6	gene miRNA	94
+22	843.3999999999999	gene miRNA	94
+23	579.6999999999999	gene miRNA	94
+24	89.80000000000001	gene miRNA	94
+25	1.1	gene miRNA	94
+18	1.0	gene	95
+19	3.3	gene	95
+20	7.5	gene	95
+21	3.5	gene	95
+22	1.0	gene	95
+24	0.4	gene	95
+27	0.8	gene	95
+18	3.6	gene	96
+19	4.7	gene	96
+20	7.6000000000000005	gene	96
+21	13.9	gene	96
+22	2.0999999999999996	gene	96
+23	0.8	gene	96
+24	3.8999999999999995	gene	96
+25	2.8	gene	96
+26	4.0	gene	96
+27	6.9	gene	96
+28	1.4000000000000001	gene	96
+18	1.0	ncrna gene	97
+19	2.6	ncrna gene	97
+20	0.9	ncrna gene	97
+21	0.7	ncrna gene	97
+25	0.7	ncrna gene	97
+27	1.2	ncrna gene	97
+28	0.3	ncrna gene	97
+18	0.3	gene ncrna piRNA	98
+19	1.0	gene ncrna piRNA	98
+20	1.7999999999999998	gene ncrna piRNA	98
+21	0.5	gene ncrna piRNA	98
+22	0.3	gene ncrna piRNA	98
+23	0.3	gene ncrna piRNA	98
+25	1.7	gene ncrna piRNA	98
+27	1.0	gene ncrna piRNA	98
+18	6.4	gene miRNA	99
+19	11.200000000000001	gene miRNA	99
+20	5.3	gene miRNA	99
+21	9.8	gene miRNA	99
+22	33.1	gene miRNA	99
+23	25.9	gene miRNA	99
+24	3.2	gene miRNA	99
+25	3.9	gene miRNA	99
+26	2.3	gene miRNA	99
+27	24.900000000000002	gene miRNA	99
+28	11.8	gene miRNA	99
+18	0.6	gene miRNA	100
+19	1.4	gene miRNA	100
+20	3.3	gene miRNA	100
+21	25.4	gene miRNA	100
+22	9.6	gene miRNA	100
+18	4.4	gene miRNA	101
+19	2.9	gene miRNA	101
+20	41.0	gene miRNA	101
+21	145.7	gene miRNA	101
+22	196.30000000000004	gene miRNA	101
+23	402.8	gene miRNA	101
+24	388.5000000000001	gene miRNA	101
+25	70.19999999999999	gene miRNA	101
+26	5.1	gene miRNA	101
+27	2.3	gene miRNA	101
+18	0.3	gene miRNA piRNA	102
+19	0.3	gene miRNA piRNA	102
+20	7.6	gene miRNA piRNA	102
+21	37.1	gene miRNA piRNA	102
+22	81.69999999999999	gene miRNA piRNA	102
+23	78.3	gene miRNA piRNA	102
+24	24.3	gene miRNA piRNA	102
+25	1.2	gene miRNA piRNA	102
+20	0.9	gene	103
+21	1.1	gene	103
+22	0.3	gene	103
+23	3.5	gene	103
+24	0.6	gene	103
+25	0.3	gene	103
+28	0.5	gene	103
+18	142.4	ncrna gene	104
+19	196.40000000000006	ncrna gene	104
+20	87.2	ncrna gene	104
+21	26.800000000000004	ncrna gene	104
+22	14.5	ncrna gene	104
+23	17.5	ncrna gene	104
+24	52.599999999999994	ncrna gene	104
+25	223.20000000000002	ncrna gene	104
+26	22.3	ncrna gene	104
+27	19.2	ncrna gene	104
+28	9.2	ncrna gene	104
+18	13.5	gene miRNA	105
+19	13.3	gene miRNA	105
+20	36.2	gene miRNA	105
+21	63.5	gene miRNA	105
+22	887.2	gene miRNA	105
+23	279.50000000000006	gene miRNA	105
+24	365.2	gene miRNA	105
+25	457.7	gene miRNA	105
+26	15.8	gene miRNA	105
+27	3.3999999999999995	gene miRNA	105
+18	2.6	gene	106
+19	4.6	gene	106
+20	6.1000000000000005	gene	106
+21	3.8	gene	106
+22	0.3	gene	106
+23	0.6	gene	106
+24	2.4	gene	106
+25	0.3	gene	106
+27	0.5	gene	106
+28	0.5	gene	106
+19	0.6	gene	107
+21	0.3	gene	107
+22	5.4	gene	107
+23	3.0	gene	107
+25	0.3	gene	107
+26	1.7000000000000002	gene	107
+27	1.2	gene	107
+28	0.8	gene	107
+18	1.0	gene	108
+19	2.6	gene	108
+20	124.30000000000001	gene	108
+21	74.5	gene	108
+22	526.9999999999999	gene	108
+23	1604.5	gene	108
+24	158.79999999999998	gene	108
+18	0.8	ncrna gene	109
+19	1.9	ncrna gene	109
+20	4.1	ncrna gene	109
+21	2.1	ncrna gene	109
+22	20.5	ncrna gene	109
+23	18.1	ncrna gene	109
+27	6.5	ncrna gene	109
+28	2.3	ncrna gene	109
+18	1.5999999999999999	gene	110
+19	1.4000000000000001	gene	110
+20	4.699999999999999	gene	110
+21	2.0	gene	110
+22	0.3	gene	110
+23	0.3	gene	110
+24	0.5	gene	110
+25	0.8999999999999999	gene	110
+26	0.7	gene	110
+27	0.8999999999999999	gene	110
+28	0.8999999999999999	gene	110
+18	0.6	gene	111
+19	1.0	gene	111
+21	1.5999999999999999	gene	111
+22	0.6	gene	111
+23	0.3	gene	111
+24	1.1	gene	111
+25	0.3	gene	111
+18	1.2	gene	112
+19	1.1	gene	112
+20	1.0	gene	112
+21	0.6	gene	112
+23	0.4	gene	112
+27	0.4	gene	112
+18	6.2	gene	113
+19	5.6	gene	113
+20	14.6	gene	113
+21	66.6	gene	113
+22	49.8	gene	113
+23	40.89999999999999	gene	113
+24	38.199999999999996	gene	113
+25	0.5	gene	113
+18	0.5	gene	114
+19	0.8	gene	114
+20	0.4	gene	114
+21	0.6	gene	114
+22	4.199999999999999	gene	114
+23	5.1000000000000005	gene	114
+24	4.0	gene	114
+25	4.2	gene	114
+26	6.2	gene	114
+27	9.4	gene	114
+28	13.600000000000001	gene	114
+18	14.5	ncrna gene	115
+19	11.700000000000001	ncrna gene	115
+20	21.3	ncrna gene	115
+21	59.8	ncrna gene	115
+22	25.0	ncrna gene	115
+23	44.29999999999998	ncrna gene	115
+24	40.39999999999999	ncrna gene	115
+25	186.60000000000005	ncrna gene	115
+26	119.10000000000002	ncrna gene	115
+27	207.70000000000002	ncrna gene	115
+28	506.1999999999999	ncrna gene	115
+19	6.699999999999999	gene ncrna piRNA	116
+20	1.4000000000000001	gene ncrna piRNA	116
+21	2.5	gene ncrna piRNA	116
+22	5.9	gene ncrna piRNA	116
+23	7.8	gene ncrna piRNA	116
+24	36.9	gene ncrna piRNA	116
+25	17.000000000000004	gene ncrna piRNA	116
+26	13.300000000000002	gene ncrna piRNA	116
+27	6.699999999999999	gene ncrna piRNA	116
+28	3.4	gene ncrna piRNA	116
+19	0.3	gene miRNA	117
+20	0.7	gene miRNA	117
+22	0.3	gene miRNA	117
+23	13.2	gene miRNA	117
+24	30.900000000000002	gene miRNA	117
+25	3.1	gene miRNA	117
+26	7.4	gene miRNA	117
+18	30.2		118
+19	14.400000000000002		118
+20	15.600000000000001		118
+21	24.2		118
+22	28.999999999999993		118
+23	15.700000000000003		118
+24	2.3		118
+25	1.5		118
+26	1.8		118
+27	1.3		118
+28	7.6000000000000005		118
+21	0.6		119
+22	0.5		119
+23	1.6		119
+24	1.2999999999999998		119
+25	1.8		119
+26	6.2		119
+27	5.4		119
+28	4.6		119
+19	0.3		120
+21	0.3		120
+22	1.1		120
+25	0.6		120
+26	1.3		120
+27	1.9		120
+28	0.4		120
+19	0.3	repeat	121
+20	0.8	repeat	121
+21	0.7	repeat	121
+22	1.4	repeat	121
+24	1.0	repeat	121
+25	0.3	repeat	121
+26	0.3	repeat	121
+27	0.3	repeat	121
+22	0.3	ncrna gene	122
+23	0.3	ncrna gene	122
+24	3.9	ncrna gene	122
+25	3.3	ncrna gene	122
+26	2.9	ncrna gene	122
+27	11.1	ncrna gene	122
+28	19.199999999999996	ncrna gene	122
+18	0.8999999999999999	ncrna gene	123
+19	3.0999999999999996	ncrna gene	123
+20	5.5	ncrna gene	123
+21	2.9	ncrna gene	123
+22	1.1	ncrna gene	123
+24	0.3	ncrna gene	123
+25	2.0	ncrna gene	123
+26	2.0999999999999996	ncrna gene	123
+27	4.499999999999999	ncrna gene	123
+28	9.5	ncrna gene	123
+18	22.000000000000004	tRNA repeat	124
+19	6.1000000000000005	tRNA repeat	124
+20	1.2000000000000002	tRNA repeat	124
+21	15.200000000000001	tRNA repeat	124
+22	8.3	tRNA repeat	124
+23	9.7	tRNA repeat	124
+24	10.3	tRNA repeat	124
+25	9.300000000000002	tRNA repeat	124
+26	36.9	tRNA repeat	124
+27	21.3	tRNA repeat	124
+28	62.099999999999994	tRNA repeat	124
+18	0.9	tRNA repeat	125
+19	0.3	tRNA repeat	125
+21	0.5	tRNA repeat	125
+22	0.7	tRNA repeat	125
+25	0.3	tRNA repeat	125
+26	6.5	tRNA repeat	125
+27	2.0	tRNA repeat	125
+28	27.4	tRNA repeat	125
+21	0.3	gene	126
+22	0.3	gene	126
+23	6.3999999999999995	gene	126
+24	5.800000000000001	gene	126
+25	23.7	gene	126
+26	285.0	gene	126
+27	69.2	gene	126
+19	1.0	gene miRNA	127
+20	0.5	gene miRNA	127
+21	1.6	gene miRNA	127
+22	6.5	gene miRNA	127
+23	49.699999999999996	gene miRNA	127
+24	5.699999999999999	gene miRNA	127
+25	0.3	gene miRNA	127
+18	10.0	gene	128
+19	3.6999999999999997	gene	128
+20	1.3	gene	128
+21	3.5999999999999996	gene	128
+22	1.1	gene	128
+23	0.3	gene	128
+18	81.8	tRNA repeat	129
+19	25.799999999999997	tRNA repeat	129
+20	1.1	tRNA repeat	129
+21	0.5	tRNA repeat	129
+18	0.6	tRNA repeat	130
+23	4.3	tRNA repeat	130
+24	0.3	tRNA repeat	130
+25	1.0	tRNA repeat	130
+26	1.1	tRNA repeat	130
+28	1.5	tRNA repeat	130
+18	11.8	tRNA repeat	131
+19	30.0	tRNA repeat	131
+20	12.2	tRNA repeat	131
+21	16.9	tRNA repeat	131
+22	7.2	tRNA repeat	131
+23	3.5	tRNA repeat	131
+24	2.9	tRNA repeat	131
+25	5.9	tRNA repeat	131
+26	2.6999999999999997	tRNA repeat	131
+27	1.6	tRNA repeat	131
+28	2.7	tRNA repeat	131
+18	0.4	gene repeat piRNA	132
+20	2.9	gene repeat piRNA	132
+21	6.9	gene repeat piRNA	132
+22	2.5	gene repeat piRNA	132
+23	2.2	gene repeat piRNA	132
+24	2.0	gene repeat piRNA	132
+25	4.3	gene repeat piRNA	132
+26	4.2	gene repeat piRNA	132
+27	1.4	gene repeat piRNA	132
+28	1.6	gene repeat piRNA	132
+18	2.1	tRNA repeat piRNA	133
+19	2.8999999999999995	tRNA repeat piRNA	133
+20	4.2	tRNA repeat piRNA	133
+21	1.6	tRNA repeat piRNA	133
+22	2.7	tRNA repeat piRNA	133
+23	47.0	tRNA repeat piRNA	133
+24	2.3	tRNA repeat piRNA	133
+25	14.000000000000002	tRNA repeat piRNA	133
+26	3.2	tRNA repeat piRNA	133
+27	4.4	tRNA repeat piRNA	133
+28	43.3	tRNA repeat piRNA	133
+18	1859.7	tRNA repeat piRNA	134
+19	127.80000000000001	tRNA repeat piRNA	134
+20	36.199999999999996	tRNA repeat piRNA	134
+21	25.4	tRNA repeat piRNA	134
+22	94.00000000000001	tRNA repeat piRNA	134
+23	107.69999999999999	tRNA repeat piRNA	134
+24	28.700000000000003	tRNA repeat piRNA	134
+25	63.6	tRNA repeat piRNA	134
+26	12.700000000000001	tRNA repeat piRNA	134
+27	31.4	tRNA repeat piRNA	134
+28	233.20000000000002	tRNA repeat piRNA	134
+18	0.3	tRNA repeat	135
+19	0.9	tRNA repeat	135
+20	4.8	tRNA repeat	135
+21	32.5	tRNA repeat	135
+22	215.5	tRNA repeat	135
+23	0.9	tRNA repeat	135
+24	1.0	tRNA repeat	135
+25	0.3	tRNA repeat	135
+28	0.3	tRNA repeat	135
+18	14.400000000000002	gene ncrna piRNA	136
+19	27.3	gene ncrna piRNA	136
+20	18.099999999999998	gene ncrna piRNA	136
+21	36.89999999999999	gene ncrna piRNA	136
+22	25.700000000000003	gene ncrna piRNA	136
+23	17.2	gene ncrna piRNA	136
+24	22.2	gene ncrna piRNA	136
+25	19.8	gene ncrna piRNA	136
+26	13.899999999999999	gene ncrna piRNA	136
+27	50.6	gene ncrna piRNA	136
+28	24.5	gene ncrna piRNA	136
+18	0.5	ncrna gene	137
+19	9.3	ncrna gene	137
+20	15.1	ncrna gene	137
+21	10.7	ncrna gene	137
+25	7.1	ncrna gene	137
+26	3.0999999999999996	ncrna gene	137
+27	0.4	ncrna gene	137
+28	1.2	ncrna gene	137
+18	2.5	ncrna gene	138
+19	8.5	ncrna gene	138
+20	16.7	ncrna gene	138
+21	17.4	ncrna gene	138
+22	26.800000000000004	ncrna gene	138
+23	63.5	ncrna gene	138
+24	93.79999999999998	ncrna gene	138
+25	97.59999999999997	ncrna gene	138
+26	114.5	ncrna gene	138
+27	109.60000000000001	ncrna gene	138
+28	1482.2000000000007	ncrna gene	138
+18	2.9	gene ncrna piRNA	139
+19	2.9	gene ncrna piRNA	139
+20	4.199999999999999	gene ncrna piRNA	139
+21	3.7	gene ncrna piRNA	139
+22	7.5	gene ncrna piRNA	139
+23	13.500000000000004	gene ncrna piRNA	139
+24	22.5	gene ncrna piRNA	139
+25	21.799999999999997	gene ncrna piRNA	139
+26	14.700000000000001	gene ncrna piRNA	139
+27	12.400000000000002	gene ncrna piRNA	139
+28	9.4	gene ncrna piRNA	139
+18	2.5	tRNA gene repeat piRNA	140
+19	6.4	tRNA gene repeat piRNA	140
+20	0.7	tRNA gene repeat piRNA	140
+21	0.6	tRNA gene repeat piRNA	140
+22	0.7	tRNA gene repeat piRNA	140
+23	0.8999999999999999	tRNA gene repeat piRNA	140
+24	6.1	tRNA gene repeat piRNA	140
+25	3.3	tRNA gene repeat piRNA	140
+26	1.8	tRNA gene repeat piRNA	140
+27	0.7	tRNA gene repeat piRNA	140
+18	2.8999999999999995	tRNA repeat piRNA	141
+19	4.6	tRNA repeat piRNA	141
+20	4.3	tRNA repeat piRNA	141
+21	2.4999999999999996	tRNA repeat piRNA	141
+22	12.200000000000003	tRNA repeat piRNA	141
+23	7.8999999999999995	tRNA repeat piRNA	141
+24	8.799999999999999	tRNA repeat piRNA	141
+25	35.39999999999999	tRNA repeat piRNA	141
+26	54.69999999999999	tRNA repeat piRNA	141
+27	43.599999999999994	tRNA repeat piRNA	141
+28	14.200000000000003	tRNA repeat piRNA	141
+18	2.0	tRNA repeat piRNA	142
+19	2.2	tRNA repeat piRNA	142
+20	0.6	tRNA repeat piRNA	142
+21	0.3	tRNA repeat piRNA	142
+22	2.1	tRNA repeat piRNA	142
+23	0.9	tRNA repeat piRNA	142
+25	1.0	tRNA repeat piRNA	142
+26	1.2	tRNA repeat piRNA	142
+27	2.3	tRNA repeat piRNA	142
+28	2.9	tRNA repeat piRNA	142
+23	0.3	tRNA repeat	143
+24	1.3	tRNA repeat	143
+25	4.0	tRNA repeat	143
+26	6.700000000000001	tRNA repeat	143
+27	3.9	tRNA repeat	143
+28	1.4000000000000001	tRNA repeat	143
+18	11.8	ncrna gene	144
+19	28.600000000000005	ncrna gene	144
+20	8.399999999999999	ncrna gene	144
+21	9.5	ncrna gene	144
+22	22.099999999999998	ncrna gene	144
+23	10.4	ncrna gene	144
+24	27.200000000000003	ncrna gene	144
+25	52.89999999999998	ncrna gene	144
+26	63.199999999999996	ncrna gene	144
+27	113.39999999999999	ncrna gene	144
+28	114.79999999999997	ncrna gene	144
+18	2.7	gene miRNA	145
+19	9.8	gene miRNA	145
+20	0.3	gene miRNA	145
+21	19.4	gene miRNA	145
+18	0.3	gene	146
+21	3.0	gene	146
+22	1.4000000000000001	gene	146
+23	0.8	gene	146
+25	0.8	gene	146
+27	0.4	gene	146
+28	0.3	gene	146
+18	0.6	gene	147
+19	0.3	gene	147
+20	0.5	gene	147
+21	3.2	gene	147
+22	1.3	gene	147
+24	0.3	gene	147
+26	0.5	gene	147
+28	0.3	gene	147
+18	195.90000000000003	tRNA	148
+19	6.1	tRNA	148
+20	7.299999999999999	tRNA	148
+21	34.4	tRNA	148
+22	310.1000000000001	tRNA	148
+23	1.7	tRNA	148
+24	2.2	tRNA	148
+25	1.9	tRNA	148
+26	1.7	tRNA	148
+27	5.5	tRNA	148
+28	1.2	tRNA	148
+18	5.3		149
+19	6.8999999999999995		149
+20	168.6		149
+21	662.4999999999999		149
+22	468.4		149
+23	7.8		149
+19	8.8		150
+20	18.900000000000002		150
+21	2.6		150
+22	43.199999999999996		150
+23	180.7		150
+18	19.400000000000002	gene ncrna piRNA	151
+19	63.0	gene ncrna piRNA	151
+20	39.0	gene ncrna piRNA	151
+21	37.39999999999999	gene ncrna piRNA	151
+22	38.8	gene ncrna piRNA	151
+23	71.39999999999999	gene ncrna piRNA	151
+24	166.90000000000006	gene ncrna piRNA	151
+25	138.29999999999998	gene ncrna piRNA	151
+26	129.1	gene ncrna piRNA	151
+27	206.50000000000003	gene ncrna piRNA	151
+28	111.3	gene ncrna piRNA	151
+19	0.4	gene	152
+21	1.3	gene	152
+22	7.1	gene	152
+23	4.8	gene	152
+24	2.0	gene	152
+25	2.7	gene	152
+18	0.3	gene ncrna piRNA	153
+19	0.6	gene ncrna piRNA	153
+20	3.0	gene ncrna piRNA	153
+21	3.5	gene ncrna piRNA	153
+22	3.0	gene ncrna piRNA	153
+23	8.899999999999999	gene ncrna piRNA	153
+24	165.79999999999998	gene ncrna piRNA	153
+25	863.6999999999994	gene ncrna piRNA	153
+26	107.30000000000001	gene ncrna piRNA	153
+27	18.499999999999996	gene ncrna piRNA	153
+28	50.400000000000006	gene ncrna piRNA	153
+19	0.5	gene	154
+20	1.9	gene	154
+21	5.7	gene	154
+22	23.6	gene	154
+23	34.8	gene	154
+24	12.1	gene	154
+25	0.4	gene	154
+18	22.7	tRNA gene repeat piRNA	155
+19	34.099999999999994	tRNA gene repeat piRNA	155
+20	1.6	tRNA gene repeat piRNA	155
+21	1.2	tRNA gene repeat piRNA	155
+22	0.3	tRNA gene repeat piRNA	155
+23	0.5	tRNA gene repeat piRNA	155
+25	0.7	tRNA gene repeat piRNA	155
+26	1.0	tRNA gene repeat piRNA	155
+27	1.2	tRNA gene repeat piRNA	155
+18	0.4	repeat	156
+19	6.9	repeat	156
+20	8.4	repeat	156
+21	27.700000000000003	repeat	156
+22	11.700000000000001	repeat	156
+23	2.9000000000000004	repeat	156
+24	1.0	repeat	156
+25	0.8	repeat	156
+26	1.7000000000000002	repeat	156
+27	0.6	repeat	156
+28	0.3	repeat	156
+21	0.3	gene miRNA	157
+22	7.699999999999999	gene miRNA	157
+23	179.3	gene miRNA	157
+24	4.1	gene miRNA	157
+25	2.7	gene miRNA	157
+26	5.1	gene miRNA	157
+18	1.0	ncrna gene	158
+19	1.3	ncrna gene	158
+20	4.8	ncrna gene	158
+21	17.3	ncrna gene	158
+22	1.9	ncrna gene	158
+23	3.2	ncrna gene	158
+24	4.3	ncrna gene	158
+25	6.8999999999999995	ncrna gene	158
+26	7.7	ncrna gene	158
+27	9.000000000000002	ncrna gene	158
+28	19.400000000000002	ncrna gene	158
+18	0.7	ncrna gene	159
+19	1.1	ncrna gene	159
+20	8.3	ncrna gene	159
+21	12.200000000000001	ncrna gene	159
+22	0.5	ncrna gene	159
+23	0.3	ncrna gene	159
+24	0.9	ncrna gene	159
+25	3.3	ncrna gene	159
+26	3.3	ncrna gene	159
+27	5.499999999999999	ncrna gene	159
+28	15.600000000000001	ncrna gene	159
+18	3.2	repeat gene	160
+19	1.8	repeat gene	160
+21	0.8999999999999999	repeat gene	160
+22	0.8	repeat gene	160
+23	1.7999999999999998	repeat gene	160
+24	1.9000000000000001	repeat gene	160
+25	0.6	repeat gene	160
+26	0.7	repeat gene	160
+27	0.5	repeat gene	160
+18	55.599999999999994	ncrna repeat	161
+19	49.6	ncrna repeat	161
+20	16.6	ncrna repeat	161
+21	7.1	ncrna repeat	161
+22	65.8	ncrna repeat	161
+23	124.89999999999996	ncrna repeat	161
+24	50.9	ncrna repeat	161
+25	28.599999999999998	ncrna repeat	161
+26	4.599999999999999	ncrna repeat	161
+27	6.9	ncrna repeat	161
+28	74.39999999999999	ncrna repeat	161
+18	5.699999999999999	repeat gene	162
+19	2.5999999999999996	repeat gene	162
+20	1.0	repeat gene	162
+21	2.1	repeat gene	162
+22	2.2	repeat gene	162
+23	1.7	repeat gene	162
+24	1.9	repeat gene	162
+25	0.7	repeat gene	162
+27	0.3	repeat gene	162
+18	2.0	ncrna gene	163
+19	0.6	ncrna gene	163
+20	1.8	ncrna gene	163
+22	0.6	ncrna gene	163
+23	1.9000000000000001	ncrna gene	163
+24	0.7	ncrna gene	163
+25	1.0	ncrna gene	163
+26	1.5	ncrna gene	163
+27	130.3	ncrna gene	163
+28	34.9	ncrna gene	163
+18	16.6	gene miRNA	164
+19	45.00000000000001	gene miRNA	164
+20	53.89999999999999	gene miRNA	164
+21	183.5	gene miRNA	164
+22	1696.4	gene miRNA	164
+23	34.9	gene miRNA	164
+24	1.0	gene miRNA	164
+18	6.8	gene	165
+19	5.6	gene	165
+20	1.8000000000000003	gene	165
+21	2.3	gene	165
+22	3.4	gene	165
+23	0.6	gene	165
+25	0.9	gene	165
+26	0.3	gene	165
+27	0.6	gene	165
+28	0.3	gene	165
+18	9.9	repeat gene	166
+19	15.5	repeat gene	166
+20	10.5	repeat gene	166
+21	12.600000000000001	repeat gene	166
+22	11.2	repeat gene	166
+23	8.200000000000001	repeat gene	166
+24	6.1	repeat gene	166
+25	8.399999999999999	repeat gene	166
+26	12.1	repeat gene	166
+27	8.299999999999999	repeat gene	166
+28	6.699999999999999	repeat gene	166
+18	0.8999999999999999	gene ncrna piRNA	167
+19	0.8999999999999999	gene ncrna piRNA	167
+20	2.5	gene ncrna piRNA	167
+21	4.7	gene ncrna piRNA	167
+22	4.6	gene ncrna piRNA	167
+23	5.3	gene ncrna piRNA	167
+24	9.4	gene ncrna piRNA	167
+25	3.9	gene ncrna piRNA	167
+26	7.5	gene ncrna piRNA	167
+27	2.0	gene ncrna piRNA	167
+28	1.6	gene ncrna piRNA	167
+18	0.6		168
+19	1.8		168
+20	1.6		168
+21	1.7		168
+22	1.0		168
+23	0.6		168
+24	2.0		168
+25	2.3		168
+26	0.6		168
+27	0.8999999999999999		168
+28	1.0		168
+19	0.3	ncrna repeat gene	169
+20	0.3	ncrna repeat gene	169
+21	1.2	ncrna repeat gene	169
+22	1.4	ncrna repeat gene	169
+23	1.9	ncrna repeat gene	169
+24	8.299999999999999	ncrna repeat gene	169
+25	2.0	ncrna repeat gene	169
+26	4.3	ncrna repeat gene	169
+18	3.1999999999999997	ncrna gene	170
+19	3.3	ncrna gene	170
+20	10.4	ncrna gene	170
+21	20.0	ncrna gene	170
+22	8.1	ncrna gene	170
+23	0.3	ncrna gene	170
+24	1.2000000000000002	ncrna gene	170
+25	1.2	ncrna gene	170
+26	1.1	ncrna gene	170
+27	1.7	ncrna gene	170
+28	2.0	ncrna gene	170
+20	0.3	gene	171
+21	0.7	gene	171
+23	1.7999999999999998	gene	171
+24	2.1999999999999997	gene	171
+25	0.3	gene	171
+26	0.3	gene	171
+27	0.5	gene	171
+19	0.3		172
+21	0.4		172
+22	3.6999999999999997		172
+23	75.3		172
+24	70.2		172
+25	1.2		172
+27	0.9		172
+18	9.6	gene ncrna piRNA	173
+19	1.5	gene ncrna piRNA	173
+20	0.8	gene ncrna piRNA	173
+21	1.8	gene ncrna piRNA	173
+22	2.5999999999999996	gene ncrna piRNA	173
+23	2.7	gene ncrna piRNA	173
+24	6.800000000000001	gene ncrna piRNA	173
+25	8.6	gene ncrna piRNA	173
+26	14.2	gene ncrna piRNA	173
+27	12.900000000000002	gene ncrna piRNA	173
+28	36.8	gene ncrna piRNA	173
+19	0.3	gene	174
+20	1.4000000000000001	gene	174
+21	1.2	gene	174
+22	0.3	gene	174
+23	0.6	gene	174
+24	2.0	gene	174
+25	2.5	gene	174
+27	0.7	gene	174
+18	1.6	ncrna gene	175
+19	2.8	ncrna gene	175
+20	5.1	ncrna gene	175
+21	30.499999999999996	ncrna gene	175
+22	28.599999999999998	ncrna gene	175
+23	8.4	ncrna gene	175
+24	21.8	ncrna gene	175
+25	47.800000000000004	ncrna gene	175
+26	77.19999999999999	ncrna gene	175
+27	381.2	ncrna gene	175
+28	157.50000000000003	ncrna gene	175
+18	7.5	gene miRNA	176
+19	38.9	gene miRNA	176
+20	395.1000000000001	gene miRNA	176
+21	4580.500000000005	gene miRNA	176
+22	600.6	gene miRNA	176
+23	474.1	gene miRNA	176
+24	44.79999999999999	gene miRNA	176
+19	0.3	gene miRNA	177
+20	2.5999999999999996	gene miRNA	177
+21	2.1	gene miRNA	177
+22	3.6999999999999997	gene miRNA	177
+23	1.4000000000000001	gene miRNA	177
+24	0.4	gene miRNA	177
+18	2.4000000000000004	gene miRNA	178
+19	36.4	gene miRNA	178
+20	25.700000000000003	gene miRNA	178
+21	86.50000000000001	gene miRNA	178
+22	377.80000000000007	gene miRNA	178
+23	124.9	gene miRNA	178
+24	2.3	gene miRNA	178
+26	0.6	gene miRNA	178
+18	0.7	gene	179
+19	2.2	gene	179
+20	2.7	gene	179
+21	2.9999999999999996	gene	179
+22	4.2	gene	179
+23	4.699999999999999	gene	179
+24	3.8	gene	179
+25	4.2	gene	179
+26	3.0999999999999996	gene	179
+27	1.9	gene	179
+28	1.6	gene	179
+18	27.1	gene miRNA	180
+19	136.6	gene miRNA	180
+20	289.8	gene miRNA	180
+21	3153.4	gene miRNA	180
+22	17808.20000000001	gene miRNA	180
+23	870.8	gene miRNA	180
+24	149.8	gene miRNA	180
+25	13.0	gene miRNA	180
+26	0.8	gene miRNA	180
+27	0.3	gene miRNA	180
+18	0.4	gene	181
+19	0.3	gene	181
+20	0.8	gene	181
+22	0.3	gene	181
+23	0.6	gene	181
+24	1.7000000000000002	gene	181
+25	0.5	gene	181
+26	0.3	gene	181
+27	1.4	gene	181
+28	0.4	gene	181
+18	0.5	ncrna gene	182
+19	1.0	ncrna gene	182
+20	0.3	ncrna gene	182
+24	2.2	ncrna gene	182
+25	1.5	ncrna gene	182
+26	1.5	ncrna gene	182
+27	9.6	ncrna gene	182
+28	1.0	ncrna gene	182
+18	106.9	gene ncrna piRNA	183
+19	168.00000000000003	gene ncrna piRNA	183
+20	130.4	gene ncrna piRNA	183
+21	91.2	gene ncrna piRNA	183
+22	68.99999999999999	gene ncrna piRNA	183
+23	47.8	gene ncrna piRNA	183
+24	32.2	gene ncrna piRNA	183
+25	36.599999999999994	gene ncrna piRNA	183
+26	19.400000000000002	gene ncrna piRNA	183
+27	19.400000000000002	gene ncrna piRNA	183
+28	10.799999999999999	gene ncrna piRNA	183
+18	6.800000000000001	ncrna gene	184
+19	47.199999999999996	ncrna gene	184
+20	21.7	ncrna gene	184
+21	4.9	ncrna gene	184
+22	2.1	ncrna gene	184
+23	3.9	ncrna gene	184
+24	2.8	ncrna gene	184
+25	1.8	ncrna gene	184
+26	11.9	ncrna gene	184
+27	2.8	ncrna gene	184
+28	2.5	ncrna gene	184
+18	12.3	gene ncrna piRNA	185
+19	3.0	gene ncrna piRNA	185
+20	8.0	gene ncrna piRNA	185
+21	13.600000000000003	gene ncrna piRNA	185
+22	18.2	gene ncrna piRNA	185
+23	53.49999999999999	gene ncrna piRNA	185
+24	19.6	gene ncrna piRNA	185
+25	34.5	gene ncrna piRNA	185
+26	44.2	gene ncrna piRNA	185
+27	23.400000000000002	gene ncrna piRNA	185
+28	25.3	gene ncrna piRNA	185
+18	3.7	gene	186
+19	2.2	gene	186
+20	3.1999999999999997	gene	186
+21	1.5000000000000002	gene	186
+22	0.8999999999999999	gene	186
+19	0.4		187
+23	1.3		187
+24	2.1		187
+25	0.3		187
+26	0.6		187
+27	0.6		187
+28	0.3		187
+18	4.199999999999999	repeat gene	188
+19	4.0	repeat gene	188
+20	29.2	repeat gene	188
+21	3.8999999999999995	repeat gene	188
+22	2.4	repeat gene	188
+23	16.8	repeat gene	188
+24	9.500000000000002	repeat gene	188
+25	2.5	repeat gene	188
+26	6.799999999999999	repeat gene	188
+27	2.8	repeat gene	188
+28	1.4	repeat gene	188
+18	0.8999999999999999	gene	189
+19	4.2	gene	189
+20	4.8999999999999995	gene	189
+21	2.3	gene	189
+22	3.5999999999999996	gene	189
+23	2.7	gene	189
+24	3.0	gene	189
+25	8.0	gene	189
+26	8.5	gene	189
+27	10.3	gene	189
+28	5.3999999999999995	gene	189
+18	4.0	gene miRNA	190
+19	35.300000000000004	gene miRNA	190
+20	115.0	gene miRNA	190
+21	3743.800000000001	gene miRNA	190
+22	6444.9	gene miRNA	190
+23	1186.1	gene miRNA	190
+24	181.90000000000003	gene miRNA	190
+25	11.000000000000002	gene miRNA	190
+26	0.3	gene miRNA	190
+19	0.3	repeat miRNA gene	191
+20	0.4	repeat miRNA gene	191
+21	6.6	repeat miRNA gene	191
+22	1.5000000000000002	repeat miRNA gene	191
+23	0.8	repeat miRNA gene	191
+18	2.1	gene ncrna piRNA	192
+19	1.2000000000000002	gene ncrna piRNA	192
+20	6.6	gene ncrna piRNA	192
+21	9.600000000000001	gene ncrna piRNA	192
+22	4.7	gene ncrna piRNA	192
+23	13.0	gene ncrna piRNA	192
+24	12.5	gene ncrna piRNA	192
+25	5.5	gene ncrna piRNA	192
+26	13.099999999999998	gene ncrna piRNA	192
+27	30.799999999999994	gene ncrna piRNA	192
+28	89.9	gene ncrna piRNA	192
+18	2.7	ncrna gene	193
+19	1.9000000000000001	ncrna gene	193
+20	1.0	ncrna gene	193
+21	2.6	ncrna gene	193
+22	0.6	ncrna gene	193
+23	6.8	ncrna gene	193
+24	5.4	ncrna gene	193
+25	8.7	ncrna gene	193
+26	5.8	ncrna gene	193
+27	2.9000000000000004	ncrna gene	193
+28	9.6	ncrna gene	193
+18	3.7	ncrna gene	194
+19	15.8	ncrna gene	194
+20	17.1	ncrna gene	194
+21	3.6	ncrna gene	194
+22	9.700000000000001	ncrna gene	194
+23	10.7	ncrna gene	194
+24	0.3	ncrna gene	194
+25	0.7	ncrna gene	194
+26	2.1	ncrna gene	194
+28	0.8999999999999999	ncrna gene	194
+18	17.700000000000003	gene ncrna piRNA	195
+19	7.1	gene ncrna piRNA	195
+20	11.5	gene ncrna piRNA	195
+21	15.7	gene ncrna piRNA	195
+22	28.500000000000004	gene ncrna piRNA	195
+23	44.900000000000006	gene ncrna piRNA	195
+24	53.4	gene ncrna piRNA	195
+25	108.19999999999999	gene ncrna piRNA	195
+26	39.3	gene ncrna piRNA	195
+27	212.40000000000003	gene ncrna piRNA	195
+28	369.9000000000001	gene ncrna piRNA	195
+18	23.899999999999995	gene ncrna piRNA	196
+19	20.8	gene ncrna piRNA	196
+20	18.8	gene ncrna piRNA	196
+21	19.7	gene ncrna piRNA	196
+22	61.59999999999999	gene ncrna piRNA	196
+23	34.5	gene ncrna piRNA	196
+24	154.6	gene ncrna piRNA	196
+25	256.90000000000003	gene ncrna piRNA	196
+26	101.99999999999999	gene ncrna piRNA	196
+27	136.29999999999998	gene ncrna piRNA	196
+28	108.50000000000001	gene ncrna piRNA	196
+18	9.3	gene ncrna piRNA	197
+19	14.5	gene ncrna piRNA	197
+20	17.2	gene ncrna piRNA	197
+21	18.2	gene ncrna piRNA	197
+22	17.000000000000004	gene ncrna piRNA	197
+23	21.799999999999997	gene ncrna piRNA	197
+24	48.900000000000006	gene ncrna piRNA	197
+25	71.49999999999999	gene ncrna piRNA	197
+26	154.8	gene ncrna piRNA	197
+27	36.59999999999999	gene ncrna piRNA	197
+28	103.0	gene ncrna piRNA	197
+18	34.4	gene	198
+19	25.400000000000002	gene	198
+20	9.9	gene	198
+21	10.2	gene	198
+22	11.799999999999999	gene	198
+23	13.0	gene	198
+24	19.8	gene	198
+25	19.5	gene	198
+26	37.6	gene	198
+27	170.4	gene	198
+28	105.8	gene	198
+18	1.1	gene miRNA	199
+19	3.6	gene miRNA	199
+20	46.89999999999999	gene miRNA	199
+21	242.5	gene miRNA	199
+22	459.8999999999999	gene miRNA	199
+23	58.9	gene miRNA	199
+24	1.1	gene miRNA	199
+18	1.0	ncrna gene	200
+19	2.0999999999999996	ncrna gene	200
+20	2.1	ncrna gene	200
+21	5.1	ncrna gene	200
+22	5.7	ncrna gene	200
+23	17.0	ncrna gene	200
+24	3.0999999999999996	ncrna gene	200
+25	3.3000000000000003	ncrna gene	200
+26	18.2	ncrna gene	200
+27	6.2	ncrna gene	200
+28	2.4000000000000004	ncrna gene	200
+19	0.7	ncrna gene	201
+20	0.4	ncrna gene	201
+21	0.7	ncrna gene	201
+23	1.4	ncrna gene	201
+24	1.0	ncrna gene	201
+25	0.3	ncrna gene	201
+26	0.4	ncrna gene	201
+27	2.5	ncrna gene	201
+28	4.5	ncrna gene	201
+23	0.4	gene	202
+24	2.0	gene	202
+25	1.5	gene	202
+26	50.4	gene	202
+27	55.5	gene	202
+28	1.9	gene	202
+19	12.700000000000001	gene miRNA	203
+20	32.0	gene miRNA	203
+21	7.8	gene miRNA	203
+22	45.3	gene miRNA	203
+23	48.300000000000004	gene miRNA	203
+24	39.400000000000006	gene miRNA	203
+25	0.9	gene miRNA	203
+20	0.3	ncrna gene	204
+21	0.3	ncrna gene	204
+22	1.6	ncrna gene	204
+23	3.5	ncrna gene	204
+25	0.7	ncrna gene	204
+27	1.6	ncrna gene	204
+28	5.7	ncrna gene	204
+22	8.700000000000001	repeat	205
+23	4.2	repeat	205
+24	28.5	repeat	205
+25	33.9	repeat	205
+26	5.7	repeat	205
+20	0.3	gene	206
+23	1.6	gene	206
+24	0.5	gene	206
+26	2.5	gene	206
+27	1.3	gene	206
+28	1.4000000000000001	gene	206
+19	0.3	gene	207
+20	0.3	gene	207
+21	1.0	gene	207
+22	1.0	gene	207
+23	0.7	gene	207
+24	0.3	gene	207
+25	0.6	gene	207
+28	0.6	gene	207
+18	0.8999999999999999	gene miRNA	208
+19	15.799999999999999	gene miRNA	208
+20	4.9	gene miRNA	208
+21	72.2	gene miRNA	208
+22	14.8	gene miRNA	208
+23	320.4000000000001	gene miRNA	208
+24	14.299999999999999	gene miRNA	208
+25	12.8	gene miRNA	208
+26	8.7	gene miRNA	208
+27	0.6	gene miRNA	208
+18	0.5	gene	209
+19	0.6	gene	209
+20	0.3	gene	209
+23	0.9	gene	209
+24	0.6	gene	209
+25	1.4	gene	209
+26	3.1	gene	209
+27	0.8999999999999999	gene	209
+28	1.9000000000000001	gene	209
+19	0.8	gene miRNA	210
+20	10.7	gene miRNA	210
+21	13.7	gene miRNA	210
+22	17.3	gene miRNA	210
+23	4.7	gene miRNA	210
+24	1.7000000000000002	gene miRNA	210
+25	6.5	gene miRNA	210
+26	0.4	gene miRNA	210
+18	22.099999999999998	piRNA	211
+19	17.900000000000006	piRNA	211
+20	16.6	piRNA	211
+21	15.800000000000006	piRNA	211
+22	17.1	piRNA	211
+23	20.200000000000003	piRNA	211
+24	28.599999999999998	piRNA	211
+25	11.900000000000004	piRNA	211
+26	10.100000000000003	piRNA	211
+27	30.100000000000005	piRNA	211
+28	18.7	piRNA	211
+19	0.3	gene miRNA	212
+20	0.3	gene miRNA	212
+21	8.700000000000001	gene miRNA	212
+22	16.0	gene miRNA	212
+23	29.099999999999998	gene miRNA	212
+24	134.20000000000002	gene miRNA	212
+25	10.7	gene miRNA	212
+18	0.5	gene	213
+21	2.6	gene	213
+22	1.1	gene	213
+23	1.7	gene	213
+24	4.2	gene	213
+25	1.2	gene	213
+26	0.3	gene	213
+28	0.9	gene	213
+18	3.9	ncrna gene	214
+19	2.6	ncrna gene	214
+20	1.2000000000000002	ncrna gene	214
+21	2.6999999999999997	ncrna gene	214
+22	2.1	ncrna gene	214
+23	5.9	ncrna gene	214
+24	3.0	ncrna gene	214
+25	2.1	ncrna gene	214
+26	8.2	ncrna gene	214
+27	12.3	ncrna gene	214
+28	3.8	ncrna gene	214
+19	0.6	ncrna gene	215
+23	0.8	ncrna gene	215
+24	1.5	ncrna gene	215
+25	2.0	ncrna gene	215
+26	0.6	ncrna gene	215
+27	1.5	ncrna gene	215
+28	5.3	ncrna gene	215
+18	0.4	ncrna gene	216
+19	4.0	ncrna gene	216
+20	10.4	ncrna gene	216
+21	12.500000000000002	ncrna gene	216
+22	11.8	ncrna gene	216
+23	9.700000000000001	ncrna gene	216
+24	9.499999999999998	ncrna gene	216
+25	6.699999999999999	ncrna gene	216
+26	8.0	ncrna gene	216
+27	12.100000000000001	ncrna gene	216
+18	32.1	ncrna gene	217
+19	16.900000000000002	ncrna gene	217
+20	25.599999999999998	ncrna gene	217
+21	40.00000000000001	ncrna gene	217
+22	97.3	ncrna gene	217
+23	129.10000000000002	ncrna gene	217
+24	233.39999999999998	ncrna gene	217
+25	161.20000000000002	ncrna gene	217
+26	66.10000000000001	ncrna gene	217
+27	104.89999999999999	ncrna gene	217
+28	374.2	ncrna gene	217
+18	1.2		218
+19	0.6		218
+20	1.5		218
+21	3.1999999999999997		218
+22	2.5		218
+23	1.5		218
+24	1.4		218
+25	2.5		218
+26	1.1		218
+27	0.6		218
+28	1.7000000000000002		218
+18	19.499999999999996	gene miRNA	219
+19	35.0	gene miRNA	219
+20	36.099999999999994	gene miRNA	219
+21	433.3	gene miRNA	219
+22	254.2	gene miRNA	219
+23	205.70000000000002	gene miRNA	219
+24	32.3	gene miRNA	219
+25	5.0	gene miRNA	219
+26	1.0	gene miRNA	219
+18	226.50000000000006		220
+19	101.39999999999999		220
+20	44.499999999999986		220
+21	149.90000000000006		220
+22	65.1		220
+23	67.5		220
+24	131.00000000000003		220
+25	87.49999999999999		220
+26	76.3		220
+27	130.70000000000002		220
+28	273.30000000000007		220
+18	0.9	gene miRNA	221
+19	1.6	gene miRNA	221
+20	10.600000000000001	gene miRNA	221
+21	244.6	gene miRNA	221
+22	328.9	gene miRNA	221
+23	219.7	gene miRNA	221
+24	28.200000000000003	gene miRNA	221
+25	4.0	gene miRNA	221
+26	0.3	gene miRNA	221
+18	1.2	ncrna miRNA gene	222
+19	0.7	ncrna miRNA gene	222
+20	0.4	ncrna miRNA gene	222
+21	2.5	ncrna miRNA gene	222
+22	1.6	ncrna miRNA gene	222
+23	8.9	ncrna miRNA gene	222
+24	2.4000000000000004	ncrna miRNA gene	222
+25	1.1	ncrna miRNA gene	222
+26	2.4	ncrna miRNA gene	222
+27	0.8	ncrna miRNA gene	222
+28	0.3	ncrna miRNA gene	222
+18	0.8999999999999999		223
+19	1.2		223
+20	0.6		223
+21	3.0		223
+22	1.8		223
+23	1.9000000000000001		223
+24	1.3		223
+25	1.6		223
+26	0.7		223
+27	3.0999999999999996		223
+28	0.6		223
+18	27.6	ncrna gene	224
+19	51.39999999999999	ncrna gene	224
+20	38.3	ncrna gene	224
+21	64.30000000000001	ncrna gene	224
+22	87.89999999999999	ncrna gene	224
+23	71.2	ncrna gene	224
+24	37.800000000000004	ncrna gene	224
+25	22.1	ncrna gene	224
+26	26.0	ncrna gene	224
+27	33.8	ncrna gene	224
+28	29.1	ncrna gene	224
+18	5.5	piRNA gene ncrna	225
+19	7.3	piRNA gene ncrna	225
+20	4.3999999999999995	piRNA gene ncrna	225
+21	7.699999999999999	piRNA gene ncrna	225
+22	7.400000000000001	piRNA gene ncrna	225
+23	5.6	piRNA gene ncrna	225
+24	13.6	piRNA gene ncrna	225
+25	108.39999999999999	piRNA gene ncrna	225
+26	584.5	piRNA gene ncrna	225
+27	961.9999999999995	piRNA gene ncrna	225
+28	70.69999999999999	piRNA gene ncrna	225
+18	19.400000000000002	gene ncrna piRNA	226
+19	20.0	gene ncrna piRNA	226
+20	32.7	gene ncrna piRNA	226
+21	3.6	gene ncrna piRNA	226
+22	7.8	gene ncrna piRNA	226
+23	29.900000000000002	gene ncrna piRNA	226
+24	3.7	gene ncrna piRNA	226
+25	3.3	gene ncrna piRNA	226
+26	1.9	gene ncrna piRNA	226
+27	0.3	gene ncrna piRNA	226
+28	1.5	gene ncrna piRNA	226
+18	6.3999999999999995	ncrna gene	227
+19	3.5999999999999996	ncrna gene	227
+20	16.0	ncrna gene	227
+21	9.700000000000001	ncrna gene	227
+22	25.6	ncrna gene	227
+23	2.9999999999999996	ncrna gene	227
+24	4.1	ncrna gene	227
+25	8.0	ncrna gene	227
+26	7.199999999999999	ncrna gene	227
+27	4.3	ncrna gene	227
+28	8.1	ncrna gene	227
+20	0.3	ncrna gene	228
+22	0.9	ncrna gene	228
+24	0.3	ncrna gene	228
+25	2.8	ncrna gene	228
+26	1.6	ncrna gene	228
+27	0.3	ncrna gene	228
+28	0.3	ncrna gene	228
+18	6.5		229
+19	1.9		229
+20	4.2		229
+21	5.100000000000001		229
+22	3.4999999999999996		229
+23	8.0		229
+24	11.200000000000003		229
+25	6.6		229
+26	6.7		229
+27	7.799999999999999		229
+28	8.299999999999999		229
+18	2825.7000000000007	repeat miRNA gene	230
+19	26.299999999999997	repeat miRNA gene	230
+20	0.6	repeat miRNA gene	230
+21	0.3	repeat miRNA gene	230
+22	5.3	repeat miRNA gene	230
+18	4.8999999999999995	repeat	231
+19	1.1	repeat	231
+20	3.9	repeat	231
+21	1.3	repeat	231
+22	7.8	repeat	231
+24	0.8	repeat	231
+25	0.6	repeat	231
+26	1.0	repeat	231
+27	1.6	repeat	231
+28	0.7	repeat	231
+18	25.700000000000003	repeat	232
+19	1.9	repeat	232
+20	12.900000000000002	repeat	232
+21	133.5	repeat	232
+22	3.8	repeat	232
+23	1.1	repeat	232
+24	0.7	repeat	232
+25	1.6	repeat	232
+26	6.3999999999999995	repeat	232
+27	0.8999999999999999	repeat	232
+28	0.3	repeat	232
+18	96.19999999999999	tRNA repeat	233
+19	8.1	tRNA repeat	233
+20	25.799999999999997	tRNA repeat	233
+21	121.79999999999998	tRNA repeat	233
+22	33.2	tRNA repeat	233
+23	9.799999999999999	tRNA repeat	233
+24	24.299999999999997	tRNA repeat	233
+25	49.69999999999999	tRNA repeat	233
+26	268.1	tRNA repeat	233
+27	2.0	tRNA repeat	233
+28	12.0	tRNA repeat	233
+18	3204.1	repeat gene	234
+19	42.5	repeat gene	234
+20	6.499999999999999	repeat gene	234
+21	73.10000000000001	repeat gene	234
+22	681.3999999999997	repeat gene	234
+23	2.5	repeat gene	234
+25	0.3	repeat gene	234
+26	0.5	repeat gene	234
+18	0.4	repeat	235
+19	0.5	repeat	235
+20	0.3	repeat	235
+21	0.5	repeat	235
+23	0.8999999999999999	repeat	235
+24	18.5	repeat	235
+25	0.3	repeat	235
+26	0.7	repeat	235
+28	0.3	repeat	235
+18	79.39999999999999	tRNA repeat	236
+19	60.79999999999998	tRNA repeat	236
+20	214.00000000000003	tRNA repeat	236
+21	232.00000000000003	tRNA repeat	236
+22	58.800000000000004	tRNA repeat	236
+23	1.2	tRNA repeat	236
+25	0.6	tRNA repeat	236
+26	0.7	tRNA repeat	236
+27	0.3	tRNA repeat	236
+28	0.3	tRNA repeat	236
+18	4.8	tRNA repeat	237
+19	5.0	tRNA repeat	237
+20	8.6	tRNA repeat	237
+21	69.60000000000001	tRNA repeat	237
+22	114.29999999999998	tRNA repeat	237
+23	9.2	tRNA repeat	237
+24	4.3999999999999995	tRNA repeat	237
+25	17.1	tRNA repeat	237
+26	31.7	tRNA repeat	237
+27	1.5999999999999999	tRNA repeat	237
+28	4.3999999999999995	tRNA repeat	237
+18	1699.6999999999998		238
+19	22.3		238
+20	3.3		238
+21	23.700000000000003		238
+22	303.09999999999997		238
+19	3.3	gene miRNA	239
+20	2.3	gene miRNA	239
+21	61.49999999999999	gene miRNA	239
+22	985.9999999999998	gene miRNA	239
+23	83.1	gene miRNA	239
+24	3.6	gene miRNA	239
+26	1.0	gene miRNA	239
+19	11.100000000000001	repeat miRNA gene	240
+20	4.6	repeat miRNA gene	240
+21	17.5	repeat miRNA gene	240
+22	8.600000000000001	repeat miRNA gene	240
+23	3.0	repeat miRNA gene	240
+24	0.3	repeat miRNA gene	240
+26	0.3	repeat miRNA gene	240
+18	48.0	repeat miRNA gene	241
+19	80.39999999999999	repeat miRNA gene	241
+20	475.6	repeat miRNA gene	241
+21	3151.8000000000025	repeat miRNA gene	241
+22	4827.599999999999	repeat miRNA gene	241
+23	3312.8000000000034	repeat miRNA gene	241
+24	171.20000000000002	repeat miRNA gene	241
+25	65.3	repeat miRNA gene	241
+26	1.3	repeat miRNA gene	241
+27	0.3	repeat miRNA gene	241
+18	0.6	repeat gene	242
+21	0.3	repeat gene	242
+22	18.1	repeat gene	242
+23	10.8	repeat gene	242
+24	5.7	repeat gene	242
+25	0.8	repeat gene	242
+21	2.1	repeat gene	243
+22	2.0	repeat gene	243
+23	1.0	repeat gene	243
+25	1.2	repeat gene	243
+18	99.39999999999998	ncrna gene	244
+19	60.599999999999994	ncrna gene	244
+20	63.300000000000004	ncrna gene	244
+21	84.1	ncrna gene	244
+22	292.6	ncrna gene	244
+23	366.69999999999993	ncrna gene	244
+24	497.10000000000014	ncrna gene	244
+25	862.1999999999996	ncrna gene	244
+26	884.0999999999995	ncrna gene	244
+27	827.5999999999997	ncrna gene	244
+28	550.3999999999997	ncrna gene	244
+18	36.09999999999999	gene	245
+19	43.900000000000006	gene	245
+20	82.89999999999999	gene	245
+21	380.10000000000014	gene	245
+22	1336.3	gene	245
+23	747.7999999999995	gene	245
+24	791.0999999999992	gene	245
+25	175.3	gene	245
+26	198.10000000000008	gene	245
+27	188.79999999999998	gene	245
+28	566.4999999999997	gene	245
+18	0.4	ncrna gene	246
+19	7.1	ncrna gene	246
+20	3.8	ncrna gene	246
+21	2.4	ncrna gene	246
+22	6.9	ncrna gene	246
+23	5.800000000000001	ncrna gene	246
+24	12.9	ncrna gene	246
+25	23.5	ncrna gene	246
+26	9.700000000000001	ncrna gene	246
+27	13.299999999999999	ncrna gene	246
+28	28.8	ncrna gene	246
+18	12.400000000000002	ncrna gene	247
+19	206.10000000000002	ncrna gene	247
+20	22.8	ncrna gene	247
+21	12.9	ncrna gene	247
+22	20.900000000000002	ncrna gene	247
+23	2.5	ncrna gene	247
+24	5.300000000000001	ncrna gene	247
+25	38.5	ncrna gene	247
+26	16.3	ncrna gene	247
+27	20.5	ncrna gene	247
+28	10.4	ncrna gene	247
+18	19.4	gene ncrna piRNA	248
+19	12.899999999999999	gene ncrna piRNA	248
+20	17.799999999999997	gene ncrna piRNA	248
+21	16.8	gene ncrna piRNA	248
+22	7.3	gene ncrna piRNA	248
+23	11.500000000000002	gene ncrna piRNA	248
+24	18.0	gene ncrna piRNA	248
+25	21.9	gene ncrna piRNA	248
+26	13.799999999999999	gene ncrna piRNA	248
+27	7.0	gene ncrna piRNA	248
+28	4.1000000000000005	gene ncrna piRNA	248
+18	10.7	repeat	249
+19	1.2	repeat	249
+20	6.1	repeat	249
+21	2.8	repeat	249
+22	6.0	repeat	249
+23	3.4	repeat	249
+24	1.5	repeat	249
+25	12.600000000000001	repeat	249
+26	3.6	repeat	249
+27	3.9999999999999996	repeat	249
+28	7.5	repeat	249
+18	18.699999999999996	repeat gene	250
+19	46.199999999999996	repeat gene	250
+20	164.9	repeat gene	250
+21	224.6	repeat gene	250
+22	776.8999999999997	repeat gene	250
+23	361.2000000000001	repeat gene	250
+24	1016.5999999999997	repeat gene	250
+25	373.9	repeat gene	250
+26	47.49999999999999	repeat gene	250
+27	77.20000000000002	repeat gene	250
+28	53.6	repeat gene	250
+18	39.19999999999999	repeat	251
+19	33.1	repeat	251
+20	76.29999999999998	repeat	251
+21	85.3	repeat	251
+22	233.40000000000012	repeat	251
+23	132.7	repeat	251
+24	338.8000000000001	repeat	251
+25	180.29999999999998	repeat	251
+26	73.59999999999998	repeat	251
+27	283.3	repeat	251
+28	58.8	repeat	251
+18	12.100000000000001	repeat gene	252
+19	12.700000000000001	repeat gene	252
+20	22.200000000000003	repeat gene	252
+21	27.1	repeat gene	252
+22	42.199999999999996	repeat gene	252
+23	19.099999999999998	repeat gene	252
+24	48.400000000000006	repeat gene	252
+25	92.7	repeat gene	252
+26	112.0	repeat gene	252
+27	671.3	repeat gene	252
+28	295.29999999999995	repeat gene	252
+18	91.0	ncrna gene	253
+19	62.3	ncrna gene	253
+20	112.29999999999998	ncrna gene	253
+21	132.6	ncrna gene	253
+22	113.1	ncrna gene	253
+23	119.60000000000002	ncrna gene	253
+24	1319.599999999999	ncrna gene	253
+25	355.8999999999999	ncrna gene	253
+26	680.1000000000001	ncrna gene	253
+27	1180.9999999999995	ncrna gene	253
+28	493.6	ncrna gene	253
+18	5.9	gene ncrna piRNA	254
+19	2.5	gene ncrna piRNA	254
+20	4.7	gene ncrna piRNA	254
+21	5.7	gene ncrna piRNA	254
+22	3.0	gene ncrna piRNA	254
+23	7.5	gene ncrna piRNA	254
+24	6.0	gene ncrna piRNA	254
+25	13.400000000000002	gene ncrna piRNA	254
+26	58.9	gene ncrna piRNA	254
+27	88.60000000000001	gene ncrna piRNA	254
+28	91.8	gene ncrna piRNA	254
+18	2.4	tRNA repeat piRNA	255
+19	0.7	tRNA repeat piRNA	255
+21	0.5	tRNA repeat piRNA	255
+22	13.7	tRNA repeat piRNA	255
+23	4.9	tRNA repeat piRNA	255
+25	0.8	tRNA repeat piRNA	255
+27	0.3	tRNA repeat piRNA	255
+19	4.9	repeat miRNA gene	256
+20	26.1	repeat miRNA gene	256
+21	23.799999999999997	repeat miRNA gene	256
+22	48.3	repeat miRNA gene	256
+23	13.8	repeat miRNA gene	256
+24	5.3	repeat miRNA gene	256
+25	3.3	repeat miRNA gene	256
+26	1.0	repeat miRNA gene	256
+18	0.4	repeat gene	257
+19	1.3	repeat gene	257
+22	15.300000000000002	repeat gene	257
+18	15.1	tRNA repeat	258
+19	5.3999999999999995	tRNA repeat	258
+20	29.599999999999998	tRNA repeat	258
+21	37.4	tRNA repeat	258
+22	562.0	tRNA repeat	258
+23	26.200000000000003	tRNA repeat	258
+24	26.499999999999996	tRNA repeat	258
+25	16.5	tRNA repeat	258
+26	24.6	tRNA repeat	258
+27	61.599999999999994	tRNA repeat	258
+28	82.19999999999999	tRNA repeat	258
+18	201.00000000000006		259
+19	210.90000000000003		259
+20	449.59999999999997		259
+21	190.00000000000003		259
+22	1798.9999999999995		259
+23	87.19999999999997		259
+24	93.99999999999997		259
+25	514.0000000000001		259
+26	272.6		259
+27	147.4		259
+28	223.60000000000002		259
+18	708.8	repeat	260
+19	282.7	repeat	260
+20	41.699999999999996	repeat	260
+21	0.7	repeat	260
+22	25.099999999999998	repeat	260
+18	26.699999999999996	tRNA repeat	261
+19	21.400000000000002	tRNA repeat	261
+20	7.499999999999998	tRNA repeat	261
+21	28.3	tRNA repeat	261
+22	93.29999999999998	tRNA repeat	261
+23	123.30000000000001	tRNA repeat	261
+24	38.499999999999986	tRNA repeat	261
+25	10.500000000000002	tRNA repeat	261
+26	3.1999999999999997	tRNA repeat	261
+27	6.199999999999999	tRNA repeat	261
+28	15.600000000000001	tRNA repeat	261
+18	4.5	repeat miRNA gene	262
+19	246.9	repeat miRNA gene	262
+20	49.0	repeat miRNA gene	262
+21	60.7	repeat miRNA gene	262
+22	373.8	repeat miRNA gene	262
+19	0.7	repeat miRNA gene	263
+20	2.9	repeat miRNA gene	263
+21	28.8	repeat miRNA gene	263
+22	24.5	repeat miRNA gene	263
+23	9.5	repeat miRNA gene	263
+18	17.0	gene miRNA	264
+19	4.3	gene miRNA	264
+20	61.4	gene miRNA	264
+21	62.900000000000006	gene miRNA	264
+22	877.0999999999996	gene miRNA	264
+23	469.0	gene miRNA	264
+24	15.700000000000001	gene miRNA	264
+25	0.3	gene miRNA	264
+18	0.3	gene miRNA	265
+19	1.1	gene miRNA	265
+20	16.3	gene miRNA	265
+21	8.500000000000002	gene miRNA	265
+22	86.3	gene miRNA	265
+23	76.3	gene miRNA	265
+24	8.200000000000001	gene miRNA	265
+18	32.2	gene ncrna piRNA	266
+19	87.89999999999999	gene ncrna piRNA	266
+20	121.1	gene ncrna piRNA	266
+21	20.500000000000004	gene ncrna piRNA	266
+22	40.5	gene ncrna piRNA	266
+23	70.7	gene ncrna piRNA	266
+24	58.199999999999996	gene ncrna piRNA	266
+25	80.5	gene ncrna piRNA	266
+26	55.2	gene ncrna piRNA	266
+27	40.2	gene ncrna piRNA	266
+28	69.00000000000001	gene ncrna piRNA	266
+18	5.9	gene miRNA	267
+19	10.8	gene miRNA	267
+20	127.1	gene miRNA	267
+21	412.40000000000015	gene miRNA	267
+22	838.9	gene miRNA	267
+23	209.40000000000003	gene miRNA	267
+24	37.3	gene miRNA	267
+25	19.000000000000004	gene miRNA	267
+26	70.3	gene miRNA	267
+27	5.8	gene miRNA	267
+28	1.5	gene miRNA	267
+18	3.8999999999999995	gene miRNA	268
+19	54.9	gene miRNA	268
+20	328.20000000000005	gene miRNA	268
+21	600.6999999999998	gene miRNA	268
+22	5756.799999999999	gene miRNA	268
+23	46.0	gene miRNA	268
+18	0.8999999999999999	gene	269
+19	1.1	gene	269
+20	4.3	gene	269
+21	3.4	gene	269
+22	0.3	gene	269
+23	0.3	gene	269
+24	1.1	gene	269
+25	1.0	gene	269
+26	3.8	gene	269
+28	0.4	gene	269
+18	3.9	gene ncrna piRNA	270
+19	7.8999999999999995	gene ncrna piRNA	270
+20	9.4	gene ncrna piRNA	270
+21	19.400000000000002	gene ncrna piRNA	270
+22	32.699999999999996	gene ncrna piRNA	270
+23	32.099999999999994	gene ncrna piRNA	270
+24	32.5	gene ncrna piRNA	270
+25	34.699999999999996	gene ncrna piRNA	270
+26	62.39999999999999	gene ncrna piRNA	270
+27	70.0	gene ncrna piRNA	270
+28	31.999999999999996	gene ncrna piRNA	270
+18	0.6	piRNA gene	271
+19	0.6	piRNA gene	271
+20	2.7999999999999994	piRNA gene	271
+21	0.9	piRNA gene	271
+22	1.2	piRNA gene	271
+23	0.3	piRNA gene	271
+24	2.0	piRNA gene	271
+25	1.7	piRNA gene	271
+26	4.0	piRNA gene	271
+27	1.2000000000000002	piRNA gene	271
+28	1.0	piRNA gene	271
+18	1.1	repeat miRNA gene	272
+19	19.0	repeat miRNA gene	272
+20	72.1	repeat miRNA gene	272
+21	56.900000000000006	repeat miRNA gene	272
+22	79.99999999999997	repeat miRNA gene	272
+23	6.6	repeat miRNA gene	272
+24	2.0	repeat miRNA gene	272
+18	12.600000000000001	ncrna gene	273
+19	7.6	ncrna gene	273
+20	21.799999999999997	ncrna gene	273
+21	120.5	ncrna gene	273
+22	175.80000000000004	ncrna gene	273
+23	155.3	ncrna gene	273
+24	112.90000000000002	ncrna gene	273
+25	140.5	ncrna gene	273
+26	93.29999999999998	ncrna gene	273
+27	67.8	ncrna gene	273
+28	45.79999999999999	ncrna gene	273
+24	2.9		274
+25	2.3		274
+26	9.0		274
+27	1.6		274
+28	14.6		274
+18	0.3	ncrna gene	275
+19	0.8	ncrna gene	275
+20	1.9	ncrna gene	275
+21	0.3	ncrna gene	275
+23	0.7	ncrna gene	275
+24	0.6	ncrna gene	275
+25	2.4	ncrna gene	275
+26	2.5	ncrna gene	275
+27	0.9	ncrna gene	275
+28	0.6	ncrna gene	275
+18	1.5	gene	276
+19	0.8	gene	276
+20	2.4	gene	276
+21	1.4000000000000001	gene	276
+22	1.6	gene	276
+23	0.3	gene	276
+24	2.9	gene	276
+25	2.3	gene	276
+26	3.6999999999999997	gene	276
+27	4.3	gene	276
+19	0.4	gene	277
+22	0.3	gene	277
+23	0.7	gene	277
+24	2.1	gene	277
+25	2.6999999999999997	gene	277
+26	0.9	gene	277
+28	1.3	gene	277
+18	5.5	gene	278
+19	13.0	gene	278
+20	8.8	gene	278
+21	3.4	gene	278
+22	4.7	gene	278
+18	0.3	repeat gene	279
+19	57.3	repeat gene	279
+20	41.699999999999996	repeat gene	279
+21	38.0	repeat gene	279
+22	32.5	repeat gene	279
+23	26.1	repeat gene	279
+24	25.4	repeat gene	279
+25	22.200000000000003	repeat gene	279
+26	14.5	repeat gene	279
+27	7.7	repeat gene	279
+28	5.0	repeat gene	279
+18	19.500000000000007	piRNA	280
+19	12.0	piRNA	280
+20	10.800000000000004	piRNA	280
+21	18.800000000000004	piRNA	280
+22	20.200000000000003	piRNA	280
+23	21.000000000000004	piRNA	280
+24	23.6	piRNA	280
+25	18.000000000000004	piRNA	280
+26	11.299999999999999	piRNA	280
+27	33.400000000000006	piRNA	280
+28	21.100000000000005	piRNA	280
+18	1.3	gene	281
+19	2.5	gene	281
+20	2.2	gene	281
+21	1.7	gene	281
+22	1.2000000000000002	gene	281
+23	5.4	gene	281
+24	2.0	gene	281
+25	1.8	gene	281
+26	1.6	gene	281
+27	1.4	gene	281
+28	1.9	gene	281
+18	2.6999999999999997	repeat gene	282
+19	1.4	repeat gene	282
+20	1.9000000000000001	repeat gene	282
+21	3.6999999999999997	repeat gene	282
+22	2.1	repeat gene	282
+23	4.1	repeat gene	282
+24	0.3	repeat gene	282
+19	1.1	gene	283
+20	0.3	gene	283
+21	124.9	gene	283
+22	0.3	gene	283
+23	0.3	gene	283
+24	0.3	gene	283
+18	49.89999999999999	piRNA	284
+19	85.50000000000001	piRNA	284
+20	44.8	piRNA	284
+21	37.89999999999999	piRNA	284
+22	109.29999999999998	piRNA	284
+23	49.599999999999966	piRNA	284
+24	194.70000000000002	piRNA	284
+25	49.199999999999974	piRNA	284
+26	38.09999999999999	piRNA	284
+27	102.0	piRNA	284
+28	59.59999999999998	piRNA	284
+18	623.8		285
+19	709.2		285
+20	506.69999999999993		285
+21	65.80000000000001		285
+22	54.900000000000006		285
+23	1.0		285
+25	0.3		285
+18	0.3	ncrna gene	286
+21	1.9000000000000001	ncrna gene	286
+22	0.4	ncrna gene	286
+23	0.7	ncrna gene	286
+24	0.3	ncrna gene	286
+25	1.6	ncrna gene	286
+26	1.7	ncrna gene	286
+28	0.3	ncrna gene	286
+18	1.8	gene	287
+20	0.3	gene	287
+22	0.6	gene	287
+25	2.8	gene	287
+26	0.4	gene	287
+27	8.6	gene	287
+28	0.5	gene	287
+19	0.7		288
+20	0.6		288
+22	0.5		288
+23	1.7		288
+24	0.8		288
+25	1.8		288
+26	2.1		288
+27	1.2000000000000002		288
+28	1.1		288
+18	926.7	gene miRNA	289
+19	723.6999999999996	gene miRNA	289
+20	390.4000000000001	gene miRNA	289
+21	945.5	gene miRNA	289
+22	2287.300000000002	gene miRNA	289
+23	5626.0	gene miRNA	289
+24	769.3999999999996	gene miRNA	289
+25	109.10000000000001	gene miRNA	289
+26	4.2	gene miRNA	289
+27	0.3	gene miRNA	289
+18	40.49999999999999	ncrna gene	290
+19	0.6	ncrna gene	290
+20	0.8999999999999999	ncrna gene	290
+21	5.6	ncrna gene	290
+22	17.6	ncrna gene	290
+23	27.199999999999996	ncrna gene	290
+24	19.799999999999997	ncrna gene	290
+25	45.2	ncrna gene	290
+26	4.5	ncrna gene	290
+27	11.1	ncrna gene	290
+28	4.4	ncrna gene	290
+18	708.0	ncrna gene	291
+19	116.19999999999997	ncrna gene	291
+20	20.500000000000004	ncrna gene	291
+21	26.299999999999997	ncrna gene	291
+22	36.800000000000004	ncrna gene	291
+23	43.39999999999999	ncrna gene	291
+24	81.69999999999999	ncrna gene	291
+25	80.6	ncrna gene	291
+26	118.90000000000002	ncrna gene	291
+27	352.1000000000001	ncrna gene	291
+28	445.80000000000007	ncrna gene	291
+20	1.6	ncrna gene	292
+21	4.2	ncrna gene	292
+22	0.3	ncrna gene	292
+24	10.1	ncrna gene	292
+25	5.1000000000000005	ncrna gene	292
+26	1.8	ncrna gene	292
+27	3.0	ncrna gene	292
+28	15.200000000000001	ncrna gene	292
+20	1.0	gene	293
+24	0.6	gene	293
+25	1.3	gene	293
+26	0.3	gene	293
+27	0.7	gene	293
+19	2.8	gene miRNA	294
+20	3.1999999999999997	gene miRNA	294
+21	18.8	gene miRNA	294
+22	4.5	gene miRNA	294
+23	1.3	gene miRNA	294
+24	0.9	gene miRNA	294
+18	7.0	ncrna gene	295
+19	16.7	ncrna gene	295
+20	1.3	ncrna gene	295
+21	1.7	ncrna gene	295
+22	1.9	ncrna gene	295
+26	7.8999999999999995	ncrna gene	295
+27	5.3	ncrna gene	295
+28	1.3	ncrna gene	295
+19	1.9000000000000001	ncrna gene	296
+20	2.2	ncrna gene	296
+21	1.4000000000000001	ncrna gene	296
+22	0.6	ncrna gene	296
+23	1.4	ncrna gene	296
+24	3.3	ncrna gene	296
+25	44.2	ncrna gene	296
+26	38.99999999999999	ncrna gene	296
+27	11.2	ncrna gene	296
+28	13.900000000000002	ncrna gene	296
+18	57.69999999999999	gene	297
+19	94.3	gene	297
+20	34.1	gene	297
+21	11.700000000000001	gene	297
+22	14.500000000000002	gene	297
+23	12.1	gene	297
+24	10.5	gene	297
+25	11.4	gene	297
+26	8.8	gene	297
+27	12.8	gene	297
+28	34.800000000000004	gene	297
+18	1.8	gene miRNA	298
+19	4.4	gene miRNA	298
+20	28.8	gene miRNA	298
+21	41.099999999999994	gene miRNA	298
+22	120.60000000000001	gene miRNA	298
+23	1229.7999999999997	gene miRNA	298
+24	605.5999999999999	gene miRNA	298
+25	98.10000000000001	gene miRNA	298
+26	12.100000000000001	gene miRNA	298
+27	0.8	gene miRNA	298
+18	0.6	gene miRNA	299
+20	4.3	gene miRNA	299
+21	6.1000000000000005	gene miRNA	299
+22	16.0	gene miRNA	299
+23	267.6000000000001	gene miRNA	299
+24	101.80000000000001	gene miRNA	299
+25	3.6999999999999997	gene miRNA	299
+26	0.6	gene miRNA	299
+20	3.9	gene miRNA	300
+21	4.7	gene miRNA	300
+22	14.4	gene miRNA	300
+23	130.5	gene miRNA	300
+24	16.3	gene miRNA	300
+25	4.300000000000001	gene miRNA	300
+26	0.3	gene miRNA	300
+18	8.2	gene miRNA	301
+19	112.8	gene miRNA	301
+20	97.6	gene miRNA	301
+21	450.40000000000003	gene miRNA	301
+22	213.40000000000003	gene miRNA	301
+23	1311.9	gene miRNA	301
+24	640.7999999999994	gene miRNA	301
+25	52.99999999999999	gene miRNA	301
+26	9.600000000000001	gene miRNA	301
+27	0.6	gene miRNA	301
+18	30.299999999999997	tRNA repeat	302
+19	53.099999999999994	tRNA repeat	302
+20	18.200000000000003	tRNA repeat	302
+21	54.60000000000001	tRNA repeat	302
+22	270.90000000000015	tRNA repeat	302
+23	72.69999999999999	tRNA repeat	302
+24	274.30000000000007	tRNA repeat	302
+25	40.800000000000004	tRNA repeat	302
+26	62.59999999999999	tRNA repeat	302
+27	128.5	tRNA repeat	302
+28	12.400000000000002	tRNA repeat	302
+18	1.2	repeat gene	303
+19	6.4	repeat gene	303
+20	3.4	repeat gene	303
+21	3.2	repeat gene	303
+22	8.399999999999999	repeat gene	303
+23	2.6	repeat gene	303
+24	4.7	repeat gene	303
+25	4.4	repeat gene	303
+26	0.7	repeat gene	303
+27	0.7	repeat gene	303
+28	1.0	repeat gene	303
+18	25.8	gene miRNA	304
+19	186.00000000000003	gene miRNA	304
+20	280.9000000000001	gene miRNA	304
+21	1246.8000000000009	gene miRNA	304
+22	14742.899999999974	gene miRNA	304
+23	621.9999999999999	gene miRNA	304
+24	175.9	gene miRNA	304
+25	9.899999999999999	gene miRNA	304
+26	0.3	gene miRNA	304
+27	12.9	gene miRNA	304
+18	7.2	gene miRNA	305
+19	12.2	gene miRNA	305
+20	250.50000000000003	gene miRNA	305
+21	327.9	gene miRNA	305
+22	2257.9000000000005	gene miRNA	305
+23	328.0	gene miRNA	305
+24	40.2	gene miRNA	305
+25	0.3	gene miRNA	305
+18	19.599999999999998		306
+19	23.500000000000004		306
+20	23.799999999999997		306
+21	26.4		306
+22	31.900000000000006		306
+23	43.59999999999999		306
+24	29.000000000000004		306
+25	19.10000000000001		306
+26	43.999999999999986		306
+27	49.29999999999998		306
+28	27.40000000000001		306
+20	0.4	gene	307
+25	0.7	gene	307
+26	11.3	gene	307
+27	70.10000000000001	gene	307
+28	121.00000000000001	gene	307
+18	2007.4999999999998	gene miRNA	308
+19	1467.4999999999993	gene miRNA	308
+20	28761.90000000001	gene miRNA	308
+21	7802.800000000001	gene miRNA	308
+22	5060.5999999999985	gene miRNA	308
+23	1564.3	gene miRNA	308
+24	128.59999999999997	gene miRNA	308
+25	14.900000000000004	gene miRNA	308
+26	0.3	gene miRNA	308
+27	0.5	gene miRNA	308
+28	0.7	gene miRNA	308
+18	484.5	repeat	309
+19	10.2	repeat	309
+20	1.5	repeat	309
+21	2.1	repeat	309
+22	2.7	repeat	309
+19	1.1	ncrna gene	310
+20	0.6	ncrna gene	310
+24	0.7	ncrna gene	310
+25	1.0	ncrna gene	310
+26	2.0	ncrna gene	310
+27	2.0	ncrna gene	310
+28	2.5	ncrna gene	310
+18	0.8	gene miRNA	311
+20	2.0999999999999996	gene miRNA	311
+21	4.1	gene miRNA	311
+22	16.5	gene miRNA	311
+23	2.4	gene miRNA	311
+21	0.3	ncrna gene	312
+24	0.6	ncrna gene	312
+25	5.6000000000000005	ncrna gene	312
+26	2.8	ncrna gene	312
+27	1.1	ncrna gene	312
+28	10.400000000000002	ncrna gene	312
+18	5.699999999999999	gene	313
+19	182.3	gene	313
+20	9.2	gene	313
+21	179.9	gene	313
+18	6.3	repeat	314
+19	23.5	repeat	314
+20	53.3	repeat	314
+21	65.7	repeat	314
+22	26.000000000000004	repeat	314
+23	25.6	repeat	314
+24	36.7	repeat	314
+25	18.200000000000003	repeat	314
+26	55.900000000000006	repeat	314
+27	16.1	repeat	314
+28	55.399999999999984	repeat	314
+18	118.69999999999996	ncrna repeat	315
+19	131.9	ncrna repeat	315
+20	194.40000000000003	ncrna repeat	315
+21	285.4000000000001	ncrna repeat	315
+22	219.4000000000001	ncrna repeat	315
+23	306.6000000000001	ncrna repeat	315
+24	240.10000000000008	ncrna repeat	315
+25	221.40000000000006	ncrna repeat	315
+26	196.4	ncrna repeat	315
+27	236.79999999999998	ncrna repeat	315
+28	193.30000000000013	ncrna repeat	315
+18	87.89999999999996	ncrna gene	316
+19	21.9	ncrna gene	316
+20	16.7	ncrna gene	316
+21	31.700000000000003	ncrna gene	316
+22	11.3	ncrna gene	316
+23	16.9	ncrna gene	316
+24	20.500000000000004	ncrna gene	316
+25	38.69999999999999	ncrna gene	316
+26	102.79999999999997	ncrna gene	316
+27	281.0	ncrna gene	316
+28	183.8	ncrna gene	316
+18	774.9	ncrna gene	317
+19	256.7	ncrna gene	317
+20	221.5	ncrna gene	317
+21	178.3	ncrna gene	317
+22	135.3	ncrna gene	317
+23	194.4	ncrna gene	317
+24	106.29999999999998	ncrna gene	317
+25	27.8	ncrna gene	317
+26	74.1	ncrna gene	317
+27	69.7	ncrna gene	317
+28	37.699999999999996	ncrna gene	317
+18	20.2	ncrna gene	318
+19	16.5	ncrna gene	318
+20	4.199999999999999	ncrna gene	318
+21	1.3	ncrna gene	318
+22	0.4	ncrna gene	318
+23	2.4	ncrna gene	318
+24	2.2	ncrna gene	318
+25	1.9	ncrna gene	318
+26	0.3	ncrna gene	318
+28	1.5	ncrna gene	318
+19	0.7	gene	319
+20	6.5	gene	319
+21	12.700000000000001	gene	319
+22	6.0	gene	319
+23	26.3	gene	319
+24	2.2	gene	319
+18	137.4	gene miRNA	320
+19	688.7999999999998	gene miRNA	320
+20	1819.8	gene miRNA	320
+21	7563.299999999998	gene miRNA	320
+22	20386.4	gene miRNA	320
+23	9576.69999999999	gene miRNA	320
+24	2200.500000000001	gene miRNA	320
+25	56.599999999999994	gene miRNA	320
+26	3.3	gene miRNA	320
+18	0.3	gene miRNA	321
+19	1.5	gene miRNA	321
+20	1.9	gene miRNA	321
+21	17.3	gene miRNA	321
+22	86.0	gene miRNA	321
+23	24.9	gene miRNA	321
+24	5.8	gene miRNA	321
+18	2.4	gene miRNA	322
+19	2.9	gene miRNA	322
+20	9.8	gene miRNA	322
+21	87.40000000000003	gene miRNA	322
+22	174.5	gene miRNA	322
+23	44.2	gene miRNA	322
+24	4.1	gene miRNA	322
+18	2.2	gene miRNA	323
+19	3.0999999999999996	gene miRNA	323
+20	25.7	gene miRNA	323
+21	49.2	gene miRNA	323
+22	293.6	gene miRNA	323
+23	125.2	gene miRNA	323
+24	1.8	gene miRNA	323
+25	0.6	gene miRNA	323
+18	287.4000000000001	gene miRNA	324
+19	594.0999999999998	gene miRNA	324
+20	878.2999999999995	gene miRNA	324
+21	9029.100000000006	gene miRNA	324
+22	16278.599999999986	gene miRNA	324
+23	10366.8	gene miRNA	324
+24	14853.199999999993	gene miRNA	324
+25	66.19999999999999	gene miRNA	324
+26	22.3	gene miRNA	324
+27	17.400000000000002	gene miRNA	324
+28	8.4	gene miRNA	324
+18	10.4	gene	325
+19	18.300000000000004	gene	325
+20	20.3	gene	325
+21	21.6	gene	325
+22	27.999999999999996	gene	325
+23	15.100000000000001	gene	325
+24	14.399999999999999	gene	325
+25	25.999999999999996	gene	325
+26	26.700000000000006	gene	325
+27	20.2	gene	325
+28	13.000000000000004	gene	325
+18	36.69999999999999	gene ncrna piRNA	326
+19	7.800000000000001	gene ncrna piRNA	326
+20	5.3	gene ncrna piRNA	326
+21	4.2	gene ncrna piRNA	326
+22	13.0	gene ncrna piRNA	326
+23	5.699999999999999	gene ncrna piRNA	326
+24	17.5	gene ncrna piRNA	326
+25	10.0	gene ncrna piRNA	326
+26	9.0	gene ncrna piRNA	326
+27	15.200000000000001	gene ncrna piRNA	326
+28	9.5	gene ncrna piRNA	326
+18	47.8	gene miRNA	327
+19	191.10000000000002	gene miRNA	327
+20	193.70000000000005	gene miRNA	327
+21	350.4	gene miRNA	327
+22	92.69999999999999	gene miRNA	327
+23	96.6	gene miRNA	327
+24	10.100000000000001	gene miRNA	327
+25	0.8	gene miRNA	327
+18	489.3	ncrna gene	328
+19	684.0999999999997	ncrna gene	328
+20	386.30000000000007	ncrna gene	328
+21	47.39999999999999	ncrna gene	328
+22	76.4	ncrna gene	328
+23	170.70000000000002	ncrna gene	328
+24	207.79999999999998	ncrna gene	328
+25	238.00000000000006	ncrna gene	328
+26	919.2999999999997	ncrna gene	328
+27	4541.300000000002	ncrna gene	328
+28	7795.899999999999	ncrna gene	328
+20	0.3		329
+21	0.6		329
+22	0.4		329
+25	0.6		329
+26	0.8999999999999999		329
+27	3.5999999999999996		329
+28	2.1		329
+18	25.700000000000003	gene	330
+19	49.59999999999999	gene	330
+20	48.199999999999996	gene	330
+21	39.5	gene	330
+22	149.60000000000002	gene	330
+23	256.20000000000016	gene	330
+24	2946.900000000001	gene	330
+25	411.20000000000005	gene	330
+26	75.0	gene	330
+27	80.60000000000001	gene	330
+28	193.2	gene	330
+21	2.1999999999999997	gene ncrna piRNA	331
+22	18.099999999999998	gene ncrna piRNA	331
+23	2.3	gene ncrna piRNA	331
+24	1.4	gene ncrna piRNA	331
+25	0.3	gene ncrna piRNA	331
+26	4.3999999999999995	gene ncrna piRNA	331
+27	2.8	gene ncrna piRNA	331
+28	6.2	gene ncrna piRNA	331
+18	111.6	ncrna gene	332
+19	1094.1000000000001	ncrna gene	332
+20	595.2	ncrna gene	332
+21	628.9999999999999	ncrna gene	332
+22	333.0	ncrna gene	332
+23	341.3	ncrna gene	332
+24	295.90000000000015	ncrna gene	332
+25	257.6	ncrna gene	332
+26	258.80000000000007	ncrna gene	332
+27	258.1000000000001	ncrna gene	332
+28	155.0	ncrna gene	332
+18	48.39999999999999	ncrna gene	333
+19	122.8	ncrna gene	333
+20	58.1	ncrna gene	333
+21	196.10000000000002	ncrna gene	333
+22	18.9	ncrna gene	333
+23	22.400000000000002	ncrna gene	333
+24	42.0	ncrna gene	333
+25	35.9	ncrna gene	333
+26	38.9	ncrna gene	333
+27	32.0	ncrna gene	333
+28	33.099999999999994	ncrna gene	333
+18	15954.899999999958	repeat	334
+19	24027.8	repeat	334
+20	3283.100000000003	repeat	334
+21	2202.2999999999993	repeat	334
+22	1834.1999999999985	repeat	334
+23	3761.5000000000014	repeat	334
+24	8596.299999999992	repeat	334
+25	9286.099999999988	repeat	334
+26	1584.6000000000001	repeat	334
+27	1479.8999999999996	repeat	334
+28	1695.5999999999992	repeat	334
+18	0.3	repeat gene	335
+20	0.8	repeat gene	335
+22	0.4	repeat gene	335
+24	1.1	repeat gene	335
+25	5.9	repeat gene	335
+27	0.4	repeat gene	335
+28	1.6	repeat gene	335
+18	1.7999999999999998	repeat	336
+19	2.5	repeat	336
+22	0.6	repeat	336
+23	2.6	repeat	336
+24	4.2	repeat	336
+25	2.7	repeat	336
+28	1.4	repeat	336
+18	17.6	repeat	337
+19	15.700000000000001	repeat	337
+21	0.6	repeat	337
+23	2.7	repeat	337
+24	14.700000000000001	repeat	337
+25	18.799999999999997	repeat	337
+18	3.599999999999999		338
+19	3.8		338
+20	3.6		338
+21	6.2		338
+22	10.700000000000001		338
+23	20.200000000000003		338
+24	11.100000000000001		338
+25	6.0		338
+26	9.5		338
+27	19.999999999999996		338
+28	61.49999999999999		338
+18	67.4	gene miRNA	339
+19	90.0	gene miRNA	339
+20	196.0	gene miRNA	339
+21	1355.1000000000001	gene miRNA	339
+22	11312.599999999986	gene miRNA	339
+23	1111.6999999999998	gene miRNA	339
+24	71.00000000000001	gene miRNA	339
+25	2.1999999999999997	gene miRNA	339
+18	21.6	gene miRNA	340
+19	30.8	gene miRNA	340
+20	115.29999999999998	gene miRNA	340
+21	593.9	gene miRNA	340
+22	5331.200000000001	gene miRNA	340
+23	355.70000000000005	gene miRNA	340
+24	8.0	gene miRNA	340
+19	2.5999999999999996	gene miRNA piRNA	341
+20	4.4	gene miRNA piRNA	341
+21	66.3	gene miRNA piRNA	341
+22	469.30000000000007	gene miRNA piRNA	341
+23	33.9	gene miRNA piRNA	341
+24	0.3	gene miRNA piRNA	341
+25	0.3	gene miRNA piRNA	341
+18	47.4	gene miRNA piRNA	342
+19	278.09999999999997	gene miRNA piRNA	342
+20	715.6999999999999	gene miRNA piRNA	342
+21	5774.799999999998	gene miRNA piRNA	342
+22	40347.9	gene miRNA piRNA	342
+23	2881.3000000000034	gene miRNA piRNA	342
+24	29.7	gene miRNA piRNA	342
+25	1.5	gene miRNA piRNA	342
+27	1.4	gene miRNA piRNA	342
+18	451.00000000000006	gene miRNA	343
+19	152.9	gene miRNA	343
+20	335.70000000000005	gene miRNA	343
+21	798.1	gene miRNA	343
+22	5431.8	gene miRNA	343
+23	1323.3	gene miRNA	343
+24	74.9	gene miRNA	343
+25	6.3	gene miRNA	343
+18	55.00000000000001	gene miRNA	344
+19	198.9	gene miRNA	344
+20	698.3999999999996	gene miRNA	344
+21	6732.700000000001	gene miRNA	344
+22	48038.900000000016	gene miRNA	344
+23	3033.0999999999995	gene miRNA	344
+24	207.20000000000005	gene miRNA	344
+25	6.3	gene miRNA	344
+27	4.1	gene miRNA	344
+28	0.3	gene miRNA	344
+18	1.9000000000000001	gene miRNA	345
+19	5.0	gene miRNA	345
+20	28.299999999999997	gene miRNA	345
+21	96.2	gene miRNA	345
+22	366.6	gene miRNA	345
+23	120.40000000000002	gene miRNA	345
+24	26.6	gene miRNA	345
+25	3.3999999999999995	gene miRNA	345
+18	5.0	gene miRNA	346
+19	37.99999999999999	gene miRNA	346
+20	153.30000000000004	gene miRNA	346
+21	706.7999999999997	gene miRNA	346
+22	3223.600000000001	gene miRNA	346
+23	317.8	gene miRNA	346
+24	27.8	gene miRNA	346
+20	1.0	gene miRNA	347
+21	10.9	gene miRNA	347
+22	69.6	gene miRNA	347
+23	4.4	gene miRNA	347
+24	0.3	gene miRNA	347
+18	2.3	tRNA repeat	348
+19	0.3	tRNA repeat	348
+20	0.4	tRNA repeat	348
+21	0.3	tRNA repeat	348
+22	2.3	tRNA repeat	348
+23	6.5	tRNA repeat	348
+24	17.0	tRNA repeat	348
+25	15.899999999999999	tRNA repeat	348
+26	6.6	tRNA repeat	348
+27	4.1	tRNA repeat	348
+28	6.5	tRNA repeat	348
+21	2.2	tRNA repeat	349
+22	6.699999999999999	tRNA repeat	349
+23	2.5999999999999996	tRNA repeat	349
+24	2.2	tRNA repeat	349
+25	1.7	tRNA repeat	349
+18	2.4	tRNA gene repeat piRNA	350
+19	0.3	tRNA gene repeat piRNA	350
+20	1.5	tRNA gene repeat piRNA	350
+21	1.7000000000000002	tRNA gene repeat piRNA	350
+22	1.5	tRNA gene repeat piRNA	350
+23	0.3	tRNA gene repeat piRNA	350
+27	0.4	tRNA gene repeat piRNA	350
+28	0.6	tRNA gene repeat piRNA	350
+18	45.3	tRNA repeat piRNA	351
+19	5.0	tRNA repeat piRNA	351
+20	6.9	tRNA repeat piRNA	351
+21	1.4	tRNA repeat piRNA	351
+24	1.8	tRNA repeat piRNA	351
+25	0.3	tRNA repeat piRNA	351
+27	1.2	tRNA repeat piRNA	351
+28	0.4	tRNA repeat piRNA	351
+18	729.6	repeat gene	352
+19	32.2	repeat gene	352
+20	2.5	repeat gene	352
+18	12.200000000000001	tRNA piRNA repeat	353
+19	3.9	tRNA piRNA repeat	353
+20	4.8	tRNA piRNA repeat	353
+21	20.799999999999997	tRNA piRNA repeat	353
+22	96.5	tRNA piRNA repeat	353
+23	2.7999999999999994	tRNA piRNA repeat	353
+24	5.6	tRNA piRNA repeat	353
+25	21.4	tRNA piRNA repeat	353
+26	29.000000000000004	tRNA piRNA repeat	353
+27	6.4	tRNA piRNA repeat	353
+28	1.9	tRNA piRNA repeat	353
+18	17.6	repeat	354
+19	1.4000000000000001	repeat	354
+18	2.9	tRNA repeat	355
+19	0.3	tRNA repeat	355
+20	0.7	tRNA repeat	355
+21	3.4	tRNA repeat	355
+22	0.3	tRNA repeat	355
+23	5.5	tRNA repeat	355
+24	1.4000000000000001	tRNA repeat	355
+25	5.5	tRNA repeat	355
+27	0.3	tRNA repeat	355
+28	0.8999999999999999	tRNA repeat	355
+18	1673.5000000000002	tRNA repeat piRNA	356
+19	7.5	tRNA repeat piRNA	356
+20	6.499999999999999	tRNA repeat piRNA	356
+21	7.8999999999999995	tRNA repeat piRNA	356
+22	28.6	tRNA repeat piRNA	356
+23	25.500000000000004	tRNA repeat piRNA	356
+24	25.000000000000004	tRNA repeat piRNA	356
+25	5.5	tRNA repeat piRNA	356
+28	1.4	tRNA repeat piRNA	356
+18	16.0	gene ncrna piRNA	357
+19	4.1	gene ncrna piRNA	357
+20	5.9	gene ncrna piRNA	357
+21	7.6000000000000005	gene ncrna piRNA	357
+22	12.299999999999999	gene ncrna piRNA	357
+23	53.799999999999976	gene ncrna piRNA	357
+24	123.69999999999999	gene ncrna piRNA	357
+25	99.6	gene ncrna piRNA	357
+26	14.000000000000002	gene ncrna piRNA	357
+27	35.9	gene ncrna piRNA	357
+28	753.6999999999998	gene ncrna piRNA	357
+18	4.0	gene	358
+19	1.0	gene	358
+20	2.0	gene	358
+21	1.7	gene	358
+22	0.8999999999999999	gene	358
+23	2.2	gene	358
+24	1.7999999999999998	gene	358
+25	1.3	gene	358
+26	2.5	gene	358
+27	2.1	gene	358
+28	1.9000000000000001	gene	358
+18	0.9	gene miRNA	359
+19	1.4000000000000001	gene miRNA	359
+20	10.700000000000001	gene miRNA	359
+21	1.2	gene miRNA	359
+22	5.0	gene miRNA	359
+23	8.799999999999999	gene miRNA	359
+24	86.8	gene miRNA	359
+25	0.4	gene miRNA	359
+18	107.1	gene miRNA	360
+19	161.9	gene miRNA	360
+20	90.29999999999998	gene miRNA	360
+21	89.4	gene miRNA	360
+22	910.6999999999998	gene miRNA	360
+23	921.6999999999996	gene miRNA	360
+24	6501.300000000004	gene miRNA	360
+25	181.9	gene miRNA	360
+26	6.5	gene miRNA	360
+27	0.8	gene miRNA	360
+18	253.70000000000005	gene miRNA	361
+19	216.40000000000003	gene miRNA	361
+20	1716.5999999999995	gene miRNA	361
+21	1223.1	gene miRNA	361
+22	828.0999999999998	gene miRNA	361
+23	2545.800000000001	gene miRNA	361
+24	17284.499999999993	gene miRNA	361
+25	226.50000000000006	gene miRNA	361
+26	17.0	gene miRNA	361
+27	3.3	gene miRNA	361
+28	0.6	gene miRNA	361
+18	221.5	ncrna gene	362
+19	105.10000000000001	ncrna gene	362
+20	150.30000000000007	ncrna gene	362
+21	92.39999999999999	ncrna gene	362
+22	201.2	ncrna gene	362
+23	92.60000000000001	ncrna gene	362
+24	86.4	ncrna gene	362
+25	108.1	ncrna gene	362
+26	314.6	ncrna gene	362
+27	2023.4	ncrna gene	362
+28	1171.7999999999995	ncrna gene	362
+18	22.1	ncrna gene	363
+19	68.0	ncrna gene	363
+20	65.90000000000002	ncrna gene	363
+21	127.89999999999999	ncrna gene	363
+22	128.8	ncrna gene	363
+23	257.50000000000006	ncrna gene	363
+24	406.5	ncrna gene	363
+25	446.00000000000006	ncrna gene	363
+26	282.5	ncrna gene	363
+27	88.5	ncrna gene	363
+28	184.20000000000005	ncrna gene	363
+18	75.9	ncrna gene	364
+19	211.90000000000003	ncrna gene	364
+20	318.09999999999997	ncrna gene	364
+21	93.70000000000002	ncrna gene	364
+22	118.39999999999999	ncrna gene	364
+23	53.79999999999999	ncrna gene	364
+24	38.29999999999999	ncrna gene	364
+25	35.6	ncrna gene	364
+26	18.3	ncrna gene	364
+27	26.8	ncrna gene	364
+28	12.000000000000002	ncrna gene	364
+18	15.8	gene miRNA	365
+19	22.3	gene miRNA	365
+20	113.39999999999998	gene miRNA	365
+21	227.40000000000003	gene miRNA	365
+22	874.9999999999994	gene miRNA	365
+23	981.9999999999999	gene miRNA	365
+24	512.9000000000001	gene miRNA	365
+25	102.2	gene miRNA	365
+26	5.1	gene miRNA	365
+27	0.6	gene miRNA	365
+18	2.8	ncrna gene	366
+19	3.7	ncrna gene	366
+20	4.3	ncrna gene	366
+21	12.8	ncrna gene	366
+22	15.800000000000002	ncrna gene	366
+23	30.5	ncrna gene	366
+24	42.0	ncrna gene	366
+25	26.599999999999998	ncrna gene	366
+26	49.39999999999999	ncrna gene	366
+27	75.60000000000001	ncrna gene	366
+28	103.3	ncrna gene	366
+18	196.20000000000002	repeat gene	367
+19	195.10000000000002	repeat gene	367
+20	170.9	repeat gene	367
+21	15.500000000000002	repeat gene	367
+18	6.5		368
+19	2.8999999999999995		368
+20	117.1		368
+21	93.39999999999999		368
+22	25.3		368
+18	0.4	repeat	369
+19	6.7	repeat	369
+20	6.0	repeat	369
+21	13.2	repeat	369
+19	0.4		370
+20	17.500000000000004		370
+21	62.6		370
+22	3.2		370
+23	2.1		370
+24	0.3		370
+18	348.79999999999995	gene	371
+19	1372.1	gene	371
+20	168.5	gene	371
+21	1.0	gene	371
+18	1.1		372
+19	5.1		372
+20	44.3		372
+21	1.7		372
+22	3.4		372
+19	2.3	gene	373
+20	11.400000000000002	gene	373
+21	3.9000000000000004	gene	373
+22	0.3	gene	373
+18	0.3		374
+19	0.5		374
+20	2.5		374
+21	6.1		374
+22	16.0		374
+19	0.3	repeat gene	375
+20	3.5	repeat gene	375
+21	21.8	repeat gene	375
+22	58.1	repeat gene	375
+23	2.6	repeat gene	375
+18	7.400000000000001	tRNA repeat piRNA	376
+19	4.9	tRNA repeat piRNA	376
+20	9.1	tRNA repeat piRNA	376
+21	7.8	tRNA repeat piRNA	376
+22	26.9	tRNA repeat piRNA	376
+23	1.8	tRNA repeat piRNA	376
+24	0.7	tRNA repeat piRNA	376
+25	0.3	tRNA repeat piRNA	376
+27	0.3	tRNA repeat piRNA	376
+28	0.3	tRNA repeat piRNA	376
+18	506.3	repeat gene	377
+19	24.799999999999997	repeat gene	377
+20	2.2	repeat gene	377
+21	1.3	repeat gene	377
+22	0.4	repeat gene	377
+18	18.6	gene miRNA	378
+19	26.300000000000004	gene miRNA	378
+20	187.70000000000002	gene miRNA	378
+21	2058.3	gene miRNA	378
+22	7034.7	gene miRNA	378
+23	7408.699999999999	gene miRNA	378
+24	944.9999999999999	gene miRNA	378
+25	95.69999999999997	gene miRNA	378
+26	0.3	gene miRNA	378
+18	133.3	tRNA repeat	379
+19	65.60000000000001	tRNA repeat	379
+20	26.800000000000004	tRNA repeat	379
+21	59.4	tRNA repeat	379
+22	168.7	tRNA repeat	379
+23	116.29999999999998	tRNA repeat	379
+24	40.999999999999986	tRNA repeat	379
+25	8.5	tRNA repeat	379
+26	21.900000000000002	tRNA repeat	379
+27	10.100000000000001	tRNA repeat	379
+28	3.4	tRNA repeat	379
+18	40.49999999999999	repeat gene	380
+19	17.2	repeat gene	380
+20	3.1999999999999997	repeat gene	380
+21	5.800000000000001	repeat gene	380
+22	45.5	repeat gene	380
+18	26.6	tRNA repeat piRNA	381
+19	1.9000000000000001	tRNA repeat piRNA	381
+20	14.3	tRNA repeat piRNA	381
+21	7.999999999999999	tRNA repeat piRNA	381
+22	8.9	tRNA repeat piRNA	381
+23	5.499999999999999	tRNA repeat piRNA	381
+24	1.0	tRNA repeat piRNA	381
+25	3.8	tRNA repeat piRNA	381
+26	4.9	tRNA repeat piRNA	381
+27	0.4	tRNA repeat piRNA	381
+18	548.8999999999999	repeat gene	382
+19	21.7	repeat gene	382
+20	0.7	repeat gene	382
+18	802.6	repeat	383
+19	453.0	repeat	383
+20	619.7999999999993	repeat	383
+21	479.40000000000015	repeat	383
+22	248.20000000000007	repeat	383
+23	196.10000000000008	repeat	383
+24	163.60000000000002	repeat	383
+25	156.90000000000006	repeat	383
+26	145.70000000000005	repeat	383
+27	135.1	repeat	383
+28	154.69999999999996	repeat	383
+18	11.8	gene miRNA	384
+19	2.5	gene miRNA	384
+20	596.1	gene miRNA	384
+21	286.4	gene miRNA	384
+22	94.0	gene miRNA	384
+23	7.200000000000001	gene miRNA	384
+24	3.1999999999999997	gene miRNA	384
+25	0.4	gene miRNA	384
+21	1.3		385
+22	0.7		385
+25	1.2		385
+26	1.2999999999999998		385
+27	0.8999999999999999		385
+28	1.0		385
+18	236.70000000000005	tRNA repeat	386
+19	703.3999999999999	tRNA repeat	386
+20	894.1000000000001	tRNA repeat	386
+21	117.39999999999999	tRNA repeat	386
+22	25.200000000000003	tRNA repeat	386
+23	2.5999999999999996	tRNA repeat	386
+24	1.5	tRNA repeat	386
+25	0.3	tRNA repeat	386
+21	0.3	gene	387
+22	0.8	gene	387
+23	2.0	gene	387
+26	2.2	gene	387
+27	1.2	gene	387
+28	0.3	gene	387
+18	58.099999999999994	gene ncrna	388
+19	216.20000000000005	gene ncrna	388
+20	16.5	gene ncrna	388
+21	16.6	gene ncrna	388
+22	154.00000000000006	gene ncrna	388
+23	18.3	gene ncrna	388
+24	17.4	gene ncrna	388
+25	26.600000000000005	gene ncrna	388
+26	47.8	gene ncrna	388
+27	221.49999999999997	gene ncrna	388
+28	148.60000000000002	gene ncrna	388
+18	2.1	gene miRNA piRNA	389
+19	2.4	gene miRNA piRNA	389
+20	27.0	gene miRNA piRNA	389
+21	35.2	gene miRNA piRNA	389
+22	231.50000000000003	gene miRNA piRNA	389
+23	119.90000000000002	gene miRNA piRNA	389
+24	634.9999999999999	gene miRNA piRNA	389
+25	90.50000000000001	gene miRNA piRNA	389
+26	154.50000000000006	gene miRNA piRNA	389
+27	17.7	gene miRNA piRNA	389
+28	2.4000000000000004	gene miRNA piRNA	389
+18	96.30000000000001	gene miRNA piRNA	390
+19	32.7	gene miRNA piRNA	390
+20	403.29999999999995	gene miRNA piRNA	390
+21	260.2000000000001	gene miRNA piRNA	390
+22	648.5000000000001	gene miRNA piRNA	390
+23	19.0	gene miRNA piRNA	390
+24	12.799999999999999	gene miRNA piRNA	390
+18	12.7	repeat	391
+19	21.400000000000002	repeat	391
+20	65.4	repeat	391
+21	110.5	repeat	391
+22	122.69999999999999	repeat	391
+23	155.4	repeat	391
+24	132.0	repeat	391
+25	83.5	repeat	391
+26	38.199999999999996	repeat	391
+27	9.8	repeat	391
+28	8.2	repeat	391
+18	30.6	ncrna repeat gene	392
+19	46.79999999999999	ncrna repeat gene	392
+20	45.1	ncrna repeat gene	392
+21	31.4	ncrna repeat gene	392
+22	28.4	ncrna repeat gene	392
+23	56.19999999999999	ncrna repeat gene	392
+24	44.8	ncrna repeat gene	392
+25	46.999999999999986	ncrna repeat gene	392
+26	31.1	ncrna repeat gene	392
+27	26.1	ncrna repeat gene	392
+28	29.500000000000007	ncrna repeat gene	392
+18	0.3	gene	393
+19	1.1	gene	393
+20	1.2	gene	393
+21	5.0	gene	393
+22	3.2	gene	393
+23	1.6	gene	393
+25	0.3	gene	393
+27	0.3	gene	393
+28	0.3	gene	393
+18	1.3		394
+19	1.4		394
+20	1.2000000000000002		394
+21	0.3		394
+23	1.1		394
+24	1.0		394
+27	0.3		394
+18	267.0	gene miRNA	395
+19	132.1	gene miRNA	395
+20	5437.100000000002	gene miRNA	395
+21	699.3999999999997	gene miRNA	395
+22	319.5	gene miRNA	395
+23	50.79999999999999	gene miRNA	395
+24	3.1999999999999997	gene miRNA	395
+18	12.4	gene miRNA	396
+19	856.7999999999995	gene miRNA	396
+20	1355.5000000000005	gene miRNA	396
+21	320.7	gene miRNA	396
+22	183.89999999999998	gene miRNA	396
+23	1.5999999999999999	gene miRNA	396
+18	49.99999999999999	tRNA repeat piRNA	397
+19	22.0	tRNA repeat piRNA	397
+20	1.7999999999999998	tRNA repeat piRNA	397
+21	1.9000000000000001	tRNA repeat piRNA	397
+22	2.6	tRNA repeat piRNA	397
+26	2.5	tRNA repeat piRNA	397
+27	1.4000000000000001	tRNA repeat piRNA	397
+28	0.4	tRNA repeat piRNA	397
+18	452.1	tRNA repeat gene	398
+19	15.599999999999998	tRNA repeat gene	398
+20	25.900000000000002	tRNA repeat gene	398
+21	1.4	tRNA repeat gene	398
+22	0.6	tRNA repeat gene	398
+23	0.8999999999999999	tRNA repeat gene	398
+24	2.0999999999999996	tRNA repeat gene	398
+25	1.4	tRNA repeat gene	398
+26	6.1000000000000005	tRNA repeat gene	398
+27	11.500000000000002	tRNA repeat gene	398
+28	8.1	tRNA repeat gene	398
+18	0.8999999999999999	repeat	399
+19	1.7000000000000002	repeat	399
+20	3.1	repeat	399
+21	9.8	repeat	399
+22	5.8999999999999995	repeat	399
+23	1.4000000000000001	repeat	399
+26	2.4	repeat	399
+27	0.3	repeat	399
+28	0.3	repeat	399
+18	1.7	tRNA repeat	400
+19	16.2	tRNA repeat	400
+20	29.2	tRNA repeat	400
+21	18.700000000000003	tRNA repeat	400
+22	24.6	tRNA repeat	400
+23	12.100000000000001	tRNA repeat	400
+24	1.6	tRNA repeat	400
+26	0.4	tRNA repeat	400
+27	0.7	tRNA repeat	400
+28	1.3	tRNA repeat	400
+18	0.3	tRNA repeat	401
+19	5.6	tRNA repeat	401
+20	1.2	tRNA repeat	401
+21	0.7	tRNA repeat	401
+22	0.3	tRNA repeat	401
+23	0.3	tRNA repeat	401
+24	1.0	tRNA repeat	401
+25	0.3	tRNA repeat	401
+26	0.3	tRNA repeat	401
+28	0.6	tRNA repeat	401
+18	13.100000000000001	tRNA piRNA repeat gene	402
+19	8.4	tRNA piRNA repeat gene	402
+20	6.6	tRNA piRNA repeat gene	402
+21	1.4000000000000001	tRNA piRNA repeat gene	402
+22	0.6	tRNA piRNA repeat gene	402
+23	0.3	tRNA piRNA repeat gene	402
+24	0.3	tRNA piRNA repeat gene	402
+25	1.7000000000000002	tRNA piRNA repeat gene	402
+26	1.1	tRNA piRNA repeat gene	402
+27	2.0	tRNA piRNA repeat gene	402
+28	1.2000000000000002	tRNA piRNA repeat gene	402
+18	8.2	tRNA repeat	403
+19	11.299999999999999	tRNA repeat	403
+20	9.0	tRNA repeat	403
+21	13.6	tRNA repeat	403
+22	6.499999999999999	tRNA repeat	403
+23	7.6	tRNA repeat	403
+24	8.7	tRNA repeat	403
+25	1.5	tRNA repeat	403
+26	21.400000000000002	tRNA repeat	403
+27	4.1	tRNA repeat	403
+28	67.0	tRNA repeat	403
+18	113.5	gene miRNA	404
+19	85.3	gene miRNA	404
+20	505.9000000000001	gene miRNA	404
+21	7541.899999999999	gene miRNA	404
+22	73174.40000000001	gene miRNA	404
+23	28654.399999999994	gene miRNA	404
+24	12211.699999999997	gene miRNA	404
+25	524.7	gene miRNA	404
+26	69.2	gene miRNA	404
+27	3.6999999999999997	gene miRNA	404
+18	94.10000000000001	gene miRNA	405
+19	119.1	gene miRNA	405
+20	117.19999999999999	gene miRNA	405
+21	472.3	gene miRNA	405
+22	1333.0000000000002	gene miRNA	405
+23	5024.200000000001	gene miRNA	405
+24	23079.19999999998	gene miRNA	405
+25	723.0000000000001	gene miRNA	405
+26	347.00000000000006	gene miRNA	405
+27	55.9	gene miRNA	405
+28	0.3	gene miRNA	405
+18	3.9	repeat gene	406
+19	3.1	repeat gene	406
+20	4.8	repeat gene	406
+21	2.8	repeat gene	406
+22	0.3	repeat gene	406
+23	0.3	repeat gene	406
+18	298.70000000000005	piRNA	407
+19	502.0000000000003	piRNA	407
+20	433.8000000000002	piRNA	407
+21	321.1000000000001	piRNA	407
+22	501.0000000000003	piRNA	407
+23	612.4000000000005	piRNA	407
+24	511.3000000000002	piRNA	407
+25	385.80000000000024	piRNA	407
+26	515.9000000000002	piRNA	407
+27	2666.800000000005	piRNA	407
+28	4430.100000000006	piRNA	407
+18	0.3	gene	408
+19	1.5	gene	408
+20	0.8	gene	408
+21	0.3	gene	408
+23	2.3	gene	408
+25	0.4	gene	408
+26	1.2999999999999998	gene	408
+27	1.8	gene	408
+18	0.3	gene	409
+19	1.1	gene	409
+20	1.3	gene	409
+21	4.3999999999999995	gene	409
+22	2.1	gene	409
+23	0.8	gene	409
+24	1.4	gene	409
+25	1.3	gene	409
+26	1.1	gene	409
+27	1.5999999999999999	gene	409
+28	3.5	gene	409
+18	113.9	gene miRNA	410
+19	477.79999999999995	gene miRNA	410
+20	827.2999999999998	gene miRNA	410
+21	3426.4000000000005	gene miRNA	410
+22	10948.20000000001	gene miRNA	410
+23	47182.60000000002	gene miRNA	410
+24	70183.70000000006	gene miRNA	410
+25	22822.700000000004	gene miRNA	410
+26	5765.700000000004	gene miRNA	410
+27	3335.500000000003	gene miRNA	410
+28	344.49999999999994	gene miRNA	410
+18	19.7	repeat gene	411
+19	36.5	repeat gene	411
+20	466.7	repeat gene	411
+21	428.50000000000006	repeat gene	411
+22	121.99999999999999	repeat gene	411
+23	1014.4000000000001	repeat gene	411
+24	755.9999999999994	repeat gene	411
+25	177.00000000000009	repeat gene	411
+26	168.40000000000006	repeat gene	411
+27	86.4	repeat gene	411
+28	17.6	repeat gene	411
+18	2.0	ncrna gene	412
+19	0.6	ncrna gene	412
+20	0.7	ncrna gene	412
+21	2.3	ncrna gene	412
+22	3.5999999999999996	ncrna gene	412
+23	0.8	ncrna gene	412
+24	0.3	ncrna gene	412
+25	0.3	ncrna gene	412
+26	0.8	ncrna gene	412
+27	2.9	ncrna gene	412
+28	0.6	ncrna gene	412
+18	1.7000000000000002	gene	413
+19	1.7	gene	413
+20	1.6	gene	413
+21	1.5	gene	413
+22	1.0	gene	413
+23	1.3	gene	413
+24	2.5	gene	413
+25	1.3	gene	413
+26	4.2	gene	413
+27	1.5	gene	413
+28	4.5	gene	413
+20	3.2	gene	414
+21	3.3	gene	414
+22	2.6999999999999997	gene	414
+23	1.5	gene	414
+24	1.2	gene	414
+25	1.1	gene	414
+26	0.3	gene	414
+18	8.7	repeat gene	415
+19	11.8	repeat gene	415
+20	21.200000000000003	repeat gene	415
+21	29.599999999999998	repeat gene	415
+22	22.4	repeat gene	415
+23	18.599999999999998	repeat gene	415
+24	6.300000000000001	repeat gene	415
+25	18.0	repeat gene	415
+27	0.3	repeat gene	415
+28	0.3	repeat gene	415
+18	0.3		416
+20	0.3		416
+21	3.5		416
+23	0.3		416
+24	3.6		416
+25	1.5		416
+26	1.8		416
+18	97.69999999999997		417
+19	65.0		417
+20	39.00000000000001		417
+21	29.5		417
+22	191.50000000000006		417
+23	79.4		417
+24	135.4		417
+25	235.4000000000001		417
+26	763.3999999999997		417
+27	1199.8000000000002		417
+28	280.30000000000007		417
+18	27.5	tRNA repeat gene	418
+19	8.8	tRNA repeat gene	418
+20	3.9	tRNA repeat gene	418
+21	1.7999999999999998	tRNA repeat gene	418
+22	12.8	tRNA repeat gene	418
+23	1.2999999999999998	tRNA repeat gene	418
+24	0.5	tRNA repeat gene	418
+25	5.3999999999999995	tRNA repeat gene	418
+26	2.8	tRNA repeat gene	418
+27	1.3	tRNA repeat gene	418
+28	6.7	tRNA repeat gene	418
+21	0.3	repeat	419
+22	1.4000000000000001	repeat	419
+23	1.1	repeat	419
+24	10.600000000000001	repeat	419
+25	115.69999999999999	repeat	419
+26	30.1	repeat	419
+27	79.4	repeat	419
+28	22.3	repeat	419
+18	18.6	repeat	420
+19	1.7	repeat	420
+20	7.9	repeat	420
+21	0.7	repeat	420
+22	0.7	repeat	420
+23	0.3	repeat	420
+26	0.3	repeat	420
+18	140.0	gene miRNA	421
+19	155.00000000000003	gene miRNA	421
+20	59.4	gene miRNA	421
+21	226.20000000000002	gene miRNA	421
+22	532.9	gene miRNA	421
+23	113.1	gene miRNA	421
+24	3.3999999999999995	gene miRNA	421
+19	0.3	ncrna gene	422
+20	0.8	ncrna gene	422
+21	0.6	ncrna gene	422
+22	2.8	ncrna gene	422
+23	6.3999999999999995	ncrna gene	422
+24	4.9	ncrna gene	422
+25	8.6	ncrna gene	422
+26	19.700000000000003	ncrna gene	422
+27	6.9	ncrna gene	422
+28	3.9	ncrna gene	422
+18	0.8	gene	423
+20	0.4	gene	423
+21	1.0	gene	423
+22	0.6	gene	423
+23	0.6	gene	423
+24	1.4000000000000001	gene	423
+25	0.7	gene	423
+26	0.4	gene	423
+27	0.6	gene	423
+18	9.400000000000002	ncrna gene	424
+19	15.700000000000001	ncrna gene	424
+20	45.800000000000004	ncrna gene	424
+21	43.2	ncrna gene	424
+22	48.79999999999999	ncrna gene	424
+23	39.3	ncrna gene	424
+24	58.099999999999994	ncrna gene	424
+25	83.39999999999999	ncrna gene	424
+26	152.09999999999997	ncrna gene	424
+27	360.9000000000001	ncrna gene	424
+28	1063.4999999999993	ncrna gene	424
+18	659.1999999999999	ncrna gene	425
+19	744.8999999999996	ncrna gene	425
+20	444.29999999999995	ncrna gene	425
+21	513.9999999999999	ncrna gene	425
+22	114.0	ncrna gene	425
+23	107.5	ncrna gene	425
+24	304.99999999999994	ncrna gene	425
+25	224.90000000000006	ncrna gene	425
+26	323.4000000000001	ncrna gene	425
+27	183.4000000000001	ncrna gene	425
+28	215.70000000000005	ncrna gene	425
+18	39.8	ncrna gene	426
+19	21.4	ncrna gene	426
+20	39.8	ncrna gene	426
+21	36.0	ncrna gene	426
+22	22.6	ncrna gene	426
+23	19.9	ncrna gene	426
+24	50.599999999999994	ncrna gene	426
+25	44.3	ncrna gene	426
+26	7.300000000000001	ncrna gene	426
+27	28.6	ncrna gene	426
+28	7.499999999999999	ncrna gene	426
+18	12.4	ncrna gene	427
+19	1.4	ncrna gene	427
+20	7.5	ncrna gene	427
+21	2.1	ncrna gene	427
+22	2.9	ncrna gene	427
+23	6.8	ncrna gene	427
+24	12.9	ncrna gene	427
+25	48.199999999999996	ncrna gene	427
+26	76.2	ncrna gene	427
+27	275.30000000000007	ncrna gene	427
+28	154.79999999999998	ncrna gene	427
+18	10.100000000000001		428
+19	9.5		428
+20	10.900000000000004		428
+21	13.000000000000002		428
+22	11.7		428
+23	10.5		428
+24	8.6		428
+25	11.600000000000003		428
+26	43.69999999999998		428
+27	17.900000000000002		428
+28	24.1		428
+18	6.2	piRNA	429
+19	6.699999999999999	piRNA	429
+20	5.8	piRNA	429
+21	6.6000000000000005	piRNA	429
+22	6.0	piRNA	429
+23	2.5999999999999996	piRNA	429
+24	1.2	piRNA	429
+25	0.9	piRNA	429
+26	1.8	piRNA	429
+27	1.3	piRNA	429
+28	0.3	piRNA	429
+18	4.8999999999999995	gene miRNA	430
+19	1.4000000000000001	gene miRNA	430
+20	27.5	gene miRNA	430
+21	515.1	gene miRNA	430
+22	608.3000000000001	gene miRNA	430
+23	778.7999999999996	gene miRNA	430
+24	76.49999999999996	gene miRNA	430
+25	6.8999999999999995	gene miRNA	430
+26	1.0	gene miRNA	430
+18	92.69999999999999	gene miRNA	431
+19	168.60000000000008	gene miRNA	431
+20	461.4	gene miRNA	431
+21	2626.0000000000014	gene miRNA	431
+22	80569.80000000018	gene miRNA	431
+23	36550.000000000044	gene miRNA	431
+24	6270.500000000002	gene miRNA	431
+25	1147.1000000000001	gene miRNA	431
+26	151.0	gene miRNA	431
+27	38.900000000000006	gene miRNA	431
+28	5.3	gene miRNA	431
+22	22.1	gene miRNA	432
+23	45.300000000000004	gene miRNA	432
+24	57.099999999999994	gene miRNA	432
+25	0.8	gene miRNA	432
+26	2.1999999999999997	gene miRNA	432
+18	7.3	gene miRNA	433
+19	15.600000000000001	gene miRNA	433
+20	72.1	gene miRNA	433
+21	202.20000000000002	gene miRNA	433
+22	2253.400000000002	gene miRNA	433
+23	1828.6999999999998	gene miRNA	433
+24	1684.0000000000014	gene miRNA	433
+25	337.20000000000005	gene miRNA	433
+26	84.70000000000002	gene miRNA	433
+27	19.799999999999997	gene miRNA	433
+28	2.5	gene miRNA	433
+18	22.7	gene miRNA	434
+19	21.5	gene miRNA	434
+20	16.3	gene miRNA	434
+21	108.7	gene miRNA	434
+22	81.0	gene miRNA	434
+23	372.30000000000007	gene miRNA	434
+24	6021.600000000001	gene miRNA	434
+25	67.0	gene miRNA	434
+26	20.300000000000004	gene miRNA	434
+27	1.3	gene miRNA	434
+18	1.3	gene miRNA	435
+19	2.4	gene miRNA	435
+20	7.9	gene miRNA	435
+21	47.7	gene miRNA	435
+22	2228.2000000000016	gene miRNA	435
+23	21.299999999999997	gene miRNA	435
+24	9.3	gene miRNA	435
+18	13.0	gene miRNA	436
+19	32.6	gene miRNA	436
+20	123.69999999999999	gene miRNA	436
+21	365.20000000000005	gene miRNA	436
+22	1906.4000000000003	gene miRNA	436
+23	457.1	gene miRNA	436
+24	118.0	gene miRNA	436
+25	17.7	gene miRNA	436
+26	0.3	gene miRNA	436
+28	0.4	gene miRNA	436
+18	3.5999999999999996	ncrna gene	437
+19	8.1	ncrna gene	437
+20	15.0	ncrna gene	437
+21	12.200000000000001	ncrna gene	437
+22	8.700000000000001	ncrna gene	437
+23	3.6	ncrna gene	437
+24	19.8	ncrna gene	437
+25	28.9	ncrna gene	437
+26	21.000000000000004	ncrna gene	437
+27	14.400000000000002	ncrna gene	437
+28	27.599999999999998	ncrna gene	437
+18	64.5	repeat gene	438
+19	65.89999999999998	repeat gene	438
+20	69.19999999999999	repeat gene	438
+21	65.6	repeat gene	438
+22	112.29999999999998	repeat gene	438
+23	99.99999999999997	repeat gene	438
+24	130.00000000000003	repeat gene	438
+25	69.9	repeat gene	438
+26	50.599999999999994	repeat gene	438
+27	13.200000000000001	repeat gene	438
+28	13.299999999999999	repeat gene	438
+18	12.7	repeat gene	439
+19	28.499999999999996	repeat gene	439
+20	54.099999999999994	repeat gene	439
+21	146.20000000000002	repeat gene	439
+22	191.70000000000002	repeat gene	439
+23	410.6	repeat gene	439
+24	399.1	repeat gene	439
+25	99.3	repeat gene	439
+26	296.6	repeat gene	439
+27	168.2	repeat gene	439
+28	66.69999999999999	repeat gene	439
+18	76.4	repeat gene	440
+19	65.79999999999998	repeat gene	440
+20	89.00000000000001	repeat gene	440
+21	66.59999999999998	repeat gene	440
+22	102.0	repeat gene	440
+23	264.6	repeat gene	440
+24	74.80000000000001	repeat gene	440
+25	73.69999999999999	repeat gene	440
+26	16.299999999999997	repeat gene	440
+27	50.3	repeat gene	440
+28	11.9	repeat gene	440
+21	0.5	ncrna repeat gene	441
+22	1.4	ncrna repeat gene	441
+23	0.3	ncrna repeat gene	441
+24	1.2	ncrna repeat gene	441
+26	1.7999999999999998	ncrna repeat gene	441
+27	0.6	ncrna repeat gene	441
+28	0.5	ncrna repeat gene	441
+18	2.0	ncrna repeat gene	442
+19	0.5	ncrna repeat gene	442
+20	0.3	ncrna repeat gene	442
+21	1.0	ncrna repeat gene	442
+22	2.1	ncrna repeat gene	442
+23	2.9	ncrna repeat gene	442
+24	9.500000000000002	ncrna repeat gene	442
+25	4.4	ncrna repeat gene	442
+26	5.199999999999999	ncrna repeat gene	442
+27	0.6	ncrna repeat gene	442
+18	0.3		443
+19	0.6		443
+20	0.7		443
+22	0.3		443
+23	0.3		443
+24	0.7		443
+27	0.7		443
+18	2.2	gene miRNA	444
+19	18.0	gene miRNA	444
+20	39.99999999999999	gene miRNA	444
+21	69.00000000000001	gene miRNA	444
+22	393.6	gene miRNA	444
+23	467.2	gene miRNA	444
+24	56.300000000000004	gene miRNA	444
+25	7.699999999999999	gene miRNA	444
+18	7.9	ncrna gene	445
+19	0.6	ncrna gene	445
+20	0.3	ncrna gene	445
+21	0.8	ncrna gene	445
+22	1.4	ncrna gene	445
+23	0.4	ncrna gene	445
+25	5.7	ncrna gene	445
+27	0.4	ncrna gene	445
+18	39.8	piRNA	446
+19	62.89999999999999	piRNA	446
+20	55.199999999999996	piRNA	446
+21	60.199999999999996	piRNA	446
+22	52.3	piRNA	446
+23	66.8	piRNA	446
+24	40.99999999999999	piRNA	446
+25	33.900000000000006	piRNA	446
+26	47.09999999999999	piRNA	446
+27	84.7	piRNA	446
+28	184.80000000000004	piRNA	446
+19	0.6		447
+20	3.0999999999999996		447
+21	4.6000000000000005		447
+22	3.5		447
+23	1.7999999999999998		447
+24	2.1		447
+25	0.4		447
+26	0.3		447
+28	0.7		447
+18	324.0	gene miRNA	448
+19	1053.3999999999996	gene miRNA	448
+20	620.0	gene miRNA	448
+21	1684.4999999999998	gene miRNA	448
+22	892.7	gene miRNA	448
+23	4207.200000000002	gene miRNA	448
+24	1550.899999999999	gene miRNA	448
+25	166.1	gene miRNA	448
+26	23.0	gene miRNA	448
+27	2.1	gene miRNA	448
+18	26.799999999999997	gene ncrna piRNA	449
+19	9.7	gene ncrna piRNA	449
+20	6.9	gene ncrna piRNA	449
+21	12.7	gene ncrna piRNA	449
+22	12.400000000000002	gene ncrna piRNA	449
+23	13.900000000000002	gene ncrna piRNA	449
+24	17.5	gene ncrna piRNA	449
+25	9.6	gene ncrna piRNA	449
+26	14.599999999999998	gene ncrna piRNA	449
+27	41.2	gene ncrna piRNA	449
+28	39.20000000000001	gene ncrna piRNA	449
+18	79582.79999999997	repeat gene	450
+19	1233.6000000000001	repeat gene	450
+20	17.6	repeat gene	450
+21	16.700000000000003	repeat gene	450
+22	33.6	repeat gene	450
+23	1.3	repeat gene	450
+18	18.900000000000002	repeat	451
+19	5.300000000000001	repeat	451
+20	22.2	repeat	451
+21	21.599999999999998	repeat	451
+18	129.7	repeat gene	452
+19	1.8	repeat gene	452
+18	44.4	repeat gene	453
+19	173.09999999999997	repeat gene	453
+20	303.0	repeat gene	453
+21	1.0	repeat gene	453
+22	0.8999999999999999	repeat gene	453
+23	0.3	repeat gene	453
+18	1451.3999999999994	tRNA repeat	454
+19	472.4000000000003	tRNA repeat	454
+20	205.40000000000006	tRNA repeat	454
+21	417.9000000000001	tRNA repeat	454
+22	829.8999999999992	tRNA repeat	454
+23	430.90000000000043	tRNA repeat	454
+24	706.4999999999999	tRNA repeat	454
+25	184.50000000000006	tRNA repeat	454
+26	79.89999999999998	tRNA repeat	454
+27	228.50000000000006	tRNA repeat	454
+28	136.2	tRNA repeat	454
+18	24.099999999999998	tRNA repeat piRNA	455
+19	9.1	tRNA repeat piRNA	455
+20	1.6	tRNA repeat piRNA	455
+21	0.9	tRNA repeat piRNA	455
+22	4.5	tRNA repeat piRNA	455
+23	1.0	tRNA repeat piRNA	455
+24	5.5	tRNA repeat piRNA	455
+25	1.1	tRNA repeat piRNA	455
+26	0.6	tRNA repeat piRNA	455
+27	2.8999999999999995	tRNA repeat piRNA	455
+28	3.3	tRNA repeat piRNA	455
+18	10.4	gene miRNA	456
+19	80.9	gene miRNA	456
+20	419.7	gene miRNA	456
+21	365.3000000000001	gene miRNA	456
+22	423.1999999999999	gene miRNA	456
+23	203.50000000000006	gene miRNA	456
+24	51.30000000000001	gene miRNA	456
+25	6.9	gene miRNA	456
+26	1.2	gene miRNA	456
+18	0.3		457
+19	1.5		457
+20	148.70000000000002		457
+21	210.3		457
+22	821.9		457
+23	9.6		457
+24	2.6		457
+18	52.2	gene miRNA	458
+19	75.90000000000002	gene miRNA	458
+20	991.8999999999996	gene miRNA	458
+21	492.59999999999997	gene miRNA	458
+22	311.5	gene miRNA	458
+23	430.7	gene miRNA	458
+24	9.299999999999999	gene miRNA	458
+25	0.5	gene miRNA	458
+18	2.6	gene	459
+19	3.4	gene	459
+20	1.5	gene	459
+21	1.0	gene	459
+22	0.8	gene	459
+23	0.3	gene	459
+25	0.3	gene	459
+26	1.2999999999999998	gene	459
+27	0.6	gene	459
+28	0.6	gene	459
+18	1551.6999999999994	repeat piRNA	460
+19	619.3999999999995	repeat piRNA	460
+20	990.8999999999992	repeat piRNA	460
+21	2022.2999999999993	repeat piRNA	460
+22	10643.70000000001	repeat piRNA	460
+23	36271.699999999975	repeat piRNA	460
+24	11166.899999999961	repeat piRNA	460
+25	11313.699999999943	repeat piRNA	460
+26	35464.90000000018	repeat piRNA	460
+27	75912.30000000035	repeat piRNA	460
+28	20092.899999999914	repeat piRNA	460
+18	14.9	repeat gene	461
+19	24.6	repeat gene	461
+20	8.8	repeat gene	461
+21	0.5	repeat gene	461
+22	0.3	repeat gene	461
+23	3.1	repeat gene	461
+24	5.0	repeat gene	461
+25	3.0	repeat gene	461
+26	4.3	repeat gene	461
+27	3.2	repeat gene	461
+28	3.1	repeat gene	461
+18	31.6	repeat	462
+19	10.500000000000002	repeat	462
+20	3.2	repeat	462
+21	9.399999999999999	repeat	462
+22	11.3	repeat	462
+23	17.0	repeat	462
+24	20.900000000000002	repeat	462
+25	20.600000000000005	repeat	462
+26	30.8	repeat	462
+27	63.8	repeat	462
+28	48.599999999999994	repeat	462
+18	0.5	repeat gene	463
+19	0.3	repeat gene	463
+20	0.8999999999999999	repeat gene	463
+23	1.9	repeat gene	463
+24	2.0	repeat gene	463
+26	0.8	repeat gene	463
+27	0.4	repeat gene	463
+28	0.5	repeat gene	463
+18	2.4	repeat gene	464
+19	7.3	repeat gene	464
+20	4.4	repeat gene	464
+21	45.699999999999996	repeat gene	464
+22	97.29999999999998	repeat gene	464
+23	17.900000000000002	repeat gene	464
+24	8.5	repeat gene	464
+25	3.1	repeat gene	464
+26	2.1999999999999997	repeat gene	464
+27	2.5	repeat gene	464
+28	2.0	repeat gene	464
+18	21.2	repeat	465
+19	4.7	repeat	465
+20	3.1999999999999997	repeat	465
+21	8.399999999999999	repeat	465
+22	13.1	repeat	465
+23	27.799999999999997	repeat	465
+24	6.5	repeat	465
+25	9.8	repeat	465
+26	14.2	repeat	465
+27	44.199999999999996	repeat	465
+28	16.200000000000003	repeat	465
+18	29.999999999999996	repeat	466
+19	45.09999999999999	repeat	466
+20	126.10000000000001	repeat	466
+21	404.3000000000002	repeat	466
+22	58.099999999999994	repeat	466
+23	9.5	repeat	466
+24	14.400000000000002	repeat	466
+25	14.8	repeat	466
+26	5.899999999999999	repeat	466
+27	11.8	repeat	466
+28	17.799999999999997	repeat	466
+18	6.5	tRNA repeat	467
+19	5.5	tRNA repeat	467
+20	2.2	tRNA repeat	467
+21	1.8	tRNA repeat	467
+22	18.5	tRNA repeat	467
+24	0.3	tRNA repeat	467
+26	0.4	tRNA repeat	467
+18	1309.1000000000001	gene	468
+19	48.9	gene	468
+20	7.1000000000000005	gene	468
+18	1.7	tRNA repeat gene	469
+19	0.3	tRNA repeat gene	469
+22	0.6	tRNA repeat gene	469
+25	0.9	tRNA repeat gene	469
+26	2.1999999999999997	tRNA repeat gene	469
+27	2.4	tRNA repeat gene	469
+28	3.3	tRNA repeat gene	469
+18	135.59999999999997	piRNA	470
+19	202.30000000000018	piRNA	470
+20	188.50000000000023	piRNA	470
+21	312.0000000000001	piRNA	470
+22	312.7000000000004	piRNA	470
+23	246.30000000000035	piRNA	470
+24	285.3000000000001	piRNA	470
+25	327.6000000000005	piRNA	470
+26	381.9000000000002	piRNA	470
+27	534.0000000000006	piRNA	470
+28	416.2000000000003	piRNA	470
+18	0.3	gene	471
+19	0.3	gene	471
+21	0.3	gene	471
+22	0.7	gene	471
+23	0.6	gene	471
+24	0.3	gene	471
+26	1.7000000000000002	gene	471
+27	7.6	gene	471
+28	1.3	gene	471
+18	0.7	gene	472
+20	1.0	gene	472
+21	0.7	gene	472
+22	0.8999999999999999	gene	472
+23	2.6999999999999997	gene	472
+24	3.7	gene	472
+25	1.5	gene	472
+26	1.3	gene	472
+27	3.0	gene	472
+28	1.7	gene	472
+20	0.3		473
+21	2.2		473
+23	1.5999999999999999		473
+25	0.8999999999999999		473
+26	0.3		473
+27	0.3		473
+28	0.4		473
+18	122.0	gene	474
+19	5.5	gene	474
+20	1.1	gene	474
+21	0.3	gene	474
+24	0.3	gene	474
+25	6.1	gene	474
+18	795.1999999999996	repeat piRNA	475
+19	52.79999999999999	repeat piRNA	475
+20	56.69999999999999	repeat piRNA	475
+21	99.4	repeat piRNA	475
+22	140.8	repeat piRNA	475
+23	95.89999999999999	repeat piRNA	475
+24	76.19999999999999	repeat piRNA	475
+25	81.69999999999997	repeat piRNA	475
+26	261.40000000000003	repeat piRNA	475
+27	205.40000000000003	repeat piRNA	475
+28	135.2	repeat piRNA	475
+18	45031.00000000007	repeat gene	476
+19	21216.300000000017	repeat gene	476
+20	5736.799999999998	repeat gene	476
+21	8394.899999999994	repeat gene	476
+22	7687.800000000002	repeat gene	476
+23	3215.900000000006	repeat gene	476
+24	5958.200000000002	repeat gene	476
+25	5490.100000000013	repeat gene	476
+26	7751.800000000008	repeat gene	476
+27	7486.000000000009	repeat gene	476
+28	6744.500000000006	repeat gene	476
+18	0.3	gene	477
+20	0.6	gene	477
+21	0.3	gene	477
+22	1.6	gene	477
+23	0.3	gene	477
+24	1.1	gene	477
+25	1.1	gene	477
+28	0.6	gene	477
+18	30.999999999999996	gene miRNA	478
+19	44.400000000000006	gene miRNA	478
+20	635.2999999999998	gene miRNA	478
+21	934.7999999999995	gene miRNA	478
+22	4553.300000000002	gene miRNA	478
+23	91339.10000000002	gene miRNA	478
+24	9204.899999999994	gene miRNA	478
+25	467.4	gene miRNA	478
+26	134.20000000000002	gene miRNA	478
+27	4.3	gene miRNA	478
+18	0.8		479
+19	3.1		479
+20	4.7		479
+21	2.8		479
+22	4.5		479
+23	3.0		479
+24	1.3		479
+25	0.6		479
+27	0.3		479
+28	0.3		479
+18	5.6	gene miRNA	480
+19	19.2	gene miRNA	480
+20	30.3	gene miRNA	480
+21	209.00000000000003	gene miRNA	480
+22	449.49999999999994	gene miRNA	480
+23	732.8	gene miRNA	480
+24	790.1999999999999	gene miRNA	480
+25	18.7	gene miRNA	480
+18	313.59999999999997	gene miRNA	481
+19	608.4999999999998	gene miRNA	481
+20	640.2999999999998	gene miRNA	481
+21	2437.000000000004	gene miRNA	481
+22	29385.099999999995	gene miRNA	481
+23	23409.399999999994	gene miRNA	481
+24	1881.5999999999997	gene miRNA	481
+25	21.9	gene miRNA	481
+26	2.0	gene miRNA	481
+27	0.6	gene miRNA	481
+28	1.1	gene miRNA	481
+18	85685.60000000219	piRNA repeat gene	482
+19	90535.30000000258	piRNA repeat gene	482
+20	114398.10000000209	piRNA repeat gene	482
+21	98160.00000000297	piRNA repeat gene	482
+22	158358.89999999056	piRNA repeat gene	482
+23	117600.00000000212	piRNA repeat gene	482
+24	147392.49999999322	piRNA repeat gene	482
+25	93954.1000000024	piRNA repeat gene	482
+26	98720.40000000219	piRNA repeat gene	482
+27	92203.80000000297	piRNA repeat gene	482
+28	83391.60000000233	piRNA repeat gene	482
+20	0.3	gene	483
+21	0.3	gene	483
+22	22.800000000000004	gene	483
+23	38.1	gene	483
+24	9.100000000000001	gene	483
+25	1.6	gene	483
+26	3.5	gene	483
+27	18.8	gene	483
+28	5.999999999999999	gene	483
+18	3.2	gene ncrna piRNA	484
+19	1.4	gene ncrna piRNA	484
+20	1.2	gene ncrna piRNA	484
+21	2.3	gene ncrna piRNA	484
+22	0.3	gene ncrna piRNA	484
+23	4.8	gene ncrna piRNA	484
+24	8.7	gene ncrna piRNA	484
+25	7.0	gene ncrna piRNA	484
+26	12.3	gene ncrna piRNA	484
+27	8.700000000000001	gene ncrna piRNA	484
+28	12.100000000000001	gene ncrna piRNA	484
+18	0.7	repeat gene	485
+19	1.7000000000000002	repeat gene	485
+20	0.3	repeat gene	485
+21	0.3	repeat gene	485
+22	0.6	repeat gene	485
+23	0.8	repeat gene	485
+24	1.7000000000000002	repeat gene	485
+25	1.0	repeat gene	485
+26	2.3	repeat gene	485
+27	1.3	repeat gene	485
+20	0.9	gene miRNA	486
+21	13.3	gene miRNA	486
+22	28.0	gene miRNA	486
+18	6.8999999999999995	ncrna gene	487
+19	8.3	ncrna gene	487
+20	9.3	ncrna gene	487
+21	22.1	ncrna gene	487
+22	9.899999999999999	ncrna gene	487
+23	12.799999999999999	ncrna gene	487
+24	13.500000000000002	ncrna gene	487
+25	17.2	ncrna gene	487
+26	20.899999999999995	ncrna gene	487
+27	9.3	ncrna gene	487
+28	21.700000000000003	ncrna gene	487
+18	1.0	gene	488
+19	1.0	gene	488
+20	0.9	gene	488
+21	1.5	gene	488
+23	0.6	gene	488
+28	0.6	gene	488
+19	0.3	gene miRNA	489
+20	3.4	gene miRNA	489
+21	18.400000000000002	gene miRNA	489
+22	4.3	gene miRNA	489
+23	7.3	gene miRNA	489
+24	0.6	gene miRNA	489
+19	0.3	gene	490
+21	0.3	gene	490
+25	0.5	gene	490
+26	0.4	gene	490
+27	13.7	gene	490
+28	222.9	gene	490
+18	0.7	gene	491
+19	0.3	gene	491
+21	0.6	gene	491
+23	1.0	gene	491
+24	1.5999999999999999	gene	491
+25	0.8	gene	491
+26	1.3	gene	491
+27	1.1	gene	491
+28	1.9	gene	491
+18	7.4	ncrna gene	492
+19	4.9	ncrna gene	492
+20	5.3999999999999995	ncrna gene	492
+21	4.2	ncrna gene	492
+22	62.8	ncrna gene	492
+23	21.0	ncrna gene	492
+24	34.0	ncrna gene	492
+25	42.39999999999999	ncrna gene	492
+26	41.0	ncrna gene	492
+27	47.5	ncrna gene	492
+28	50.599999999999994	ncrna gene	492
+18	0.6		493
+19	0.6		493
+20	0.6		493
+23	0.6		493
+26	0.3		493
+27	0.6		493
+28	0.8		493
+18	1.4	gene	494
+19	1.1	gene	494
+20	3.5999999999999996	gene	494
+21	1.0	gene	494
+22	1.0	gene	494
+23	2.5999999999999996	gene	494
+24	0.6	gene	494
+25	0.7	gene	494
+26	0.8	gene	494
+27	0.3	gene	494
+28	1.6	gene	494
+18	0.4	gene ncrna piRNA	495
+20	0.3	gene ncrna piRNA	495
+21	3.0999999999999996	gene ncrna piRNA	495
+22	2.4	gene ncrna piRNA	495
+23	4.3	gene ncrna piRNA	495
+24	1.9	gene ncrna piRNA	495
+26	0.3	gene ncrna piRNA	495
+27	2.9000000000000004	gene ncrna piRNA	495
+28	2.5	gene ncrna piRNA	495
+18	0.5	gene ncrna piRNA	496
+19	0.3	gene ncrna piRNA	496
+20	0.8999999999999999	gene ncrna piRNA	496
+23	0.3	gene ncrna piRNA	496
+24	0.4	gene ncrna piRNA	496
+25	3.4999999999999996	gene ncrna piRNA	496
+26	5.0	gene ncrna piRNA	496
+27	12.6	gene ncrna piRNA	496
+28	3.4	gene ncrna piRNA	496
+18	4.9	gene ncrna piRNA	497
+19	0.6	gene ncrna piRNA	497
+20	7.599999999999999	gene ncrna piRNA	497
+21	18.3	gene ncrna piRNA	497
+22	13.899999999999999	gene ncrna piRNA	497
+23	17.599999999999998	gene ncrna piRNA	497
+24	41.99999999999999	gene ncrna piRNA	497
+25	19.0	gene ncrna piRNA	497
+26	10.899999999999999	gene ncrna piRNA	497
+27	4.699999999999999	gene ncrna piRNA	497
+28	6.1	gene ncrna piRNA	497
+18	0.4	ncrna gene	498
+19	0.3	ncrna gene	498
+21	0.3	ncrna gene	498
+22	0.3	ncrna gene	498
+24	2.2	ncrna gene	498
+25	2.9	ncrna gene	498
+27	0.7	ncrna gene	498
+28	7.6	ncrna gene	498
+19	0.3	gene	499
+21	0.3	gene	499
+22	0.6	gene	499
+24	0.3	gene	499
+25	0.3	gene	499
+26	1.3	gene	499
+27	0.6	gene	499
+18	0.8	gene	500
+19	6.1000000000000005	gene	500
+20	12.3	gene	500
+21	43.0	gene	500
+22	45.39999999999999	gene	500
+23	4.3999999999999995	gene	500
+21	1.5	ncrna gene	501
+24	0.7	ncrna gene	501
+25	1.0	ncrna gene	501
+26	0.9	ncrna gene	501
+27	2.9	ncrna gene	501
+28	0.3	ncrna gene	501
+18	3.9	ncrna gene	502
+19	15.000000000000002	ncrna gene	502
+20	17.499999999999996	ncrna gene	502
+21	7.4	ncrna gene	502
+22	16.5	ncrna gene	502
+23	20.0	ncrna gene	502
+24	18.1	ncrna gene	502
+25	16.400000000000002	ncrna gene	502
+26	13.6	ncrna gene	502
+27	40.50000000000001	ncrna gene	502
+28	54.5	ncrna gene	502
+18	1.1	repeat miRNA gene	503
+19	0.7	repeat miRNA gene	503
+20	6.300000000000001	repeat miRNA gene	503
+21	22.900000000000002	repeat miRNA gene	503
+22	220.50000000000009	repeat miRNA gene	503
+23	182.70000000000002	repeat miRNA gene	503
+24	16.3	repeat miRNA gene	503
+18	1.3	gene miRNA	504
+19	0.5	gene miRNA	504
+20	5.700000000000001	gene miRNA	504
+21	11.500000000000002	gene miRNA	504
+22	11.200000000000001	gene miRNA	504
+23	52.1	gene miRNA	504
+24	1.8	gene miRNA	504
+20	0.3	ncrna gene	505
+21	2.9000000000000004	ncrna gene	505
+22	1.2	ncrna gene	505
+23	1.4	ncrna gene	505
+24	0.3	ncrna gene	505
+25	1.1	ncrna gene	505
+27	0.6	ncrna gene	505
+21	0.3	gene miRNA	506
+22	8.4	gene miRNA	506
+23	10.500000000000002	gene miRNA	506
+24	0.4	gene miRNA	506
+18	0.5	ncrna miRNA gene	507
+20	8.5	ncrna miRNA gene	507
+21	3.6999999999999997	ncrna miRNA gene	507
+22	12.799999999999999	ncrna miRNA gene	507
+23	143.50000000000003	ncrna miRNA gene	507
+24	6.5	ncrna miRNA gene	507
+18	1.8	gene miRNA	508
+19	6.300000000000001	gene miRNA	508
+20	10.700000000000001	gene miRNA	508
+21	86.69999999999999	gene miRNA	508
+22	99.59999999999998	gene miRNA	508
+23	3.3000000000000003	gene miRNA	508
+24	2.8	gene miRNA	508
+20	0.3	gene	509
+22	0.3	gene	509
+23	0.7	gene	509
+25	0.8	gene	509
+26	0.3	gene	509
+27	1.5	gene	509
+28	0.8	gene	509
+18	4.0	gene miRNA	510
+19	3.0	gene miRNA	510
+20	63.9	gene miRNA	510
+21	12.2	gene miRNA	510
+22	7.4	gene miRNA	510
+19	2.8	gene	511
+20	0.5	gene	511
+21	0.7	gene	511
+22	1.6	gene	511
+23	0.6	gene	511
+24	1.2	gene	511
+25	1.2000000000000002	gene	511
+26	1.7000000000000002	gene	511
+27	1.0	gene	511
+28	0.6	gene	511
+26	1.5999999999999999	gene	512
+27	6.9	gene	512
+28	19.5	gene	512
+18	4.9	gene miRNA	513
+19	17.599999999999998	gene miRNA	513
+20	299.4	gene miRNA	513
+21	113.10000000000001	gene miRNA	513
+22	81.6	gene miRNA	513
+23	201.2	gene miRNA	513
+24	30.200000000000003	gene miRNA	513
+25	0.3	gene miRNA	513
+18	30.400000000000006	ncrna gene	514
+19	16.200000000000003	ncrna gene	514
+20	10.900000000000002	ncrna gene	514
+21	7.300000000000001	ncrna gene	514
+22	9.0	ncrna gene	514
+23	17.3	ncrna gene	514
+24	23.1	ncrna gene	514
+25	20.200000000000003	ncrna gene	514
+26	30.200000000000003	ncrna gene	514
+27	46.599999999999994	ncrna gene	514
+28	40.9	ncrna gene	514
+18	2.5	repeat gene	515
+19	1.7999999999999998	repeat gene	515
+20	6.1	repeat gene	515
+21	6.000000000000001	repeat gene	515
+18	2.2	repeat gene	516
+19	24.599999999999998	repeat gene	516
+20	5.3	repeat gene	516
+18	7.5	repeat	517
+19	1388.2	repeat	517
+20	1448.7999999999997	repeat	517
+21	6.699999999999999	repeat	517
+22	1.4	repeat	517
+23	1.0	repeat	517
+18	182.50000000000003	gene	518
+19	4.5	gene	518
+20	7.8	gene	518
+21	0.6	gene	518
+19	0.6	piRNA gene	519
+21	0.8999999999999999	piRNA gene	519
+22	0.3	piRNA gene	519
+23	1.1	piRNA gene	519
+24	1.2	piRNA gene	519
+25	1.2	piRNA gene	519
+26	1.2	piRNA gene	519
+27	0.7	piRNA gene	519
+28	2.0	piRNA gene	519
+18	0.8999999999999999		520
+19	1.7000000000000002		520
+20	1.8		520
+21	1.9		520
+22	3.1		520
+23	2.9		520
+24	2.8		520
+25	2.0999999999999996		520
+26	1.3		520
+27	1.4		520
+28	1.2		520
+18	1.0	gene piRNA	521
+19	4.4	gene piRNA	521
+20	8.0	gene piRNA	521
+21	4.5	gene piRNA	521
+22	6.199999999999999	gene piRNA	521
+23	9.8	gene piRNA	521
+24	7.3999999999999995	gene piRNA	521
+25	5.3	gene piRNA	521
+26	3.0000000000000004	gene piRNA	521
+27	5.699999999999999	gene piRNA	521
+28	3.2999999999999994	gene piRNA	521
+18	5.4	ncrna gene	522
+19	13.3	ncrna gene	522
+20	19.5	ncrna gene	522
+21	40.3	ncrna gene	522
+22	15.299999999999999	ncrna gene	522
+23	29.000000000000004	ncrna gene	522
+24	26.700000000000003	ncrna gene	522
+25	39.1	ncrna gene	522
+26	13.9	ncrna gene	522
+27	43.2	ncrna gene	522
+28	59.9	ncrna gene	522
+19	2.8999999999999995	repeat miRNA gene	523
+20	24.499999999999996	repeat miRNA gene	523
+21	24.4	repeat miRNA gene	523
+22	46.8	repeat miRNA gene	523
+23	14.8	repeat miRNA gene	523
+24	0.7	repeat miRNA gene	523
+18	4.0	gene	524
+19	2.3	gene	524
+22	0.7	gene	524
+23	1.7	gene	524
+25	0.8	gene	524
+26	3.3	gene	524
+27	3.5	gene	524
+28	1.4	gene	524
+22	0.8	repeat gene	525
+23	7.699999999999999	repeat gene	525
+24	6.2	repeat gene	525
+25	1.6	repeat gene	525
+18	0.6	gene miRNA	526
+19	0.9	gene miRNA	526
+20	0.8	gene miRNA	526
+21	14.2	gene miRNA	526
+22	87.3	gene miRNA	526
+23	56.2	gene miRNA	526
+24	5.2	gene miRNA	526
+18	0.3	gene	527
+19	1.5	gene	527
+20	2.0	gene	527
+21	0.3	gene	527
+22	0.3	gene	527
+23	1.9000000000000001	gene	527
+24	2.4999999999999996	gene	527
+25	1.8	gene	527
+26	1.8000000000000003	gene	527
+27	0.8	gene	527
+28	1.3	gene	527
+18	17.3	gene miRNA	528
+19	12.700000000000001	gene miRNA	528
+20	33.3	gene miRNA	528
+21	604.6999999999998	gene miRNA	528
+22	467.5000000000001	gene miRNA	528
+23	1350.3000000000004	gene miRNA	528
+24	545.6999999999997	gene miRNA	528
+25	35.5	gene miRNA	528
+26	2.0	gene miRNA	528
+18	2.0	ncrna gene	529
+19	4.8	ncrna gene	529
+20	13.5	ncrna gene	529
+21	166.40000000000003	ncrna gene	529
+22	5.8999999999999995	ncrna gene	529
+23	15.7	ncrna gene	529
+24	0.4	ncrna gene	529
+28	1.7	ncrna gene	529
+18	2.0	ncrna gene	530
+20	0.3	ncrna gene	530
+21	0.3	ncrna gene	530
+22	5.4	ncrna gene	530
+23	6.9	ncrna gene	530
+24	6.0	ncrna gene	530
+25	0.5	ncrna gene	530
+26	0.8	ncrna gene	530
+28	2.0	ncrna gene	530
+18	79.59999999999998	repeat	531
+19	70.3	repeat	531
+20	81.6	repeat	531
+21	97.69999999999999	repeat	531
+22	112.79999999999997	repeat	531
+23	158.1	repeat	531
+24	161.60000000000014	repeat	531
+25	119.39999999999999	repeat	531
+26	122.39999999999996	repeat	531
+27	90.39999999999996	repeat	531
+28	89.69999999999997	repeat	531
+18	13.000000000000002	ncrna gene	532
+19	1.3	ncrna gene	532
+20	0.6	ncrna gene	532
+21	0.4	ncrna gene	532
+23	1.0	ncrna gene	532
+24	0.3	ncrna gene	532
+27	0.3	ncrna gene	532
+28	0.7	ncrna gene	532
+18	9.5	ncrna gene	533
+19	8.3	ncrna gene	533
+20	15.3	ncrna gene	533
+21	19.0	ncrna gene	533
+22	12.799999999999999	ncrna gene	533
+23	13.5	ncrna gene	533
+24	15.500000000000002	ncrna gene	533
+25	17.3	ncrna gene	533
+26	180.00000000000003	ncrna gene	533
+27	105.49999999999999	ncrna gene	533
+28	17.2	ncrna gene	533
+18	0.4	ncrna gene	534
+19	2.6999999999999997	ncrna gene	534
+20	9.9	ncrna gene	534
+21	22.399999999999995	ncrna gene	534
+22	15.6	ncrna gene	534
+23	2.0999999999999996	ncrna gene	534
+24	0.6	ncrna gene	534
+28	2.6	ncrna gene	534
+20	1.0	gene	535
+21	12.2	gene	535
+22	48.1	gene	535
+23	568.5999999999999	gene	535
+24	12.0	gene	535
+25	33.4	gene	535
+26	10.6	gene	535
+27	0.3	gene	535
+18	1.2	ncrna gene	536
+19	2.1999999999999997	ncrna gene	536
+20	1.5	ncrna gene	536
+21	4.699999999999999	ncrna gene	536
+22	0.5	ncrna gene	536
+23	1.1	ncrna gene	536
+24	2.1	ncrna gene	536
+25	0.6	ncrna gene	536
+26	1.9	ncrna gene	536
+27	1.0	ncrna gene	536
+28	0.7	ncrna gene	536
+18	18.0	ncrna gene	537
+19	66.5	ncrna gene	537
+20	23.0	ncrna gene	537
+21	16.2	ncrna gene	537
+22	18.1	ncrna gene	537
+23	46.8	ncrna gene	537
+24	48.39999999999999	ncrna gene	537
+25	47.599999999999994	ncrna gene	537
+26	102.50000000000001	ncrna gene	537
+27	27.000000000000004	ncrna gene	537
+28	29.000000000000004	ncrna gene	537
+24	0.9		538
+25	7.5		538
+26	10.9		538
+27	9.6		538
+28	6.1		538
+18	0.6	gene miRNA	539
+19	2.3	gene miRNA	539
+20	7.4	gene miRNA	539
+21	14.5	gene miRNA	539
+22	22.7	gene miRNA	539
+23	18.5	gene miRNA	539
+24	10.2	gene miRNA	539
+18	2.6	repeat	540
+19	1.4	repeat	540
+20	2.8	repeat	540
+21	2.3	repeat	540
+22	1.1	repeat	540
+23	0.8	repeat	540
+24	2.1	repeat	540
+25	0.6	repeat	540
+18	1.0		541
+19	0.4		541
+20	0.6		541
+22	0.6		541
+23	2.3		541
+24	1.3		541
+25	2.5		541
+26	1.6		541
+27	2.3		541
+28	1.8		541
+25	0.3	gene ncrna piRNA	542
+26	2.0	gene ncrna piRNA	542
+27	2.2	gene ncrna piRNA	542
+28	14.799999999999999	gene ncrna piRNA	542
+18	1.0	tRNA repeat gene	543
+20	1.8	tRNA repeat gene	543
+21	1.0	tRNA repeat gene	543
+22	1.4	tRNA repeat gene	543
+23	0.6	tRNA repeat gene	543
+25	0.3	tRNA repeat gene	543
+26	0.3	tRNA repeat gene	543
+27	0.3	tRNA repeat gene	543
+18	1.5	tRNA repeat	544
+19	2.6	tRNA repeat	544
+20	6.2	tRNA repeat	544
+21	2.7	tRNA repeat	544
+22	6.8999999999999995	tRNA repeat	544
+23	3.6	tRNA repeat	544
+19	3.0	ncrna gene	545
+22	0.3	ncrna gene	545
+23	5.6	ncrna gene	545
+24	4.1	ncrna gene	545
+25	0.8999999999999999	ncrna gene	545
+26	0.5	ncrna gene	545
+27	1.8	ncrna gene	545
+28	0.3	ncrna gene	545
+19	0.3	gene miRNA	546
+21	5.0	gene miRNA	546
+22	4.9	gene miRNA	546
+23	9.3	gene miRNA	546
+24	2.1	gene miRNA	546
+18	2.2	gene ncrna piRNA	547
+19	0.3	gene ncrna piRNA	547
+20	1.9	gene ncrna piRNA	547
+21	4.8	gene ncrna piRNA	547
+22	3.5	gene ncrna piRNA	547
+23	4.4	gene ncrna piRNA	547
+24	8.5	gene ncrna piRNA	547
+25	5.2	gene ncrna piRNA	547
+26	10.1	gene ncrna piRNA	547
+27	31.299999999999997	gene ncrna piRNA	547
+28	109.19999999999997	gene ncrna piRNA	547
+18	424.6	gene	548
+19	0.3	gene miRNA	549
+20	6.5	gene miRNA	549
+21	12.5	gene miRNA	549
+22	4.5	gene miRNA	549
+23	88.6	gene miRNA	549
+24	318.5	gene miRNA	549
+25	17.3	gene miRNA	549
+18	0.6	gene	550
+22	1.5	gene	550
+23	1.0	gene	550
+24	0.3	gene	550
+25	1.2	gene	550
+26	0.3	gene	550
+27	0.6	gene	550
+28	0.7	gene	550
+18	0.3	tRNA repeat	551
+19	0.6	tRNA repeat	551
+20	0.5	tRNA repeat	551
+21	2.3	tRNA repeat	551
+22	4.0	tRNA repeat	551
+23	9.899999999999999	tRNA repeat	551
+24	7.0	tRNA repeat	551
+25	0.8999999999999999	tRNA repeat	551
+27	2.4	tRNA repeat	551
+28	0.8	tRNA repeat	551
+22	0.4	repeat gene	552
+23	3.8	repeat gene	552
+24	25.3	repeat gene	552
+25	1.2	repeat gene	552
+26	3.2999999999999994	repeat gene	552
+27	28.799999999999997	repeat gene	552
+28	112.1	repeat gene	552
+18	4.4	ncrna gene	553
+19	3.2	ncrna gene	553
+20	17.8	ncrna gene	553
+21	12.899999999999999	ncrna gene	553
+22	5.5	ncrna gene	553
+23	2.4	ncrna gene	553
+26	0.3	ncrna gene	553
+27	3.3	ncrna gene	553
+28	11.3	ncrna gene	553
+18	2.5	gene miRNA	554
+19	5.6000000000000005	gene miRNA	554
+20	16.7	gene miRNA	554
+21	176.2	gene miRNA	554
+22	287.90000000000003	gene miRNA	554
+23	25.200000000000003	gene miRNA	554
+24	0.4	gene miRNA	554
+18	0.3	gene ncrna piRNA	555
+20	1.1	gene ncrna piRNA	555
+21	11.0	gene ncrna piRNA	555
+22	14.0	gene ncrna piRNA	555
+23	1.5	gene ncrna piRNA	555
+25	3.9	gene ncrna piRNA	555
+26	3.0	gene ncrna piRNA	555
+27	6.8	gene ncrna piRNA	555
+28	16.0	gene ncrna piRNA	555
+19	1.3	ncrna repeat gene	556
+20	0.3	ncrna repeat gene	556
+21	0.3	ncrna repeat gene	556
+23	0.6	ncrna repeat gene	556
+24	2.0999999999999996	ncrna repeat gene	556
+25	4.3	ncrna repeat gene	556
+26	1.1	ncrna repeat gene	556
+27	1.5	ncrna repeat gene	556
+28	1.7	ncrna repeat gene	556
+18	0.3	ncrna repeat gene	557
+19	2.5	ncrna repeat gene	557
+20	1.9	ncrna repeat gene	557
+21	2.4	ncrna repeat gene	557
+22	2.7	ncrna repeat gene	557
+23	3.2	ncrna repeat gene	557
+24	13.8	ncrna repeat gene	557
+25	5.5	ncrna repeat gene	557
+26	5.3	ncrna repeat gene	557
+27	18.799999999999997	ncrna repeat gene	557
+28	1.7	ncrna repeat gene	557
+18	16.7	ncrna gene	558
+19	2.2	ncrna gene	558
+20	0.9	ncrna gene	558
+21	1.0	ncrna gene	558
+25	0.3	ncrna gene	558
+26	1.2000000000000002	ncrna gene	558
+27	1.2000000000000002	ncrna gene	558
+28	0.4	ncrna gene	558
+18	1.1	ncrna gene	559
+21	0.3	ncrna gene	559
+25	1.8	ncrna gene	559
+26	7.8	ncrna gene	559
+27	58.699999999999996	ncrna gene	559
+28	160.60000000000005	ncrna gene	559
+18	1.6	gene	560
+20	0.4	gene	560
+22	0.8999999999999999	gene	560
+23	0.3	gene	560
+24	0.4	gene	560
+25	0.6	gene	560
+27	0.3	gene	560
+18	1.2	ncrna gene	561
+19	0.6	ncrna gene	561
+20	1.5	ncrna gene	561
+21	12.799999999999999	ncrna gene	561
+22	3.4000000000000004	ncrna gene	561
+23	10.000000000000002	ncrna gene	561
+24	1.1	ncrna gene	561
+25	0.6	ncrna gene	561
+26	1.7000000000000002	ncrna gene	561
+27	5.800000000000001	ncrna gene	561
+28	0.3	ncrna gene	561
+18	0.7	gene	562
+19	2.0	gene	562
+20	4.2	gene	562
+21	0.6	gene	562
+22	0.4	gene	562
+24	0.8999999999999999	gene	562
+25	0.3	gene	562
+26	10.600000000000001	gene	562
+27	9.1	gene	562
+28	7.3	gene	562
+18	5.499999999999999	ncrna gene	563
+19	5.4	ncrna gene	563
+20	8.3	ncrna gene	563
+21	7.799999999999999	ncrna gene	563
+22	9.900000000000002	ncrna gene	563
+23	12.6	ncrna gene	563
+24	14.599999999999998	ncrna gene	563
+25	20.3	ncrna gene	563
+26	18.200000000000003	ncrna gene	563
+27	17.8	ncrna gene	563
+28	10.9	ncrna gene	563
+18	3.3	ncrna gene	564
+19	2.8	ncrna gene	564
+20	3.8	ncrna gene	564
+21	0.3	ncrna gene	564
+22	3.3	ncrna gene	564
+23	13.899999999999999	ncrna gene	564
+24	43.7	ncrna gene	564
+25	15.3	ncrna gene	564
+26	18.900000000000002	ncrna gene	564
+27	22.4	ncrna gene	564
+28	15.899999999999999	ncrna gene	564
+18	0.5		565
+19	5.3999999999999995		565
+20	4.5		565
+21	0.8999999999999999		565
+22	1.3		565
+23	0.6		565
+24	1.2999999999999998		565
+26	0.8999999999999999		565
+28	0.3		565
+18	1.1	repeat gene	566
+20	3.5	repeat gene	566
+21	3.0999999999999996	repeat gene	566
+22	11.1	repeat gene	566
+23	3.3	repeat gene	566
+24	8.8	repeat gene	566
+25	2.5999999999999996	repeat gene	566
+26	1.7	repeat gene	566
+27	1.8	repeat gene	566
+28	0.4	repeat gene	566
+18	2.3	ncrna repeat gene	567
+20	0.3	ncrna repeat gene	567
+22	0.3	ncrna repeat gene	567
+23	2.4	ncrna repeat gene	567
+24	0.8	ncrna repeat gene	567
+25	2.8	ncrna repeat gene	567
+28	7.500000000000001	ncrna repeat gene	567
+19	0.6	gene	568
+20	1.2	gene	568
+21	0.5	gene	568
+22	1.2	gene	568
+24	0.6	gene	568
+27	0.3	gene	568
+28	0.4	gene	568
+19	0.3	gene	569
+20	36.8	gene	569
+21	8.3	gene	569
+22	1.3	gene	569
+23	11.0	gene	569
+24	19.0	gene	569
+25	7.2	gene	569
+26	5.9	gene	569
+27	9.4	gene	569
+28	3.1	gene	569
+18	5.3	ncrna gene	570
+19	4.4	ncrna gene	570
+20	34.2	ncrna gene	570
+21	14.0	ncrna gene	570
+22	13.1	ncrna gene	570
+23	9.6	ncrna gene	570
+24	6.8999999999999995	ncrna gene	570
+25	5.6	ncrna gene	570
+26	7.8999999999999995	ncrna gene	570
+27	23.2	ncrna gene	570
+28	11.1	ncrna gene	570
+18	150.4	tRNA repeat piRNA	571
+19	36.599999999999994	tRNA repeat piRNA	571
+20	3.3	tRNA repeat piRNA	571
+21	1.6	tRNA repeat piRNA	571
+22	0.3	tRNA repeat piRNA	571
+23	0.3	tRNA repeat piRNA	571
+28	0.3	tRNA repeat piRNA	571
+18	5.8	tRNA repeat piRNA	572
+19	1.2999999999999998	tRNA repeat piRNA	572
+20	0.7	tRNA repeat piRNA	572
+21	0.4	tRNA repeat piRNA	572
+22	1.7	tRNA repeat piRNA	572
+23	5.8	tRNA repeat piRNA	572
+24	0.7	tRNA repeat piRNA	572
+25	2.8	tRNA repeat piRNA	572
+26	0.8	tRNA repeat piRNA	572
+27	1.3	tRNA repeat piRNA	572
+28	4.8999999999999995	tRNA repeat piRNA	572
+18	4.2	tRNA repeat piRNA	573
+19	12.300000000000002	tRNA repeat piRNA	573
+20	2.2	tRNA repeat piRNA	573
+21	3.6	tRNA repeat piRNA	573
+22	0.5	tRNA repeat piRNA	573
+23	1.2	tRNA repeat piRNA	573
+28	0.8	tRNA repeat piRNA	573
+18	853.7	repeat gene	574
+19	19.800000000000004	repeat gene	574
+20	3.7	repeat gene	574
+24	0.4	repeat gene	574
+26	0.3	repeat gene	574
+18	3.3999999999999995	tRNA repeat piRNA	575
+19	10.899999999999999	tRNA repeat piRNA	575
+20	13.6	tRNA repeat piRNA	575
+21	32.199999999999996	tRNA repeat piRNA	575
+22	22.3	tRNA repeat piRNA	575
+23	20.6	tRNA repeat piRNA	575
+24	8.200000000000001	tRNA repeat piRNA	575
+25	8.4	tRNA repeat piRNA	575
+26	15.700000000000003	tRNA repeat piRNA	575
+27	25.3	tRNA repeat piRNA	575
+28	24.700000000000003	tRNA repeat piRNA	575
+18	67.89999999999999	tRNA repeat piRNA	576
+19	18.1	tRNA repeat piRNA	576
+20	18.2	tRNA repeat piRNA	576
+21	0.8	tRNA repeat piRNA	576
+23	0.3	tRNA repeat piRNA	576
+28	1.0	tRNA repeat piRNA	576
+21	0.3	gene	577
+23	1.3	gene	577
+24	0.8	gene	577
+25	0.6	gene	577
+26	0.3	gene	577
+27	0.6	gene	577
+28	0.7	gene	577
+18	1.4	ncrna gene	578
+19	1.4000000000000001	ncrna gene	578
+20	14.9	ncrna gene	578
+21	0.7	ncrna gene	578
+22	12.899999999999999	ncrna gene	578
+24	2.3	ncrna gene	578
+27	4.7	ncrna gene	578
+28	7.300000000000001	ncrna gene	578
+18	1.4	piRNA gene	579
+19	1.6999999999999997	piRNA gene	579
+20	1.8	piRNA gene	579
+21	0.7	piRNA gene	579
+22	2.5	piRNA gene	579
+23	2.6	piRNA gene	579
+24	3.0	piRNA gene	579
+25	2.8000000000000003	piRNA gene	579
+26	2.5999999999999996	piRNA gene	579
+27	1.8	piRNA gene	579
+28	1.0	piRNA gene	579
+18	0.3		580
+20	0.6		580
+21	2.3		580
+22	1.4		580
+25	0.6		580
+26	0.4		580
+27	1.2		580
+20	0.3	gene	581
+23	0.8	gene	581
+24	2.0	gene	581
+25	1.1	gene	581
+27	0.4	gene	581
+28	1.5	gene	581
+21	0.4	gene	582
+24	35.1	gene	582
+25	150.70000000000002	gene	582
+26	77.10000000000001	gene	582
+27	1.9000000000000001	gene	582
+19	1.6	repeat miRNA gene	583
+20	8.2	repeat miRNA gene	583
+21	14.600000000000001	repeat miRNA gene	583
+22	21.0	repeat miRNA gene	583
+23	5.4	repeat miRNA gene	583
+18	27.400000000000002	ncrna gene	584
+19	14.700000000000001	ncrna gene	584
+20	17.1	ncrna gene	584
+21	7.300000000000001	ncrna gene	584
+22	1.5	ncrna gene	584
+23	1.5	ncrna gene	584
+24	5.3	ncrna gene	584
+25	18.8	ncrna gene	584
+26	65.39999999999999	ncrna gene	584
+27	8.7	ncrna gene	584
+28	5.9	ncrna gene	584
+18	6.300000000000001	gene miRNA	585
+19	9.5	gene miRNA	585
+20	0.3	gene miRNA	585
+21	111.10000000000001	gene miRNA	585
+22	1.4	gene miRNA	585
+18	0.6	gene miRNA	586
+19	0.3	gene miRNA	586
+20	28.900000000000002	gene miRNA	586
+21	216.40000000000003	gene miRNA	586
+22	16.500000000000004	gene miRNA	586
+23	55.49999999999999	gene miRNA	586
+24	31.500000000000004	gene miRNA	586
+25	2.1	gene miRNA	586
+18	0.6	gene	587
+19	0.7	gene	587
+20	1.1	gene	587
+21	0.4	gene	587
+23	0.6	gene	587
+25	0.8	gene	587
+26	0.6	gene	587
+27	0.7	gene	587
+28	1.6	gene	587
+18	17.1	ncrna gene	588
+19	11.600000000000001	ncrna gene	588
+20	24.1	ncrna gene	588
+21	23.400000000000002	ncrna gene	588
+22	16.6	ncrna gene	588
+23	48.7	ncrna gene	588
+24	96.70000000000002	ncrna gene	588
+25	117.89999999999999	ncrna gene	588
+26	152.10000000000005	ncrna gene	588
+27	111.09999999999998	ncrna gene	588
+28	358.5	ncrna gene	588
+18	78.9	ncrna gene	589
+19	77.2	ncrna gene	589
+20	16.799999999999997	ncrna gene	589
+21	17.1	ncrna gene	589
+22	8.8	ncrna gene	589
+23	14.700000000000001	ncrna gene	589
+24	11.9	ncrna gene	589
+25	17.0	ncrna gene	589
+26	15.799999999999999	ncrna gene	589
+27	20.599999999999998	ncrna gene	589
+28	31.4	ncrna gene	589
+21	9.0	ncrna gene	590
+22	5.800000000000001	ncrna gene	590
+23	2.5	ncrna gene	590
+24	4.3	ncrna gene	590
+25	0.8999999999999999	ncrna gene	590
+28	19.0	ncrna gene	590
+18	4.8	gene miRNA	591
+21	4.1	gene miRNA	591
+22	10.0	gene miRNA	591
+23	35.0	gene miRNA	591
+24	18.299999999999997	gene miRNA	591
+18	2.3	repeat miRNA gene	592
+19	2.7	repeat miRNA gene	592
+20	50.5	repeat miRNA gene	592
+21	184.1	repeat miRNA gene	592
+22	61.6	repeat miRNA gene	592
+23	4.3	repeat miRNA gene	592
+24	0.3	repeat miRNA gene	592
+20	0.7		593
+21	0.9		593
+22	1.3		593
+23	0.7		593
+24	0.3		593
+25	0.6		593
+26	1.0		593
+27	0.9		593
+28	1.1		593
+19	57.69999999999999	gene miRNA	594
+20	6.5	gene miRNA	594
+21	18.599999999999998	gene miRNA	594
+22	22.700000000000003	gene miRNA	594
+23	4.1	gene miRNA	594
+18	2.8000000000000003	gene ncrna piRNA	595
+19	6.3999999999999995	gene ncrna piRNA	595
+20	3.7	gene ncrna piRNA	595
+21	9.299999999999999	gene ncrna piRNA	595
+22	3.7	gene ncrna piRNA	595
+23	0.3	gene ncrna piRNA	595
+24	4.8	gene ncrna piRNA	595
+25	2.7	gene ncrna piRNA	595
+26	12.7	gene ncrna piRNA	595
+27	8.600000000000001	gene ncrna piRNA	595
+28	8.3	gene ncrna piRNA	595
+20	4.0	gene miRNA	596
+21	3.7	gene miRNA	596
+22	12.600000000000001	gene miRNA	596
+23	7.700000000000001	gene miRNA	596
+24	2.4	gene miRNA	596
+18	68.1	ncrna gene	597
+19	214.90000000000006	ncrna gene	597
+20	143.8	ncrna gene	597
+21	22.200000000000003	ncrna gene	597
+22	21.599999999999998	ncrna gene	597
+23	39.7	ncrna gene	597
+24	91.6	ncrna gene	597
+25	62.900000000000006	ncrna gene	597
+26	48.2	ncrna gene	597
+27	72.69999999999999	ncrna gene	597
+28	60.19999999999999	ncrna gene	597
+19	14.899999999999999	gene miRNA piRNA	598
+20	10.200000000000001	gene miRNA piRNA	598
+21	5.4	gene miRNA piRNA	598
+22	7.699999999999999	gene miRNA piRNA	598
+23	5.8	gene miRNA piRNA	598
+24	6.4	gene miRNA piRNA	598
+25	7.8999999999999995	gene miRNA piRNA	598
+26	7.1	gene miRNA piRNA	598
+27	1.9000000000000001	gene miRNA piRNA	598
+28	5.8	gene miRNA piRNA	598
+18	43.1	repeat	599
+19	241.3	repeat	599
+20	667.8999999999996	repeat	599
+21	276.7	repeat	599
+22	1575.9	repeat	599
+18	19.5	repeat	600
+19	6.0	repeat	600
+20	10.2	repeat	600
+21	2.0	repeat	600
+19	15.200000000000001	gene miRNA	601
+20	10.600000000000001	gene miRNA	601
+21	42.400000000000006	gene miRNA	601
+22	27.400000000000002	gene miRNA	601
+23	2.9000000000000004	gene miRNA	601
+18	1.1		602
+20	1.4		602
+21	2.8000000000000003		602
+22	5.2		602
+23	3.0		602
+24	3.1		602
+25	1.9		602
+26	3.3		602
+27	2.9		602
+28	3.6999999999999993		602
+18	2.2	gene	603
+19	0.7	gene	603
+20	1.4	gene	603
+21	0.8999999999999999	gene	603
+22	1.0	gene	603
+23	1.7000000000000002	gene	603
+24	0.6	gene	603
+25	0.6	gene	603
+27	1.5	gene	603
+28	1.8	gene	603
+18	18.400000000000002	gene	604
+19	14.000000000000002	gene	604
+20	11.8	gene	604
+21	86.60000000000001	gene	604
+22	20.8	gene	604
+23	15.5	gene	604
+24	13.8	gene	604
+25	45.5	gene	604
+26	24.4	gene	604
+27	4.800000000000001	gene	604
+28	6.0	gene	604
+18	1.9	ncrna gene	605
+19	8.7	ncrna gene	605
+20	3.9	ncrna gene	605
+21	1.5	ncrna gene	605
+22	0.7	ncrna gene	605
+23	0.6	ncrna gene	605
+24	3.0	ncrna gene	605
+25	23.6	ncrna gene	605
+26	2.4	ncrna gene	605
+18	0.3	gene	606
+19	0.8	gene	606
+21	0.3	gene	606
+22	5.699999999999999	gene	606
+23	3.2	gene	606
+24	1.3	gene	606
+25	1.4000000000000001	gene	606
+26	13.2	gene	606
+27	7.1	gene	606
+28	17.3	gene	606
+19	0.8999999999999999	repeat	607
+20	0.3	repeat	607
+22	0.5	repeat	607
+23	1.0	repeat	607
+24	0.6	repeat	607
+25	1.2999999999999998	repeat	607
+26	1.3	repeat	607
+27	0.6	repeat	607
+18	7.1	ncrna gene	608
+19	21.0	ncrna gene	608
+20	42.19999999999999	ncrna gene	608
+21	46.900000000000006	ncrna gene	608
+22	60.300000000000004	ncrna gene	608
+23	250.89999999999998	ncrna gene	608
+24	157.90000000000006	ncrna gene	608
+25	38.6	ncrna gene	608
+26	6.8	ncrna gene	608
+27	32.3	ncrna gene	608
+28	16.900000000000002	ncrna gene	608
+21	0.3	gene ncrna piRNA	609
+22	1.2	gene ncrna piRNA	609
+23	4.9	gene ncrna piRNA	609
+24	7.6	gene ncrna piRNA	609
+25	7.2	gene ncrna piRNA	609
+26	3.8000000000000003	gene ncrna piRNA	609
+27	20.1	gene ncrna piRNA	609
+28	15.8	gene ncrna piRNA	609
+18	53.3	ncrna gene	610
+19	13.2	ncrna gene	610
+20	23.1	ncrna gene	610
+21	61.199999999999996	ncrna gene	610
+22	28.7	ncrna gene	610
+23	86.80000000000001	ncrna gene	610
+24	25.800000000000004	ncrna gene	610
+25	64.7	ncrna gene	610
+26	44.59999999999999	ncrna gene	610
+27	62.999999999999986	ncrna gene	610
+28	82.00000000000001	ncrna gene	610
+18	5.1		611
+19	6.799999999999999		611
+20	14.6		611
+21	12.4		611
+22	8.3		611
+23	4.999999999999999		611
+24	7.699999999999999		611
+25	7.900000000000002		611
+26	5.699999999999999		611
+27	5.5		611
+28	6.7		611
+18	5.3999999999999995	gene	612
+19	1.2	gene	612
+21	0.3	gene	612
+22	4.6	gene	612
+23	1.8	gene	612
+24	1.0	gene	612
+25	2.8999999999999995	gene	612
+26	2.0	gene	612
+27	0.9	gene	612
+28	0.7	gene	612
+18	5.4	ncrna gene	613
+19	3.4000000000000004	ncrna gene	613
+20	2.7	ncrna gene	613
+21	2.1	ncrna gene	613
+22	4.2	ncrna gene	613
+23	2.0999999999999996	ncrna gene	613
+24	6.8	ncrna gene	613
+25	8.0	ncrna gene	613
+26	1.8	ncrna gene	613
+27	2.8	ncrna gene	613
+28	1.0	ncrna gene	613
+18	4.0	gene ncrna	614
+19	1.7000000000000002	gene ncrna	614
+20	0.6	gene ncrna	614
+21	1.2	gene ncrna	614
+22	1.7000000000000002	gene ncrna	614
+23	1.2	gene ncrna	614
+24	6.2	gene ncrna	614
+25	3.5	gene ncrna	614
+26	9.299999999999999	gene ncrna	614
+27	5.300000000000001	gene ncrna	614
+28	9.6	gene ncrna	614
+20	0.4	repeat miRNA gene	615
+21	29.5	repeat miRNA gene	615
+22	64.8	repeat miRNA gene	615
+23	7.1	repeat miRNA gene	615
+21	0.6	ncrna gene	616
+22	0.3	ncrna gene	616
+23	1.8	ncrna gene	616
+24	3.5	ncrna gene	616
+25	2.5	ncrna gene	616
+26	6.2	ncrna gene	616
+27	2.0999999999999996	ncrna gene	616
+28	10.8	ncrna gene	616
+18	44.8	gene	617
+19	6.5	gene	617
+20	0.3	gene	617
+28	0.3	gene	617
+19	0.4	gene miRNA	618
+20	27.8	gene miRNA	618
+21	17.900000000000002	gene miRNA	618
+22	88.9	gene miRNA	618
+23	324.99999999999994	gene miRNA	618
+24	13.899999999999999	gene miRNA	618
+25	5.0	gene miRNA	618
+18	5.1	piRNA	619
+19	7.499999999999999	piRNA	619
+20	3.3	piRNA	619
+21	7.799999999999999	piRNA	619
+22	4.799999999999999	piRNA	619
+23	9.100000000000001	piRNA	619
+24	11.0	piRNA	619
+25	8.8	piRNA	619
+26	7.9	piRNA	619
+27	21.700000000000006	piRNA	619
+28	21.7	piRNA	619
+18	3.0	ncrna gene	620
+19	4.6	ncrna gene	620
+20	3.0	ncrna gene	620
+21	1.3	ncrna gene	620
+23	0.7	ncrna gene	620
+24	0.6	ncrna gene	620
+18	13.0	tRNA repeat piRNA	621
+19	17.5	tRNA repeat piRNA	621
+20	3.1	tRNA repeat piRNA	621
+21	18.7	tRNA repeat piRNA	621
+22	60.8	tRNA repeat piRNA	621
+23	2.5999999999999996	tRNA repeat piRNA	621
+24	1.7999999999999998	tRNA repeat piRNA	621
+25	1.2000000000000002	tRNA repeat piRNA	621
+26	3.0	tRNA repeat piRNA	621
+28	0.4	tRNA repeat piRNA	621
+18	1662.5	repeat	622
+19	10.399999999999999	repeat	622
+20	0.8	repeat	622
+21	2.2	repeat	622
+22	3.9	repeat	622
+23	0.3	repeat	622
+18	8.3	tRNA repeat piRNA	623
+19	32.599999999999994	tRNA repeat piRNA	623
+20	8.9	tRNA repeat piRNA	623
+22	0.6	tRNA repeat piRNA	623
+23	0.4	tRNA repeat piRNA	623
+25	1.0	tRNA repeat piRNA	623
+26	0.3	tRNA repeat piRNA	623
+18	0.7	repeat miRNA gene	624
+19	62.699999999999996	repeat miRNA gene	624
+20	14.399999999999999	repeat miRNA gene	624
+21	23.1	repeat miRNA gene	624
+22	57.49999999999999	repeat miRNA gene	624
+23	4.6	repeat miRNA gene	624
+24	0.3	repeat miRNA gene	624
+24	1.1	repeat gene	625
+25	5.8999999999999995	repeat gene	625
+26	126.70000000000002	repeat gene	625
+27	27.400000000000002	repeat gene	625
+18	4.2	gene miRNA	626
+21	8.6	gene miRNA	626
+22	98.8	gene miRNA	626
+23	44.49999999999999	gene miRNA	626
+24	8.3	gene miRNA	626
+18	11.5	gene miRNA	627
+19	43.1	gene miRNA	627
+20	341.09999999999997	gene miRNA	627
+21	67.4	gene miRNA	627
+22	24.1	gene miRNA	627
+23	0.3	gene miRNA	627
+20	0.3	gene miRNA	628
+21	7.7	gene miRNA	628
+22	37.4	gene miRNA	628
+23	148.4	gene miRNA	628
+24	168.70000000000002	gene miRNA	628
+25	95.8	gene miRNA	628
+26	8.9	gene miRNA	628
+27	1.0	gene miRNA	628
+18	15.6	gene ncrna piRNA	629
+19	8.3	gene ncrna piRNA	629
+20	2.0999999999999996	gene ncrna piRNA	629
+21	1.3	gene ncrna piRNA	629
+22	4.8	gene ncrna piRNA	629
+23	3.6	gene ncrna piRNA	629
+24	3.7	gene ncrna piRNA	629
+25	2.9	gene ncrna piRNA	629
+26	6.6	gene ncrna piRNA	629
+27	10.200000000000001	gene ncrna piRNA	629
+28	13.600000000000001	gene ncrna piRNA	629
+18	210.2	ncrna gene	630
+19	45.5	ncrna gene	630
+20	33.99999999999999	ncrna gene	630
+21	32.2	ncrna gene	630
+22	5.1	ncrna gene	630
+23	26.599999999999998	ncrna gene	630
+24	3.3	ncrna gene	630
+25	1.7	ncrna gene	630
+26	1.0	ncrna gene	630
+27	1.6	ncrna gene	630
+28	5.1	ncrna gene	630
+18	11.7	repeat	631
+19	11.0	repeat	631
+20	20.9	repeat	631
+21	18.4	repeat	631
+22	21.1	repeat	631
+19	0.5	ncrna gene	632
+20	0.7	ncrna gene	632
+21	0.5	ncrna gene	632
+22	0.8	ncrna gene	632
+23	4.4	ncrna gene	632
+24	0.6	ncrna gene	632
+25	2.9	ncrna gene	632
+26	1.3	ncrna gene	632
+27	0.3	ncrna gene	632
+28	6.5	ncrna gene	632
+20	2.3		633
+21	36.7		633
+22	236.5		633
+20	0.8		634
+21	31.3		634
+22	3994.6000000000004		634
+23	75.6		634
+24	2.4		634
+21	13.900000000000002	gene	635
+22	8.5	gene	635
+18	105.8		636
+19	459.9		636
+20	329.5		636
+21	8092.800000000001		636
+22	541.8		636
+23	4.6		636
+18	49.399999999999984	gene	637
+19	47.8	gene	637
+20	9.5	gene	637
+21	543.5999999999999	gene	637
+22	31.4	gene	637
+19	0.3	repeat gene	638
+22	1.8	repeat gene	638
+24	0.4	repeat gene	638
+25	1.1	repeat gene	638
+27	0.7	repeat gene	638
+28	0.3	repeat gene	638
+18	4.3	gene	639
+19	0.8	gene	639
+20	1.6	gene	639
+22	5.4	gene	639
+23	0.4	gene	639
+24	0.3	gene	639
+25	1.7	gene	639
+26	1.8	gene	639
+18	5.9	gene	640
+19	5.499999999999999	gene	640
+20	8.500000000000002	gene	640
+21	7.200000000000001	gene	640
+22	6.1	gene	640
+23	9.4	gene	640
+24	13.4	gene	640
+25	7.099999999999999	gene	640
+26	7.3999999999999995	gene	640
+27	4.2	gene	640
+28	6.499999999999999	gene	640
+18	2.5	tRNA repeat	641
+19	0.3	tRNA repeat	641
+20	5.7	tRNA repeat	641
+21	0.3	tRNA repeat	641
+22	6.5	tRNA repeat	641
+24	16.2	tRNA repeat	641
+25	26.099999999999998	tRNA repeat	641
+26	1.9000000000000001	tRNA repeat	641
+27	4.4	tRNA repeat	641
+28	1.7	tRNA repeat	641
+18	6.300000000000001	tRNA repeat	642
+19	3.0	tRNA repeat	642
+20	4.1	tRNA repeat	642
+21	1.5999999999999999	tRNA repeat	642
+22	1.6999999999999997	tRNA repeat	642
+23	2.3	tRNA repeat	642
+24	1.7999999999999998	tRNA repeat	642
+25	1.9	tRNA repeat	642
+26	4.6	tRNA repeat	642
+27	1.6	tRNA repeat	642
+28	0.3	tRNA repeat	642
+20	0.5	gene miRNA	643
+21	3.2	gene miRNA	643
+22	31.200000000000003	gene miRNA	643
+23	6.1	gene miRNA	643
+18	3.6	ncrna gene	644
+19	1.3	ncrna gene	644
+20	1.1	ncrna gene	644
+21	1.1	ncrna gene	644
+22	8.2	ncrna gene	644
+23	7.499999999999999	ncrna gene	644
+24	1.2999999999999998	ncrna gene	644
+25	5.0	ncrna gene	644
+26	0.8999999999999999	ncrna gene	644
+27	0.8	ncrna gene	644
+28	0.6	ncrna gene	644
+18	5.199999999999999	gene	645
+19	6.5	gene	645
+20	14.6	gene	645
+21	9.4	gene	645
+22	4.2	gene	645
+23	7.800000000000001	gene	645
+24	4.7	gene	645
+25	4.1	gene	645
+26	1.1	gene	645
+27	0.3	gene	645
+28	1.8	gene	645
+18	2.3	ncrna gene	646
+19	1.7	ncrna gene	646
+20	1.5	ncrna gene	646
+21	1.5	ncrna gene	646
+22	1.0	ncrna gene	646
+23	0.6	ncrna gene	646
+24	0.6	ncrna gene	646
+25	0.8	ncrna gene	646
+26	2.1999999999999997	ncrna gene	646
+27	2.9	ncrna gene	646
+28	16.2	ncrna gene	646
+18	0.3	gene ncrna piRNA	647
+19	0.3	gene ncrna piRNA	647
+20	0.6	gene ncrna piRNA	647
+21	15.8	gene ncrna piRNA	647
+22	16.8	gene ncrna piRNA	647
+23	5.199999999999999	gene ncrna piRNA	647
+24	7.8	gene ncrna piRNA	647
+25	9.6	gene ncrna piRNA	647
+26	20.8	gene ncrna piRNA	647
+27	46.9	gene ncrna piRNA	647
+28	24.300000000000004	gene ncrna piRNA	647
+18	19.300000000000004	ncrna gene	648
+19	30.5	ncrna gene	648
+20	35.3	ncrna gene	648
+21	41.3	ncrna gene	648
+22	67.3	ncrna gene	648
+23	59.8	ncrna gene	648
+24	34.699999999999996	ncrna gene	648
+25	36.0	ncrna gene	648
+26	48.900000000000006	ncrna gene	648
+27	83.79999999999998	ncrna gene	648
+28	109.6	ncrna gene	648
+18	21.2	gene ncrna piRNA	649
+19	27.3	gene ncrna piRNA	649
+20	29.9	gene ncrna piRNA	649
+21	4.0	gene ncrna piRNA	649
+22	1.7	gene ncrna piRNA	649
+23	2.0	gene ncrna piRNA	649
+24	1.0	gene ncrna piRNA	649
+25	1.2	gene ncrna piRNA	649
+26	1.8	gene ncrna piRNA	649
+27	2.0999999999999996	gene ncrna piRNA	649
+28	1.5	gene ncrna piRNA	649
+18	2.8	gene ncrna piRNA	650
+19	9.6	gene ncrna piRNA	650
+20	9.1	gene ncrna piRNA	650
+21	41.49999999999999	gene ncrna piRNA	650
+22	26.799999999999997	gene ncrna piRNA	650
+23	10.5	gene ncrna piRNA	650
+24	18.299999999999997	gene ncrna piRNA	650
+25	14.500000000000002	gene ncrna piRNA	650
+26	11.1	gene ncrna piRNA	650
+27	5.8999999999999995	gene ncrna piRNA	650
+28	11.600000000000001	gene ncrna piRNA	650
+20	0.7	gene	651
+21	6.8	gene	651
+22	15.1	gene	651
+23	6.8	gene	651
+24	1.0	gene	651
+21	3.3	ncrna gene	652
+22	2.7	ncrna gene	652
+23	1.8	ncrna gene	652
+24	15.3	ncrna gene	652
+25	1.9000000000000001	ncrna gene	652
+26	0.6	ncrna gene	652
+28	4.3	ncrna gene	652
+19	0.3	gene	653
+20	0.3	gene	653
+21	0.3	gene	653
+23	3.1	gene	653
+24	1.0	gene	653
+25	2.8	gene	653
+26	0.8999999999999999	gene	653
+28	0.3	gene	653
+18	65.39999999999999	ncrna gene	654
+19	30.8	ncrna gene	654
+20	52.79999999999998	ncrna gene	654
+21	121.69999999999999	ncrna gene	654
+22	239.60000000000016	ncrna gene	654
+23	66.10000000000001	ncrna gene	654
+24	25.200000000000006	ncrna gene	654
+25	120.2	ncrna gene	654
+26	282.50000000000017	ncrna gene	654
+27	2577.9000000000005	ncrna gene	654
+28	2252.7	ncrna gene	654
+22	1.3	ncrna gene	655
+23	1.1	ncrna gene	655
+24	0.8	ncrna gene	655
+25	0.3	ncrna gene	655
+26	1.0	ncrna gene	655
+27	14.6	ncrna gene	655
+28	0.8	ncrna gene	655
+18	0.3	repeat miRNA gene	656
+19	0.7	repeat miRNA gene	656
+20	5.199999999999999	repeat miRNA gene	656
+21	18.7	repeat miRNA gene	656
+22	36.59999999999999	repeat miRNA gene	656
+23	63.1	repeat miRNA gene	656
+24	18.200000000000003	repeat miRNA gene	656
+25	13.6	repeat miRNA gene	656
+26	2.9000000000000004	repeat miRNA gene	656
+18	0.8	ncrna gene	657
+19	0.3	ncrna gene	657
+20	0.8	ncrna gene	657
+21	1.5	ncrna gene	657
+22	14.7	ncrna gene	657
+23	11.899999999999999	ncrna gene	657
+24	16.8	ncrna gene	657
+25	3.6999999999999997	ncrna gene	657
+26	7.5	ncrna gene	657
+27	8.0	ncrna gene	657
+28	10.4	ncrna gene	657
+19	0.5	ncrna gene	658
+20	0.5	ncrna gene	658
+21	1.7	ncrna gene	658
+22	2.5999999999999996	ncrna gene	658
+23	12.6	ncrna gene	658
+24	7.5	ncrna gene	658
+25	1.8	ncrna gene	658
+26	4.1	ncrna gene	658
+27	2.5	ncrna gene	658
+28	2.3	ncrna gene	658
+18	81.3	repeat gene	659
+19	282.29999999999995	repeat gene	659
+20	229.3	repeat gene	659
+21	3.2	repeat gene	659
+18	4.3		660
+19	7.9		660
+20	14.700000000000001		660
+21	1169.1999999999998		660
+22	117.4		660
+23	2.9		660
+18	0.8999999999999999		661
+19	2.2		661
+20	0.6		661
+21	2.0		661
+22	2.0		661
+24	0.8		661
+25	2.0		661
+26	3.1999999999999997		661
+27	6.1		661
+28	6.3999999999999995		661
+18	2.1	ncrna gene	662
+19	1.4	ncrna gene	662
+20	1.0	ncrna gene	662
+21	0.8999999999999999	ncrna gene	662
+22	2.9000000000000004	ncrna gene	662
+23	1.5	ncrna gene	662
+24	1.3	ncrna gene	662
+25	2.3000000000000003	ncrna gene	662
+26	1.5	ncrna gene	662
+27	2.9	ncrna gene	662
+28	4.1	ncrna gene	662
+18	0.3	gene	663
+22	0.7	gene	663
+23	0.3	gene	663
+24	2.5	gene	663
+25	8.7	gene	663
+26	0.6	gene	663
+27	0.3	gene	663
+28	2.8	gene	663
+18	7.8999999999999995	repeat	664
+19	23.8	repeat	664
+20	423.5	repeat	664
+21	986.0999999999999	repeat	664
+22	13.200000000000001	repeat	664
+18	1.6	ncrna gene	665
+19	3.5999999999999996	ncrna gene	665
+20	6.199999999999999	ncrna gene	665
+21	18.099999999999998	ncrna gene	665
+22	4.699999999999999	ncrna gene	665
+23	25.1	ncrna gene	665
+24	102.2	ncrna gene	665
+25	6.2	ncrna gene	665
+26	9.6	ncrna gene	665
+27	2.5	ncrna gene	665
+28	3.8	ncrna gene	665
+18	0.7	gene	666
+19	0.4	gene	666
+20	0.3	gene	666
+21	12.5	gene	666
+22	1.6	gene	666
+23	1.9000000000000001	gene	666
+24	7.8	gene	666
+25	16.8	gene	666
+26	48.8	gene	666
+27	6.2	gene	666
+28	0.4	gene	666
+18	0.3	gene miRNA	667
+19	0.9	gene miRNA	667
+20	2.6999999999999997	gene miRNA	667
+21	10.0	gene miRNA	667
+22	39.49999999999999	gene miRNA	667
+23	9.100000000000001	gene miRNA	667
+24	2.1	gene miRNA	667
+18	0.5	ncrna gene	668
+19	2.3	ncrna gene	668
+20	2.7	ncrna gene	668
+21	0.3	ncrna gene	668
+22	0.3	ncrna gene	668
+23	0.7	ncrna gene	668
+24	3.5	ncrna gene	668
+27	0.3	ncrna gene	668
+18	1.3	repeat gene	669
+19	2.4	repeat gene	669
+20	4.1	repeat gene	669
+21	11.8	repeat gene	669
+22	17.000000000000007	repeat gene	669
+23	28.7	repeat gene	669
+24	12.500000000000002	repeat gene	669
+25	3.9999999999999996	repeat gene	669
+26	0.8999999999999999	repeat gene	669
+27	2.4	repeat gene	669
+28	4.9	repeat gene	669
+18	0.3		670
+19	0.3		670
+20	2.5		670
+21	4.3		670
+22	3.5999999999999996		670
+23	1.3		670
+24	2.3		670
+25	0.8999999999999999		670
+26	2.4		670
+27	1.7000000000000002		670
+28	1.2		670
+24	0.3	gene	671
+25	0.3	gene	671
+26	2.7	gene	671
+27	4.2	gene	671
+28	5.3	gene	671
+18	2.0999999999999996	ncrna gene	672
+19	2.8	ncrna gene	672
+20	14.0	ncrna gene	672
+21	0.7	ncrna gene	672
+22	4.2	ncrna gene	672
+23	5.7	ncrna gene	672
+24	3.9	ncrna gene	672
+25	25.1	ncrna gene	672
+26	7.499999999999999	ncrna gene	672
+27	66.10000000000001	ncrna gene	672
+28	243.1	ncrna gene	672
+18	1.5	gene miRNA	673
+19	0.3	gene miRNA	673
+21	4.6	gene miRNA	673
+22	11.6	gene miRNA	673
+23	14.0	gene miRNA	673
+24	1.7000000000000002	gene miRNA	673
+18	0.9	piRNA gene	674
+19	4.4	piRNA gene	674
+20	2.7	piRNA gene	674
+21	0.3	piRNA gene	674
+22	2.1	piRNA gene	674
+23	3.6	piRNA gene	674
+24	1.2	piRNA gene	674
+26	0.4	piRNA gene	674
+28	0.3	piRNA gene	674
+18	0.9	ncrna gene	675
+19	0.3	ncrna gene	675
+20	0.6	ncrna gene	675
+21	0.4	ncrna gene	675
+22	5.3	ncrna gene	675
+23	4.7	ncrna gene	675
+24	8.8	ncrna gene	675
+25	3.3	ncrna gene	675
+26	2.7	ncrna gene	675
+27	23.599999999999998	ncrna gene	675
+28	30.4	ncrna gene	675
+21	3.6		676
+22	12.0		676
+23	3.1999999999999997		676
+24	24.5		676
+18	226.90000000000003	gene	677
+19	83.40000000000002	gene	677
+20	114.6	gene	677
+21	54.89999999999999	gene	677
+22	95.29999999999998	gene	677
+23	175.79999999999998	gene	677
+24	260.79999999999995	gene	677
+25	78.50000000000001	gene	677
+26	32.8	gene	677
+27	16.7	gene	677
+28	9.5	gene	677
+18	1.0		678
+21	0.6		678
+22	1.1		678
+23	0.3		678
+25	1.8		678
+26	2.1		678
+27	1.5		678
+28	0.4		678
+18	15.7	ncrna gene	679
+19	10.1	ncrna gene	679
+20	1.5	ncrna gene	679
+21	1.7	ncrna gene	679
+23	0.6	ncrna gene	679
+24	1.5	ncrna gene	679
+25	5.3	ncrna gene	679
+26	1.9	ncrna gene	679
+27	7.7	ncrna gene	679
+28	16.499999999999996	ncrna gene	679
+18	21.1	ncrna gene	680
+19	25.700000000000003	ncrna gene	680
+20	19.900000000000002	ncrna gene	680
+21	44.199999999999996	ncrna gene	680
+22	107.4	ncrna gene	680
+23	447.90000000000003	ncrna gene	680
+24	113.5	ncrna gene	680
+25	228.00000000000006	ncrna gene	680
+26	724.9999999999997	ncrna gene	680
+27	706.1999999999998	ncrna gene	680
+28	321.3	ncrna gene	680
+18	1.7000000000000002	repeat gene	681
+19	2.5	repeat gene	681
+20	3.3	repeat gene	681
+21	0.3	repeat gene	681
+22	0.3	repeat gene	681
+23	0.6	repeat gene	681
+25	0.7	repeat gene	681
+26	0.8	repeat gene	681
+21	0.4		682
+22	0.7		682
+23	9.2		682
+24	36.1		682
+25	8.1		682
+26	7.6		682
+27	5.4		682
+28	6.800000000000001		682
+18	3.3	repeat gene	683
+19	1.5	repeat gene	683
+20	0.6	repeat gene	683
+21	7.8	repeat gene	683
+22	2.6999999999999997	repeat gene	683
+23	0.3	repeat gene	683
+24	0.3	repeat gene	683
+25	0.7	repeat gene	683
+26	2.7	repeat gene	683
+27	1.0	repeat gene	683
+28	39.9	repeat gene	683
+18	483.1	gene	684
+19	18.0	gene	684
+20	3.5	gene	684
+18	10.0	gene miRNA	685
+19	14.100000000000001	gene miRNA	685
+20	10.299999999999999	gene miRNA	685
+21	24.4	gene miRNA	685
+22	52.9	gene miRNA	685
+23	15.700000000000001	gene miRNA	685
+24	3.3	gene miRNA	685
+18	4.8	gene miRNA	686
+19	7.300000000000001	gene miRNA	686
+20	6.799999999999999	gene miRNA	686
+21	2.3	gene miRNA	686
+22	62.7	gene miRNA	686
+23	137.9	gene miRNA	686
+24	58.400000000000006	gene miRNA	686
+26	0.3	gene miRNA	686
+18	0.7		687
+19	1.1		687
+20	2.3		687
+21	2.7		687
+22	9.9		687
+23	6.9		687
+24	3.3		687
+25	4.5		687
+26	2.8		687
+27	4.6000000000000005		687
+28	4.0		687
+19	0.4	gene miRNA	688
+20	0.7	gene miRNA	688
+21	32.199999999999996	gene miRNA	688
+22	41.4	gene miRNA	688
+23	83.79999999999998	gene miRNA	688
+18	0.4	gene miRNA	689
+19	1.9000000000000001	gene miRNA	689
+20	204.60000000000002	gene miRNA	689
+21	179.9	gene miRNA	689
+22	32.5	gene miRNA	689
+23	43.5	gene miRNA	689
+18	5.5		690
+19	3.4000000000000004		690
+20	9.8		690
+21	1.6		690
+22	0.4		690
+23	0.8999999999999999		690
+24	0.3		690
+25	1.7000000000000002		690
+26	0.6		690
+28	2.6999999999999997		690
+19	3.8	gene miRNA	691
+20	12.100000000000001	gene miRNA	691
+21	4.4	gene miRNA	691
+22	99.39999999999999	gene miRNA	691
+23	72.0	gene miRNA	691
+24	15.5	gene miRNA	691
+25	2.2	gene miRNA	691
+18	59.4	gene miRNA	692
+19	27.6	gene miRNA	692
+20	86.8	gene miRNA	692
+21	72.8	gene miRNA	692
+22	132.10000000000002	gene miRNA	692
+23	0.8999999999999999	gene miRNA	692
+19	1.0	gene miRNA	693
+20	2.5	gene miRNA	693
+21	4.8999999999999995	gene miRNA	693
+22	58.099999999999994	gene miRNA	693
+23	109.20000000000002	gene miRNA	693
+24	51.7	gene miRNA	693
+18	0.3	gene	694
+19	0.3	gene	694
+20	0.6	gene	694
+22	0.6	gene	694
+23	0.8	gene	694
+24	0.8	gene	694
+27	0.8	gene	694
+18	0.4	gene	695
+19	0.6	gene	695
+20	0.5	gene	695
+21	0.3	gene	695
+23	1.6	gene	695
+24	1.5	gene	695
+25	1.9000000000000001	gene	695
+26	1.1	gene	695
+27	3.6	gene	695
+28	0.8	gene	695
+18	0.3	gene miRNA	696
+21	2.7	gene miRNA	696
+22	12.200000000000001	gene miRNA	696
+23	50.8	gene miRNA	696
+24	226.7	gene miRNA	696
+25	40.099999999999994	gene miRNA	696
+26	0.9	gene miRNA	696
+18	5.300000000000001	gene miRNA	697
+19	3.9	gene miRNA	697
+20	5.6000000000000005	gene miRNA	697
+21	184.8	gene miRNA	697
+22	24.8	gene miRNA	697
+23	2.1	gene miRNA	697
+24	12.3	gene miRNA	697
+25	3.7	gene miRNA	697
+26	0.8999999999999999	gene miRNA	697
+27	0.3	gene miRNA	697
+22	0.3	gene	698
+23	1.2	gene	698
+24	0.6	gene	698
+25	0.6	gene	698
+26	7.9	gene	698
+27	7.5	gene	698
+28	5.9	gene	698
+18	1.3	gene	699
+19	0.3	gene	699
+21	0.3	gene	699
+22	0.4	gene	699
+23	1.3	gene	699
+24	0.8999999999999999	gene	699
+25	0.3	gene	699
+26	1.7000000000000002	gene	699
+27	1.8	gene	699
+28	2.5	gene	699
+18	1.4000000000000001		700
+19	1.1		700
+21	1.3		700
+22	0.8999999999999999		700
+23	3.8		700
+24	0.7		700
+25	0.3		700
+26	0.5		700
+27	0.3		700
+28	2.8		700
+18	24.300000000000004	ncrna gene	701
+19	34.8	ncrna gene	701
+20	30.8	ncrna gene	701
+21	32.5	ncrna gene	701
+22	19.099999999999998	ncrna gene	701
+23	16.2	ncrna gene	701
+24	18.5	ncrna gene	701
+25	24.8	ncrna gene	701
+26	22.1	ncrna gene	701
+27	24.9	ncrna gene	701
+28	37.0	ncrna gene	701
+20	6.5	repeat gene	702
+21	11.1	repeat gene	702
+22	15.8	repeat gene	702
+23	0.3	repeat gene	702
+24	0.3	repeat gene	702
+18	0.3	gene	703
+19	0.8	gene	703
+20	0.7	gene	703
+21	8.4	gene	703
+22	11.200000000000001	gene	703
+23	16.1	gene	703
+24	6.4	gene	703
+25	2.5	gene	703
+26	1.7000000000000002	gene	703
+27	5.3	gene	703
+28	1.4	gene	703
+19	0.8	gene miRNA	704
+20	3.2	gene miRNA	704
+21	12.1	gene miRNA	704
+22	35.699999999999996	gene miRNA	704
+18	6.2	repeat miRNA gene	705
+19	5.8999999999999995	repeat miRNA gene	705
+20	98.0	repeat miRNA gene	705
+21	850.0999999999997	repeat miRNA gene	705
+22	1042.7	repeat miRNA gene	705
+23	300.2	repeat miRNA gene	705
+24	49.800000000000004	repeat miRNA gene	705
+19	0.3	repeat	706
+20	4.3	repeat	706
+21	18.1	repeat	706
+22	34.3	repeat	706
+23	16.7	repeat	706
+24	2.3	repeat	706
+25	0.4	repeat	706
+18	7.8	ncrna gene	707
+19	4.1000000000000005	ncrna gene	707
+20	3.5999999999999996	ncrna gene	707
+21	6.6	ncrna gene	707
+22	5.0	ncrna gene	707
+23	3.2	ncrna gene	707
+24	6.2	ncrna gene	707
+25	9.600000000000001	ncrna gene	707
+26	4.7	ncrna gene	707
+27	8.1	ncrna gene	707
+28	28.4	ncrna gene	707
+18	3.7	gene ncrna piRNA	708
+19	2.5	gene ncrna piRNA	708
+20	1.1	gene ncrna piRNA	708
+21	5.2	gene ncrna piRNA	708
+22	20.1	gene ncrna piRNA	708
+23	10.600000000000001	gene ncrna piRNA	708
+24	8.500000000000002	gene ncrna piRNA	708
+25	23.4	gene ncrna piRNA	708
+26	9.299999999999999	gene ncrna piRNA	708
+27	18.000000000000004	gene ncrna piRNA	708
+28	32.099999999999994	gene ncrna piRNA	708
+18	0.3	gene ncrna	709
+22	1.0	gene ncrna	709
+23	1.9	gene ncrna	709
+24	2.5	gene ncrna	709
+25	2.5	gene ncrna	709
+26	4.1	gene ncrna	709
+27	10.499999999999998	gene ncrna	709
+28	19.1	gene ncrna	709
+18	2.2	gene miRNA	710
+19	1.9	gene miRNA	710
+20	12.9	gene miRNA	710
+21	18.6	gene miRNA	710
+22	52.599999999999994	gene miRNA	710
+23	7.5	gene miRNA	710
+24	1.6	gene miRNA	710
+24	0.3	repeat	711
+18	4.3999999999999995	gene	712
+19	0.3	gene	712
+20	4.6	gene	712
+21	2.9	gene	712
+22	2.6	gene	712
+23	2.3	gene	712
+25	7.7	gene	712
+26	5.199999999999999	gene	712
+27	4.9	gene	712
+28	6.8	gene	712
+18	0.3	ncrna gene	713
+19	0.3	ncrna gene	713
+20	0.3	ncrna gene	713
+23	0.6	ncrna gene	713
+24	0.4	ncrna gene	713
+26	0.5	ncrna gene	713
+27	1.4	ncrna gene	713
+28	0.7	ncrna gene	713
+18	56.899999999999984	ncrna gene	714
+19	314.3999999999999	ncrna gene	714
+20	53.7	ncrna gene	714
+21	24.299999999999997	ncrna gene	714
+22	52.300000000000004	ncrna gene	714
+23	57.199999999999996	ncrna gene	714
+24	65.3	ncrna gene	714
+25	150.60000000000005	ncrna gene	714
+26	285.3	ncrna gene	714
+27	547.5000000000001	ncrna gene	714
+28	111.90000000000002	ncrna gene	714
+18	2.1	repeat miRNA gene	715
+19	66.4	repeat miRNA gene	715
+20	70.1	repeat miRNA gene	715
+21	360.9	repeat miRNA gene	715
+22	574.1999999999996	repeat miRNA gene	715
+23	178.40000000000006	repeat miRNA gene	715
+24	198.3	repeat miRNA gene	715
+25	27.599999999999998	repeat miRNA gene	715
+26	2.0999999999999996	repeat miRNA gene	715
+18	4.7	gene ncrna piRNA	716
+19	2.0	gene ncrna piRNA	716
+20	1.9000000000000001	gene ncrna piRNA	716
+21	2.2	gene ncrna piRNA	716
+22	10.200000000000001	gene ncrna piRNA	716
+23	59.0	gene ncrna piRNA	716
+24	43.89999999999999	gene ncrna piRNA	716
+25	0.3	gene ncrna piRNA	716
+27	0.6	gene ncrna piRNA	716
+28	1.3	gene ncrna piRNA	716
+18	0.3	ncrna gene	717
+19	6.2	ncrna gene	717
+20	22.1	ncrna gene	717
+21	5.8999999999999995	ncrna gene	717
+22	1.4	ncrna gene	717
+23	21.099999999999998	ncrna gene	717
+24	16.4	ncrna gene	717
+25	1.0	ncrna gene	717
+26	3.4	ncrna gene	717
+27	2.8	ncrna gene	717
+28	3.6999999999999997	ncrna gene	717
+18	1.5	gene	718
+19	5.7	gene	718
+20	2.2	gene	718
+21	133.0	gene	718
+22	970.1	gene	718
+23	0.4	gene	718
+18	1.8	gene	719
+19	8.4	gene	719
+20	147.50000000000003	gene	719
+21	34.3	gene	719
+22	14.0	gene	719
+23	75.4	gene	719
+24	48.99999999999999	gene	719
+18	15.0	ncrna gene	720
+19	29.9	ncrna gene	720
+20	28.599999999999998	ncrna gene	720
+21	53.39999999999999	ncrna gene	720
+22	71.7	ncrna gene	720
+23	81.6	ncrna gene	720
+24	75.3	ncrna gene	720
+25	62.29999999999999	ncrna gene	720
+26	41.29999999999999	ncrna gene	720
+27	47.19999999999999	ncrna gene	720
+28	41.2	ncrna gene	720

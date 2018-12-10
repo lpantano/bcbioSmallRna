@@ -1,0 +1,11 @@
+Sample	adapter_content	Sequences flagged as poor quality	sequence_duplication_levels	avg_sequence_length	Encoding	per_base_sequence_quality	sequence_length_distribution	Sequence length	File type	basic_statistics	per_sequence_gc_content	Total Sequences	per_base_n_content	per_base_sequence_content	overrepresented_sequences	%GC	total_deduplicated_percentage	Filename	per_sequence_quality_scores
+ERS185036	pass	0.0	fail	21.554634485	Sanger / Illumina 1.9	pass	warn	17-28	Conventional base calls	pass	fail	28490037.0	pass	fail	warn	55.0	3.49855919783	ERS185036	pass
+ERS185068	pass	0.0	fail	22.258454648	Sanger / Illumina 1.9	pass	warn	17-28	Conventional base calls	pass	warn	40966549.0	pass	fail	warn	53.0	9.19143792527	ERS185068	pass
+ERS185082	pass	0.0	fail	21.7353319576	Sanger / Illumina 1.9	pass	warn	17-28	Conventional base calls	pass	warn	51510333.0	fail	fail	warn	54.0	34.282951198	ERS185082	pass
+ERS185102	pass	0.0	fail	21.9711576969	Sanger / Illumina 1.9	pass	warn	17-28	Conventional base calls	pass	warn	42194758.0	pass	fail	warn	54.0	6.23997260551	ERS185102	pass
+ERS185125	pass	0.0	fail	22.0244302029	Sanger / Illumina 1.9	pass	warn	17-28	Conventional base calls	pass	fail	9919320.0	pass	fail	fail	54.0	1.26982588	ERS185125	pass
+ERS185252	pass	0.0	fail	21.9590498942	Sanger / Illumina 1.9	pass	warn	17-28	Conventional base calls	pass	warn	20308348.0	pass	fail	warn	53.0	4.98023766377	ERS185252	pass
+ERS185400	pass	0.0	fail	23.7574735456	Sanger / Illumina 1.9	pass	warn	17-28	Conventional base calls	pass	pass	8803151.0	pass	fail	fail	52.0	2.8676719686	ERS185400	pass
+ERS185403	pass	0.0	fail	21.8596651015	Sanger / Illumina 1.9	pass	warn	17-28	Conventional base calls	pass	fail	12045621.0	pass	fail	fail	54.0	1.25505742539	ERS185403	pass
+ERS185470	pass	0.0	fail	21.6991695884	Sanger / Illumina 1.9	pass	warn	17-28	Conventional base calls	pass	pass	13569416.0	pass	fail	fail	54.0	1.51506004446	ERS185470	pass
+ERS185473	pass	0.0	fail	21.9806799695	Sanger / Illumina 1.9	pass	warn	17-28	Conventional base calls	pass	warn	9656610.0	pass	fail	fail	54.0	1.37332465002	ERS185473	pass

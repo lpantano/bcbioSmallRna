@@ -1,0 +1,18 @@
+bcftools:
+  write_separate_table: true
+module_order:
+- bcbio
+- samtools
+- goleft_indexcov
+- peddy
+- bcftools
+- picard
+- qualimap
+- snpeff
+- fastqc
+- preseq
+table_columns_visible:
+  Peddy:
+    error_sex_check: false
+    family_id: false
+    sex_het_ratio: false

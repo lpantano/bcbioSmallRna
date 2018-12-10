@@ -1,0 +1,116 @@
+[2018-12-05 12:21:01,717] multiqc                                            [DEBUG  ]  No MultiQC config found: /n/app/bcbio/alpha_version/lpantano/bcbio/anaconda/lib/python2.7/site-packages/multiqc_config.yaml
+[2018-12-05 12:21:01,718] multiqc                                            [DEBUG  ]  No MultiQC config found: /home/lp113/.multiqc_config.yaml
+[2018-12-05 12:21:01,721] multiqc                                            [DEBUG  ]  Loading config settings from: multiqc_config.yaml
+[2018-12-05 12:21:01,721] multiqc                                            [DEBUG  ]  New config 'module_order': ['bcbio', 'samtools', 'goleft_indexcov', 'peddy', 'bcftools', 'picard', 'qualimap', 'snpeff', 'fastqc', 'preseq']
+[2018-12-05 12:21:01,721] multiqc                                            [DEBUG  ]  New config 'bcftools': {'write_separate_table': True}
+[2018-12-05 12:21:01,722] multiqc                                            [DEBUG  ]  New config 'table_columns_visible': {'Peddy': {'family_id': False, 'sex_het_ratio': False, 'error_sex_check': False}}
+[2018-12-05 12:21:01,722] multiqc                                            [DEBUG  ]  Command used: /n/app/bcbio/alpha_version/lpantano/bcbio/galaxy/../anaconda/bin/multiqc -f -l /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/qc/multiqc/list_files.txt -o /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/bcbiotx/tmpFgluxd
+[2018-12-05 12:21:02,358] multiqc                                            [DEBUG  ]  Latest MultiQC version is v1.6
+[2018-12-05 12:21:02,358] multiqc                                            [INFO   ]  This is MultiQC v1.6
+[2018-12-05 12:21:02,359] multiqc                                            [DEBUG  ]  Command     : /n/app/bcbio/alpha_version/lpantano/bcbio/galaxy/../anaconda/bin/multiqc -f -l /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/qc/multiqc/list_files.txt -o /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/bcbiotx/tmpFgluxd
+[2018-12-05 12:21:02,359] multiqc                                            [DEBUG  ]  Working dir : /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/qc/multiqc
+[2018-12-05 12:21:02,359] multiqc                                            [INFO   ]  Template    : default
+[2018-12-05 12:21:02,372] multiqc                                            [DEBUG  ]  Analysing modules: rna_seqc, theta2, longranger, bismark, sargasso, fastp, sortmerna, cutadapt, deeptools, bamtools, star, kallisto, busco, happy, clipandmerge, clusterflow, disambiguate, rseqc, dedup, quast, interop, bbmap, gatk, hicup, bowtie2, hicpro, vcftools, featureCounts, qorts, adapterRemoval, flexbar, supernova, rsem, salmon, fastq_screen, methylQA, htseq, hicexplorer, kat, verifybamid, bowtie1, trimmomatic, jellyfish, homer, bcl2fastq, prokka, slamdunk, leehom, biobloomtools, mirtrace, hisat2, afterqc, macs2, skewer, tophat, conpair, custom_content, samblaster, bcbio, samtools, goleft_indexcov, peddy, bcftools, picard, qualimap, snpeff, fastqc, preseq
+[2018-12-05 12:21:02,373] multiqc                                            [DEBUG  ]  Using temporary directory for creating report: /tmp/tmpQSdNxI
+[2018-12-05 12:21:02,835] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: fastqc_report.html
+[2018-12-05 12:21:03,787] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: qualimapReport.html
+[2018-12-05 12:21:04,440] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: fastqc_report.html
+[2018-12-05 12:21:05,149] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: qualimapReport.html
+[2018-12-05 12:21:05,799] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: fastqc_report.html
+[2018-12-05 12:21:06,757] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: qualimapReport.html
+[2018-12-05 12:21:07,381] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: fastqc_report.html
+[2018-12-05 12:21:08,412] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: qualimapReport.html
+[2018-12-05 12:21:09,025] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: fastqc_report.html
+[2018-12-05 12:21:10,205] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: qualimapReport.html
+[2018-12-05 12:21:10,814] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: fastqc_report.html
+[2018-12-05 12:21:11,771] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: qualimapReport.html
+[2018-12-05 12:21:12,381] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: fastqc_report.html
+[2018-12-05 12:21:13,150] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: qualimapReport.html
+[2018-12-05 12:21:13,761] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: fastqc_report.html
+[2018-12-05 12:21:14,705] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: qualimapReport.html
+[2018-12-05 12:21:15,326] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: fastqc_report.html
+[2018-12-05 12:21:16,273] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: qualimapReport.html
+[2018-12-05 12:21:17,017] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: fastqc_report.html
+[2018-12-05 12:21:17,728] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: qualimapReport.html
+[2018-12-05 12:21:18,897] multiqc                                            [DEBUG  ]  No samples found: rna_seqc
+[2018-12-05 12:21:18,923] multiqc                                            [DEBUG  ]  No samples found: theta2
+[2018-12-05 12:21:18,949] multiqc                                            [DEBUG  ]  No samples found: longranger
+[2018-12-05 12:21:18,966] multiqc                                            [DEBUG  ]  No samples found: bismark
+[2018-12-05 12:21:18,978] multiqc                                            [DEBUG  ]  No samples found: sargasso
+[2018-12-05 12:21:18,991] multiqc                                            [DEBUG  ]  No samples found: fastp
+[2018-12-05 12:21:19,009] multiqc                                            [DEBUG  ]  No samples found: sortmerna
+[2018-12-05 12:21:19,034] multiqc                                            [DEBUG  ]  No samples found: cutadapt
+[2018-12-05 12:21:19,074] multiqc                                            [DEBUG  ]  No samples found: deeptools
+[2018-12-05 12:21:19,111] multiqc                                            [DEBUG  ]  No samples found: bamtools
+[2018-12-05 12:21:19,123] multiqc                                            [DEBUG  ]  No samples found: star
+[2018-12-05 12:21:19,136] multiqc                                            [DEBUG  ]  No samples found: kallisto
+[2018-12-05 12:21:19,152] multiqc                                            [DEBUG  ]  No samples found: busco
+[2018-12-05 12:21:19,168] multiqc                                            [DEBUG  ]  No samples found: happy
+[2018-12-05 12:21:19,179] multiqc                                            [DEBUG  ]  No samples found: clipandmerge
+[2018-12-05 12:21:19,192] multiqc                                            [DEBUG  ]  No samples found: clusterflow
+[2018-12-05 12:21:19,210] multiqc                                            [DEBUG  ]  No samples found: disambiguate
+[2018-12-05 12:21:19,253] multiqc                                            [DEBUG  ]  No samples found: rseqc
+[2018-12-05 12:21:19,271] multiqc                                            [DEBUG  ]  No samples found: dedup
+[2018-12-05 12:21:19,289] multiqc                                            [DEBUG  ]  No samples found: quast
+[2018-12-05 12:21:19,302] multiqc                                            [DEBUG  ]  No samples found: interop
+[2018-12-05 12:21:19,352] multiqc                                            [DEBUG  ]  No samples found: bbmap
+[2018-12-05 12:21:19,377] multiqc                                            [DEBUG  ]  No samples found: gatk
+[2018-12-05 12:21:19,400] multiqc                                            [DEBUG  ]  No samples found: hicup
+[2018-12-05 12:21:19,412] multiqc                                            [DEBUG  ]  No samples found: bowtie2
+[2018-12-05 12:21:19,424] multiqc                                            [DEBUG  ]  No samples found: hicpro
+[2018-12-05 12:21:19,442] multiqc                                            [DEBUG  ]  No samples found: vcftools
+[2018-12-05 12:21:19,453] multiqc                                            [DEBUG  ]  No samples found: featureCounts
+[2018-12-05 12:21:19,467] multiqc                                            [DEBUG  ]  No samples found: qorts
+[2018-12-05 12:21:19,477] multiqc                                            [DEBUG  ]  No samples found: adapterRemoval
+[2018-12-05 12:21:19,490] multiqc                                            [DEBUG  ]  No samples found: flexbar
+[2018-12-05 12:21:19,510] multiqc                                            [DEBUG  ]  No samples found: supernova
+[2018-12-05 12:21:19,527] multiqc                                            [DEBUG  ]  No samples found: rsem
+[2018-12-05 12:21:19,547] multiqc                                            [DEBUG  ]  No samples found: salmon
+[2018-12-05 12:21:19,557] multiqc                                            [DEBUG  ]  No samples found: fastq_screen
+[2018-12-05 12:21:19,575] multiqc                                            [DEBUG  ]  No samples found: methylQA
+[2018-12-05 12:21:19,584] multiqc                                            [DEBUG  ]  No samples found: htseq
+[2018-12-05 12:21:19,599] multiqc                                            [DEBUG  ]  No samples found: hicexplorer
+[2018-12-05 12:21:19,608] multiqc                                            [DEBUG  ]  No samples found: kat
+[2018-12-05 12:21:19,622] multiqc                                            [DEBUG  ]  No samples found: verifybamid
+[2018-12-05 12:21:19,632] multiqc                                            [DEBUG  ]  No samples found: bowtie1
+[2018-12-05 12:21:19,641] multiqc                                            [DEBUG  ]  No samples found: trimmomatic
+[2018-12-05 12:21:19,657] multiqc                                            [DEBUG  ]  No samples found: jellyfish
+[2018-12-05 12:21:19,683] multiqc                                            [DEBUG  ]  No samples found: homer
+[2018-12-05 12:21:19,692] multiqc                                            [DEBUG  ]  No samples found: bcl2fastq
+[2018-12-05 12:21:19,701] multiqc                                            [DEBUG  ]  No samples found: prokka
+[2018-12-05 12:21:19,711] multiqc                                            [DEBUG  ]  No samples found: slamdunk
+[2018-12-05 12:21:19,720] multiqc                                            [DEBUG  ]  No samples found: leehom
+[2018-12-05 12:21:19,736] multiqc                                            [DEBUG  ]  No samples found: biobloomtools
+[2018-12-05 12:21:19,752] multiqc                                            [DEBUG  ]  No samples found: mirtrace
+[2018-12-05 12:21:19,767] multiqc                                            [DEBUG  ]  No samples found: hisat2
+[2018-12-05 12:21:19,783] multiqc                                            [DEBUG  ]  No samples found: afterqc
+[2018-12-05 12:21:19,797] multiqc                                            [DEBUG  ]  No samples found: macs2
+[2018-12-05 12:21:19,807] multiqc                                            [DEBUG  ]  No samples found: skewer
+[2018-12-05 12:21:19,830] multiqc                                            [DEBUG  ]  No samples found: tophat
+[2018-12-05 12:21:19,842] multiqc                                            [DEBUG  ]  No samples found: conpair
+[2018-12-05 12:21:19,857] multiqc                                            [DEBUG  ]  No samples found: custom_content
+[2018-12-05 12:21:19,884] multiqc                                            [DEBUG  ]  No samples found: samblaster
+[2018-12-05 12:21:19,903] multiqc.multiqc_bcbio                              [INFO   ]  Found 10 reports
+[2018-12-05 12:21:20,074] multiqc.modules.samtools.samtools                  [INFO   ]  Found 10 stats reports
+[2018-12-05 12:21:20,407] multiqc.modules.samtools.samtools                  [INFO   ]  Found 10 idxstats reports
+[2018-12-05 12:21:20,425] multiqc                                            [DEBUG  ]  No samples found: goleft_indexcov
+[2018-12-05 12:21:20,435] multiqc                                            [DEBUG  ]  No samples found: peddy
+[2018-12-05 12:21:20,455] multiqc                                            [DEBUG  ]  No samples found: bcftools
+[2018-12-05 12:21:20,513] multiqc                                            [DEBUG  ]  No samples found: picard
+[2018-12-05 12:21:20,637] multiqc.modules.qualimap.qualimap                  [INFO   ]  Found 10 RNASeq reports
+[2018-12-05 12:21:20,648] multiqc                                            [DEBUG  ]  No samples found: snpeff
+[2018-12-05 12:21:20,979] multiqc.modules.fastqc.fastqc                      [INFO   ]  Found 10 reports
+[2018-12-05 12:21:21,128] multiqc                                            [DEBUG  ]  No samples found: preseq
+[2018-12-05 12:21:21,188] multiqc                                            [INFO   ]  Compressing plot data
+[2018-12-05 12:21:23,679] multiqc                                            [INFO   ]  Report      : ../../bcbiotx/tmpFgluxd/multiqc_report.html
+[2018-12-05 12:21:23,679] multiqc                                            [INFO   ]  Data        : ../../bcbiotx/tmpFgluxd/multiqc_data
+[2018-12-05 12:21:23,679] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmpQSdNxI/multiqc_data/seqbuster_mirs.txt' to '/n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/bcbiotx/tmpFgluxd/multiqc_data'
+[2018-12-05 12:21:23,683] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmpQSdNxI/multiqc_data/seqbuster_isomirs.txt' to '/n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/bcbiotx/tmpFgluxd/multiqc_data'
+[2018-12-05 12:21:23,686] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmpQSdNxI/multiqc_data/multiqc_bcbio_metrics.txt' to '/n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/bcbiotx/tmpFgluxd/multiqc_data'
+[2018-12-05 12:21:23,689] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmpQSdNxI/multiqc_data/multiqc_samtools_stats.txt' to '/n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/bcbiotx/tmpFgluxd/multiqc_data'
+[2018-12-05 12:21:23,691] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmpQSdNxI/multiqc_data/multiqc_samtools_idxstats.txt' to '/n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/bcbiotx/tmpFgluxd/multiqc_data'
+[2018-12-05 12:21:23,694] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmpQSdNxI/multiqc_data/multiqc_fastqc.txt' to '/n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/bcbiotx/tmpFgluxd/multiqc_data'
+[2018-12-05 12:21:23,697] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmpQSdNxI/multiqc_data/multiqc_general_stats.txt' to '/n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/bcbiotx/tmpFgluxd/multiqc_data'
+[2018-12-05 12:21:23,700] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmpQSdNxI/multiqc_data/multiqc_sources.txt' to '/n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/bcbiotx/tmpFgluxd/multiqc_data'
+[2018-12-05 12:21:23,702] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmpQSdNxI/multiqc_data/multiqc_data.json' to '/n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/bcbiotx/tmpFgluxd/multiqc_data'
+[2018-12-05 12:21:23,977] multiqc                                            [INFO   ]  MultiQC complete

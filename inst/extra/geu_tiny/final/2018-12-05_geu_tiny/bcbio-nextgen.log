@@ -1,0 +1,1054 @@
+[2018-11-28T18:39Z] compute-e-16-233.o2.rc.hms.harvard.edu: System YAML configuration: /n/app/bcbio/alpha_version/lpantano/bcbio/galaxy/bcbio_system.yaml
+[2018-11-28T18:40Z] compute-e-16-233.o2.rc.hms.harvard.edu: Timing: organize samples
+[2018-11-28T18:40Z] compute-e-16-233.o2.rc.hms.harvard.edu: ipython: organize_samples
+[2018-11-28T18:41Z] compute-a-16-43.o2.rc.hms.harvard.edu: Using input YAML configuration: /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/config/geu_tiny.yaml
+[2018-11-28T18:44Z] compute-a-16-43.o2.rc.hms.harvard.edu: Checking sample YAML configuration: /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/config/geu_tiny.yaml
+[2018-11-28T18:44Z] compute-a-16-43.o2.rc.hms.harvard.edu: Testing minimum versions of installed programs
+[2018-11-28T18:44Z] compute-e-16-233.o2.rc.hms.harvard.edu: ipython: prepare_sample
+[2018-11-28T18:44Z] compute-e-16-233.o2.rc.hms.harvard.edu: Timing: adapter trimming
+[2018-11-28T18:44Z] compute-e-16-233.o2.rc.hms.harvard.edu: ipython: trim_srna_sample
+[2018-11-28T18:44Z] compute-a-16-43.o2.rc.hms.harvard.edu: Adapter is set up in config file, but trim_reads is not true.If you want to skip trimming, skip adapter option from config.
+[2018-11-28T18:44Z] compute-a-16-43.o2.rc.hms.harvard.edu: Adapter is set up in config file, but trim_reads is not true.If you want to skip trimming, skip adapter option from config.
+[2018-11-28T18:44Z] compute-a-16-43.o2.rc.hms.harvard.edu: Adapter is set up in config file, but trim_reads is not true.If you want to skip trimming, skip adapter option from config.
+[2018-11-28T18:44Z] compute-a-16-43.o2.rc.hms.harvard.edu: Adapter is set up in config file, but trim_reads is not true.If you want to skip trimming, skip adapter option from config.
+[2018-11-28T18:44Z] compute-a-16-43.o2.rc.hms.harvard.edu: Adapter is set up in config file, but trim_reads is not true.If you want to skip trimming, skip adapter option from config.
+[2018-11-28T18:44Z] compute-a-16-43.o2.rc.hms.harvard.edu: Adapter is set up in config file, but trim_reads is not true.If you want to skip trimming, skip adapter option from config.
+[2018-11-28T18:44Z] compute-a-16-43.o2.rc.hms.harvard.edu: Adapter is set up in config file, but trim_reads is not true.If you want to skip trimming, skip adapter option from config.
+[2018-11-28T18:44Z] compute-a-16-43.o2.rc.hms.harvard.edu: Adapter is set up in config file, but trim_reads is not true.If you want to skip trimming, skip adapter option from config.
+[2018-11-28T18:44Z] compute-a-16-43.o2.rc.hms.harvard.edu: Adapter is set up in config file, but trim_reads is not true.If you want to skip trimming, skip adapter option from config.
+[2018-11-28T18:44Z] compute-a-16-43.o2.rc.hms.harvard.edu: Adapter is set up in config file, but trim_reads is not true.If you want to skip trimming, skip adapter option from config.
+[2018-11-28T18:44Z] compute-a-16-43.o2.rc.hms.harvard.edu: Uncaught exception occurred
+Traceback (most recent call last):
+  File "/n/app/bcbio/alpha_version/lpantano/bcbio/anaconda/lib/python2.7/site-packages/bcbio/provenance/do.py", line 23, in run
+    _do_run(cmd, checks, log_stdout, env=env)
+  File "/n/app/bcbio/alpha_version/lpantano/bcbio/anaconda/lib/python2.7/site-packages/bcbio/provenance/do.py", line 103, in _do_run
+    raise subprocess.CalledProcessError(exitcode, error_msg)
+CalledProcessError: Command 'set -o pipefail; /n/app/bcbio/alpha_version/lpantano/bcbio/anaconda/bin/../envs/python3/bin/atropos    -a TGGAATTCTCGGGTGC --untrimmed-output=/n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/trimmed/ERS185470/ERR204777.fragments.fastq.gz -o /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/bcbiotx/tmp8wHLAN/ERR204777.clean.fastq.gz -m 17 --overlap=8 -se /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/inputs/ERR204777/ERR204777.fastq.gz --too-short-output /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/trimmed/ERS185470/ERR204777.short.fastq.gz | tee > /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/trimmed/ERS185470/ERS185470.log
+' returned non-zero exit status 1
+[2018-11-28T18:44Z] compute-a-16-43.o2.rc.hms.harvard.edu: Unexpected error
+Traceback (most recent call last):
+  File "/n/app/bcbio/alpha_version/lpantano/bcbio/anaconda/lib/python2.7/site-packages/bcbio/distributed/ipythontasks.py", line 52, in _setup_logging
+    yield config
+  File "/n/app/bcbio/alpha_version/lpantano/bcbio/anaconda/lib/python2.7/site-packages/bcbio/distributed/ipythontasks.py", line 93, in trim_srna_sample
+    return ipython.zip_args(apply(srna.trim_srna_sample, *args))
+  File "/n/app/bcbio/alpha_version/lpantano/bcbio/anaconda/lib/python2.7/site-packages/bcbio/srna/sample.py", line 85, in trim_srna_sample
+    do.run(cmd.format(**locals()), "remove adapter for %s" % names)
+  File "/n/app/bcbio/alpha_version/lpantano/bcbio/anaconda/lib/python2.7/site-packages/bcbio/provenance/do.py", line 23, in run
+    _do_run(cmd, checks, log_stdout, env=env)
+  File "/n/app/bcbio/alpha_version/lpantano/bcbio/anaconda/lib/python2.7/site-packages/bcbio/provenance/do.py", line 103, in _do_run
+    raise subprocess.CalledProcessError(exitcode, error_msg)
+CalledProcessError: Command 'set -o pipefail; /n/app/bcbio/alpha_version/lpantano/bcbio/anaconda/bin/../envs/python3/bin/atropos    -a TGGAATTCTCGGGTGC --untrimmed-output=/n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/trimmed/ERS185470/ERR204777.fragments.fastq.gz -o /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/bcbiotx/tmp8wHLAN/ERR204777.clean.fastq.gz -m 17 --overlap=8 -se /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/inputs/ERR204777/ERR204777.fastq.gz --too-short-output /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/trimmed/ERS185470/ERR204777.short.fastq.gz | tee > /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/trimmed/ERS185470/ERS185470.log
+' returned non-zero exit status 1
+[2018-11-28T18:46Z] compute-a-16-43.o2.rc.hms.harvard.edu: Collapsing /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/trimmed/ERS185125/ERR187911.clean.fastq.gz with --min_size 16 --min 1
+[2018-11-28T18:46Z] compute-a-16-43.o2.rc.hms.harvard.edu: Collapsing /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/trimmed/ERS185473/ERR187620.clean.fastq.gz with --min_size 16 --min 1
+[2018-11-28T18:47Z] compute-a-16-43.o2.rc.hms.harvard.edu: Collapsing /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/trimmed/ERS185403/ERR187558.clean.fastq.gz with --min_size 16 --min 1
+[2018-11-28T18:47Z] compute-a-16-43.o2.rc.hms.harvard.edu: Collapsing /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/trimmed/ERS185400/ERR187777.clean.fastq.gz with --min_size 16 --min 1
+[2018-11-28T18:49Z] compute-a-16-43.o2.rc.hms.harvard.edu: Collapsing /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/trimmed/ERS185252/ERR187506.clean.fastq.gz with --min_size 16 --min 1
+[2018-11-28T18:50Z] compute-a-16-43.o2.rc.hms.harvard.edu: Collapsing /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/trimmed/ERS185036/ERR187913.clean.fastq.gz with --min_size 16 --min 1
+[2018-11-28T18:53Z] compute-a-16-43.o2.rc.hms.harvard.edu: Collapsing /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/trimmed/ERS185102/ERR187864.clean.fastq.gz with --min_size 16 --min 1
+[2018-11-28T18:53Z] compute-a-16-43.o2.rc.hms.harvard.edu: Collapsing /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/trimmed/ERS185068/ERR187605.clean.fastq.gz with --min_size 16 --min 1
+[2018-11-28T19:01Z] compute-a-16-43.o2.rc.hms.harvard.edu: Collapsing /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/trimmed/ERS185082/ERR187883.clean.fastq.gz with --min_size 16 --min 1
+[2018-11-29T22:49Z] compute-a-16-163.o2.rc.hms.harvard.edu: System YAML configuration: /n/app/bcbio/alpha_version/lpantano/bcbio/galaxy/bcbio_system.yaml
+[2018-11-30T03:23Z] compute-a-16-163.o2.rc.hms.harvard.edu: Timing: organize samples
+[2018-11-30T03:23Z] compute-a-16-163.o2.rc.hms.harvard.edu: ipython: organize_samples
+[2018-11-30T03:23Z] compute-e-16-250.o2.rc.hms.harvard.edu: Using input YAML configuration: /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/config/geu_tiny.yaml
+[2018-11-30T03:23Z] compute-e-16-250.o2.rc.hms.harvard.edu: Checking sample YAML configuration: /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/config/geu_tiny.yaml
+[2018-11-30T03:23Z] compute-e-16-250.o2.rc.hms.harvard.edu: Testing minimum versions of installed programs
+[2018-11-30T03:23Z] compute-a-16-163.o2.rc.hms.harvard.edu: ipython: prepare_sample
+[2018-11-30T03:23Z] compute-a-16-163.o2.rc.hms.harvard.edu: Timing: adapter trimming
+[2018-11-30T03:23Z] compute-a-16-163.o2.rc.hms.harvard.edu: ipython: trim_srna_sample
+[2018-11-30T03:23Z] compute-e-16-250.o2.rc.hms.harvard.edu: Adapter is set up in config file, but trim_reads is not true.If you want to skip trimming, skip adapter option from config.
+[2018-11-30T03:27Z] compute-e-16-250.o2.rc.hms.harvard.edu: Collapsing /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/trimmed/ERS185470/ERR204777.clean.fastq.gz with --min_size 16 --min 1
+[2018-11-30T03:29Z] compute-a-16-163.o2.rc.hms.harvard.edu: Timing: alignment
+[2018-11-30T03:29Z] compute-a-16-163.o2.rc.hms.harvard.edu: ipython: process_alignment
+[2018-11-30T03:29Z] compute-e-16-250.o2.rc.hms.harvard.edu: Aligning lane ERS185470 with star aligner
+[2018-11-30T03:31Z] compute-e-16-250.o2.rc.hms.harvard.edu: Aligning lane ERS185403 with star aligner
+[2018-11-30T03:34Z] compute-e-16-250.o2.rc.hms.harvard.edu: Aligning lane ERS185400 with star aligner
+[2018-11-30T03:36Z] compute-e-16-250.o2.rc.hms.harvard.edu: Aligning lane ERS185125 with star aligner
+[2018-11-30T03:37Z] compute-e-16-198.o2.rc.hms.harvard.edu: Aligning lane ERS185102 with star aligner
+[2018-11-30T03:40Z] compute-e-16-198.o2.rc.hms.harvard.edu: Aligning lane ERS185252 with star aligner
+[2018-11-30T03:40Z] compute-e-16-250.o2.rc.hms.harvard.edu: Aligning lane ERS185036 with star aligner
+[2018-11-30T03:43Z] compute-e-16-198.o2.rc.hms.harvard.edu: Aligning lane ERS185068 with star aligner
+[2018-11-30T03:45Z] compute-e-16-250.o2.rc.hms.harvard.edu: Aligning lane ERS185082 with star aligner
+[2018-11-30T03:46Z] compute-e-16-198.o2.rc.hms.harvard.edu: Aligning lane ERS185473 with star aligner
+[2018-11-30T03:51Z] compute-a-16-163.o2.rc.hms.harvard.edu: Running locally instead of distributed -- checkpoint passed: alignment
+[2018-11-30T03:51Z] compute-a-16-163.o2.rc.hms.harvard.edu: Timing: prepare
+[2018-11-30T03:51Z] compute-a-16-163.o2.rc.hms.harvard.edu: multiprocessing: seqcluster_prepare
+[2018-11-30T03:51Z] compute-a-16-163.o2.rc.hms.harvard.edu: Prepare seqs.fastq with -minl 17 -maxl 40 -minc 2 --min_shared 0.1
+[2018-11-30T03:51Z] compute-a-16-163.o2.rc.hms.harvard.edu: Timing: seqcluster alignment
+[2018-11-30T03:51Z] compute-a-16-163.o2.rc.hms.harvard.edu: multiprocessing: srna_alignment
+[2018-11-30T03:51Z] compute-a-16-163.o2.rc.hms.harvard.edu: Aligning lane ERS185470 with star aligner
+[2018-11-30T03:55Z] compute-a-16-163.o2.rc.hms.harvard.edu: Timing: small RNA annotation
+[2018-11-30T03:55Z] compute-a-16-163.o2.rc.hms.harvard.edu: ipython: srna_annotation
+[2018-11-30T04:13Z] compute-a-16-163.o2.rc.hms.harvard.edu: Timing: cluster
+[2018-11-30T04:13Z] compute-a-16-163.o2.rc.hms.harvard.edu: ipython: seqcluster_cluster
+[2018-11-30T04:13Z] compute-e-16-213.o2.rc.hms.harvard.edu: Uncaught exception occurred
+Traceback (most recent call last):
+  File "/n/app/bcbio/alpha_version/lpantano/bcbio/anaconda/lib/python2.7/site-packages/bcbio/provenance/do.py", line 23, in run
+    _do_run(cmd, checks, log_stdout, env=env)
+  File "/n/app/bcbio/alpha_version/lpantano/bcbio/anaconda/lib/python2.7/site-packages/bcbio/provenance/do.py", line 103, in _do_run
+    raise subprocess.CalledProcessError(exitcode, error_msg)
+CalledProcessError: Command 'set -o pipefail; /n/app/bcbio/alpha_version/lpantano/bcbio/anaconda/bin/seqcluster cluster -o /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/seqcluster/cluster -m /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/seqcluster/prepare/seqs.ma -a /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/align/seqs.bam -r /n/app/bcbio/dev/genomes/Hsapiens/hg19/seq/hg19.fa -g /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/srna-transcripts.gtf
+INFO Run cluster
+INFO Checking parameters and files
+INFO Output dir will be: /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/seqcluster/cluster
+INFO Clean bam file with highly repetitive reads with low counts. sum(counts)/n_hits > 1%
+['cluster', '-o', '/n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/seqcluster/cluster', '-m', '/n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/seqcluster/prepare/seqs.ma', '-a', '/n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/align/seqs.bam', '-r', '/n/app/bcbio/dev/genomes/Hsapiens/hg19/seq/hg19.fa', '-g', '/n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/srna-transcripts.gtf']
+Traceback (most recent call last):
+  File "/n/app/bcbio/alpha_version/lpantano/bcbio/anaconda/bin/seqcluster", line 11, in <module>
+    load_entry_point('seqcluster==1.2.4a6', 'console_scripts', 'seqcluster')()
+  File "/n/app/bcbio/alpha_version/lpantano/bcbio/anaconda/lib/python2.7/site-packages/seqcluster/command_line.py", line 28, in main
+    cluster(kwargs["args"])
+  File "/n/app/bcbio/alpha_version/lpantano/bcbio/anaconda/lib/python2.7/site-packages/seqcluster/make_clusters.py", line 38, in cluster
+    bam_file, seq_obj = _clean_alignment(args)
+  File "/n/app/bcbio/alpha_version/lpantano/bcbio/anaconda/lib/python2.7/site-packages/seqcluster/make_clusters.py", line 237, in _clean_alignment
+    bam_file, seq_obj = clean_bam_file(args.afile, args.mask)
+  File "/n/app/bcbio/alpha_version/lpantano/bcbio/anaconda/lib/python2.7/site-packages/seqcluster/detect/cluster.py", line 56, in clean_bam_file
+    seq_name = int(read.query_name.replace('seq_', ''))
+ValueError: invalid literal for int() with base 10: 'ERR204777.1852321'
+' returned non-zero exit status 1
+[2018-11-30T04:13Z] compute-e-16-213.o2.rc.hms.harvard.edu: Unexpected error
+Traceback (most recent call last):
+  File "/n/app/bcbio/alpha_version/lpantano/bcbio/anaconda/lib/python2.7/site-packages/bcbio/distributed/ipythontasks.py", line 52, in _setup_logging
+    yield config
+  File "/n/app/bcbio/alpha_version/lpantano/bcbio/anaconda/lib/python2.7/site-packages/bcbio/distributed/ipythontasks.py", line 111, in seqcluster_cluster
+    return ipython.zip_args(apply(seqcluster.run_cluster, *args))
+  File "/n/app/bcbio/alpha_version/lpantano/bcbio/anaconda/lib/python2.7/site-packages/bcbio/srna/group.py", line 98, in run_cluster
+    gtf_file)
+  File "/n/app/bcbio/alpha_version/lpantano/bcbio/anaconda/lib/python2.7/site-packages/bcbio/srna/group.py", line 130, in _cluster
+    do.run(cmd.format(**locals()), "Running seqcluster.")
+  File "/n/app/bcbio/alpha_version/lpantano/bcbio/anaconda/lib/python2.7/site-packages/bcbio/provenance/do.py", line 23, in run
+    _do_run(cmd, checks, log_stdout, env=env)
+  File "/n/app/bcbio/alpha_version/lpantano/bcbio/anaconda/lib/python2.7/site-packages/bcbio/provenance/do.py", line 103, in _do_run
+    raise subprocess.CalledProcessError(exitcode, error_msg)
+CalledProcessError: Command 'set -o pipefail; /n/app/bcbio/alpha_version/lpantano/bcbio/anaconda/bin/seqcluster cluster -o /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/seqcluster/cluster -m /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/seqcluster/prepare/seqs.ma -a /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/align/seqs.bam -r /n/app/bcbio/dev/genomes/Hsapiens/hg19/seq/hg19.fa -g /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/srna-transcripts.gtf
+INFO Run cluster
+INFO Checking parameters and files
+INFO Output dir will be: /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/seqcluster/cluster
+INFO Clean bam file with highly repetitive reads with low counts. sum(counts)/n_hits > 1%
+['cluster', '-o', '/n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/seqcluster/cluster', '-m', '/n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/seqcluster/prepare/seqs.ma', '-a', '/n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/align/seqs.bam', '-r', '/n/app/bcbio/dev/genomes/Hsapiens/hg19/seq/hg19.fa', '-g', '/n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/srna-transcripts.gtf']
+Traceback (most recent call last):
+  File "/n/app/bcbio/alpha_version/lpantano/bcbio/anaconda/bin/seqcluster", line 11, in <module>
+    load_entry_point('seqcluster==1.2.4a6', 'console_scripts', 'seqcluster')()
+  File "/n/app/bcbio/alpha_version/lpantano/bcbio/anaconda/lib/python2.7/site-packages/seqcluster/command_line.py", line 28, in main
+    cluster(kwargs["args"])
+  File "/n/app/bcbio/alpha_version/lpantano/bcbio/anaconda/lib/python2.7/site-packages/seqcluster/make_clusters.py", line 38, in cluster
+    bam_file, seq_obj = _clean_alignment(args)
+  File "/n/app/bcbio/alpha_version/lpantano/bcbio/anaconda/lib/python2.7/site-packages/seqcluster/make_clusters.py", line 237, in _clean_alignment
+    bam_file, seq_obj = clean_bam_file(args.afile, args.mask)
+  File "/n/app/bcbio/alpha_version/lpantano/bcbio/anaconda/lib/python2.7/site-packages/seqcluster/detect/cluster.py", line 56, in clean_bam_file
+    seq_name = int(read.query_name.replace('seq_', ''))
+ValueError: invalid literal for int() with base 10: 'ERR204777.1852321'
+' returned non-zero exit status 1
+[2018-11-30T17:39Z] compute-e-16-233.o2.rc.hms.harvard.edu: System YAML configuration: /n/app/bcbio/dev/galaxy/bcbio_system.yaml
+[2018-11-30T17:39Z] compute-e-16-233.o2.rc.hms.harvard.edu: Running locally instead of distributed -- checkpoint passed: trimming
+[2018-11-30T17:39Z] compute-e-16-233.o2.rc.hms.harvard.edu: Timing: organize samples
+[2018-11-30T17:39Z] compute-e-16-233.o2.rc.hms.harvard.edu: multiprocessing: organize_samples
+[2018-11-30T17:39Z] compute-e-16-233.o2.rc.hms.harvard.edu: Using input YAML configuration: /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/config/geu_tiny.yaml
+[2018-11-30T17:39Z] compute-e-16-233.o2.rc.hms.harvard.edu: Checking sample YAML configuration: /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/config/geu_tiny.yaml
+[2018-11-30T17:39Z] compute-e-16-233.o2.rc.hms.harvard.edu: Testing minimum versions of installed programs
+[2018-11-30T17:39Z] compute-e-16-233.o2.rc.hms.harvard.edu: multiprocessing: prepare_sample
+[2018-11-30T17:39Z] compute-e-16-233.o2.rc.hms.harvard.edu: Timing: adapter trimming
+[2018-11-30T17:39Z] compute-e-16-233.o2.rc.hms.harvard.edu: multiprocessing: trim_srna_sample
+[2018-11-30T17:39Z] compute-e-16-233.o2.rc.hms.harvard.edu: No UMI transform specified, assuming pre-transformed data.
+[2018-11-30T17:39Z] compute-e-16-233.o2.rc.hms.harvard.edu: No UMI transform was specified, but /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/inputs/ERR204777/ERR204777.fastq.gz does not look pre-transformed.
+[2018-12-01T00:41Z] compute-a-16-170.o2.rc.hms.harvard.edu: System YAML configuration: /n/app/bcbio/alpha_version/lpantano/bcbio/galaxy/bcbio_system.yaml
+[2018-12-01T00:41Z] compute-a-16-170.o2.rc.hms.harvard.edu: Running locally instead of distributed -- checkpoint passed: trimming
+[2018-12-01T00:41Z] compute-a-16-170.o2.rc.hms.harvard.edu: Timing: organize samples
+[2018-12-01T00:41Z] compute-a-16-170.o2.rc.hms.harvard.edu: multiprocessing: organize_samples
+[2018-12-01T00:41Z] compute-a-16-170.o2.rc.hms.harvard.edu: Using input YAML configuration: /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/config/geu_tiny.yaml
+[2018-12-01T00:41Z] compute-a-16-170.o2.rc.hms.harvard.edu: Checking sample YAML configuration: /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/config/geu_tiny.yaml
+[2018-12-01T00:41Z] compute-a-16-170.o2.rc.hms.harvard.edu: Testing minimum versions of installed programs
+[2018-12-01T00:41Z] compute-a-16-170.o2.rc.hms.harvard.edu: multiprocessing: prepare_sample
+[2018-12-01T00:41Z] compute-a-16-170.o2.rc.hms.harvard.edu: Timing: adapter trimming
+[2018-12-01T00:41Z] compute-a-16-170.o2.rc.hms.harvard.edu: multiprocessing: trim_srna_sample
+[2018-12-01T00:47Z] compute-a-16-168.o2.rc.hms.harvard.edu: System YAML configuration: /n/app/bcbio/alpha_version/lpantano/bcbio/galaxy/bcbio_system.yaml
+[2018-12-01T00:47Z] compute-a-16-168.o2.rc.hms.harvard.edu: Running locally instead of distributed -- checkpoint passed: trimming
+[2018-12-01T00:47Z] compute-a-16-168.o2.rc.hms.harvard.edu: Timing: organize samples
+[2018-12-01T00:47Z] compute-a-16-168.o2.rc.hms.harvard.edu: multiprocessing: organize_samples
+[2018-12-01T00:47Z] compute-a-16-168.o2.rc.hms.harvard.edu: Using input YAML configuration: /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/config/geu_tiny.yaml
+[2018-12-01T00:47Z] compute-a-16-168.o2.rc.hms.harvard.edu: Checking sample YAML configuration: /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/config/geu_tiny.yaml
+[2018-12-01T00:47Z] compute-a-16-168.o2.rc.hms.harvard.edu: Testing minimum versions of installed programs
+[2018-12-01T00:47Z] compute-a-16-168.o2.rc.hms.harvard.edu: multiprocessing: prepare_sample
+[2018-12-01T00:47Z] compute-a-16-168.o2.rc.hms.harvard.edu: Timing: adapter trimming
+[2018-12-01T00:47Z] compute-a-16-168.o2.rc.hms.harvard.edu: multiprocessing: trim_srna_sample
+[2018-12-01T01:30Z] compute-a-16-168.o2.rc.hms.harvard.edu: Timing: alignment
+[2018-12-01T01:30Z] compute-a-16-168.o2.rc.hms.harvard.edu: ipython: process_alignment
+[2018-12-01T01:30Z] compute-e-16-188.o2.rc.hms.harvard.edu: Aligning lane ERS185470 with star aligner
+[2018-12-01T01:33Z] compute-e-16-188.o2.rc.hms.harvard.edu: Aligning lane ERS185403 with star aligner
+[2018-12-01T01:35Z] compute-e-16-188.o2.rc.hms.harvard.edu: Aligning lane ERS185400 with star aligner
+[2018-12-01T01:36Z] compute-e-16-188.o2.rc.hms.harvard.edu: Aligning lane ERS185125 with star aligner
+[2018-12-01T01:38Z] compute-e-16-188.o2.rc.hms.harvard.edu: Aligning lane ERS185102 with star aligner
+[2018-12-01T01:41Z] compute-e-16-188.o2.rc.hms.harvard.edu: Aligning lane ERS185252 with star aligner
+[2018-12-01T01:43Z] compute-e-16-188.o2.rc.hms.harvard.edu: Aligning lane ERS185036 with star aligner
+[2018-12-01T01:46Z] compute-e-16-188.o2.rc.hms.harvard.edu: Aligning lane ERS185068 with star aligner
+[2018-12-01T01:49Z] compute-e-16-188.o2.rc.hms.harvard.edu: Aligning lane ERS185082 with star aligner
+[2018-12-01T01:53Z] compute-e-16-188.o2.rc.hms.harvard.edu: Aligning lane ERS185473 with star aligner
+[2018-12-01T01:55Z] compute-a-16-168.o2.rc.hms.harvard.edu: Running locally instead of distributed -- checkpoint passed: alignment
+[2018-12-01T01:55Z] compute-a-16-168.o2.rc.hms.harvard.edu: Timing: prepare
+[2018-12-01T01:55Z] compute-a-16-168.o2.rc.hms.harvard.edu: multiprocessing: seqcluster_prepare
+[2018-12-01T01:55Z] compute-a-16-168.o2.rc.hms.harvard.edu: Timing: seqcluster alignment
+[2018-12-01T01:55Z] compute-a-16-168.o2.rc.hms.harvard.edu: multiprocessing: srna_alignment
+[2018-12-01T01:55Z] compute-a-16-168.o2.rc.hms.harvard.edu: Aligning lane ERS185470 with star aligner
+[2018-12-01T02:18Z] compute-a-16-168.o2.rc.hms.harvard.edu: Timing: small RNA annotation
+[2018-12-01T02:18Z] compute-a-16-168.o2.rc.hms.harvard.edu: ipython: srna_annotation
+[2018-12-01T02:23Z] compute-a-16-168.o2.rc.hms.harvard.edu: Timing: cluster
+[2018-12-01T02:23Z] compute-a-16-168.o2.rc.hms.harvard.edu: ipython: seqcluster_cluster
+[2018-12-01T02:24Z] compute-a-16-142.o2.rc.hms.harvard.edu: Uncaught exception occurred
+Traceback (most recent call last):
+  File "/n/app/bcbio/alpha_version/lpantano/bcbio/anaconda/lib/python2.7/site-packages/bcbio/provenance/do.py", line 23, in run
+    _do_run(cmd, checks, log_stdout, env=env)
+  File "/n/app/bcbio/alpha_version/lpantano/bcbio/anaconda/lib/python2.7/site-packages/bcbio/provenance/do.py", line 103, in _do_run
+    raise subprocess.CalledProcessError(exitcode, error_msg)
+CalledProcessError: Command 'set -o pipefail; /n/app/bcbio/alpha_version/lpantano/bcbio/anaconda/bin/seqcluster cluster -o /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/seqcluster/cluster -m /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/seqcluster/prepare/seqs.ma -a /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/align/seqs.bam -r /n/app/bcbio/dev/genomes/Hsapiens/hg19/seq/hg19.fa -g /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/srna-transcripts.gtf
+INFO Run cluster
+INFO Checking parameters and files
+INFO Output dir will be: /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/seqcluster/cluster
+INFO Clean bam file with highly repetitive reads with low counts. sum(counts)/n_hits > 1%
+['cluster', '-o', '/n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/seqcluster/cluster', '-m', '/n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/seqcluster/prepare/seqs.ma', '-a', '/n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/align/seqs.bam', '-r', '/n/app/bcbio/dev/genomes/Hsapiens/hg19/seq/hg19.fa', '-g', '/n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/srna-transcripts.gtf']
+Traceback (most recent call last):
+  File "/n/app/bcbio/alpha_version/lpantano/bcbio/anaconda/bin/seqcluster", line 11, in <module>
+    load_entry_point('seqcluster==1.2.4a6', 'console_scripts', 'seqcluster')()
+  File "/n/app/bcbio/alpha_version/lpantano/bcbio/anaconda/lib/python2.7/site-packages/seqcluster/command_line.py", line 28, in main
+    cluster(kwargs["args"])
+  File "/n/app/bcbio/alpha_version/lpantano/bcbio/anaconda/lib/python2.7/site-packages/seqcluster/make_clusters.py", line 38, in cluster
+    bam_file, seq_obj = _clean_alignment(args)
+  File "/n/app/bcbio/alpha_version/lpantano/bcbio/anaconda/lib/python2.7/site-packages/seqcluster/make_clusters.py", line 237, in _clean_alignment
+    bam_file, seq_obj = clean_bam_file(args.afile, args.mask)
+  File "/n/app/bcbio/alpha_version/lpantano/bcbio/anaconda/lib/python2.7/site-packages/seqcluster/detect/cluster.py", line 56, in clean_bam_file
+    seq_name = int(read.query_name.replace('seq_', ''))
+ValueError: invalid literal for int() with base 10: 'ERR204777.1852321'
+' returned non-zero exit status 1
+[2018-12-01T02:24Z] compute-a-16-142.o2.rc.hms.harvard.edu: Unexpected error
+Traceback (most recent call last):
+  File "/n/app/bcbio/alpha_version/lpantano/bcbio/anaconda/lib/python2.7/site-packages/bcbio/distributed/ipythontasks.py", line 52, in _setup_logging
+    yield config
+  File "/n/app/bcbio/alpha_version/lpantano/bcbio/anaconda/lib/python2.7/site-packages/bcbio/distributed/ipythontasks.py", line 111, in seqcluster_cluster
+    return ipython.zip_args(apply(seqcluster.run_cluster, *args))
+  File "/n/app/bcbio/alpha_version/lpantano/bcbio/anaconda/lib/python2.7/site-packages/bcbio/srna/group.py", line 98, in run_cluster
+    gtf_file)
+  File "/n/app/bcbio/alpha_version/lpantano/bcbio/anaconda/lib/python2.7/site-packages/bcbio/srna/group.py", line 130, in _cluster
+    do.run(cmd.format(**locals()), "Running seqcluster.")
+  File "/n/app/bcbio/alpha_version/lpantano/bcbio/anaconda/lib/python2.7/site-packages/bcbio/provenance/do.py", line 23, in run
+    _do_run(cmd, checks, log_stdout, env=env)
+  File "/n/app/bcbio/alpha_version/lpantano/bcbio/anaconda/lib/python2.7/site-packages/bcbio/provenance/do.py", line 103, in _do_run
+    raise subprocess.CalledProcessError(exitcode, error_msg)
+CalledProcessError: Command 'set -o pipefail; /n/app/bcbio/alpha_version/lpantano/bcbio/anaconda/bin/seqcluster cluster -o /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/seqcluster/cluster -m /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/seqcluster/prepare/seqs.ma -a /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/align/seqs.bam -r /n/app/bcbio/dev/genomes/Hsapiens/hg19/seq/hg19.fa -g /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/srna-transcripts.gtf
+INFO Run cluster
+INFO Checking parameters and files
+INFO Output dir will be: /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/seqcluster/cluster
+INFO Clean bam file with highly repetitive reads with low counts. sum(counts)/n_hits > 1%
+['cluster', '-o', '/n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/seqcluster/cluster', '-m', '/n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/seqcluster/prepare/seqs.ma', '-a', '/n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/align/seqs.bam', '-r', '/n/app/bcbio/dev/genomes/Hsapiens/hg19/seq/hg19.fa', '-g', '/n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/srna-transcripts.gtf']
+Traceback (most recent call last):
+  File "/n/app/bcbio/alpha_version/lpantano/bcbio/anaconda/bin/seqcluster", line 11, in <module>
+    load_entry_point('seqcluster==1.2.4a6', 'console_scripts', 'seqcluster')()
+  File "/n/app/bcbio/alpha_version/lpantano/bcbio/anaconda/lib/python2.7/site-packages/seqcluster/command_line.py", line 28, in main
+    cluster(kwargs["args"])
+  File "/n/app/bcbio/alpha_version/lpantano/bcbio/anaconda/lib/python2.7/site-packages/seqcluster/make_clusters.py", line 38, in cluster
+    bam_file, seq_obj = _clean_alignment(args)
+  File "/n/app/bcbio/alpha_version/lpantano/bcbio/anaconda/lib/python2.7/site-packages/seqcluster/make_clusters.py", line 237, in _clean_alignment
+    bam_file, seq_obj = clean_bam_file(args.afile, args.mask)
+  File "/n/app/bcbio/alpha_version/lpantano/bcbio/anaconda/lib/python2.7/site-packages/seqcluster/detect/cluster.py", line 56, in clean_bam_file
+    seq_name = int(read.query_name.replace('seq_', ''))
+ValueError: invalid literal for int() with base 10: 'ERR204777.1852321'
+' returned non-zero exit status 1
+[2018-12-03T15:27Z] compute-a-16-171.o2.rc.hms.harvard.edu: System YAML configuration: /n/app/bcbio/dev/galaxy/bcbio_system.yaml
+[2018-12-03T15:27Z] compute-a-16-171.o2.rc.hms.harvard.edu: Running locally instead of distributed -- checkpoint passed: trimming
+[2018-12-03T15:27Z] compute-a-16-171.o2.rc.hms.harvard.edu: Timing: organize samples
+[2018-12-03T15:27Z] compute-a-16-171.o2.rc.hms.harvard.edu: multiprocessing: organize_samples
+[2018-12-03T15:27Z] compute-a-16-171.o2.rc.hms.harvard.edu: Using input YAML configuration: /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/config/geu_tiny.yaml
+[2018-12-03T15:27Z] compute-a-16-171.o2.rc.hms.harvard.edu: Checking sample YAML configuration: /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/config/geu_tiny.yaml
+[2018-12-03T15:27Z] compute-a-16-171.o2.rc.hms.harvard.edu: Testing minimum versions of installed programs
+[2018-12-03T15:27Z] compute-a-16-171.o2.rc.hms.harvard.edu: multiprocessing: prepare_sample
+[2018-12-03T15:27Z] compute-a-16-171.o2.rc.hms.harvard.edu: Timing: adapter trimming
+[2018-12-03T15:27Z] compute-a-16-171.o2.rc.hms.harvard.edu: multiprocessing: trim_srna_sample
+[2018-12-03T15:27Z] compute-a-16-171.o2.rc.hms.harvard.edu: No UMI transform specified, assuming pre-transformed data.
+[2018-12-03T15:27Z] compute-a-16-171.o2.rc.hms.harvard.edu: No UMI transform was specified, but /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/inputs/ERR204777/ERR204777.fastq.gz does not look pre-transformed.
+[2018-12-03T18:54Z] compute-e-16-233.o2.rc.hms.harvard.edu: System YAML configuration: /n/app/bcbio/dev/galaxy/bcbio_system.yaml
+[2018-12-03T18:54Z] compute-e-16-233.o2.rc.hms.harvard.edu: Running locally instead of distributed -- checkpoint passed: trimming
+[2018-12-03T18:54Z] compute-e-16-233.o2.rc.hms.harvard.edu: Timing: organize samples
+[2018-12-03T18:54Z] compute-e-16-233.o2.rc.hms.harvard.edu: multiprocessing: organize_samples
+[2018-12-03T18:54Z] compute-e-16-233.o2.rc.hms.harvard.edu: Using input YAML configuration: /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/config/geu_tiny.yaml
+[2018-12-03T18:54Z] compute-e-16-233.o2.rc.hms.harvard.edu: Checking sample YAML configuration: /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/config/geu_tiny.yaml
+[2018-12-03T18:54Z] compute-e-16-233.o2.rc.hms.harvard.edu: Testing minimum versions of installed programs
+[2018-12-03T18:54Z] compute-e-16-233.o2.rc.hms.harvard.edu: multiprocessing: prepare_sample
+[2018-12-03T18:54Z] compute-e-16-233.o2.rc.hms.harvard.edu: Timing: adapter trimming
+[2018-12-03T18:54Z] compute-e-16-233.o2.rc.hms.harvard.edu: multiprocessing: trim_srna_sample
+[2018-12-03T18:54Z] compute-e-16-233.o2.rc.hms.harvard.edu: No UMI transform specified, assuming pre-transformed data.
+[2018-12-03T18:54Z] compute-e-16-233.o2.rc.hms.harvard.edu: No UMI transform was specified, but /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/inputs/ERR204777/ERR204777.fastq.gz does not look pre-transformed.
+[2018-12-03T20:07Z] compute-a-16-163.o2.rc.hms.harvard.edu: System YAML configuration: /n/app/bcbio/alpha_version/lpantano/bcbio/galaxy/bcbio_system.yaml
+[2018-12-03T20:07Z] compute-a-16-163.o2.rc.hms.harvard.edu: Running locally instead of distributed -- checkpoint passed: trimming
+[2018-12-03T20:07Z] compute-a-16-163.o2.rc.hms.harvard.edu: Timing: organize samples
+[2018-12-03T20:07Z] compute-a-16-163.o2.rc.hms.harvard.edu: multiprocessing: organize_samples
+[2018-12-03T20:07Z] compute-a-16-163.o2.rc.hms.harvard.edu: Using input YAML configuration: /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/config/geu_tiny.yaml
+[2018-12-03T20:07Z] compute-a-16-163.o2.rc.hms.harvard.edu: Checking sample YAML configuration: /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/config/geu_tiny.yaml
+[2018-12-03T20:07Z] compute-a-16-163.o2.rc.hms.harvard.edu: Testing minimum versions of installed programs
+[2018-12-03T20:07Z] compute-a-16-163.o2.rc.hms.harvard.edu: multiprocessing: prepare_sample
+[2018-12-03T20:07Z] compute-a-16-163.o2.rc.hms.harvard.edu: Timing: adapter trimming
+[2018-12-03T20:07Z] compute-a-16-163.o2.rc.hms.harvard.edu: multiprocessing: trim_srna_sample
+[2018-12-03T20:17Z] compute-a-16-163.o2.rc.hms.harvard.edu: Timing: alignment
+[2018-12-03T20:17Z] compute-a-16-163.o2.rc.hms.harvard.edu: ipython: process_alignment
+[2018-12-03T20:17Z] compute-a-16-113.o2.rc.hms.harvard.edu: Aligning lane ERS185470 with star aligner
+[2018-12-03T20:20Z] compute-a-16-113.o2.rc.hms.harvard.edu: Aligning lane ERS185403 with star aligner
+[2018-12-03T20:20Z] compute-a-16-113.o2.rc.hms.harvard.edu: Aligning lane ERS185400 with star aligner
+[2018-12-03T20:20Z] compute-a-16-113.o2.rc.hms.harvard.edu: Aligning lane ERS185125 with star aligner
+[2018-12-03T20:20Z] compute-a-16-113.o2.rc.hms.harvard.edu: Aligning lane ERS185102 with star aligner
+[2018-12-03T20:20Z] compute-a-16-113.o2.rc.hms.harvard.edu: Aligning lane ERS185252 with star aligner
+[2018-12-03T20:20Z] compute-a-16-113.o2.rc.hms.harvard.edu: Aligning lane ERS185036 with star aligner
+[2018-12-03T20:20Z] compute-a-16-113.o2.rc.hms.harvard.edu: Aligning lane ERS185068 with star aligner
+[2018-12-03T20:20Z] compute-a-16-113.o2.rc.hms.harvard.edu: Aligning lane ERS185082 with star aligner
+[2018-12-03T20:20Z] compute-a-16-113.o2.rc.hms.harvard.edu: Aligning lane ERS185473 with star aligner
+[2018-12-03T20:20Z] compute-a-16-163.o2.rc.hms.harvard.edu: Running locally instead of distributed -- checkpoint passed: alignment
+[2018-12-03T20:20Z] compute-a-16-163.o2.rc.hms.harvard.edu: Timing: prepare
+[2018-12-03T20:20Z] compute-a-16-163.o2.rc.hms.harvard.edu: multiprocessing: seqcluster_prepare
+[2018-12-03T20:20Z] compute-a-16-163.o2.rc.hms.harvard.edu: Timing: seqcluster alignment
+[2018-12-03T20:20Z] compute-a-16-163.o2.rc.hms.harvard.edu: multiprocessing: srna_alignment
+[2018-12-03T20:20Z] compute-a-16-163.o2.rc.hms.harvard.edu: Aligning lane ERS185470 with star aligner
+[2018-12-03T20:20Z] compute-a-16-163.o2.rc.hms.harvard.edu: Running locally instead of distributed -- checkpoint passed: annotation
+[2018-12-03T20:20Z] compute-a-16-163.o2.rc.hms.harvard.edu: Timing: small RNA annotation
+[2018-12-03T20:20Z] compute-a-16-163.o2.rc.hms.harvard.edu: multiprocessing: srna_annotation
+[2018-12-03T20:49Z] compute-a-16-163.o2.rc.hms.harvard.edu: Timing: cluster
+[2018-12-03T20:49Z] compute-a-16-163.o2.rc.hms.harvard.edu: ipython: seqcluster_cluster
+[2018-12-03T20:50Z] compute-a-16-155.o2.rc.hms.harvard.edu: Uncaught exception occurred
+Traceback (most recent call last):
+  File "/n/app/bcbio/alpha_version/lpantano/bcbio/anaconda/lib/python2.7/site-packages/bcbio/provenance/do.py", line 23, in run
+    _do_run(cmd, checks, log_stdout, env=env)
+  File "/n/app/bcbio/alpha_version/lpantano/bcbio/anaconda/lib/python2.7/site-packages/bcbio/provenance/do.py", line 103, in _do_run
+    raise subprocess.CalledProcessError(exitcode, error_msg)
+CalledProcessError: Command 'set -o pipefail; /n/app/bcbio/alpha_version/lpantano/bcbio/anaconda/bin/seqcluster cluster -o /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/seqcluster/cluster -m /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/seqcluster/prepare/seqs.ma -a /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/align/seqs.bam -r /n/app/bcbio/dev/genomes/Hsapiens/hg19/seq/hg19.fa -g /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/srna-transcripts.gtf
+INFO Run cluster
+INFO Checking parameters and files
+INFO Output dir will be: /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/seqcluster/cluster
+INFO Clean bam file with highly repetitive reads with low counts. sum(counts)/n_hits > 1%
+['cluster', '-o', '/n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/seqcluster/cluster', '-m', '/n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/seqcluster/prepare/seqs.ma', '-a', '/n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/align/seqs.bam', '-r', '/n/app/bcbio/dev/genomes/Hsapiens/hg19/seq/hg19.fa', '-g', '/n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/srna-transcripts.gtf']
+Traceback (most recent call last):
+  File "/n/app/bcbio/alpha_version/lpantano/bcbio/anaconda/bin/seqcluster", line 11, in <module>
+    load_entry_point('seqcluster==1.2.4a6', 'console_scripts', 'seqcluster')()
+  File "/n/app/bcbio/alpha_version/lpantano/bcbio/anaconda/lib/python2.7/site-packages/seqcluster/command_line.py", line 28, in main
+    cluster(kwargs["args"])
+  File "/n/app/bcbio/alpha_version/lpantano/bcbio/anaconda/lib/python2.7/site-packages/seqcluster/make_clusters.py", line 38, in cluster
+    bam_file, seq_obj = _clean_alignment(args)
+  File "/n/app/bcbio/alpha_version/lpantano/bcbio/anaconda/lib/python2.7/site-packages/seqcluster/make_clusters.py", line 237, in _clean_alignment
+    bam_file, seq_obj = clean_bam_file(args.afile, args.mask)
+  File "/n/app/bcbio/alpha_version/lpantano/bcbio/anaconda/lib/python2.7/site-packages/seqcluster/detect/cluster.py", line 56, in clean_bam_file
+    seq_name = int(read.query_name.replace('seq_', ''))
+ValueError: invalid literal for int() with base 10: 'ERR204777.1852321'
+' returned non-zero exit status 1
+[2018-12-03T20:50Z] compute-a-16-155.o2.rc.hms.harvard.edu: Unexpected error
+Traceback (most recent call last):
+  File "/n/app/bcbio/alpha_version/lpantano/bcbio/anaconda/lib/python2.7/site-packages/bcbio/distributed/ipythontasks.py", line 52, in _setup_logging
+    yield config
+  File "/n/app/bcbio/alpha_version/lpantano/bcbio/anaconda/lib/python2.7/site-packages/bcbio/distributed/ipythontasks.py", line 111, in seqcluster_cluster
+    return ipython.zip_args(apply(seqcluster.run_cluster, *args))
+  File "/n/app/bcbio/alpha_version/lpantano/bcbio/anaconda/lib/python2.7/site-packages/bcbio/srna/group.py", line 98, in run_cluster
+    gtf_file)
+  File "/n/app/bcbio/alpha_version/lpantano/bcbio/anaconda/lib/python2.7/site-packages/bcbio/srna/group.py", line 130, in _cluster
+    do.run(cmd.format(**locals()), "Running seqcluster.")
+  File "/n/app/bcbio/alpha_version/lpantano/bcbio/anaconda/lib/python2.7/site-packages/bcbio/provenance/do.py", line 23, in run
+    _do_run(cmd, checks, log_stdout, env=env)
+  File "/n/app/bcbio/alpha_version/lpantano/bcbio/anaconda/lib/python2.7/site-packages/bcbio/provenance/do.py", line 103, in _do_run
+    raise subprocess.CalledProcessError(exitcode, error_msg)
+CalledProcessError: Command 'set -o pipefail; /n/app/bcbio/alpha_version/lpantano/bcbio/anaconda/bin/seqcluster cluster -o /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/seqcluster/cluster -m /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/seqcluster/prepare/seqs.ma -a /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/align/seqs.bam -r /n/app/bcbio/dev/genomes/Hsapiens/hg19/seq/hg19.fa -g /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/srna-transcripts.gtf
+INFO Run cluster
+INFO Checking parameters and files
+INFO Output dir will be: /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/seqcluster/cluster
+INFO Clean bam file with highly repetitive reads with low counts. sum(counts)/n_hits > 1%
+['cluster', '-o', '/n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/seqcluster/cluster', '-m', '/n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/seqcluster/prepare/seqs.ma', '-a', '/n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/align/seqs.bam', '-r', '/n/app/bcbio/dev/genomes/Hsapiens/hg19/seq/hg19.fa', '-g', '/n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/srna-transcripts.gtf']
+Traceback (most recent call last):
+  File "/n/app/bcbio/alpha_version/lpantano/bcbio/anaconda/bin/seqcluster", line 11, in <module>
+    load_entry_point('seqcluster==1.2.4a6', 'console_scripts', 'seqcluster')()
+  File "/n/app/bcbio/alpha_version/lpantano/bcbio/anaconda/lib/python2.7/site-packages/seqcluster/command_line.py", line 28, in main
+    cluster(kwargs["args"])
+  File "/n/app/bcbio/alpha_version/lpantano/bcbio/anaconda/lib/python2.7/site-packages/seqcluster/make_clusters.py", line 38, in cluster
+    bam_file, seq_obj = _clean_alignment(args)
+  File "/n/app/bcbio/alpha_version/lpantano/bcbio/anaconda/lib/python2.7/site-packages/seqcluster/make_clusters.py", line 237, in _clean_alignment
+    bam_file, seq_obj = clean_bam_file(args.afile, args.mask)
+  File "/n/app/bcbio/alpha_version/lpantano/bcbio/anaconda/lib/python2.7/site-packages/seqcluster/detect/cluster.py", line 56, in clean_bam_file
+    seq_name = int(read.query_name.replace('seq_', ''))
+ValueError: invalid literal for int() with base 10: 'ERR204777.1852321'
+' returned non-zero exit status 1
+[2018-12-04T16:39Z] compute-a-16-160.o2.rc.hms.harvard.edu: System YAML configuration: /n/app/bcbio/dev/galaxy/bcbio_system.yaml
+[2018-12-04T16:39Z] compute-a-16-160.o2.rc.hms.harvard.edu: Running locally instead of distributed -- checkpoint passed: trimming
+[2018-12-04T16:39Z] compute-a-16-160.o2.rc.hms.harvard.edu: Timing: organize samples
+[2018-12-04T16:39Z] compute-a-16-160.o2.rc.hms.harvard.edu: multiprocessing: organize_samples
+[2018-12-04T16:39Z] compute-a-16-160.o2.rc.hms.harvard.edu: Using input YAML configuration: /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/config/geu_tiny.yaml
+[2018-12-04T16:39Z] compute-a-16-160.o2.rc.hms.harvard.edu: Checking sample YAML configuration: /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/config/geu_tiny.yaml
+[2018-12-04T16:39Z] compute-a-16-160.o2.rc.hms.harvard.edu: Testing minimum versions of installed programs
+[2018-12-04T16:39Z] compute-a-16-160.o2.rc.hms.harvard.edu: multiprocessing: prepare_sample
+[2018-12-04T16:39Z] compute-a-16-160.o2.rc.hms.harvard.edu: Timing: adapter trimming
+[2018-12-04T16:39Z] compute-a-16-160.o2.rc.hms.harvard.edu: multiprocessing: trim_srna_sample
+[2018-12-04T16:39Z] compute-a-16-160.o2.rc.hms.harvard.edu: No UMI transform specified, assuming pre-transformed data.
+[2018-12-04T16:39Z] compute-a-16-160.o2.rc.hms.harvard.edu: No UMI transform was specified, but /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/inputs/ERR204777/ERR204777.fastq.gz does not look pre-transformed.
+[2018-12-04T19:34Z] compute-a-16-160.o2.rc.hms.harvard.edu: System YAML configuration: /n/app/bcbio/alpha_version/lpantano/bcbio/galaxy/bcbio_system.yaml
+[2018-12-04T19:34Z] compute-a-16-160.o2.rc.hms.harvard.edu: Running locally instead of distributed -- checkpoint passed: trimming
+[2018-12-04T19:34Z] compute-a-16-160.o2.rc.hms.harvard.edu: Timing: organize samples
+[2018-12-04T19:34Z] compute-a-16-160.o2.rc.hms.harvard.edu: multiprocessing: organize_samples
+[2018-12-04T19:34Z] compute-a-16-160.o2.rc.hms.harvard.edu: Using input YAML configuration: /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/config/geu_tiny.yaml
+[2018-12-04T19:34Z] compute-a-16-160.o2.rc.hms.harvard.edu: Checking sample YAML configuration: /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/config/geu_tiny.yaml
+[2018-12-04T19:34Z] compute-a-16-160.o2.rc.hms.harvard.edu: Testing minimum versions of installed programs
+[2018-12-04T19:34Z] compute-a-16-160.o2.rc.hms.harvard.edu: multiprocessing: prepare_sample
+[2018-12-04T19:34Z] compute-a-16-160.o2.rc.hms.harvard.edu: Timing: adapter trimming
+[2018-12-04T19:34Z] compute-a-16-160.o2.rc.hms.harvard.edu: multiprocessing: trim_srna_sample
+[2018-12-04T19:34Z] compute-a-16-160.o2.rc.hms.harvard.edu: No UMI transform specified, assuming pre-transformed data.
+[2018-12-04T19:34Z] compute-a-16-160.o2.rc.hms.harvard.edu: No UMI transform was specified, but /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/inputs/ERR204777/ERR204777.fastq.gz does not look pre-transformed. Assuming non-umi data.
+[2018-12-04T19:35Z] compute-a-16-160.o2.rc.hms.harvard.edu: No UMI transform specified, assuming pre-transformed data.
+[2018-12-04T19:35Z] compute-a-16-160.o2.rc.hms.harvard.edu: No UMI transform was specified, but /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/inputs/ERR187558/ERR187558.fastq.gz does not look pre-transformed. Assuming non-umi data.
+[2018-12-04T19:35Z] compute-a-16-160.o2.rc.hms.harvard.edu: No UMI transform specified, assuming pre-transformed data.
+[2018-12-04T19:35Z] compute-a-16-160.o2.rc.hms.harvard.edu: No UMI transform was specified, but /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/inputs/ERR187777/ERR187777.fastq.gz does not look pre-transformed. Assuming non-umi data.
+[2018-12-04T19:36Z] compute-a-16-160.o2.rc.hms.harvard.edu: No UMI transform specified, assuming pre-transformed data.
+[2018-12-04T19:36Z] compute-a-16-160.o2.rc.hms.harvard.edu: No UMI transform was specified, but /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/inputs/ERR187911/ERR187911.fastq.gz does not look pre-transformed. Assuming non-umi data.
+[2018-12-04T19:37Z] compute-a-16-160.o2.rc.hms.harvard.edu: No UMI transform specified, assuming pre-transformed data.
+[2018-12-04T19:37Z] compute-a-16-160.o2.rc.hms.harvard.edu: No UMI transform was specified, but /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/inputs/ERR187864/ERR187864.fastq.gz does not look pre-transformed. Assuming non-umi data.
+[2018-12-04T19:39Z] compute-a-16-160.o2.rc.hms.harvard.edu: No UMI transform specified, assuming pre-transformed data.
+[2018-12-04T19:39Z] compute-a-16-160.o2.rc.hms.harvard.edu: No UMI transform was specified, but /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/inputs/ERR187506/ERR187506.fastq.gz does not look pre-transformed. Assuming non-umi data.
+[2018-12-04T19:40Z] compute-a-16-160.o2.rc.hms.harvard.edu: No UMI transform specified, assuming pre-transformed data.
+[2018-12-04T19:40Z] compute-a-16-160.o2.rc.hms.harvard.edu: No UMI transform was specified, but /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/inputs/ERR187913/ERR187913.fastq.gz does not look pre-transformed. Assuming non-umi data.
+[2018-12-04T19:41Z] compute-a-16-160.o2.rc.hms.harvard.edu: No UMI transform specified, assuming pre-transformed data.
+[2018-12-04T19:41Z] compute-a-16-160.o2.rc.hms.harvard.edu: No UMI transform was specified, but /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/inputs/ERR187605/ERR187605.fastq.gz does not look pre-transformed. Assuming non-umi data.
+[2018-12-04T19:43Z] compute-a-16-160.o2.rc.hms.harvard.edu: No UMI transform specified, assuming pre-transformed data.
+[2018-12-04T19:43Z] compute-a-16-160.o2.rc.hms.harvard.edu: No UMI transform was specified, but /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/inputs/ERR187883/ERR187883.fastq.gz does not look pre-transformed. Assuming non-umi data.
+[2018-12-04T19:46Z] compute-a-16-160.o2.rc.hms.harvard.edu: No UMI transform specified, assuming pre-transformed data.
+[2018-12-04T19:46Z] compute-a-16-160.o2.rc.hms.harvard.edu: No UMI transform was specified, but /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/inputs/ERR187620/ERR187620.fastq.gz does not look pre-transformed. Assuming non-umi data.
+[2018-12-04T19:47Z] compute-a-16-160.o2.rc.hms.harvard.edu: Timing: prepare
+[2018-12-04T19:47Z] compute-a-16-160.o2.rc.hms.harvard.edu: ipython: seqcluster_prepare
+[2018-12-04T19:47Z] compute-a-16-160.o2.rc.hms.harvard.edu: Timing: seqcluster alignment
+[2018-12-04T19:47Z] compute-a-16-160.o2.rc.hms.harvard.edu: ipython: srna_alignment
+[2018-12-04T19:47Z] compute-e-16-178.o2.rc.hms.harvard.edu: Aligning lane ERS185470 with star aligner
+[2018-12-05T14:15Z] compute-e-16-231.o2.rc.hms.harvard.edu: System YAML configuration: /n/app/bcbio/alpha_version/lpantano/bcbio/galaxy/bcbio_system.yaml
+[2018-12-05T14:15Z] compute-e-16-231.o2.rc.hms.harvard.edu: Running locally instead of distributed -- checkpoint passed: trimming
+[2018-12-05T14:15Z] compute-e-16-231.o2.rc.hms.harvard.edu: Timing: organize samples
+[2018-12-05T14:15Z] compute-e-16-231.o2.rc.hms.harvard.edu: multiprocessing: organize_samples
+[2018-12-05T14:15Z] compute-e-16-231.o2.rc.hms.harvard.edu: Using input YAML configuration: /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/config/geu_tiny.yaml
+[2018-12-05T14:15Z] compute-e-16-231.o2.rc.hms.harvard.edu: Checking sample YAML configuration: /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/config/geu_tiny.yaml
+[2018-12-05T14:15Z] compute-e-16-231.o2.rc.hms.harvard.edu: Testing minimum versions of installed programs
+[2018-12-05T14:15Z] compute-e-16-231.o2.rc.hms.harvard.edu: multiprocessing: prepare_sample
+[2018-12-05T14:15Z] compute-e-16-231.o2.rc.hms.harvard.edu: Timing: adapter trimming
+[2018-12-05T14:15Z] compute-e-16-231.o2.rc.hms.harvard.edu: multiprocessing: trim_srna_sample
+[2018-12-05T14:15Z] compute-e-16-231.o2.rc.hms.harvard.edu: No UMI transform specified, assuming pre-transformed data.
+[2018-12-05T14:15Z] compute-e-16-231.o2.rc.hms.harvard.edu: No UMI transform was specified, but /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/inputs/ERR204777/ERR204777.fastq.gz does not look pre-transformed. Assuming non-umi data.
+[2018-12-05T14:15Z] compute-e-16-231.o2.rc.hms.harvard.edu: No UMI transform specified, assuming pre-transformed data.
+[2018-12-05T14:15Z] compute-e-16-231.o2.rc.hms.harvard.edu: No UMI transform was specified, but /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/inputs/ERR187558/ERR187558.fastq.gz does not look pre-transformed. Assuming non-umi data.
+[2018-12-05T14:15Z] compute-e-16-231.o2.rc.hms.harvard.edu: No UMI transform specified, assuming pre-transformed data.
+[2018-12-05T14:15Z] compute-e-16-231.o2.rc.hms.harvard.edu: No UMI transform was specified, but /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/inputs/ERR187777/ERR187777.fastq.gz does not look pre-transformed. Assuming non-umi data.
+[2018-12-05T14:15Z] compute-e-16-231.o2.rc.hms.harvard.edu: No UMI transform specified, assuming pre-transformed data.
+[2018-12-05T14:15Z] compute-e-16-231.o2.rc.hms.harvard.edu: No UMI transform was specified, but /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/inputs/ERR187911/ERR187911.fastq.gz does not look pre-transformed. Assuming non-umi data.
+[2018-12-05T14:15Z] compute-e-16-231.o2.rc.hms.harvard.edu: No UMI transform specified, assuming pre-transformed data.
+[2018-12-05T14:15Z] compute-e-16-231.o2.rc.hms.harvard.edu: No UMI transform was specified, but /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/inputs/ERR187864/ERR187864.fastq.gz does not look pre-transformed. Assuming non-umi data.
+[2018-12-05T14:15Z] compute-e-16-231.o2.rc.hms.harvard.edu: No UMI transform specified, assuming pre-transformed data.
+[2018-12-05T14:15Z] compute-e-16-231.o2.rc.hms.harvard.edu: No UMI transform was specified, but /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/inputs/ERR187506/ERR187506.fastq.gz does not look pre-transformed. Assuming non-umi data.
+[2018-12-05T14:15Z] compute-e-16-231.o2.rc.hms.harvard.edu: No UMI transform specified, assuming pre-transformed data.
+[2018-12-05T14:15Z] compute-e-16-231.o2.rc.hms.harvard.edu: No UMI transform was specified, but /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/inputs/ERR187913/ERR187913.fastq.gz does not look pre-transformed. Assuming non-umi data.
+[2018-12-05T14:15Z] compute-e-16-231.o2.rc.hms.harvard.edu: No UMI transform specified, assuming pre-transformed data.
+[2018-12-05T14:15Z] compute-e-16-231.o2.rc.hms.harvard.edu: No UMI transform was specified, but /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/inputs/ERR187605/ERR187605.fastq.gz does not look pre-transformed. Assuming non-umi data.
+[2018-12-05T14:15Z] compute-e-16-231.o2.rc.hms.harvard.edu: No UMI transform specified, assuming pre-transformed data.
+[2018-12-05T14:15Z] compute-e-16-231.o2.rc.hms.harvard.edu: No UMI transform was specified, but /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/inputs/ERR187883/ERR187883.fastq.gz does not look pre-transformed. Assuming non-umi data.
+[2018-12-05T14:15Z] compute-e-16-231.o2.rc.hms.harvard.edu: No UMI transform specified, assuming pre-transformed data.
+[2018-12-05T14:15Z] compute-e-16-231.o2.rc.hms.harvard.edu: No UMI transform was specified, but /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/inputs/ERR187620/ERR187620.fastq.gz does not look pre-transformed. Assuming non-umi data.
+[2018-12-05T14:18Z] compute-e-16-231.o2.rc.hms.harvard.edu: System YAML configuration: /n/app/bcbio/alpha_version/lpantano/bcbio/galaxy/bcbio_system.yaml
+[2018-12-05T14:18Z] compute-e-16-231.o2.rc.hms.harvard.edu: Running locally instead of distributed -- checkpoint passed: trimming
+[2018-12-05T14:18Z] compute-e-16-231.o2.rc.hms.harvard.edu: Timing: organize samples
+[2018-12-05T14:18Z] compute-e-16-231.o2.rc.hms.harvard.edu: multiprocessing: organize_samples
+[2018-12-05T14:18Z] compute-e-16-231.o2.rc.hms.harvard.edu: Using input YAML configuration: /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/config/geu_tiny.yaml
+[2018-12-05T14:18Z] compute-e-16-231.o2.rc.hms.harvard.edu: Checking sample YAML configuration: /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/config/geu_tiny.yaml
+[2018-12-05T14:18Z] compute-e-16-231.o2.rc.hms.harvard.edu: Testing minimum versions of installed programs
+[2018-12-05T14:18Z] compute-e-16-231.o2.rc.hms.harvard.edu: multiprocessing: prepare_sample
+[2018-12-05T14:18Z] compute-e-16-231.o2.rc.hms.harvard.edu: Timing: adapter trimming
+[2018-12-05T14:18Z] compute-e-16-231.o2.rc.hms.harvard.edu: multiprocessing: trim_srna_sample
+[2018-12-05T14:18Z] compute-e-16-231.o2.rc.hms.harvard.edu: No UMI transform specified, assuming pre-transformed data.
+[2018-12-05T14:18Z] compute-e-16-231.o2.rc.hms.harvard.edu: No UMI transform was specified, but /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/inputs/ERR204777/ERR204777.fastq.gz does not look pre-transformed. Assuming non-umi data.
+[2018-12-05T14:18Z] compute-e-16-231.o2.rc.hms.harvard.edu: No UMI transform specified, assuming pre-transformed data.
+[2018-12-05T14:18Z] compute-e-16-231.o2.rc.hms.harvard.edu: No UMI transform was specified, but /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/inputs/ERR187558/ERR187558.fastq.gz does not look pre-transformed. Assuming non-umi data.
+[2018-12-05T14:18Z] compute-e-16-231.o2.rc.hms.harvard.edu: No UMI transform specified, assuming pre-transformed data.
+[2018-12-05T14:18Z] compute-e-16-231.o2.rc.hms.harvard.edu: No UMI transform was specified, but /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/inputs/ERR187777/ERR187777.fastq.gz does not look pre-transformed. Assuming non-umi data.
+[2018-12-05T14:18Z] compute-e-16-231.o2.rc.hms.harvard.edu: No UMI transform specified, assuming pre-transformed data.
+[2018-12-05T14:18Z] compute-e-16-231.o2.rc.hms.harvard.edu: No UMI transform was specified, but /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/inputs/ERR187911/ERR187911.fastq.gz does not look pre-transformed. Assuming non-umi data.
+[2018-12-05T14:18Z] compute-e-16-231.o2.rc.hms.harvard.edu: No UMI transform specified, assuming pre-transformed data.
+[2018-12-05T14:18Z] compute-e-16-231.o2.rc.hms.harvard.edu: No UMI transform was specified, but /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/inputs/ERR187864/ERR187864.fastq.gz does not look pre-transformed. Assuming non-umi data.
+[2018-12-05T14:18Z] compute-e-16-231.o2.rc.hms.harvard.edu: No UMI transform specified, assuming pre-transformed data.
+[2018-12-05T14:18Z] compute-e-16-231.o2.rc.hms.harvard.edu: No UMI transform was specified, but /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/inputs/ERR187506/ERR187506.fastq.gz does not look pre-transformed. Assuming non-umi data.
+[2018-12-05T14:18Z] compute-e-16-231.o2.rc.hms.harvard.edu: No UMI transform specified, assuming pre-transformed data.
+[2018-12-05T14:18Z] compute-e-16-231.o2.rc.hms.harvard.edu: No UMI transform was specified, but /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/inputs/ERR187913/ERR187913.fastq.gz does not look pre-transformed. Assuming non-umi data.
+[2018-12-05T14:18Z] compute-e-16-231.o2.rc.hms.harvard.edu: No UMI transform specified, assuming pre-transformed data.
+[2018-12-05T14:18Z] compute-e-16-231.o2.rc.hms.harvard.edu: No UMI transform was specified, but /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/inputs/ERR187605/ERR187605.fastq.gz does not look pre-transformed. Assuming non-umi data.
+[2018-12-05T14:18Z] compute-e-16-231.o2.rc.hms.harvard.edu: No UMI transform specified, assuming pre-transformed data.
+[2018-12-05T14:18Z] compute-e-16-231.o2.rc.hms.harvard.edu: No UMI transform was specified, but /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/inputs/ERR187883/ERR187883.fastq.gz does not look pre-transformed. Assuming non-umi data.
+[2018-12-05T14:18Z] compute-e-16-231.o2.rc.hms.harvard.edu: No UMI transform specified, assuming pre-transformed data.
+[2018-12-05T14:18Z] compute-e-16-231.o2.rc.hms.harvard.edu: No UMI transform was specified, but /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/inputs/ERR187620/ERR187620.fastq.gz does not look pre-transformed. Assuming non-umi data.
+[2018-12-05T14:24Z] compute-e-16-231.o2.rc.hms.harvard.edu: Timing: prepare
+[2018-12-05T14:24Z] compute-e-16-231.o2.rc.hms.harvard.edu: ipython: seqcluster_prepare
+[2018-12-05T14:25Z] compute-e-16-231.o2.rc.hms.harvard.edu: Timing: seqcluster alignment
+[2018-12-05T14:25Z] compute-e-16-231.o2.rc.hms.harvard.edu: ipython: srna_alignment
+[2018-12-05T14:25Z] compute-a-16-79.o2.rc.hms.harvard.edu: Aligning lane ERS185470 with bowtie aligner
+[2018-12-05T14:46Z] compute-e-16-231.o2.rc.hms.harvard.edu: Running locally instead of distributed -- checkpoint passed: alignment_samples
+[2018-12-05T14:46Z] compute-e-16-231.o2.rc.hms.harvard.edu: Timing: alignment
+[2018-12-05T14:46Z] compute-e-16-231.o2.rc.hms.harvard.edu: multiprocessing: process_alignment
+[2018-12-05T14:46Z] compute-e-16-231.o2.rc.hms.harvard.edu: Aligning lane ERS185470 with bowtie aligner
+[2018-12-05T14:52Z] compute-e-16-231.o2.rc.hms.harvard.edu: Aligning lane ERS185403 with bowtie aligner
+[2018-12-05T14:57Z] compute-e-16-231.o2.rc.hms.harvard.edu: Aligning lane ERS185400 with bowtie aligner
+[2018-12-05T15:01Z] compute-e-16-231.o2.rc.hms.harvard.edu: Aligning lane ERS185125 with bowtie aligner
+[2018-12-05T15:05Z] compute-e-16-231.o2.rc.hms.harvard.edu: Aligning lane ERS185102 with bowtie aligner
+[2018-12-05T15:19Z] compute-e-16-231.o2.rc.hms.harvard.edu: Aligning lane ERS185252 with bowtie aligner
+[2018-12-05T15:28Z] compute-e-16-231.o2.rc.hms.harvard.edu: Aligning lane ERS185036 with bowtie aligner
+[2018-12-05T15:40Z] compute-e-16-231.o2.rc.hms.harvard.edu: Aligning lane ERS185068 with bowtie aligner
+[2018-12-05T15:57Z] compute-e-16-231.o2.rc.hms.harvard.edu: Aligning lane ERS185082 with bowtie aligner
+[2018-12-05T16:16Z] compute-e-16-231.o2.rc.hms.harvard.edu: Aligning lane ERS185473 with bowtie aligner
+[2018-12-05T16:20Z] compute-e-16-231.o2.rc.hms.harvard.edu: Running locally instead of distributed -- checkpoint passed: annotation
+[2018-12-05T16:20Z] compute-e-16-231.o2.rc.hms.harvard.edu: Timing: small RNA annotation
+[2018-12-05T16:20Z] compute-e-16-231.o2.rc.hms.harvard.edu: multiprocessing: srna_annotation
+[2018-12-05T16:22Z] compute-e-16-231.o2.rc.hms.harvard.edu: Timing: cluster
+[2018-12-05T16:22Z] compute-e-16-231.o2.rc.hms.harvard.edu: ipython: seqcluster_cluster
+[2018-12-05T17:02Z] compute-e-16-231.o2.rc.hms.harvard.edu: Timing: quality control
+[2018-12-05T17:02Z] compute-e-16-231.o2.rc.hms.harvard.edu: ipython: pipeline_summary
+[2018-12-05T17:02Z] compute-e-16-244.o2.rc.hms.harvard.edu: QC: ERS185403 small-rna
+[2018-12-05T17:02Z] compute-e-16-244.o2.rc.hms.harvard.edu: QC: ERS185470 small-rna
+[2018-12-05T17:02Z] compute-e-16-244.o2.rc.hms.harvard.edu: QC: ERS185400 fastqc
+[2018-12-05T17:02Z] compute-e-16-244.o2.rc.hms.harvard.edu: QC: ERS185470 qualimap_rnaseq
+[2018-12-05T17:02Z] compute-e-16-244.o2.rc.hms.harvard.edu: QC: ERS185470 fastqc
+[2018-12-05T17:02Z] compute-e-16-244.o2.rc.hms.harvard.edu: QC: ERS185400 atropos
+[2018-12-05T17:02Z] compute-a-16-93.o2.rc.hms.harvard.edu: QC: ERS185470 samtools
+[2018-12-05T17:02Z] compute-a-16-93.o2.rc.hms.harvard.edu: QC: ERS185470 atropos
+[2018-12-05T17:02Z] compute-a-16-93.o2.rc.hms.harvard.edu: QC: ERS185403 atropos
+[2018-12-05T17:02Z] compute-a-16-93.o2.rc.hms.harvard.edu: QC: ERS185403 samtools
+[2018-12-05T17:02Z] compute-a-16-93.o2.rc.hms.harvard.edu: QC: ERS185403 qualimap_rnaseq
+[2018-12-05T17:02Z] compute-a-16-93.o2.rc.hms.harvard.edu: QC: ERS185403 fastqc
+[2018-12-05T17:02Z] compute-a-16-93.o2.rc.hms.harvard.edu: QC: ERS185400 qualimap_rnaseq
+[2018-12-05T17:02Z] compute-e-16-244.o2.rc.hms.harvard.edu: QC: ERS185400 samtools
+[2018-12-05T17:02Z] compute-a-16-93.o2.rc.hms.harvard.edu: QC: ERS185400 small-rna
+[2018-12-05T17:02Z] compute-e-16-244.o2.rc.hms.harvard.edu: QC: ERS185125 atropos
+[2018-12-05T17:02Z] compute-e-16-244.o2.rc.hms.harvard.edu: QC: ERS185125 fastqc
+[2018-12-05T17:02Z] compute-a-16-93.o2.rc.hms.harvard.edu: QC: ERS185125 qualimap_rnaseq
+[2018-12-05T17:02Z] compute-e-16-244.o2.rc.hms.harvard.edu: QC: ERS185125 samtools
+[2018-12-05T17:02Z] compute-e-16-244.o2.rc.hms.harvard.edu: QC: ERS185125 small-rna
+[2018-12-05T17:02Z] compute-e-16-244.o2.rc.hms.harvard.edu: QC: ERS185102 atropos
+[2018-12-05T17:02Z] compute-e-16-244.o2.rc.hms.harvard.edu: QC: ERS185102 fastqc
+[2018-12-05T17:02Z] compute-e-16-244.o2.rc.hms.harvard.edu: QC: ERS185102 qualimap_rnaseq
+[2018-12-05T17:02Z] compute-a-16-93.o2.rc.hms.harvard.edu: QC: ERS185102 samtools
+[2018-12-05T17:03Z] compute-a-16-93.o2.rc.hms.harvard.edu: QC: ERS185102 small-rna
+[2018-12-05T17:03Z] compute-a-16-93.o2.rc.hms.harvard.edu: QC: ERS185252 atropos
+[2018-12-05T17:03Z] compute-a-16-93.o2.rc.hms.harvard.edu: QC: ERS185252 fastqc
+[2018-12-05T17:03Z] compute-e-16-244.o2.rc.hms.harvard.edu: Produced HTML report /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/qc/ERS185400/fastqc/fastqc_report.html
+[2018-12-05T17:03Z] compute-e-16-244.o2.rc.hms.harvard.edu: QC: ERS185252 qualimap_rnaseq
+[2018-12-05T17:04Z] compute-a-16-93.o2.rc.hms.harvard.edu: QC: ERS185252 samtools
+[2018-12-05T17:05Z] compute-e-16-244.o2.rc.hms.harvard.edu: Produced HTML report /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/qc/ERS185470/fastqc/fastqc_report.html
+[2018-12-05T17:05Z] compute-e-16-244.o2.rc.hms.harvard.edu: QC: ERS185252 small-rna
+[2018-12-05T17:05Z] compute-e-16-244.o2.rc.hms.harvard.edu: QC: ERS185036 atropos
+[2018-12-05T17:05Z] compute-e-16-244.o2.rc.hms.harvard.edu: QC: ERS185036 fastqc
+[2018-12-05T17:05Z] compute-e-16-244.o2.rc.hms.harvard.edu: Produced HTML report /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/qc/ERS185102/fastqc/fastqc_report.html
+[2018-12-05T17:05Z] compute-e-16-244.o2.rc.hms.harvard.edu: QC: ERS185036 qualimap_rnaseq
+[2018-12-05T17:05Z] compute-a-16-93.o2.rc.hms.harvard.edu: QC: ERS185036 samtools
+[2018-12-05T17:06Z] compute-a-16-93.o2.rc.hms.harvard.edu: Produced HTML report /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/qc/ERS185252/fastqc/fastqc_report.html
+[2018-12-05T17:06Z] compute-a-16-93.o2.rc.hms.harvard.edu: QC: ERS185036 small-rna
+[2018-12-05T17:06Z] compute-a-16-93.o2.rc.hms.harvard.edu: QC: ERS185068 atropos
+[2018-12-05T17:06Z] compute-a-16-93.o2.rc.hms.harvard.edu: QC: ERS185068 fastqc
+[2018-12-05T17:06Z] compute-e-16-244.o2.rc.hms.harvard.edu: Detecting duplicates in /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/align/ERS185470/ERS185470-sort-dedup.bam.
+[2018-12-05T17:06Z] compute-a-16-93.o2.rc.hms.harvard.edu: QC: ERS185068 qualimap_rnaseq
+[2018-12-05T17:06Z] compute-e-16-244.o2.rc.hms.harvard.edu: Calculating RNA-seq rRNA metrics for None.
+[2018-12-05T17:07Z] compute-e-16-244.o2.rc.hms.harvard.edu: Produced HTML report /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/qc/ERS185125/fastqc/fastqc_report.html
+[2018-12-05T17:07Z] compute-e-16-244.o2.rc.hms.harvard.edu: QC: ERS185068 samtools
+[2018-12-05T17:07Z] compute-e-16-244.o2.rc.hms.harvard.edu: QC: ERS185068 small-rna
+[2018-12-05T17:07Z] compute-e-16-244.o2.rc.hms.harvard.edu: Produced HTML report /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/qc/ERS185036/fastqc/fastqc_report.html
+[2018-12-05T17:07Z] compute-e-16-244.o2.rc.hms.harvard.edu: QC: ERS185082 atropos
+[2018-12-05T17:07Z] compute-e-16-244.o2.rc.hms.harvard.edu: QC: ERS185082 fastqc
+[2018-12-05T17:07Z] compute-a-16-93.o2.rc.hms.harvard.edu: Detecting duplicates in /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/align/ERS185125/ERS185125-sort-dedup.bam.
+[2018-12-05T17:07Z] compute-e-16-244.o2.rc.hms.harvard.edu: QC: ERS185082 qualimap_rnaseq
+[2018-12-05T17:08Z] compute-a-16-93.o2.rc.hms.harvard.edu: Detecting duplicates in /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/align/ERS185400/ERS185400-sort-dedup.bam.
+[2018-12-05T17:08Z] compute-a-16-93.o2.rc.hms.harvard.edu: Produced HTML report /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/qc/ERS185403/fastqc/fastqc_report.html
+[2018-12-05T17:08Z] compute-a-16-93.o2.rc.hms.harvard.edu: QC: ERS185082 samtools
+[2018-12-05T17:08Z] compute-a-16-93.o2.rc.hms.harvard.edu: Calculating RNA-seq rRNA metrics for None.
+[2018-12-05T17:08Z] compute-a-16-93.o2.rc.hms.harvard.edu: Calculating RNA-seq rRNA metrics for None.
+[2018-12-05T17:08Z] compute-a-16-93.o2.rc.hms.harvard.edu: Detecting duplicates in /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/align/ERS185403/ERS185403-sort-dedup.bam.
+[2018-12-05T17:08Z] compute-e-16-244.o2.rc.hms.harvard.edu: Detecting duplicates in /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/align/ERS185252/ERS185252-sort-dedup.bam.
+[2018-12-05T17:08Z] compute-a-16-93.o2.rc.hms.harvard.edu: Calculating RNA-seq rRNA metrics for None.
+[2018-12-05T17:09Z] compute-e-16-244.o2.rc.hms.harvard.edu: Calculating RNA-seq rRNA metrics for None.
+[2018-12-05T17:09Z] compute-a-16-93.o2.rc.hms.harvard.edu: Produced HTML report /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/qc/ERS185068/fastqc/fastqc_report.html
+[2018-12-05T17:09Z] compute-a-16-93.o2.rc.hms.harvard.edu: QC: ERS185082 small-rna
+[2018-12-05T17:09Z] compute-a-16-93.o2.rc.hms.harvard.edu: QC: ERS185473 atropos
+[2018-12-05T17:09Z] compute-a-16-93.o2.rc.hms.harvard.edu: QC: ERS185473 fastqc
+[2018-12-05T17:09Z] compute-a-16-93.o2.rc.hms.harvard.edu: QC: ERS185473 qualimap_rnaseq
+[2018-12-05T17:09Z] compute-e-16-244.o2.rc.hms.harvard.edu: Produced HTML report /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/qc/ERS185082/fastqc/fastqc_report.html
+[2018-12-05T17:09Z] compute-e-16-244.o2.rc.hms.harvard.edu: QC: ERS185473 samtools
+[2018-12-05T17:09Z] compute-e-16-244.o2.rc.hms.harvard.edu: QC: ERS185473 small-rna
+[2018-12-05T17:10Z] compute-e-16-244.o2.rc.hms.harvard.edu: Detecting duplicates in /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/align/ERS185102/ERS185102-sort-dedup.bam.
+[2018-12-05T17:11Z] compute-e-16-244.o2.rc.hms.harvard.edu: Detecting duplicates in /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/align/ERS185036/ERS185036-sort-dedup.bam.
+[2018-12-05T17:11Z] compute-e-16-244.o2.rc.hms.harvard.edu: Calculating RNA-seq rRNA metrics for None.
+[2018-12-05T17:11Z] compute-e-16-244.o2.rc.hms.harvard.edu: Calculating RNA-seq rRNA metrics for None.
+[2018-12-05T17:13Z] compute-a-16-93.o2.rc.hms.harvard.edu: Detecting duplicates in /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/align/ERS185473/ERS185473-sort-dedup.bam.
+[2018-12-05T17:13Z] compute-a-16-93.o2.rc.hms.harvard.edu: Calculating RNA-seq rRNA metrics for None.
+[2018-12-05T17:13Z] compute-a-16-93.o2.rc.hms.harvard.edu: Produced HTML report /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/qc/ERS185473/fastqc/fastqc_report.html
+[2018-12-05T17:15Z] compute-e-16-244.o2.rc.hms.harvard.edu: Detecting duplicates in /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/align/ERS185082/ERS185082-sort-dedup.bam.
+[2018-12-05T17:15Z] compute-a-16-93.o2.rc.hms.harvard.edu: Detecting duplicates in /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/align/ERS185068/ERS185068-sort-dedup.bam.
+[2018-12-05T17:15Z] compute-e-16-244.o2.rc.hms.harvard.edu: Calculating RNA-seq rRNA metrics for None.
+[2018-12-05T17:16Z] compute-a-16-93.o2.rc.hms.harvard.edu: Calculating RNA-seq rRNA metrics for None.
+[2018-12-05T17:20Z] compute-e-16-231.o2.rc.hms.harvard.edu: ipython: qsignature_summary
+[2018-12-05T17:20Z] compute-e-16-231.o2.rc.hms.harvard.edu: summarize metadata
+[2018-12-05T17:20Z] compute-e-16-231.o2.rc.hms.harvard.edu: ipython: multiqc_summary
+[2018-12-05T17:20Z] compute-a-16-93.o2.rc.hms.harvard.edu: summarize target information
+[2018-12-05T17:20Z] compute-a-16-93.o2.rc.hms.harvard.edu: summarize fastqc
+[2018-12-05T17:20Z] compute-a-16-93.o2.rc.hms.harvard.edu: summarize metrics
+[2018-12-05T17:21Z] compute-e-16-231.o2.rc.hms.harvard.edu: Timing: report
+[2018-12-05T17:21Z] compute-e-16-231.o2.rc.hms.harvard.edu: Timing: upload
+[2018-12-05T17:21Z] compute-e-16-231.o2.rc.hms.harvard.edu: ipython: upload_samples
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185403/qc/fastqc/fastqc_report.html
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185400/qc/fastqc/fastqc_report.html
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185036/qc/fastqc/fastqc_report.html
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185102/qc/fastqc/fastqc_report.html
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185473/qc/fastqc/fastqc_report.html
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185082/qc/fastqc/fastqc_report.html
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185403/qc/fastqc/Per_sequence_GC_content.tsv
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185400/qc/fastqc/Per_sequence_GC_content.tsv
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185473/qc/fastqc/Per_sequence_GC_content.tsv
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185470/qc/fastqc/fastqc_report.html
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185252/qc/fastqc/fastqc_report.html
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185036/qc/fastqc/Per_sequence_GC_content.tsv
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185102/qc/fastqc/Per_sequence_GC_content.tsv
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185473/qc/fastqc/Per_base_sequence_content.tsv
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185403/qc/fastqc/Per_base_sequence_content.tsv
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185125/qc/fastqc/fastqc_report.html
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185400/qc/fastqc/Per_base_sequence_content.tsv
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185036/qc/fastqc/Per_base_sequence_content.tsv
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185102/qc/fastqc/Per_base_sequence_content.tsv
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185473/qc/fastqc/Per_base_sequence_quality.tsv
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185403/qc/fastqc/Per_base_sequence_quality.tsv
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185400/qc/fastqc/Per_base_sequence_quality.tsv
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185036/qc/fastqc/Per_base_sequence_quality.tsv
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185102/qc/fastqc/Per_base_sequence_quality.tsv
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185473/qc/fastqc/Sequence_Length_Distribution.tsv
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185403/qc/fastqc/Sequence_Length_Distribution.tsv
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185470/qc/fastqc/Per_sequence_GC_content.tsv
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185068/qc/fastqc/fastqc_report.html
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185400/qc/fastqc/Sequence_Length_Distribution.tsv
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185036/qc/fastqc/Sequence_Length_Distribution.tsv
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185102/qc/fastqc/Sequence_Length_Distribution.tsv
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185082/qc/fastqc/Per_sequence_GC_content.tsv
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185473/qc/fastqc/Per_base_N_content.tsv
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185403/qc/fastqc/Per_base_N_content.tsv
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185252/qc/fastqc/ERS185252.zip
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185470/qc/fastqc/ERS185470.zip
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185400/qc/fastqc/Per_base_N_content.tsv
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185102/qc/fastqc/Per_base_N_content.tsv
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185036/qc/fastqc/Per_base_N_content.tsv
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185082/qc/fastqc/Per_base_sequence_content.tsv
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185473/qc/fastqc/Sequence_Duplication_Levels.tsv
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185403/qc/fastqc/Sequence_Duplication_Levels.tsv
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185400/qc/fastqc/Sequence_Duplication_Levels.tsv
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185036/qc/fastqc/Sequence_Duplication_Levels.tsv
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185102/qc/fastqc/Sequence_Duplication_Levels.tsv
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185470/qc/fastqc/Per_base_sequence_content.tsv
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185082/qc/fastqc/Per_base_sequence_quality.tsv
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185473/qc/fastqc/fastqc_data.txt
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185403/qc/fastqc/fastqc_data.txt
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185252/qc/fastqc/Per_sequence_GC_content.tsv
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185400/qc/fastqc/ERS185400.zip
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185036/qc/fastqc/fastqc_data.txt
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185102/qc/fastqc/fastqc_data.txt
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185470/qc/fastqc/Per_base_sequence_quality.tsv
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185473/qc/fastqc/Per_sequence_quality_scores.tsv
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185403/qc/fastqc/Per_sequence_quality_scores.tsv
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185082/qc/fastqc/Sequence_Length_Distribution.tsv
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185036/qc/fastqc/Per_sequence_quality_scores.tsv
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185252/qc/fastqc/Per_base_sequence_content.tsv
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185102/qc/fastqc/Per_sequence_quality_scores.tsv
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185473/qc/fastqc/ERS185473.zip
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185470/qc/fastqc/Sequence_Length_Distribution.tsv
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185403/qc/fastqc/ERS185403.zip
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185082/qc/fastqc/Per_base_N_content.tsv
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185036/qc/fastqc/ERS185036.zip
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185102/qc/fastqc/ERS185102.zip
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185068/qc/fastqc/ERS185068.zip
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185470/qc/fastqc/Per_base_N_content.tsv
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185082/qc/fastqc/Sequence_Duplication_Levels.tsv
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185473/qc/samtools/ERS185473-idxstats.txt
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185403/qc/samtools/ERS185403-idxstats.txt
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185036/qc/samtools/ERS185036-idxstats.txt
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185102/qc/samtools/ERS185102-idxstats.txt
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185470/qc/fastqc/Sequence_Duplication_Levels.tsv
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185082/qc/fastqc/ERS185082.zip
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185252/qc/fastqc/Per_base_sequence_quality.tsv
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185473/qc/samtools/ERS185473.txt
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185470/qc/fastqc/fastqc_data.txt
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185403/qc/samtools/ERS185403.txt
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185036/qc/samtools/ERS185036.txt
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185102/qc/samtools/ERS185102.txt
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185252/qc/fastqc/Sequence_Length_Distribution.tsv
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185082/qc/fastqc/fastqc_data.txt
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185082/qc/fastqc/Per_sequence_quality_scores.tsv
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185473/qc/atropos/ERS185473.log
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185470/qc/fastqc/Per_sequence_quality_scores.tsv
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185068/qc/fastqc/Per_sequence_GC_content.tsv
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185403/qc/atropos/ERS185403.log
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185036/qc/atropos/ERS185036.log
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185102/qc/atropos/ERS185102.log
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185252/qc/fastqc/Per_base_N_content.tsv
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185125/qc/fastqc/ERS185125.zip
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185400/qc/fastqc/fastqc_data.txt
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185082/qc/samtools/ERS185082-idxstats.txt
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185473/qc/qualimap_rnaseq/rnaseq_qc_results.txt
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185470/qc/samtools/ERS185470-idxstats.txt
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185068/qc/fastqc/Per_base_sequence_content.tsv
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185403/qc/qualimap_rnaseq/rnaseq_qc_results.txt
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185036/qc/qualimap_rnaseq/rnaseq_qc_results.txt
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185102/qc/qualimap_rnaseq/rnaseq_qc_results.txt
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185252/qc/fastqc/Sequence_Duplication_Levels.tsv
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185125/qc/fastqc/Per_sequence_GC_content.tsv
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185400/qc/fastqc/Per_sequence_quality_scores.tsv
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185082/qc/samtools/ERS185082.txt
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185473/qc/qualimap_rnaseq/ERS185473/qualimapReport.html
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185470/qc/samtools/ERS185470.txt
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185068/qc/fastqc/Per_base_sequence_quality.tsv
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185403/qc/qualimap_rnaseq/ERS185403/qualimapReport.html
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185036/qc/qualimap_rnaseq/ERS185036/qualimapReport.html
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185102/qc/qualimap_rnaseq/ERS185102/qualimapReport.html
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185252/qc/fastqc/fastqc_data.txt
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185125/qc/fastqc/Per_base_sequence_content.tsv
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185400/qc/samtools/ERS185400-idxstats.txt
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185082/qc/atropos/ERS185082.log
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185473/qc/qualimap_rnaseq/ERS185473/dup_metrics.txt
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185470/qc/atropos/ERS185470.log
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185068/qc/fastqc/Sequence_Length_Distribution.tsv
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185403/qc/qualimap_rnaseq/ERS185403/dup_metrics.txt
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185036/qc/qualimap_rnaseq/ERS185036/dup_metrics.txt
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185102/qc/qualimap_rnaseq/ERS185102/dup_metrics.txt
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185252/qc/fastqc/Per_sequence_quality_scores.tsv
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185125/qc/fastqc/Per_base_sequence_quality.tsv
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185400/qc/samtools/ERS185400.txt
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185082/qc/qualimap_rnaseq/rnaseq_qc_results.txt
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185473/qc/qualimap_rnaseq/ERS185473/css/doctools.js
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185470/qc/qualimap_rnaseq/rnaseq_qc_results.txt
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185068/qc/fastqc/Per_base_N_content.tsv
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185403/qc/qualimap_rnaseq/ERS185403/css/doctools.js
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185036/qc/qualimap_rnaseq/ERS185036/css/doctools.js
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185102/qc/qualimap_rnaseq/ERS185102/css/doctools.js
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185252/qc/samtools/ERS185252-idxstats.txt
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185125/qc/fastqc/Sequence_Length_Distribution.tsv
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185400/qc/atropos/ERS185400.log
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185082/qc/qualimap_rnaseq/ERS185082/qualimapReport.html
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185473/qc/qualimap_rnaseq/ERS185473/css/agogo.css
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185470/qc/qualimap_rnaseq/ERS185470/qualimapReport.html
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185068/qc/fastqc/Sequence_Duplication_Levels.tsv
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185403/qc/qualimap_rnaseq/ERS185403/css/agogo.css
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185036/qc/qualimap_rnaseq/ERS185036/css/agogo.css
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185102/qc/qualimap_rnaseq/ERS185102/css/agogo.css
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185252/qc/samtools/ERS185252.txt
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185125/qc/fastqc/Per_base_N_content.tsv
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185400/qc/qualimap_rnaseq/rnaseq_qc_results.txt
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185082/qc/qualimap_rnaseq/ERS185082/dup_metrics.txt
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185473/qc/qualimap_rnaseq/ERS185473/css/comment.png
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185470/qc/qualimap_rnaseq/ERS185470/dup_metrics.txt
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185068/qc/fastqc/fastqc_data.txt
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185403/qc/qualimap_rnaseq/ERS185403/css/comment.png
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185036/qc/qualimap_rnaseq/ERS185036/css/comment.png
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185102/qc/qualimap_rnaseq/ERS185102/css/comment.png
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185252/qc/atropos/ERS185252.log
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185125/qc/fastqc/Sequence_Duplication_Levels.tsv
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185400/qc/qualimap_rnaseq/ERS185400/qualimapReport.html
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185082/qc/qualimap_rnaseq/ERS185082/css/doctools.js
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185473/qc/qualimap_rnaseq/ERS185473/css/underscore.js
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185470/qc/qualimap_rnaseq/ERS185470/css/doctools.js
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185068/qc/fastqc/Per_sequence_quality_scores.tsv
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185403/qc/qualimap_rnaseq/ERS185403/css/underscore.js
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185036/qc/qualimap_rnaseq/ERS185036/css/underscore.js
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185102/qc/qualimap_rnaseq/ERS185102/css/underscore.js
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185252/qc/qualimap_rnaseq/rnaseq_qc_results.txt
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185125/qc/fastqc/fastqc_data.txt
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185400/qc/qualimap_rnaseq/ERS185400/dup_metrics.txt
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185082/qc/qualimap_rnaseq/ERS185082/css/agogo.css
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185473/qc/qualimap_rnaseq/ERS185473/css/jquery.js
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185470/qc/qualimap_rnaseq/ERS185470/css/agogo.css
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185068/qc/samtools/ERS185068-idxstats.txt
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185403/qc/qualimap_rnaseq/ERS185403/css/jquery.js
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185036/qc/qualimap_rnaseq/ERS185036/css/jquery.js
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185102/qc/qualimap_rnaseq/ERS185102/css/jquery.js
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185252/qc/qualimap_rnaseq/ERS185252/qualimapReport.html
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185125/qc/fastqc/Per_sequence_quality_scores.tsv
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185400/qc/qualimap_rnaseq/ERS185400/css/doctools.js
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185082/qc/qualimap_rnaseq/ERS185082/css/comment.png
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185473/qc/qualimap_rnaseq/ERS185473/css/qualimap_logo_small.png
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185470/qc/qualimap_rnaseq/ERS185470/css/comment.png
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185068/qc/samtools/ERS185068.txt
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185403/qc/qualimap_rnaseq/ERS185403/css/qualimap_logo_small.png
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185036/qc/qualimap_rnaseq/ERS185036/css/qualimap_logo_small.png
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185102/qc/qualimap_rnaseq/ERS185102/css/qualimap_logo_small.png
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185252/qc/qualimap_rnaseq/ERS185252/dup_metrics.txt
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185125/qc/samtools/ERS185125-idxstats.txt
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185400/qc/qualimap_rnaseq/ERS185400/css/agogo.css
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185082/qc/qualimap_rnaseq/ERS185082/css/underscore.js
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185473/qc/qualimap_rnaseq/ERS185473/css/report.css
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185470/qc/qualimap_rnaseq/ERS185470/css/underscore.js
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185068/qc/atropos/ERS185068.log
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185403/qc/qualimap_rnaseq/ERS185403/css/report.css
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185036/qc/qualimap_rnaseq/ERS185036/css/report.css
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185102/qc/qualimap_rnaseq/ERS185102/css/report.css
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185252/qc/qualimap_rnaseq/ERS185252/css/doctools.js
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185125/qc/samtools/ERS185125.txt
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185400/qc/qualimap_rnaseq/ERS185400/css/comment.png
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185082/qc/qualimap_rnaseq/ERS185082/css/jquery.js
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185473/qc/qualimap_rnaseq/ERS185473/css/up.png
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185470/qc/qualimap_rnaseq/ERS185470/css/jquery.js
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185068/qc/qualimap_rnaseq/rnaseq_qc_results.txt
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185403/qc/qualimap_rnaseq/ERS185403/css/up.png
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185036/qc/qualimap_rnaseq/ERS185036/css/up.png
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185102/qc/qualimap_rnaseq/ERS185102/css/up.png
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185252/qc/qualimap_rnaseq/ERS185252/css/agogo.css
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185125/qc/atropos/ERS185125.log
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185400/qc/qualimap_rnaseq/ERS185400/css/underscore.js
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185082/qc/qualimap_rnaseq/ERS185082/css/qualimap_logo_small.png
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185473/qc/qualimap_rnaseq/ERS185473/css/up-pressed.png
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185470/qc/qualimap_rnaseq/ERS185470/css/qualimap_logo_small.png
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185068/qc/qualimap_rnaseq/ERS185068/qualimapReport.html
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185403/qc/qualimap_rnaseq/ERS185403/css/up-pressed.png
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185036/qc/qualimap_rnaseq/ERS185036/css/up-pressed.png
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185102/qc/qualimap_rnaseq/ERS185102/css/up-pressed.png
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185252/qc/qualimap_rnaseq/ERS185252/css/comment.png
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185125/qc/qualimap_rnaseq/rnaseq_qc_results.txt
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185400/qc/qualimap_rnaseq/ERS185400/css/jquery.js
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185082/qc/qualimap_rnaseq/ERS185082/css/report.css
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185473/qc/qualimap_rnaseq/ERS185473/css/bgfooter.png
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185470/qc/qualimap_rnaseq/ERS185470/css/report.css
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185068/qc/qualimap_rnaseq/ERS185068/dup_metrics.txt
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185403/qc/qualimap_rnaseq/ERS185403/css/bgfooter.png
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185036/qc/qualimap_rnaseq/ERS185036/css/bgfooter.png
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185102/qc/qualimap_rnaseq/ERS185102/css/bgfooter.png
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185252/qc/qualimap_rnaseq/ERS185252/css/underscore.js
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185125/qc/qualimap_rnaseq/ERS185125/qualimapReport.html
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185400/qc/qualimap_rnaseq/ERS185400/css/qualimap_logo_small.png
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185082/qc/qualimap_rnaseq/ERS185082/css/up.png
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185473/qc/qualimap_rnaseq/ERS185473/css/basic.css
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185470/qc/qualimap_rnaseq/ERS185470/css/up.png
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185068/qc/qualimap_rnaseq/ERS185068/css/doctools.js
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185403/qc/qualimap_rnaseq/ERS185403/css/basic.css
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185036/qc/qualimap_rnaseq/ERS185036/css/basic.css
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185102/qc/qualimap_rnaseq/ERS185102/css/basic.css
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185252/qc/qualimap_rnaseq/ERS185252/css/jquery.js
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185125/qc/qualimap_rnaseq/ERS185125/dup_metrics.txt
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185400/qc/qualimap_rnaseq/ERS185400/css/report.css
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185082/qc/qualimap_rnaseq/ERS185082/css/up-pressed.png
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185473/qc/qualimap_rnaseq/ERS185473/css/down-pressed.png
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185470/qc/qualimap_rnaseq/ERS185470/css/up-pressed.png
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185068/qc/qualimap_rnaseq/ERS185068/css/agogo.css
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185403/qc/qualimap_rnaseq/ERS185403/css/down-pressed.png
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185036/qc/qualimap_rnaseq/ERS185036/css/down-pressed.png
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185102/qc/qualimap_rnaseq/ERS185102/css/down-pressed.png
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185252/qc/qualimap_rnaseq/ERS185252/css/qualimap_logo_small.png
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185125/qc/qualimap_rnaseq/ERS185125/css/doctools.js
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185400/qc/qualimap_rnaseq/ERS185400/css/up.png
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185082/qc/qualimap_rnaseq/ERS185082/css/bgfooter.png
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185473/qc/qualimap_rnaseq/ERS185473/css/file.png
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185470/qc/qualimap_rnaseq/ERS185470/css/bgfooter.png
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185068/qc/qualimap_rnaseq/ERS185068/css/comment.png
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185403/qc/qualimap_rnaseq/ERS185403/css/file.png
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185036/qc/qualimap_rnaseq/ERS185036/css/file.png
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185102/qc/qualimap_rnaseq/ERS185102/css/file.png
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185252/qc/qualimap_rnaseq/ERS185252/css/report.css
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185125/qc/qualimap_rnaseq/ERS185125/css/agogo.css
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185400/qc/qualimap_rnaseq/ERS185400/css/up-pressed.png
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185082/qc/qualimap_rnaseq/ERS185082/css/basic.css
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185473/qc/qualimap_rnaseq/ERS185473/css/bgtop.png
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185470/qc/qualimap_rnaseq/ERS185470/css/basic.css
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185068/qc/qualimap_rnaseq/ERS185068/css/underscore.js
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185403/qc/qualimap_rnaseq/ERS185403/css/bgtop.png
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185036/qc/qualimap_rnaseq/ERS185036/css/bgtop.png
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185102/qc/qualimap_rnaseq/ERS185102/css/bgtop.png
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185252/qc/qualimap_rnaseq/ERS185252/css/up.png
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185125/qc/qualimap_rnaseq/ERS185125/css/comment.png
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185400/qc/qualimap_rnaseq/ERS185400/css/bgfooter.png
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185082/qc/qualimap_rnaseq/ERS185082/css/down-pressed.png
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185473/qc/qualimap_rnaseq/ERS185473/css/comment-close.png
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185470/qc/qualimap_rnaseq/ERS185470/css/down-pressed.png
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185068/qc/qualimap_rnaseq/ERS185068/css/jquery.js
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185403/qc/qualimap_rnaseq/ERS185403/css/comment-close.png
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185036/qc/qualimap_rnaseq/ERS185036/css/comment-close.png
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185102/qc/qualimap_rnaseq/ERS185102/css/comment-close.png
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185252/qc/qualimap_rnaseq/ERS185252/css/up-pressed.png
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185125/qc/qualimap_rnaseq/ERS185125/css/underscore.js
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185400/qc/qualimap_rnaseq/ERS185400/css/basic.css
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185082/qc/qualimap_rnaseq/ERS185082/css/file.png
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185473/qc/qualimap_rnaseq/ERS185473/css/comment-bright.png
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185470/qc/qualimap_rnaseq/ERS185470/css/file.png
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185068/qc/qualimap_rnaseq/ERS185068/css/qualimap_logo_small.png
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185403/qc/qualimap_rnaseq/ERS185403/css/comment-bright.png
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185036/qc/qualimap_rnaseq/ERS185036/css/comment-bright.png
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185102/qc/qualimap_rnaseq/ERS185102/css/comment-bright.png
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185252/qc/qualimap_rnaseq/ERS185252/css/bgfooter.png
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185125/qc/qualimap_rnaseq/ERS185125/css/jquery.js
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185400/qc/qualimap_rnaseq/ERS185400/css/down-pressed.png
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185082/qc/qualimap_rnaseq/ERS185082/css/bgtop.png
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185473/qc/qualimap_rnaseq/ERS185473/css/plus.png
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185470/qc/qualimap_rnaseq/ERS185470/css/bgtop.png
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185068/qc/qualimap_rnaseq/ERS185068/css/report.css
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185403/qc/qualimap_rnaseq/ERS185403/css/plus.png
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185036/qc/qualimap_rnaseq/ERS185036/css/plus.png
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185102/qc/qualimap_rnaseq/ERS185102/css/plus.png
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185252/qc/qualimap_rnaseq/ERS185252/css/basic.css
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185125/qc/qualimap_rnaseq/ERS185125/css/qualimap_logo_small.png
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185400/qc/qualimap_rnaseq/ERS185400/css/file.png
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185082/qc/qualimap_rnaseq/ERS185082/css/comment-close.png
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185473/qc/qualimap_rnaseq/ERS185473/css/pygments.css
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185470/qc/qualimap_rnaseq/ERS185470/css/comment-close.png
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185068/qc/qualimap_rnaseq/ERS185068/css/up.png
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185403/qc/qualimap_rnaseq/ERS185403/css/pygments.css
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185036/qc/qualimap_rnaseq/ERS185036/css/pygments.css
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185102/qc/qualimap_rnaseq/ERS185102/css/pygments.css
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185252/qc/qualimap_rnaseq/ERS185252/css/down-pressed.png
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185125/qc/qualimap_rnaseq/ERS185125/css/report.css
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185400/qc/qualimap_rnaseq/ERS185400/css/bgtop.png
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185082/qc/qualimap_rnaseq/ERS185082/css/comment-bright.png
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185473/qc/qualimap_rnaseq/ERS185473/css/ajax-loader.gif
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185470/qc/qualimap_rnaseq/ERS185470/css/comment-bright.png
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185068/qc/qualimap_rnaseq/ERS185068/css/up-pressed.png
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185403/qc/qualimap_rnaseq/ERS185403/css/ajax-loader.gif
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185036/qc/qualimap_rnaseq/ERS185036/css/ajax-loader.gif
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185102/qc/qualimap_rnaseq/ERS185102/css/ajax-loader.gif
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185252/qc/qualimap_rnaseq/ERS185252/css/file.png
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185125/qc/qualimap_rnaseq/ERS185125/css/up.png
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185400/qc/qualimap_rnaseq/ERS185400/css/comment-close.png
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185082/qc/qualimap_rnaseq/ERS185082/css/plus.png
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185473/qc/qualimap_rnaseq/ERS185473/css/down.png
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185470/qc/qualimap_rnaseq/ERS185470/css/plus.png
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185068/qc/qualimap_rnaseq/ERS185068/css/bgfooter.png
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185403/qc/qualimap_rnaseq/ERS185403/css/down.png
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185036/qc/qualimap_rnaseq/ERS185036/css/down.png
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185102/qc/qualimap_rnaseq/ERS185102/css/down.png
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185252/qc/qualimap_rnaseq/ERS185252/css/bgtop.png
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185125/qc/qualimap_rnaseq/ERS185125/css/up-pressed.png
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185400/qc/qualimap_rnaseq/ERS185400/css/comment-bright.png
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185082/qc/qualimap_rnaseq/ERS185082/css/pygments.css
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185473/qc/qualimap_rnaseq/ERS185473/css/searchtools.js
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185470/qc/qualimap_rnaseq/ERS185470/css/pygments.css
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185068/qc/qualimap_rnaseq/ERS185068/css/basic.css
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185403/qc/qualimap_rnaseq/ERS185403/css/searchtools.js
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185036/qc/qualimap_rnaseq/ERS185036/css/searchtools.js
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185102/qc/qualimap_rnaseq/ERS185102/css/searchtools.js
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185252/qc/qualimap_rnaseq/ERS185252/css/comment-close.png
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185125/qc/qualimap_rnaseq/ERS185125/css/bgfooter.png
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185400/qc/qualimap_rnaseq/ERS185400/css/plus.png
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185082/qc/qualimap_rnaseq/ERS185082/css/ajax-loader.gif
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185473/qc/qualimap_rnaseq/ERS185473/css/websupport.js
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185470/qc/qualimap_rnaseq/ERS185470/css/ajax-loader.gif
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185068/qc/qualimap_rnaseq/ERS185068/css/down-pressed.png
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185403/qc/qualimap_rnaseq/ERS185403/css/websupport.js
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185036/qc/qualimap_rnaseq/ERS185036/css/websupport.js
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185102/qc/qualimap_rnaseq/ERS185102/css/websupport.js
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185252/qc/qualimap_rnaseq/ERS185252/css/comment-bright.png
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185125/qc/qualimap_rnaseq/ERS185125/css/basic.css
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185400/qc/qualimap_rnaseq/ERS185400/css/pygments.css
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185082/qc/qualimap_rnaseq/ERS185082/css/down.png
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185473/qc/qualimap_rnaseq/ERS185473/css/minus.png
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185470/qc/qualimap_rnaseq/ERS185470/css/down.png
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185068/qc/qualimap_rnaseq/ERS185068/css/file.png
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185403/qc/qualimap_rnaseq/ERS185403/css/minus.png
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185036/qc/qualimap_rnaseq/ERS185036/css/minus.png
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185102/qc/qualimap_rnaseq/ERS185102/css/minus.png
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185252/qc/qualimap_rnaseq/ERS185252/css/plus.png
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185125/qc/qualimap_rnaseq/ERS185125/css/down-pressed.png
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185400/qc/qualimap_rnaseq/ERS185400/css/ajax-loader.gif
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185082/qc/qualimap_rnaseq/ERS185082/css/searchtools.js
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185473/qc/small-rna/ERS185473_bcbio_mirbase.txt
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185470/qc/qualimap_rnaseq/ERS185470/css/searchtools.js
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185068/qc/qualimap_rnaseq/ERS185068/css/bgtop.png
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185403/qc/small-rna/ERS185403_bcbio_mirbase.txt
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185036/qc/small-rna/ERS185036_bcbio_mirbase.txt
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185102/qc/small-rna/ERS185102_bcbio_mirbase.txt
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185252/qc/qualimap_rnaseq/ERS185252/css/pygments.css
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185125/qc/qualimap_rnaseq/ERS185125/css/file.png
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185400/qc/qualimap_rnaseq/ERS185400/css/down.png
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185082/qc/qualimap_rnaseq/ERS185082/css/websupport.js
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185473/ERS185473-ready.trimming_stats
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185470/qc/qualimap_rnaseq/ERS185470/css/websupport.js
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185068/qc/qualimap_rnaseq/ERS185068/css/comment-close.png
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185403/ERS185403-ready.trimming_stats
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185036/ERS185036-ready.trimming_stats
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185102/ERS185102-ready.trimming_stats
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185252/qc/qualimap_rnaseq/ERS185252/css/ajax-loader.gif
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185125/qc/qualimap_rnaseq/ERS185125/css/bgtop.png
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185400/qc/qualimap_rnaseq/ERS185400/css/searchtools.js
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185082/qc/qualimap_rnaseq/ERS185082/css/minus.png
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185473/ERS185473-mirbase-ready.counts
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185470/qc/qualimap_rnaseq/ERS185470/css/minus.png
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185068/qc/qualimap_rnaseq/ERS185068/css/comment-bright.png
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185403/ERS185403-mirbase-ready.counts
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185036/ERS185036-mirbase-ready.counts
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185102/ERS185102-mirbase-ready.counts
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185252/qc/qualimap_rnaseq/ERS185252/css/down.png
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185125/qc/qualimap_rnaseq/ERS185125/css/comment-close.png
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185400/qc/qualimap_rnaseq/ERS185400/css/websupport.js
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185082/qc/small-rna/ERS185082_bcbio_mirbase.txt
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185473/ERS185473-mirbase-ready.gff
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185470/qc/small-rna/ERS185470_bcbio_mirbase.txt
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185068/qc/qualimap_rnaseq/ERS185068/css/plus.png
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185403/ERS185403-mirbase-ready.gff
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185036/ERS185036-mirbase-ready.gff
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185102/ERS185102-mirbase-ready.gff
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185252/qc/qualimap_rnaseq/ERS185252/css/searchtools.js
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185125/qc/qualimap_rnaseq/ERS185125/css/comment-bright.png
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185400/qc/qualimap_rnaseq/ERS185400/css/minus.png
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185082/ERS185082-ready.trimming_stats
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185473/ERS185473-transcriptome.bam
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185470/qc/small-rna/ERS185470.txt
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185068/qc/qualimap_rnaseq/ERS185068/css/pygments.css
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185403/ERS185403-transcriptome.bam
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185036/ERS185036-transcriptome.bam
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185102/ERS185102-transcriptome.bam
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185252/qc/qualimap_rnaseq/ERS185252/css/websupport.js
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185125/qc/qualimap_rnaseq/ERS185125/css/plus.png
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185400/qc/small-rna/ERS185400_bcbio_mirbase.txt
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185082/ERS185082-mirbase-ready.counts
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185400/ERS185400-ready.trimming_stats
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185470/ERS185470-ready.trimming_stats
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185068/qc/qualimap_rnaseq/ERS185068/css/ajax-loader.gif
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185125/qc/qualimap_rnaseq/ERS185125/css/pygments.css
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185252/qc/qualimap_rnaseq/ERS185252/css/minus.png
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185082/ERS185082-mirbase-ready.gff
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185400/ERS185400-mirbase-ready.counts
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185470/ERS185470-mirbase-ready.counts
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185068/qc/qualimap_rnaseq/ERS185068/css/down.png
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185125/qc/qualimap_rnaseq/ERS185125/css/ajax-loader.gif
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185252/qc/small-rna/ERS185252_bcbio_mirbase.txt
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185082/ERS185082-transcriptome.bam
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185252/ERS185252-ready.trimming_stats
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185470/ERS185470-mirbase-ready.gff
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185068/qc/qualimap_rnaseq/ERS185068/css/searchtools.js
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185125/qc/qualimap_rnaseq/ERS185125/css/down.png
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185125/qc/qualimap_rnaseq/ERS185125/css/searchtools.js
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185252/ERS185252-mirbase-ready.counts
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185470/ERS185470-transcriptome.bam
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185068/qc/qualimap_rnaseq/ERS185068/css/websupport.js
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185125/qc/qualimap_rnaseq/ERS185125/css/websupport.js
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185252/ERS185252-mirbase-ready.gff
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185068/qc/qualimap_rnaseq/ERS185068/css/minus.png
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185125/qc/qualimap_rnaseq/ERS185125/css/minus.png
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185252/ERS185252-transcriptome.bam
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185068/qc/small-rna/ERS185068_bcbio_mirbase.txt
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185125/qc/small-rna/ERS185125_bcbio_mirbase.txt
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185068/ERS185068-ready.trimming_stats
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185125/ERS185125-ready.trimming_stats
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185125/ERS185125-mirbase-ready.counts
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185125/ERS185125-mirbase-ready.gff
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185125/ERS185125-transcriptome.bam
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185068/ERS185068-mirbase-ready.counts
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185068/ERS185068-mirbase-ready.gff
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185068/ERS185068-transcriptome.bam
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185400/ERS185400-mirbase-ready.gff
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/ERS185400/ERS185400-transcriptome.bam
+[2018-12-05T17:21Z] compute-e-16-231.o2.rc.hms.harvard.edu: ipython: upload_samples_project
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/2018-12-05_geu_tiny/programs.txt
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/2018-12-05_geu_tiny/data_versions.csv
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/2018-12-05_geu_tiny/bcbio-nextgen.log
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/2018-12-05_geu_tiny/bcbio-nextgen-commands.log
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/2018-12-05_geu_tiny/project-summary.yaml
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/2018-12-05_geu_tiny/metadata.csv
+[2018-12-05T17:21Z] compute-e-16-244.o2.rc.hms.harvard.edu: Storing directory in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/2018-12-05_geu_tiny/report
+[2018-12-05T17:21Z] compute-e-16-231.o2.rc.hms.harvard.edu: ipython: upload_samples_project
+[2018-12-05T17:21Z] compute-e-16-231.o2.rc.hms.harvard.edu: ipython: upload_samples_project
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing directory in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/2018-12-05_geu_tiny/seqcluster
+[2018-12-05T17:21Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing directory in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/2018-12-05_geu_tiny/seqclusterViz
+[2018-12-05T17:22Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/2018-12-05_geu_tiny/counts.tsv
+[2018-12-05T17:22Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/2018-12-05_geu_tiny/counts_mirna.tsv
+[2018-12-05T17:22Z] compute-e-16-231.o2.rc.hms.harvard.edu: ipython: upload_samples_project
+[2018-12-05T17:22Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/2018-12-05_geu_tiny/bcbio-nextgen.log
+[2018-12-05T17:22Z] compute-e-16-231.o2.rc.hms.harvard.edu: ipython: upload_samples_project
+[2018-12-05T17:22Z] compute-e-16-231.o2.rc.hms.harvard.edu: ipython: upload_samples_project
+[2018-12-05T17:22Z] compute-e-16-231.o2.rc.hms.harvard.edu: ipython: upload_samples_project
+[2018-12-05T17:22Z] compute-e-16-231.o2.rc.hms.harvard.edu: ipython: upload_samples_project
+[2018-12-05T17:22Z] compute-e-16-231.o2.rc.hms.harvard.edu: ipython: upload_samples_project
+[2018-12-05T17:22Z] compute-e-16-231.o2.rc.hms.harvard.edu: ipython: upload_samples_project
+[2018-12-05T17:22Z] compute-a-16-93.o2.rc.hms.harvard.edu: Storing in local filesystem: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final/2018-12-05_geu_tiny/bcbio-nextgen.log

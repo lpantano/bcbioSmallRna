@@ -1,0 +1,889 @@
+date: '2018-12-05 12:20:52.765720'
+upload: /home/lp113/hbc/lpantano/geuvadis/geu_tiny/final
+bcbio_system: /n/app/bcbio/alpha_version/lpantano/bcbio/galaxy/bcbio_system.yaml
+samples:
+- description: ERS185403
+  dirs:
+    config: /n/app/bcbio/alpha_version/lpantano/bcbio/galaxy
+    fastq: null
+    flowcell: null
+    galaxy: /n/app/bcbio/alpha_version/lpantano/bcbio/galaxy
+    work: /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work
+  genome_build: hg19
+  genome_resources:
+    aliases:
+      ensembl: homo_sapiens_merged_vep_94_GRCh37
+      human: true
+      snpeff: GRCh37.75
+    coverage:
+      MIG: /n/app/bcbio/dev/genomes/Hsapiens/hg19/prioritization/MIG.bed
+      coverage_problem_dir: /n/app/bcbio/dev/genomes/Hsapiens/hg19/coverage/problem_regions
+    rnaseq:
+      dexseq: ../rnaseq/ref-transcripts.dexseq.gff3
+      gene_bed: /n/app/bcbio/dev/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.bed
+      rRNA_fa: ../rnaseq/rRNA.fa
+      refflat: /n/app/bcbio/dev/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.refFlat
+      transcriptome_index:
+        tophat: /n/app/bcbio/dev/genomes/Hsapiens/hg19/rnaseq/tophat/hg19_transcriptome.ver
+      transcripts: /n/app/bcbio/dev/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.gtf
+      transcripts_mask: /n/app/bcbio/dev/genomes/Hsapiens/hg19/rnaseq/ref-transcripts-mask.gtf
+    srnaseq:
+      mint_lookup: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/LookupTable.tRFs.MINTmap_v1.txt
+      mint_other: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/OtherAnnotations.MINTmap_v1.txt
+      mint_space: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/tRNAspace.Spliced.Sequences.MINTmap_v1.fa
+      mirbase_hairpin: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/hairpin.fa
+      mirbase_mature: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/mature.fa
+      mirdeep2_fasta: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/Rfam_for_miRDeep.fa
+      srna_transcripts: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/srna-transcripts.gtf
+      trna_fasta: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/trna_mature_pre.fa
+    variation:
+      1000g: ../variation/1000g.vcf.gz
+      ancestral: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/human_ancestor.fa.gz
+      clinvar: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/clinvar.vcf.gz
+      cosmic: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/cosmic.vcf.gz
+      dbnsfp: ../variation/dbNSFP.txt.gz
+      dbscsnv: ../variation/dbscSNV.txt.gz
+      dbsnp: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/dbsnp-151.vcf.gz
+      editing: /n/app/bcbio/dev/genomes/Hsapiens/hg19/editing/RADAR.bed.gz
+      encode_blacklist: /n/app/bcbio/dev/genomes/Hsapiens/hg19/coverage/problem_regions/ENCODE/wgEncodeDacMapabilityConsensusExcludable.bed.gz
+      esp: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/esp.vcf.gz
+      exac: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/exac.vcf.gz
+      gc_profile: /n/app/bcbio/dev/genomes/Hsapiens/hg19/coverage/gc/GC_profile.1000bp.cnp
+      genesplicer: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/genesplicer
+      genotype2phenotype: ../variation/G2P.csv
+      germline_het_pon: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/germline_het_pon.bed.gz
+      gnomad_exome: ../variation/gnomad_exome.vcf.gz
+      lcr: /n/app/bcbio/dev/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/LCR.bed.gz
+      polyx: /n/app/bcbio/dev/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/polyx.bed.gz
+      qsignature: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/qsignature.vcf
+      sv_repeat: /n/app/bcbio/dev/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/sv_repeat_telomere_centromere.bed
+      train_1000g: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/1000G_phase1.snps.high_confidence.vcf.gz
+      train_hapmap: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/hapmap_3.3.vcf.gz
+      train_indels: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/Mills_and_1000G_gold_standard.indels.vcf.gz
+      train_omni: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/1000G_omni2.5.vcf.gz
+    version: 50
+  metadata:
+    batch: null
+    laboratory: 1
+    phenotype: ''
+    population: GBR
+  sam_ref: /n/app/bcbio/dev/genomes/Hsapiens/hg19/seq/hg19.fa
+  summary:
+    metrics:
+      '%GC': '54'
+      Average_insert_size: 0.0
+      Average_read_length: 21.0
+      Duplicates: 6573910.0
+      Duplication Rate of Mapped: 0.4494750806181674
+      Exonic Rate: 0.2923
+      Intergenic Rate: 0.3123
+      Intronic Rate: 0.3954
+      Mapped_paired_reads: 0.0
+      Mapped_reads: 11941167.0
+      Name: ERS185403
+      Quality format: standard
+      Sequence length: 17-28
+      Sequences flagged as poor quality: '0'
+      Total_reads: 12045621.0
+      rRNA: NA
+      rRNA_rate: NA
+      read_pass_filter: 4636336
+      read_with_adapter: 2529571
+      reads_before_trimming: 4636336
+- description: ERS185400
+  dirs:
+    config: /n/app/bcbio/alpha_version/lpantano/bcbio/galaxy
+    fastq: null
+    flowcell: null
+    galaxy: /n/app/bcbio/alpha_version/lpantano/bcbio/galaxy
+    work: /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work
+  genome_build: hg19
+  genome_resources:
+    aliases:
+      ensembl: homo_sapiens_merged_vep_94_GRCh37
+      human: true
+      snpeff: GRCh37.75
+    coverage:
+      MIG: /n/app/bcbio/dev/genomes/Hsapiens/hg19/prioritization/MIG.bed
+      coverage_problem_dir: /n/app/bcbio/dev/genomes/Hsapiens/hg19/coverage/problem_regions
+    rnaseq:
+      dexseq: ../rnaseq/ref-transcripts.dexseq.gff3
+      gene_bed: /n/app/bcbio/dev/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.bed
+      rRNA_fa: ../rnaseq/rRNA.fa
+      refflat: /n/app/bcbio/dev/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.refFlat
+      transcriptome_index:
+        tophat: /n/app/bcbio/dev/genomes/Hsapiens/hg19/rnaseq/tophat/hg19_transcriptome.ver
+      transcripts: /n/app/bcbio/dev/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.gtf
+      transcripts_mask: /n/app/bcbio/dev/genomes/Hsapiens/hg19/rnaseq/ref-transcripts-mask.gtf
+    srnaseq:
+      mint_lookup: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/LookupTable.tRFs.MINTmap_v1.txt
+      mint_other: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/OtherAnnotations.MINTmap_v1.txt
+      mint_space: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/tRNAspace.Spliced.Sequences.MINTmap_v1.fa
+      mirbase_hairpin: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/hairpin.fa
+      mirbase_mature: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/mature.fa
+      mirdeep2_fasta: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/Rfam_for_miRDeep.fa
+      srna_transcripts: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/srna-transcripts.gtf
+      trna_fasta: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/trna_mature_pre.fa
+    variation:
+      1000g: ../variation/1000g.vcf.gz
+      ancestral: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/human_ancestor.fa.gz
+      clinvar: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/clinvar.vcf.gz
+      cosmic: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/cosmic.vcf.gz
+      dbnsfp: ../variation/dbNSFP.txt.gz
+      dbscsnv: ../variation/dbscSNV.txt.gz
+      dbsnp: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/dbsnp-151.vcf.gz
+      editing: /n/app/bcbio/dev/genomes/Hsapiens/hg19/editing/RADAR.bed.gz
+      encode_blacklist: /n/app/bcbio/dev/genomes/Hsapiens/hg19/coverage/problem_regions/ENCODE/wgEncodeDacMapabilityConsensusExcludable.bed.gz
+      esp: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/esp.vcf.gz
+      exac: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/exac.vcf.gz
+      gc_profile: /n/app/bcbio/dev/genomes/Hsapiens/hg19/coverage/gc/GC_profile.1000bp.cnp
+      genesplicer: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/genesplicer
+      genotype2phenotype: ../variation/G2P.csv
+      germline_het_pon: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/germline_het_pon.bed.gz
+      gnomad_exome: ../variation/gnomad_exome.vcf.gz
+      lcr: /n/app/bcbio/dev/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/LCR.bed.gz
+      polyx: /n/app/bcbio/dev/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/polyx.bed.gz
+      qsignature: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/qsignature.vcf
+      sv_repeat: /n/app/bcbio/dev/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/sv_repeat_telomere_centromere.bed
+      train_1000g: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/1000G_phase1.snps.high_confidence.vcf.gz
+      train_hapmap: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/hapmap_3.3.vcf.gz
+      train_indels: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/Mills_and_1000G_gold_standard.indels.vcf.gz
+      train_omni: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/1000G_omni2.5.vcf.gz
+    version: 50
+  metadata:
+    batch: null
+    laboratory: 7
+    phenotype: ''
+    population: YRI
+  sam_ref: /n/app/bcbio/dev/genomes/Hsapiens/hg19/seq/hg19.fa
+  summary:
+    metrics:
+      '%GC': '52'
+      5'-3' bias: 4.85
+      Average_insert_size: 0.0
+      Average_read_length: 23.0
+      Duplicates: 4383444.0
+      Duplication Rate of Mapped: 0.4957430669106365
+      Exonic Rate: 0.282
+      Intergenic Rate: 0.32799999999999996
+      Intronic Rate: 0.39
+      Mapped_paired_reads: 0.0
+      Mapped_reads: 8692878.0
+      Name: ERS185400
+      Quality format: standard
+      Sequence length: 17-28
+      Sequences flagged as poor quality: '0'
+      Total_reads: 8803151.0
+      rRNA: NA
+      rRNA_rate: NA
+      read_pass_filter: 6954329
+      read_with_adapter: 1636104
+      reads_before_trimming: 6954329
+- description: ERS185470
+  dirs:
+    config: /n/app/bcbio/alpha_version/lpantano/bcbio/galaxy
+    fastq: null
+    flowcell: null
+    galaxy: /n/app/bcbio/alpha_version/lpantano/bcbio/galaxy
+    work: /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work
+  genome_build: hg19
+  genome_resources:
+    aliases:
+      ensembl: homo_sapiens_merged_vep_94_GRCh37
+      human: true
+      snpeff: GRCh37.75
+    coverage:
+      MIG: /n/app/bcbio/dev/genomes/Hsapiens/hg19/prioritization/MIG.bed
+      coverage_problem_dir: /n/app/bcbio/dev/genomes/Hsapiens/hg19/coverage/problem_regions
+    rnaseq:
+      dexseq: ../rnaseq/ref-transcripts.dexseq.gff3
+      gene_bed: /n/app/bcbio/dev/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.bed
+      rRNA_fa: ../rnaseq/rRNA.fa
+      refflat: /n/app/bcbio/dev/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.refFlat
+      transcriptome_index:
+        tophat: /n/app/bcbio/dev/genomes/Hsapiens/hg19/rnaseq/tophat/hg19_transcriptome.ver
+      transcripts: /n/app/bcbio/dev/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.gtf
+      transcripts_mask: /n/app/bcbio/dev/genomes/Hsapiens/hg19/rnaseq/ref-transcripts-mask.gtf
+    srnaseq:
+      mint_lookup: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/LookupTable.tRFs.MINTmap_v1.txt
+      mint_other: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/OtherAnnotations.MINTmap_v1.txt
+      mint_space: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/tRNAspace.Spliced.Sequences.MINTmap_v1.fa
+      mirbase_hairpin: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/hairpin.fa
+      mirbase_mature: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/mature.fa
+      mirdeep2_fasta: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/Rfam_for_miRDeep.fa
+      srna_transcripts: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/srna-transcripts.gtf
+      trna_fasta: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/trna_mature_pre.fa
+    variation:
+      1000g: ../variation/1000g.vcf.gz
+      ancestral: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/human_ancestor.fa.gz
+      clinvar: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/clinvar.vcf.gz
+      cosmic: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/cosmic.vcf.gz
+      dbnsfp: ../variation/dbNSFP.txt.gz
+      dbscsnv: ../variation/dbscSNV.txt.gz
+      dbsnp: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/dbsnp-151.vcf.gz
+      editing: /n/app/bcbio/dev/genomes/Hsapiens/hg19/editing/RADAR.bed.gz
+      encode_blacklist: /n/app/bcbio/dev/genomes/Hsapiens/hg19/coverage/problem_regions/ENCODE/wgEncodeDacMapabilityConsensusExcludable.bed.gz
+      esp: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/esp.vcf.gz
+      exac: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/exac.vcf.gz
+      gc_profile: /n/app/bcbio/dev/genomes/Hsapiens/hg19/coverage/gc/GC_profile.1000bp.cnp
+      genesplicer: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/genesplicer
+      genotype2phenotype: ../variation/G2P.csv
+      germline_het_pon: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/germline_het_pon.bed.gz
+      gnomad_exome: ../variation/gnomad_exome.vcf.gz
+      lcr: /n/app/bcbio/dev/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/LCR.bed.gz
+      polyx: /n/app/bcbio/dev/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/polyx.bed.gz
+      qsignature: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/qsignature.vcf
+      sv_repeat: /n/app/bcbio/dev/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/sv_repeat_telomere_centromere.bed
+      train_1000g: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/1000G_phase1.snps.high_confidence.vcf.gz
+      train_hapmap: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/hapmap_3.3.vcf.gz
+      train_indels: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/Mills_and_1000G_gold_standard.indels.vcf.gz
+      train_omni: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/1000G_omni2.5.vcf.gz
+    version: 50
+  metadata:
+    batch: null
+    laboratory: 5
+    phenotype: ''
+    population: CEU
+  sam_ref: /n/app/bcbio/dev/genomes/Hsapiens/hg19/seq/hg19.fa
+  summary:
+    metrics:
+      '%GC': '54'
+      Average_insert_size: 0.0
+      Average_read_length: 21.0
+      Duplicates: 6856368.0
+      Duplication Rate of Mapped: 0.49116337142872407
+      Exonic Rate: 0.24489999999999998
+      Intergenic Rate: 0.3236
+      Intronic Rate: 0.4315
+      Mapped_paired_reads: 0.0
+      Mapped_reads: 13474596.0
+      Name: ERS185470
+      Quality format: standard
+      Sequence length: 17-28
+      Sequences flagged as poor quality: '0'
+      Total_reads: 13569416.0
+      rRNA: NA
+      rRNA_rate: NA
+      read_pass_filter: 8952792
+      read_with_adapter: 2993041
+      reads_before_trimming: 8952792
+- description: ERS185082
+  dirs:
+    config: /n/app/bcbio/alpha_version/lpantano/bcbio/galaxy
+    fastq: null
+    flowcell: null
+    galaxy: /n/app/bcbio/alpha_version/lpantano/bcbio/galaxy
+    work: /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work
+  genome_build: hg19
+  genome_resources:
+    aliases:
+      ensembl: homo_sapiens_merged_vep_94_GRCh37
+      human: true
+      snpeff: GRCh37.75
+    coverage:
+      MIG: /n/app/bcbio/dev/genomes/Hsapiens/hg19/prioritization/MIG.bed
+      coverage_problem_dir: /n/app/bcbio/dev/genomes/Hsapiens/hg19/coverage/problem_regions
+    rnaseq:
+      dexseq: ../rnaseq/ref-transcripts.dexseq.gff3
+      gene_bed: /n/app/bcbio/dev/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.bed
+      rRNA_fa: ../rnaseq/rRNA.fa
+      refflat: /n/app/bcbio/dev/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.refFlat
+      transcriptome_index:
+        tophat: /n/app/bcbio/dev/genomes/Hsapiens/hg19/rnaseq/tophat/hg19_transcriptome.ver
+      transcripts: /n/app/bcbio/dev/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.gtf
+      transcripts_mask: /n/app/bcbio/dev/genomes/Hsapiens/hg19/rnaseq/ref-transcripts-mask.gtf
+    srnaseq:
+      mint_lookup: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/LookupTable.tRFs.MINTmap_v1.txt
+      mint_other: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/OtherAnnotations.MINTmap_v1.txt
+      mint_space: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/tRNAspace.Spliced.Sequences.MINTmap_v1.fa
+      mirbase_hairpin: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/hairpin.fa
+      mirbase_mature: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/mature.fa
+      mirdeep2_fasta: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/Rfam_for_miRDeep.fa
+      srna_transcripts: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/srna-transcripts.gtf
+      trna_fasta: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/trna_mature_pre.fa
+    variation:
+      1000g: ../variation/1000g.vcf.gz
+      ancestral: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/human_ancestor.fa.gz
+      clinvar: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/clinvar.vcf.gz
+      cosmic: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/cosmic.vcf.gz
+      dbnsfp: ../variation/dbNSFP.txt.gz
+      dbscsnv: ../variation/dbscSNV.txt.gz
+      dbsnp: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/dbsnp-151.vcf.gz
+      editing: /n/app/bcbio/dev/genomes/Hsapiens/hg19/editing/RADAR.bed.gz
+      encode_blacklist: /n/app/bcbio/dev/genomes/Hsapiens/hg19/coverage/problem_regions/ENCODE/wgEncodeDacMapabilityConsensusExcludable.bed.gz
+      esp: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/esp.vcf.gz
+      exac: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/exac.vcf.gz
+      gc_profile: /n/app/bcbio/dev/genomes/Hsapiens/hg19/coverage/gc/GC_profile.1000bp.cnp
+      genesplicer: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/genesplicer
+      genotype2phenotype: ../variation/G2P.csv
+      germline_het_pon: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/germline_het_pon.bed.gz
+      gnomad_exome: ../variation/gnomad_exome.vcf.gz
+      lcr: /n/app/bcbio/dev/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/LCR.bed.gz
+      polyx: /n/app/bcbio/dev/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/polyx.bed.gz
+      qsignature: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/qsignature.vcf
+      sv_repeat: /n/app/bcbio/dev/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/sv_repeat_telomere_centromere.bed
+      train_1000g: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/1000G_phase1.snps.high_confidence.vcf.gz
+      train_hapmap: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/hapmap_3.3.vcf.gz
+      train_indels: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/Mills_and_1000G_gold_standard.indels.vcf.gz
+      train_omni: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/1000G_omni2.5.vcf.gz
+    version: 50
+  metadata:
+    batch: null
+    laboratory: 5
+    phenotype: ''
+    population: TSI
+  sam_ref: /n/app/bcbio/dev/genomes/Hsapiens/hg19/seq/hg19.fa
+  summary:
+    metrics:
+      '%GC': '54'
+      5'-3' bias: 6.02
+      Average_insert_size: 0.0
+      Average_read_length: 21.0
+      Duplicates: 36023405.0
+      Duplication Rate of Mapped: 0.29543075857762285
+      Exonic Rate: 0.31579999999999997
+      Intergenic Rate: 0.294
+      Intronic Rate: 0.39020000000000005
+      Mapped_paired_reads: 0.0
+      Mapped_reads: 51128268.0
+      Name: ERS185082
+      Quality format: standard
+      Sequence length: 17-28
+      Sequences flagged as poor quality: '0'
+      Total_reads: 51510333.0
+      rRNA: NA
+      rRNA_rate: NA
+      read_pass_filter: 28679602
+      read_with_adapter: 10274622
+      reads_before_trimming: 28679602
+- description: ERS185252
+  dirs:
+    config: /n/app/bcbio/alpha_version/lpantano/bcbio/galaxy
+    fastq: null
+    flowcell: null
+    galaxy: /n/app/bcbio/alpha_version/lpantano/bcbio/galaxy
+    work: /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work
+  genome_build: hg19
+  genome_resources:
+    aliases:
+      ensembl: homo_sapiens_merged_vep_94_GRCh37
+      human: true
+      snpeff: GRCh37.75
+    coverage:
+      MIG: /n/app/bcbio/dev/genomes/Hsapiens/hg19/prioritization/MIG.bed
+      coverage_problem_dir: /n/app/bcbio/dev/genomes/Hsapiens/hg19/coverage/problem_regions
+    rnaseq:
+      dexseq: ../rnaseq/ref-transcripts.dexseq.gff3
+      gene_bed: /n/app/bcbio/dev/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.bed
+      rRNA_fa: ../rnaseq/rRNA.fa
+      refflat: /n/app/bcbio/dev/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.refFlat
+      transcriptome_index:
+        tophat: /n/app/bcbio/dev/genomes/Hsapiens/hg19/rnaseq/tophat/hg19_transcriptome.ver
+      transcripts: /n/app/bcbio/dev/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.gtf
+      transcripts_mask: /n/app/bcbio/dev/genomes/Hsapiens/hg19/rnaseq/ref-transcripts-mask.gtf
+    srnaseq:
+      mint_lookup: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/LookupTable.tRFs.MINTmap_v1.txt
+      mint_other: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/OtherAnnotations.MINTmap_v1.txt
+      mint_space: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/tRNAspace.Spliced.Sequences.MINTmap_v1.fa
+      mirbase_hairpin: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/hairpin.fa
+      mirbase_mature: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/mature.fa
+      mirdeep2_fasta: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/Rfam_for_miRDeep.fa
+      srna_transcripts: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/srna-transcripts.gtf
+      trna_fasta: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/trna_mature_pre.fa
+    variation:
+      1000g: ../variation/1000g.vcf.gz
+      ancestral: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/human_ancestor.fa.gz
+      clinvar: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/clinvar.vcf.gz
+      cosmic: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/cosmic.vcf.gz
+      dbnsfp: ../variation/dbNSFP.txt.gz
+      dbscsnv: ../variation/dbscSNV.txt.gz
+      dbsnp: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/dbsnp-151.vcf.gz
+      editing: /n/app/bcbio/dev/genomes/Hsapiens/hg19/editing/RADAR.bed.gz
+      encode_blacklist: /n/app/bcbio/dev/genomes/Hsapiens/hg19/coverage/problem_regions/ENCODE/wgEncodeDacMapabilityConsensusExcludable.bed.gz
+      esp: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/esp.vcf.gz
+      exac: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/exac.vcf.gz
+      gc_profile: /n/app/bcbio/dev/genomes/Hsapiens/hg19/coverage/gc/GC_profile.1000bp.cnp
+      genesplicer: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/genesplicer
+      genotype2phenotype: ../variation/G2P.csv
+      germline_het_pon: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/germline_het_pon.bed.gz
+      gnomad_exome: ../variation/gnomad_exome.vcf.gz
+      lcr: /n/app/bcbio/dev/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/LCR.bed.gz
+      polyx: /n/app/bcbio/dev/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/polyx.bed.gz
+      qsignature: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/qsignature.vcf
+      sv_repeat: /n/app/bcbio/dev/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/sv_repeat_telomere_centromere.bed
+      train_1000g: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/1000G_phase1.snps.high_confidence.vcf.gz
+      train_hapmap: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/hapmap_3.3.vcf.gz
+      train_indels: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/Mills_and_1000G_gold_standard.indels.vcf.gz
+      train_omni: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/1000G_omni2.5.vcf.gz
+    version: 50
+  metadata:
+    batch: null
+    laboratory: 4
+    phenotype: ''
+    population: FIN
+  sam_ref: /n/app/bcbio/dev/genomes/Hsapiens/hg19/seq/hg19.fa
+  summary:
+    metrics:
+      '%GC': '53'
+      Average_insert_size: 0.0
+      Average_read_length: 21.0
+      Duplicates: 12447325.0
+      Duplication Rate of Mapped: 0.3812942298830315
+      Exonic Rate: 0.3068
+      Intergenic Rate: 0.31120000000000003
+      Intronic Rate: 0.3821
+      Mapped_paired_reads: 0.0
+      Mapped_reads: 20118327.0
+      Name: ERS185252
+      Quality format: standard
+      Sequence length: 17-28
+      Sequences flagged as poor quality: '0'
+      Total_reads: 20308348.0
+      rRNA: NA
+      rRNA_rate: NA
+      read_pass_filter: 8681143
+      read_with_adapter: 4695266
+      reads_before_trimming: 8681143
+- description: ERS185036
+  dirs:
+    config: /n/app/bcbio/alpha_version/lpantano/bcbio/galaxy
+    fastq: null
+    flowcell: null
+    galaxy: /n/app/bcbio/alpha_version/lpantano/bcbio/galaxy
+    work: /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work
+  genome_build: hg19
+  genome_resources:
+    aliases:
+      ensembl: homo_sapiens_merged_vep_94_GRCh37
+      human: true
+      snpeff: GRCh37.75
+    coverage:
+      MIG: /n/app/bcbio/dev/genomes/Hsapiens/hg19/prioritization/MIG.bed
+      coverage_problem_dir: /n/app/bcbio/dev/genomes/Hsapiens/hg19/coverage/problem_regions
+    rnaseq:
+      dexseq: ../rnaseq/ref-transcripts.dexseq.gff3
+      gene_bed: /n/app/bcbio/dev/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.bed
+      rRNA_fa: ../rnaseq/rRNA.fa
+      refflat: /n/app/bcbio/dev/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.refFlat
+      transcriptome_index:
+        tophat: /n/app/bcbio/dev/genomes/Hsapiens/hg19/rnaseq/tophat/hg19_transcriptome.ver
+      transcripts: /n/app/bcbio/dev/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.gtf
+      transcripts_mask: /n/app/bcbio/dev/genomes/Hsapiens/hg19/rnaseq/ref-transcripts-mask.gtf
+    srnaseq:
+      mint_lookup: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/LookupTable.tRFs.MINTmap_v1.txt
+      mint_other: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/OtherAnnotations.MINTmap_v1.txt
+      mint_space: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/tRNAspace.Spliced.Sequences.MINTmap_v1.fa
+      mirbase_hairpin: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/hairpin.fa
+      mirbase_mature: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/mature.fa
+      mirdeep2_fasta: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/Rfam_for_miRDeep.fa
+      srna_transcripts: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/srna-transcripts.gtf
+      trna_fasta: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/trna_mature_pre.fa
+    variation:
+      1000g: ../variation/1000g.vcf.gz
+      ancestral: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/human_ancestor.fa.gz
+      clinvar: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/clinvar.vcf.gz
+      cosmic: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/cosmic.vcf.gz
+      dbnsfp: ../variation/dbNSFP.txt.gz
+      dbscsnv: ../variation/dbscSNV.txt.gz
+      dbsnp: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/dbsnp-151.vcf.gz
+      editing: /n/app/bcbio/dev/genomes/Hsapiens/hg19/editing/RADAR.bed.gz
+      encode_blacklist: /n/app/bcbio/dev/genomes/Hsapiens/hg19/coverage/problem_regions/ENCODE/wgEncodeDacMapabilityConsensusExcludable.bed.gz
+      esp: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/esp.vcf.gz
+      exac: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/exac.vcf.gz
+      gc_profile: /n/app/bcbio/dev/genomes/Hsapiens/hg19/coverage/gc/GC_profile.1000bp.cnp
+      genesplicer: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/genesplicer
+      genotype2phenotype: ../variation/G2P.csv
+      germline_het_pon: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/germline_het_pon.bed.gz
+      gnomad_exome: ../variation/gnomad_exome.vcf.gz
+      lcr: /n/app/bcbio/dev/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/LCR.bed.gz
+      polyx: /n/app/bcbio/dev/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/polyx.bed.gz
+      qsignature: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/qsignature.vcf
+      sv_repeat: /n/app/bcbio/dev/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/sv_repeat_telomere_centromere.bed
+      train_1000g: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/1000G_phase1.snps.high_confidence.vcf.gz
+      train_hapmap: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/hapmap_3.3.vcf.gz
+      train_indels: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/Mills_and_1000G_gold_standard.indels.vcf.gz
+      train_omni: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/1000G_omni2.5.vcf.gz
+    version: 50
+  metadata:
+    batch: null
+    laboratory: 1
+    phenotype: ''
+    population: FIN
+  sam_ref: /n/app/bcbio/dev/genomes/Hsapiens/hg19/seq/hg19.fa
+  summary:
+    metrics:
+      '%GC': '55'
+      5'-3' bias: 332.33
+      Average_insert_size: 0.0
+      Average_read_length: 21.0
+      Duplicates: 17099369.0
+      Duplication Rate of Mapped: 0.39455964503315405
+      Exonic Rate: 0.27899999999999997
+      Intergenic Rate: 0.3059
+      Intronic Rate: 0.41509999999999997
+      Mapped_paired_reads: 0.0
+      Mapped_reads: 28242863.0
+      Name: ERS185036
+      Quality format: standard
+      Sequence length: 17-28
+      Sequences flagged as poor quality: '0'
+      Total_reads: 28490037.0
+      rRNA: NA
+      rRNA_rate: NA
+      read_pass_filter: 8890678
+      read_with_adapter: 6073142
+      reads_before_trimming: 8890678
+- description: ERS185125
+  dirs:
+    config: /n/app/bcbio/alpha_version/lpantano/bcbio/galaxy
+    fastq: null
+    flowcell: null
+    galaxy: /n/app/bcbio/alpha_version/lpantano/bcbio/galaxy
+    work: /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work
+  genome_build: hg19
+  genome_resources:
+    aliases:
+      ensembl: homo_sapiens_merged_vep_94_GRCh37
+      human: true
+      snpeff: GRCh37.75
+    coverage:
+      MIG: /n/app/bcbio/dev/genomes/Hsapiens/hg19/prioritization/MIG.bed
+      coverage_problem_dir: /n/app/bcbio/dev/genomes/Hsapiens/hg19/coverage/problem_regions
+    rnaseq:
+      dexseq: ../rnaseq/ref-transcripts.dexseq.gff3
+      gene_bed: /n/app/bcbio/dev/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.bed
+      rRNA_fa: ../rnaseq/rRNA.fa
+      refflat: /n/app/bcbio/dev/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.refFlat
+      transcriptome_index:
+        tophat: /n/app/bcbio/dev/genomes/Hsapiens/hg19/rnaseq/tophat/hg19_transcriptome.ver
+      transcripts: /n/app/bcbio/dev/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.gtf
+      transcripts_mask: /n/app/bcbio/dev/genomes/Hsapiens/hg19/rnaseq/ref-transcripts-mask.gtf
+    srnaseq:
+      mint_lookup: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/LookupTable.tRFs.MINTmap_v1.txt
+      mint_other: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/OtherAnnotations.MINTmap_v1.txt
+      mint_space: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/tRNAspace.Spliced.Sequences.MINTmap_v1.fa
+      mirbase_hairpin: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/hairpin.fa
+      mirbase_mature: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/mature.fa
+      mirdeep2_fasta: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/Rfam_for_miRDeep.fa
+      srna_transcripts: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/srna-transcripts.gtf
+      trna_fasta: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/trna_mature_pre.fa
+    variation:
+      1000g: ../variation/1000g.vcf.gz
+      ancestral: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/human_ancestor.fa.gz
+      clinvar: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/clinvar.vcf.gz
+      cosmic: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/cosmic.vcf.gz
+      dbnsfp: ../variation/dbNSFP.txt.gz
+      dbscsnv: ../variation/dbscSNV.txt.gz
+      dbsnp: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/dbsnp-151.vcf.gz
+      editing: /n/app/bcbio/dev/genomes/Hsapiens/hg19/editing/RADAR.bed.gz
+      encode_blacklist: /n/app/bcbio/dev/genomes/Hsapiens/hg19/coverage/problem_regions/ENCODE/wgEncodeDacMapabilityConsensusExcludable.bed.gz
+      esp: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/esp.vcf.gz
+      exac: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/exac.vcf.gz
+      gc_profile: /n/app/bcbio/dev/genomes/Hsapiens/hg19/coverage/gc/GC_profile.1000bp.cnp
+      genesplicer: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/genesplicer
+      genotype2phenotype: ../variation/G2P.csv
+      germline_het_pon: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/germline_het_pon.bed.gz
+      gnomad_exome: ../variation/gnomad_exome.vcf.gz
+      lcr: /n/app/bcbio/dev/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/LCR.bed.gz
+      polyx: /n/app/bcbio/dev/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/polyx.bed.gz
+      qsignature: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/qsignature.vcf
+      sv_repeat: /n/app/bcbio/dev/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/sv_repeat_telomere_centromere.bed
+      train_1000g: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/1000G_phase1.snps.high_confidence.vcf.gz
+      train_hapmap: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/hapmap_3.3.vcf.gz
+      train_indels: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/Mills_and_1000G_gold_standard.indels.vcf.gz
+      train_omni: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/1000G_omni2.5.vcf.gz
+    version: 50
+  metadata:
+    batch: null
+    laboratory: 1
+    phenotype: ''
+    population: TSI
+  sam_ref: /n/app/bcbio/dev/genomes/Hsapiens/hg19/seq/hg19.fa
+  summary:
+    metrics:
+      '%GC': '54'
+      Average_insert_size: 0.0
+      Average_read_length: 22.0
+      Duplicates: 6129844.0
+      Duplication Rate of Mapped: 0.3776363305560113
+      Exonic Rate: 0.37
+      Intergenic Rate: 0.2747
+      Intronic Rate: 0.3553
+      Mapped_paired_reads: 0.0
+      Mapped_reads: 9849296.0
+      Name: ERS185125
+      Quality format: standard
+      Sequence length: 17-28
+      Sequences flagged as poor quality: '0'
+      Total_reads: 9919320.0
+      rRNA: NA
+      rRNA_rate: NA
+      read_pass_filter: 3354888
+      read_with_adapter: 2099017
+      reads_before_trimming: 3354888
+- description: ERS185102
+  dirs:
+    config: /n/app/bcbio/alpha_version/lpantano/bcbio/galaxy
+    fastq: null
+    flowcell: null
+    galaxy: /n/app/bcbio/alpha_version/lpantano/bcbio/galaxy
+    work: /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work
+  genome_build: hg19
+  genome_resources:
+    aliases:
+      ensembl: homo_sapiens_merged_vep_94_GRCh37
+      human: true
+      snpeff: GRCh37.75
+    coverage:
+      MIG: /n/app/bcbio/dev/genomes/Hsapiens/hg19/prioritization/MIG.bed
+      coverage_problem_dir: /n/app/bcbio/dev/genomes/Hsapiens/hg19/coverage/problem_regions
+    rnaseq:
+      dexseq: ../rnaseq/ref-transcripts.dexseq.gff3
+      gene_bed: /n/app/bcbio/dev/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.bed
+      rRNA_fa: ../rnaseq/rRNA.fa
+      refflat: /n/app/bcbio/dev/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.refFlat
+      transcriptome_index:
+        tophat: /n/app/bcbio/dev/genomes/Hsapiens/hg19/rnaseq/tophat/hg19_transcriptome.ver
+      transcripts: /n/app/bcbio/dev/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.gtf
+      transcripts_mask: /n/app/bcbio/dev/genomes/Hsapiens/hg19/rnaseq/ref-transcripts-mask.gtf
+    srnaseq:
+      mint_lookup: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/LookupTable.tRFs.MINTmap_v1.txt
+      mint_other: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/OtherAnnotations.MINTmap_v1.txt
+      mint_space: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/tRNAspace.Spliced.Sequences.MINTmap_v1.fa
+      mirbase_hairpin: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/hairpin.fa
+      mirbase_mature: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/mature.fa
+      mirdeep2_fasta: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/Rfam_for_miRDeep.fa
+      srna_transcripts: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/srna-transcripts.gtf
+      trna_fasta: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/trna_mature_pre.fa
+    variation:
+      1000g: ../variation/1000g.vcf.gz
+      ancestral: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/human_ancestor.fa.gz
+      clinvar: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/clinvar.vcf.gz
+      cosmic: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/cosmic.vcf.gz
+      dbnsfp: ../variation/dbNSFP.txt.gz
+      dbscsnv: ../variation/dbscSNV.txt.gz
+      dbsnp: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/dbsnp-151.vcf.gz
+      editing: /n/app/bcbio/dev/genomes/Hsapiens/hg19/editing/RADAR.bed.gz
+      encode_blacklist: /n/app/bcbio/dev/genomes/Hsapiens/hg19/coverage/problem_regions/ENCODE/wgEncodeDacMapabilityConsensusExcludable.bed.gz
+      esp: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/esp.vcf.gz
+      exac: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/exac.vcf.gz
+      gc_profile: /n/app/bcbio/dev/genomes/Hsapiens/hg19/coverage/gc/GC_profile.1000bp.cnp
+      genesplicer: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/genesplicer
+      genotype2phenotype: ../variation/G2P.csv
+      germline_het_pon: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/germline_het_pon.bed.gz
+      gnomad_exome: ../variation/gnomad_exome.vcf.gz
+      lcr: /n/app/bcbio/dev/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/LCR.bed.gz
+      polyx: /n/app/bcbio/dev/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/polyx.bed.gz
+      qsignature: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/qsignature.vcf
+      sv_repeat: /n/app/bcbio/dev/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/sv_repeat_telomere_centromere.bed
+      train_1000g: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/1000G_phase1.snps.high_confidence.vcf.gz
+      train_hapmap: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/hapmap_3.3.vcf.gz
+      train_indels: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/Mills_and_1000G_gold_standard.indels.vcf.gz
+      train_omni: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/1000G_omni2.5.vcf.gz
+    version: 50
+  metadata:
+    batch: null
+    laboratory: 3
+    phenotype: ''
+    population: CEU
+  sam_ref: /n/app/bcbio/dev/genomes/Hsapiens/hg19/seq/hg19.fa
+  summary:
+    metrics:
+      '%GC': '54'
+      5'-3' bias: 2.27
+      Average_insert_size: 0.0
+      Average_read_length: 21.0
+      Duplicates: 27482405.0
+      Duplication Rate of Mapped: 0.3463056287032155
+      Exonic Rate: 0.2261
+      Intergenic Rate: 0.34020000000000006
+      Intronic Rate: 0.4337
+      Mapped_paired_reads: 0.0
+      Mapped_reads: 42041673.0
+      Name: ERS185102
+      Quality format: standard
+      Sequence length: 17-28
+      Sequences flagged as poor quality: '0'
+      Total_reads: 42194758.0
+      rRNA: NA
+      rRNA_rate: NA
+      read_pass_filter: 16454415
+      read_with_adapter: 7679783
+      reads_before_trimming: 16454415
+- description: ERS185473
+  dirs:
+    config: /n/app/bcbio/alpha_version/lpantano/bcbio/galaxy
+    fastq: null
+    flowcell: null
+    galaxy: /n/app/bcbio/alpha_version/lpantano/bcbio/galaxy
+    work: /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work
+  genome_build: hg19
+  genome_resources:
+    aliases:
+      ensembl: homo_sapiens_merged_vep_94_GRCh37
+      human: true
+      snpeff: GRCh37.75
+    coverage:
+      MIG: /n/app/bcbio/dev/genomes/Hsapiens/hg19/prioritization/MIG.bed
+      coverage_problem_dir: /n/app/bcbio/dev/genomes/Hsapiens/hg19/coverage/problem_regions
+    rnaseq:
+      dexseq: ../rnaseq/ref-transcripts.dexseq.gff3
+      gene_bed: /n/app/bcbio/dev/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.bed
+      rRNA_fa: ../rnaseq/rRNA.fa
+      refflat: /n/app/bcbio/dev/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.refFlat
+      transcriptome_index:
+        tophat: /n/app/bcbio/dev/genomes/Hsapiens/hg19/rnaseq/tophat/hg19_transcriptome.ver
+      transcripts: /n/app/bcbio/dev/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.gtf
+      transcripts_mask: /n/app/bcbio/dev/genomes/Hsapiens/hg19/rnaseq/ref-transcripts-mask.gtf
+    srnaseq:
+      mint_lookup: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/LookupTable.tRFs.MINTmap_v1.txt
+      mint_other: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/OtherAnnotations.MINTmap_v1.txt
+      mint_space: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/tRNAspace.Spliced.Sequences.MINTmap_v1.fa
+      mirbase_hairpin: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/hairpin.fa
+      mirbase_mature: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/mature.fa
+      mirdeep2_fasta: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/Rfam_for_miRDeep.fa
+      srna_transcripts: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/srna-transcripts.gtf
+      trna_fasta: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/trna_mature_pre.fa
+    variation:
+      1000g: ../variation/1000g.vcf.gz
+      ancestral: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/human_ancestor.fa.gz
+      clinvar: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/clinvar.vcf.gz
+      cosmic: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/cosmic.vcf.gz
+      dbnsfp: ../variation/dbNSFP.txt.gz
+      dbscsnv: ../variation/dbscSNV.txt.gz
+      dbsnp: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/dbsnp-151.vcf.gz
+      editing: /n/app/bcbio/dev/genomes/Hsapiens/hg19/editing/RADAR.bed.gz
+      encode_blacklist: /n/app/bcbio/dev/genomes/Hsapiens/hg19/coverage/problem_regions/ENCODE/wgEncodeDacMapabilityConsensusExcludable.bed.gz
+      esp: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/esp.vcf.gz
+      exac: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/exac.vcf.gz
+      gc_profile: /n/app/bcbio/dev/genomes/Hsapiens/hg19/coverage/gc/GC_profile.1000bp.cnp
+      genesplicer: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/genesplicer
+      genotype2phenotype: ../variation/G2P.csv
+      germline_het_pon: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/germline_het_pon.bed.gz
+      gnomad_exome: ../variation/gnomad_exome.vcf.gz
+      lcr: /n/app/bcbio/dev/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/LCR.bed.gz
+      polyx: /n/app/bcbio/dev/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/polyx.bed.gz
+      qsignature: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/qsignature.vcf
+      sv_repeat: /n/app/bcbio/dev/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/sv_repeat_telomere_centromere.bed
+      train_1000g: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/1000G_phase1.snps.high_confidence.vcf.gz
+      train_hapmap: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/hapmap_3.3.vcf.gz
+      train_indels: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/Mills_and_1000G_gold_standard.indels.vcf.gz
+      train_omni: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/1000G_omni2.5.vcf.gz
+    version: 50
+  metadata:
+    batch: null
+    laboratory: 1
+    phenotype: ''
+    population: GBR
+  sam_ref: /n/app/bcbio/dev/genomes/Hsapiens/hg19/seq/hg19.fa
+  summary:
+    metrics:
+      '%GC': '54'
+      Average_insert_size: 0.0
+      Average_read_length: 21.0
+      Duplicates: 5802468.0
+      Duplication Rate of Mapped: 0.39284855890594317
+      Exonic Rate: 0.3472
+      Intergenic Rate: 0.2891
+      Intronic Rate: 0.36369999999999997
+      Mapped_paired_reads: 0.0
+      Mapped_reads: 9556871.0
+      Name: ERS185473
+      Quality format: standard
+      Sequence length: 17-28
+      Sequences flagged as poor quality: '0'
+      Total_reads: 9656610.0
+      rRNA: NA
+      rRNA_rate: NA
+      read_pass_filter: 3667190
+      read_with_adapter: 2293710
+      reads_before_trimming: 3667190
+- description: ERS185068
+  dirs:
+    config: /n/app/bcbio/alpha_version/lpantano/bcbio/galaxy
+    fastq: null
+    flowcell: null
+    galaxy: /n/app/bcbio/alpha_version/lpantano/bcbio/galaxy
+    work: /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work
+  genome_build: hg19
+  genome_resources:
+    aliases:
+      ensembl: homo_sapiens_merged_vep_94_GRCh37
+      human: true
+      snpeff: GRCh37.75
+    coverage:
+      MIG: /n/app/bcbio/dev/genomes/Hsapiens/hg19/prioritization/MIG.bed
+      coverage_problem_dir: /n/app/bcbio/dev/genomes/Hsapiens/hg19/coverage/problem_regions
+    rnaseq:
+      dexseq: ../rnaseq/ref-transcripts.dexseq.gff3
+      gene_bed: /n/app/bcbio/dev/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.bed
+      rRNA_fa: ../rnaseq/rRNA.fa
+      refflat: /n/app/bcbio/dev/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.refFlat
+      transcriptome_index:
+        tophat: /n/app/bcbio/dev/genomes/Hsapiens/hg19/rnaseq/tophat/hg19_transcriptome.ver
+      transcripts: /n/app/bcbio/dev/genomes/Hsapiens/hg19/rnaseq/ref-transcripts.gtf
+      transcripts_mask: /n/app/bcbio/dev/genomes/Hsapiens/hg19/rnaseq/ref-transcripts-mask.gtf
+    srnaseq:
+      mint_lookup: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/LookupTable.tRFs.MINTmap_v1.txt
+      mint_other: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/OtherAnnotations.MINTmap_v1.txt
+      mint_space: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/tRNAspace.Spliced.Sequences.MINTmap_v1.fa
+      mirbase_hairpin: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/hairpin.fa
+      mirbase_mature: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/mature.fa
+      mirdeep2_fasta: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/Rfam_for_miRDeep.fa
+      srna_transcripts: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/srna-transcripts.gtf
+      trna_fasta: /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/trna_mature_pre.fa
+    variation:
+      1000g: ../variation/1000g.vcf.gz
+      ancestral: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/human_ancestor.fa.gz
+      clinvar: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/clinvar.vcf.gz
+      cosmic: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/cosmic.vcf.gz
+      dbnsfp: ../variation/dbNSFP.txt.gz
+      dbscsnv: ../variation/dbscSNV.txt.gz
+      dbsnp: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/dbsnp-151.vcf.gz
+      editing: /n/app/bcbio/dev/genomes/Hsapiens/hg19/editing/RADAR.bed.gz
+      encode_blacklist: /n/app/bcbio/dev/genomes/Hsapiens/hg19/coverage/problem_regions/ENCODE/wgEncodeDacMapabilityConsensusExcludable.bed.gz
+      esp: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/esp.vcf.gz
+      exac: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/exac.vcf.gz
+      gc_profile: /n/app/bcbio/dev/genomes/Hsapiens/hg19/coverage/gc/GC_profile.1000bp.cnp
+      genesplicer: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/genesplicer
+      genotype2phenotype: ../variation/G2P.csv
+      germline_het_pon: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/germline_het_pon.bed.gz
+      gnomad_exome: ../variation/gnomad_exome.vcf.gz
+      lcr: /n/app/bcbio/dev/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/LCR.bed.gz
+      polyx: /n/app/bcbio/dev/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/polyx.bed.gz
+      qsignature: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/qsignature.vcf
+      sv_repeat: /n/app/bcbio/dev/genomes/Hsapiens/hg19/coverage/problem_regions/repeats/sv_repeat_telomere_centromere.bed
+      train_1000g: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/1000G_phase1.snps.high_confidence.vcf.gz
+      train_hapmap: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/hapmap_3.3.vcf.gz
+      train_indels: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/Mills_and_1000G_gold_standard.indels.vcf.gz
+      train_omni: /n/app/bcbio/dev/genomes/Hsapiens/hg19/variation/1000G_omni2.5.vcf.gz
+    version: 50
+  metadata:
+    batch: null
+    laboratory: 4
+    phenotype: ''
+    population: YRI
+  sam_ref: /n/app/bcbio/dev/genomes/Hsapiens/hg19/seq/hg19.fa
+  summary:
+    metrics:
+      '%GC': '53'
+      5'-3' bias: 3.21
+      Average_insert_size: 0.0
+      Average_read_length: 22.0
+      Duplicates: 25498543.0
+      Duplication Rate of Mapped: 0.37182615815576736
+      Exonic Rate: 0.3069
+      Intergenic Rate: 0.3155
+      Intronic Rate: 0.3776
+      Mapped_paired_reads: 0.0
+      Mapped_reads: 40591539.0
+      Name: ERS185068
+      Quality format: standard
+      Sequence length: 17-28
+      Sequences flagged as poor quality: '0'
+      Total_reads: 40966549.0
+      rRNA: NA
+      rRNA_rate: NA
+      read_pass_filter: 15390771
+      read_with_adapter: 8201529
+      reads_before_trimming: 15390771

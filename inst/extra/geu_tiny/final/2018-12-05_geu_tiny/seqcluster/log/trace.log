@@ -1,0 +1,37 @@
+INFO - Run cluster
+INFO - Checking parameters and files
+INFO - Output dir will be: /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/seqcluster/cluster
+INFO - Clean bam file with highly repetitive reads with low counts. sum(counts)/n_hits > 1%
+INFO - Using /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/align/seqs_rmlw.bam file
+INFO - Total genome with sequences: 0.011891 
+INFO - Parsing matrix file
+INFO - counts after: 32614980
+INFO - # sequences after: 220285
+INFO - Cleaning bam file
+INFO - counts after: 31003050
+INFO - # sequences after: 206609
+INFO - Parsing aligned file
+INFO - Merging sequences
+INFO - Creating clusters
+INFO - 1540063 Clusters read
+INFO - Creating meta-clusters based on shared sequences: 206609
+INFO - 552 metaclusters from 186214 sequences
+INFO - 552 clusters found
+INFO - counts after: 31003050
+INFO - # sequences after: 206609
+INFO - Solving multi-mapping events in the network of clusters
+INFO - Number of loci: 1540063
+INFO - seqs in clusters 185264
+INFO - Clusters too long to be analized: 2
+INFO - Number of clusters removed because low number of reads: 183
+INFO - Number of clusters with conflicts: 89
+INFO - counts after: 30794864
+INFO - # sequences after: 185264
+INFO - Clusters up to 720
+INFO - Creating bed file
+INFO - Annotating clusters
+INFO - Using /n/app/bcbio/dev/genomes/Hsapiens/hg19/srnaseq/srna-transcripts.gtf 
+INFO - Creating json and count matrix
+INFO - Output file in: /n/scratch2/hsph_bioinformatic_core/lp113/geuvadis/geu_tiny2/geu_tiny/work/seqcluster/cluster
+INFO - Finished
+INFO - It took 32.636 minutes

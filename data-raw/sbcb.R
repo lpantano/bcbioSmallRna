@@ -16,5 +16,5 @@ left_join(
     write_csv("inst/extra/geu_tiny.csv")
 
 library(bcbioSmallRna)
-sbcb = loadSmallRnaRun("inst/extra/geu_tiny/final/2018-09-29_geu_tiny", interestingGroups = "population")
+sbcb = loadSmallRnaRun("inst/extra/geu_tiny/final/2018-12-05_geu_tiny", interestingGroups = "population")
 save(sbcb, file = "data/sbcb.rda", compress = "xz")
