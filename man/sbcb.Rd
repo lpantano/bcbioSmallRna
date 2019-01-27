@@ -4,7 +4,7 @@
 \name{sbcb}
 \alias{sbcb}
 \title{Tiny example of bcbioSmallRna object}
-\format{An object of class \code{bcbioSmallRnaDataSet} of length 3.}
+\format{An object of class \code{bcbioSmallRnaDataSet} of length 4.}
 \usage{
 sbcb
 }

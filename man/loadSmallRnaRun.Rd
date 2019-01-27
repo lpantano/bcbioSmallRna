@@ -42,7 +42,7 @@ run directory as a remote connection over
 \examples{
 path <- system.file("extra", package="bcbioSmallRna")
 sbcb <- loadSmallRnaRun(file.path(path, "geu_tiny", "final",
-                                  "2018-09-29_geu_tiny"), "population")
+                                  "2018-12-05_geu_tiny"), "population")
 }
 \author{
 Michael Steinbaugh, Lorena Pantano

@@ -148,7 +148,7 @@ There are 5 different types of isomiRs:
 
 ```{r isomiRs, fig.cap="Proportion of isomiRs counting reads (left) or unique sequences (right)."}
 ids <- bcbio(bcb, "isomirs")
-isoPlot(ids, type = "all", column = by_color)
+isoPlot(ids, type = "all", column = color_by)
 ```
 
 
