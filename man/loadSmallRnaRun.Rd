@@ -5,8 +5,8 @@
 \title{Load small RNA-seq bcbio-nextgen run}
 \usage{
 loadSmallRnaRun(projectDir = "date-final",
-  interestingGroups = "sample", maxSamples = 50, dataDir = NULL,
-  colData = NULL, ...)
+  interestingGroups = "sample", maxSamples = 50, minHits = 5,
+  dataDir = NULL, colData = NULL, ...)
 }
 \arguments{
 \item{projectDir}{Path to final upload directory. This path is set when
@@ -18,6 +18,9 @@ is used for PCA and heatmap QC functions.}
 
 \item{maxSamples}{\emph{Optional}. Maximum number of samples to calculate rlog
 and variance stabilization object from DESeq2.}
+
+\item{minHits}{\emph{Optional}. Minimum lines to have in the miRNA output
+to load the sample.}
 
 \item{dataDir}{Folder to keep a cache of the object.}
 

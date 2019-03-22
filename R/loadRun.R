@@ -18,6 +18,8 @@
 #'   is used for PCA and heatmap QC functions.
 #' @param maxSamples *Optional*. Maximum number of samples to calculate rlog
 #'   and variance stabilization object from DESeq2.
+#' @param minHits *Optional*. Minimum lines to have in the miRNA output
+#'   to load the sample.
 #' @param colData *Optional* External metadata to be used while reading samples.
 #' @param dataDir Folder to keep a cache of the object.
 #' @param ... Additional arguments, saved as metadata.
@@ -33,6 +35,7 @@ loadSmallRnaRun <- function(
     projectDir = "date-final",
     interestingGroups = "sample",
     maxSamples = 50,
+    minHits = 5,
     dataDir = NULL,
     colData = NULL,
     ...) {
@@ -130,12 +133,14 @@ loadSmallRnaRun <- function(
         bcbio_nextgen_commands = bcbio_nextgen_commands)
 
     # SummarizedExperiment for miRNA ====
-    mirna <- .read_mirna_counts(metadata, col_data, max_samples = maxSamples)
+    mirna <- .read_mirna_counts(metadata, col_data,
+                                min_hits = minHits,
+                                max_samples = maxSamples)
     mirna_rlog <- mirna %>%
         isoNorm(., maxSamples = maxSamples) %>% counts(., norm = TRUE)
-    isomirna <- isoCounts(mirna, iso5 = TRUE, iso3 = TRUE,
-                        add = TRUE, subs = TRUE, seed = TRUE,
-                        ref = TRUE)
+    isomirna <- isoCounts(mirna, TRUE, TRUE,
+                        TRUE, TRUE, TRUE,
+                        TRUE)
     iso_rlog <- isomirna %>%
         isoNorm(., maxSamples = maxSamples) %>% counts(., norm = TRUE)
     mir <- SummarizedExperiment(assays = SimpleList(
