@@ -67,7 +67,6 @@ Suggests:
     rmarkdown,
     testthat
 Remotes:
-    lpantano/DEGreport,
     lpantano/isomiRs
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 6.1.1
